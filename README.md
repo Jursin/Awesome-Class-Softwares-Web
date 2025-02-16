@@ -1,6 +1,6 @@
 # Awesome-Class-Softwares-Web
 
-这是 [Awesome-Class-Softwares-Web](https://github.com/Jursin/Awesome-Class-Softwares-Web) 仓库，本站基于 [VuePress](https://vuejs.press/) 搭建，使用 [VuePress Theme Hope](https://theme-hope.vuejs.press/zh/) 主题，[查看在线网站](https://jursin.github.com/Awesome-Class-Softwares-Web)。
+这是 [Awesome-Class-Softwares-Web](https://github.com/Jursin/Awesome-Class-Softwares-Web) 仓库，本站基于 [VuePress](https://vuejs.press/) 搭建，使用 [VuePress Theme Hope](https://theme-hope.vuejs.press/zh/) 主题，[查看在线网站](https://jursin.github.io/Awesome-Class-Softwares-Web)。
 
 ## 开始编写文档
 

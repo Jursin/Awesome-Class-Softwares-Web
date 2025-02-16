@@ -17,7 +17,7 @@ export const zhSidebar = sidebar({
       ],
     },
   ],
-  "/clasaschedule/": [
+  "/classschedule/": [
     {
       icon: "fa-solid fa-lightbulb",
       text: "课表类",
