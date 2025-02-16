@@ -1,7 +1,7 @@
 ---
 title: ClassIsland
 index: false
-html: '<img src="https://raw.githubusercontent.com/ClassIsland/ClassIsland/master/ClassIsland/Assets/AppLogo_AppLogo.svg" alt="ClassIsland Logo" style="height: 24px; vertical-align: middle;" />',
+html: '<img src="https://raw.githubusercontent.com/ClassIsland/ClassIsland/master/ClassIsland/Assets/AppLogo_AppLogo.svg" alt="ClassIsland Logo" style="height: 24px; vertical-align: middle;" />'
 category:
   - ClassIsland
 ---
