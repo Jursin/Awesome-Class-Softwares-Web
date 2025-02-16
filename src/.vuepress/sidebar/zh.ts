@@ -22,7 +22,7 @@ export const zhSidebar = sidebar({
       icon: "fa-solid fa-lightbulb",
       text: "课表类",
       children: [
-        "classisland/index.md",
+        "index.md",
       ],
     },
   ],
