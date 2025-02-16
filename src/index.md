@@ -35,18 +35,8 @@ actions:
 
 <div class="vp-card-container">
   <VPCard
-    title=""
-    desc=""
-    link=".//"
-  />
-  <VPCard
-    title=""
-    desc=""
-    link=".//"
-  />
-  <VPCard
-    title=""
-    desc=""
-    link=".//"
+    title="content"
+    desc="课表类"
+    link="./classschedule/"
   />
 </div>
