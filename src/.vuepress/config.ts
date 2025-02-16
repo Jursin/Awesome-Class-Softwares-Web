@@ -8,7 +8,7 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "Awesome-Class-Softwares-Web",
+      title: "Awesome-Class-Softwares",
       description: "Awesome-Class-Softwares-Web 网站",
     },
     "/en-us/": {

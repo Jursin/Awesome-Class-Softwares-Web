@@ -9,7 +9,7 @@ heroImageStyle:
 # bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
-heroText: Awesome-Class-Softwares-Web
+heroText: Awesome-Class-Softwares
 tagline: 适用于班级一体机的优质软件合集
 actions:
   - text: 目录
