@@ -1,0 +1,38 @@
+name: Generate and Upload PDF on Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: 设置 pnpm
+      uses: pnpm/action-setup@v4
+      with:
+        version: 9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1
+
+    - name: 设置 Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: pnpm
+
+    - name: Install dependencies
+      run: pnpm install
+
+    - name: Install Google Chrome
+      run: npx puppeteer browsers install chrome
+
+    - name: Generate PDF
+      run: pnpm run export-pdf
+
+    - name: Upload PDF to Release
+      uses: softprops/action-gh-release@v2
+      with:
+        files: ./pdf/ClassIsland-Docs.pdf

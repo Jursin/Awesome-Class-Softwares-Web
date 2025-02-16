@@ -1,0 +1,32 @@
+{
+  "name": "Awesome-Class-Softwares-Web",
+  "description": "A project of vuepress-theme-hope",
+  "version": "2.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "docs:build": "vuepress-vite build src",
+    "docs:clean-dev": "vuepress-vite dev src --clean-cache",
+    "docs:dev": "vuepress-vite dev src",
+    "docs:update-package": "pnpm dlx vp-update",
+    "export-pdf": "press-export-pdf export src"
+  },
+  "devDependencies": {
+    "@condorhero/vuepress-plugin-export-pdf-v2": "^3.0.3",
+    "@vuepress/bundler-vite": "2.0.0-rc.15",
+    "sass-embedded": "^1.81.0",
+    "vue": "^3.5.13",
+    "vuepress": "2.0.0-rc.15",
+    "vuepress-plugin-search-pro": "2.0.0-rc.59",
+    "vuepress-theme-hope": "2.0.0-rc.59"
+  },
+  "packageManager": "pnpm@9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1",
+  "dependencies": {
+    "@sentry/vue": "^8.40.0",
+    "chart.js": "^4.4.6",
+    "echarts": "^5.5.1",
+    "flowchart.ts": "^3.0.1",
+    "mathjax-full": "^3.2.2",
+    "mermaid": "^11.4.0"
+  }
+}
