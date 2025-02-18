@@ -4,4 +4,8 @@ export const zhNavbar = navbar([
   "/",
   "/content/",
   "/classschedule/",
+  "/multi-function/",
+  "/dashboard/",
+  "/annotation/",
+  "/downloader/",
 ]);

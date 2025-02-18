@@ -39,4 +39,24 @@ actions:
     desc="课表类软件"
     link="./classschedule/"
   />
+  <VPCard
+    title="多功能类"
+    desc="多功能类软件"
+    link="./multi-function/"
+  />
+  <VPCard
+    title="看板类"
+    desc="看板类软件"
+    link="./dashboard/"
+  />
+  <VPCard
+    title="批注类"
+    desc="批注类软件"
+    link="./annotation/"
+  />
+  <VPCard
+    title="下载类"
+    desc="下载类软件"
+    link="./downloader/"
+  />
 </div>
