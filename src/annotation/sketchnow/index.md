@@ -6,6 +6,8 @@ category:
   - SketchNow
 ---
 
+<div align="center">
+
 ![Banner](https://github.com/SketchNow/SketchNow.WPF/blob/main/docs/banner.png)
 
 [![stars](https://img.shields.io/github/stars/SketchNow/SketchNow.WPF?label=Stars)](https://github.com/SketchNow/SketchNow.WPF)

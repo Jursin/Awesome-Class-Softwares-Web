@@ -6,6 +6,8 @@ category:
   - ExamAware
 ---
 
+<div align="center">
+
 ![HomePage](https://github.com/ExamAware/dsz-exam-showboard/blob/master/.Screenshots/HomePage.png)
 ![InfoPage](https://github.com/ExamAware/dsz-exam-showboard/blob/master/.Screenshots/InfoPage.png)
 

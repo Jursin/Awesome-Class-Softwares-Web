@@ -6,6 +6,8 @@ category:
   - SeewoHUB
 ---
 
+<div align="center">
+
 ![主界面](/downloader/seewohub/images/main-interface.png)
 ![设置](/downloader/seewohub/images/setting.png)
 

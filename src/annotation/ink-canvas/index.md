@@ -6,6 +6,8 @@ category:
   - InkCanvas
 ---
 
+<div align="center">
+
 ![screen](/annotation/ink-canvas/images/screen.png)
 ![board](/annotation/ink-canvas/images/board.png)
 

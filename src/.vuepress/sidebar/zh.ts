@@ -50,7 +50,7 @@ export const zhSidebar = sidebar({
       ],
     },
   ],
-  "/multi-get-started/": [
+  "/multi-function/": [
     {
       icon: "fa-solid fa-puzzle-piece",
       text: "多功能类",
@@ -83,7 +83,34 @@ export const zhSidebar = sidebar({
           text: "ExamAware",
           link: "examaware/index.md",
           children: [
-            "examaware/get-started.md",
+            {
+              text: "ExamAware 2 Desktop",
+              link: "examaware/examaware2-desktop/index.md",
+              children: [
+                "examaware/examaware2-desktop/get-started.md",
+              ],
+            },
+            {
+              text: "ExamCloudSchedule",
+              link: "examaware/examcloudschedule/index.md",
+              children: [
+                "examaware/examcloudschedule/get-started.md",
+              ],
+            },
+            {
+              text: "ExamSchedule",
+              link: "examaware/examschedule/index.md",
+              children: [
+                "examaware/examschedule/get-started.md",
+              ],
+            },
+            {
+              text: "ExamShowboard",
+              link: "examaware/exam-showboard/index.md",
+              children: [
+                "examaware/exam-showboard/get-started.md",
+              ],
+            },
           ],
         },
         {

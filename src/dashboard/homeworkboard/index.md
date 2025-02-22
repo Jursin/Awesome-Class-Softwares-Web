@@ -6,6 +6,8 @@ category:
   - ElectronClassSchedule
 ---
 
+<div align="center">
+
 ![screenshot](https://github.com/EnderWolf006/HomeworkBoard/blob/main/ReadMeImages/img.png)
 
 [![stars](https://img.shields.io/github/stars/EnderWolf006/HomeworkBoard?label=Stars)](https://github.com/EnderWolf006/HomeworkBoard)

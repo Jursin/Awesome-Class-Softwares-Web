@@ -6,6 +6,8 @@ category:
   - SectionIstool
 ---
 
+<div align="center">
+
 ![About](https://github.com/SectionIstool/SectionIstool/blob/main/ScreenSots/about_Page.png)
 ![Download](https://github.com/SectionIstool/SectionIstool/blob/main/ScreenSots/ClassIsland_Page.png)
 

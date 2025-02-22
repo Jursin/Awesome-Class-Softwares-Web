@@ -6,6 +6,8 @@ category:
   - Ink-Canvas-Reborn
 ---
 
+<div align="center">
+
 [直接下载](https://github.com/dubi906w/Ink-Canvas-Reborn/releases/latest) | [使用指南](https://github.com/dubi906w/Ink-Canvas-Reborn/blob/master/MANUAL.md) | [常见问题](https://github.com/dubi906w/Ink-Canvas-Reborn#FAQ)
 
 [![stars](https://img.shields.io/github/stars/Awesome-Iwb/Ink-Canvas-Reborn?label=Stars)](https://github.com/Awesome-Iwb/Ink-Canvas-Reborn)

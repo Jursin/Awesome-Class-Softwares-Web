@@ -6,6 +6,8 @@ category:
   - ElectronClassSchedule
 ---
 
+<div align="center">
+
 ![view](https://github.com/EnderWolf006/ElectronClassSchedule/blob/main/image%2FREADME%2Fview.png)
 
 [![stars](https://img.shields.io/github/stars/EnderWolf006/ElectronClassSchedule?label=Stars)](https://github.com/EnderWolf006/ElectronClassSchedule)

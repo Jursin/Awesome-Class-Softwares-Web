@@ -6,6 +6,8 @@ category:
   - Class-Widgets
 ---
 
+<div align="center">
+
 ![Banner](https://github.com/Class-Widgets/Class-Widgets/blob/main/img%2FBanner.png)
 
 ![Light](https://github.com/Class-Widgets/Class-Widgets/blob/main/img%2Fscreenshot_0.png)

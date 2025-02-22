@@ -6,6 +6,8 @@ category:
   - Inkways-Classic
 ---
 
+<div align="center">
+
 ![banner](/annotation/inkways-classic/images/inkways_banner.png)
 ![editor](/annotation/inkways-classic/images/image_inkways_10.png)
 ![board](/annotation/inkways-classic/images/image_inkways_6.png)

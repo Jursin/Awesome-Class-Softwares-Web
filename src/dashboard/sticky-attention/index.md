@@ -6,6 +6,8 @@ category:
   - Sticky-attention
 ---
 
+<div align="center">
+
 ![banner](https://github.com/Sticky-attention/Sticky-attention/blob/master/image/banner.jpg)
 
 ![主界面](/dashboard/sticky-attention/images/main-interface.png)
