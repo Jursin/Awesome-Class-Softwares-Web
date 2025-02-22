@@ -69,6 +69,9 @@ export default hopeTheme({
     //   categoryId: "DIC_kwDOMp3pZs4CiBuf",
     //   mapping: "pathname",
     // },
+    sidebar: {
+      collapsible: true, // 允许折叠
+      collapsed: true, // 默认折叠
     searchPro: {},
     shiki: {
       themes: {

@@ -1,7 +1,7 @@
 ---
 title: 下载类
 index: false
-icon: 
+icon: download
 category:
   - 下载类
 ---

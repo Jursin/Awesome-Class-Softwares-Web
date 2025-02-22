@@ -1,7 +1,7 @@
 ---
 title: 课表类
 index: false
-icon: 
+icon: calendar-days
 category:
   - 类别
 ---
