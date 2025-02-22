@@ -8,10 +8,10 @@ category:
 
 <div align="center">
 
-![banner](/annotation/inkways-classic/images/inkways_banner.png)
-![editor](/annotation/inkways-classic/images/image_inkways_10.png)
-![board](/annotation/inkways-classic/images/image_inkways_6.png)
-![slide assistant](/annotation/inkways-classic/images/image_inkways_7.png)
+![banner](images/inkways_banner.png)
+![editor](images/image_inkways_10.png)
+![board](images/image_inkways_6.png)
+![slide assistant](images/image_inkways_7.png)
 
 ![Type](https://img.shields.io/badge/Type-Closed_Source-green)
 [![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C655979143-blue?style=flat&logo=QQ)](https://qm.qq.com/q/wzFUnRBF9C)
@@ -31,7 +31,7 @@ category:
 
 强大的墨迹分析和优化算法
 
-<img src="icons/Inkore_Badge_256.png" width="16" height="16">官方网站：[https://inkore.net/zh-cn/products/inkways/](https://inkore.net/zh-cn/products/inkways/)
+<img src="/.vuepress/public/Inkore_Badge_256.png" width="16" height="16">官方网站：[https://inkore.net/zh-cn/products/inkways/](https://inkore.net/zh-cn/products/inkways/)
 
 GitHub仓库：[https://github.com/iNKORE-NET/Inkways](https://github.com/iNKORE-NET/Inkways)
 

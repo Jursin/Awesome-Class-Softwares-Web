@@ -8,8 +8,8 @@ category:
 
 <div align="center">
 
-![主界面](/downloader/seewohub/images/main-interface.png)
-![设置](/downloader/seewohub/images/setting.png)
+![主界面](images/main-interface.png)
+![设置](images/setting.png)
 
 [![stars](https://img.shields.io/github/stars/CNwenwen/SeewoHUB?label=Stars)](https://github.com/CNwenwen/SeewoHUB)
 [![forks](https://img.shields.io/github/forks/CNwenwen/SeewoHUB?label=Forks)](https://github.com/CNwenwen/SeewoHUB)

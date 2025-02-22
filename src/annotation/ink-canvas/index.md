@@ -8,8 +8,8 @@ category:
 
 <div align="center">
 
-![screen](/annotation/ink-canvas/images/screen.png)
-![board](/annotation/ink-canvas/images/board.png)
+![screen](images/screen.png)
+![board](images/board.png)
 
 [![stars](https://img.shields.io/github/stars/WXRIW/Ink-Canvas?label=Stars)](https://github.com/WXRIW/Ink-Canvas)
 [![forks](https://img.shields.io/github/forks/WXRIW/Ink-Canvas?label=Forks)](https://github.com/WXRIW/Ink-Canvas)
