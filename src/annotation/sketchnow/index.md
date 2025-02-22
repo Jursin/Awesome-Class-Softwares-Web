@@ -25,7 +25,7 @@ category:
 
 一款让您能在屏幕任意位置实时绘图的应用程序
 
-[Releases](https://github.com/SketchNow/SketchNow.WPF/releases)｜[Actions](https://github.com/SketchNow/SketchNow.WPF/actions)｜[Upcoming](https://github.com/orgs/SketchNow/projects)｜[中文README](docs/SketchNow_cn.md)
+[Releases](https://github.com/SketchNow/SketchNow.WPF/releases)｜[Actions](https://github.com/SketchNow/SketchNow.WPF/actions)｜[Upcoming](https://github.com/orgs/SketchNow/projects)｜[中文README](https://github.com/Jursin/Awesome-Class-Softwares/blob/main/docs%2FSketchNow_cn.md)
 
 </div>
 
