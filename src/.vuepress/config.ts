@@ -9,12 +9,12 @@ export default defineUserConfig({
     "/": {
       lang: "zh-CN",
       title: "Awesome-Class-Softwares",
-      description: "Awesome-Class-Softwares-Web 网站",
+      description: "Awesome-Class-Softwares 网站",
     },
     "/en-us/": {
       lang: "en-US",
-      title: "Awesome-Class-Softwares-Web",
-      description: "Website of Awesome-Class-Softwares-Web",
+      title: "Awesome-Class-Softwares",
+      description: "Website of Awesome-Class-Softwares Website",
     },
   },
   theme

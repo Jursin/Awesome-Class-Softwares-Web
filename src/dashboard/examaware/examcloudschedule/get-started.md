@@ -1,0 +1,8 @@
+---
+title: 快速开始
+index: false
+icon: fa-solid fa-signs-post
+category:
+  - ExamAware
+  - 快速开始
+---
