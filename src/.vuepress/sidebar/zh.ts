@@ -30,27 +30,27 @@ export const zhSidebar = sidebar({
           text: "ClassIsland",
           link: "classisland/index.md",
           children: [
-            "classisland/function.md",
+            "classisland/get-started.md",
           ],
         },
         {
           text: "Class-Widgets",
           link: "class-widgets/index.md",
           children: [
-            "class-widgets/function.md",
+            "class-widgets/get-started.md",
           ],
         },
         {
           text: "ElectronClassSchedule",
           link: "electronclassschedule/index.md",
           children: [
-            "electronclassschedule/function.md",
+            "electronclassschedule/get-started.md",
           ],
         },
       ],
     },
   ],
-  "/multi-function/": [
+  "/multi-get-started/": [
     {
       icon: "fa-solid fa-puzzle-piece",
       text: "多功能类",
@@ -60,14 +60,14 @@ export const zhSidebar = sidebar({
           text: "Ris_Classtool",
           link: "ris_classtool/index.md",
           children: [
-            "ris_classtool/function.md",
+            "ris_classtool/get-started.md",
           ],
         },
         {
           text: "Zongzitek-Blackboard黑板贴",
           link: "zongzitek-blackboard-sticker/index.md",
           children: [
-            "zongzitek-blackboard-sticker/function.md",
+            "zongzitek-blackboard-sticker/get-started.md",
           ],
         },
       ],
@@ -83,21 +83,21 @@ export const zhSidebar = sidebar({
           text: "ExamAware",
           link: "examaware/index.md",
           children: [
-            "examaware/function.md",
+            "examaware/get-started.md",
           ],
         },
         {
           text: "Sticky-attention",
           link: "sticky-attention/index.md",
           children: [
-            "sticky-attention/function.md",
+            "sticky-attention/get-started.md",
           ],
         },
         {
           text: "HomeworkBoard",
           link: "homeworkboard/index.md",
           children: [
-            "homeworkboard/function.md",
+            "homeworkboard/get-started.md",
           ],
         },
       ],
@@ -113,42 +113,42 @@ export const zhSidebar = sidebar({
           text: "Ink-Canvas",
           link: "ink-canvas/index.md",
           children: [
-            "ink-canvas/function.md",
+            "ink-canvas/get-started.md",
           ],
         },
         {
           text: "Ink-Canvas-Artistry",
           link: "ink-canvas-artistry/index.md",
           children: [
-            "ink-canvas-artistry/function.md",
+            "ink-canvas-artistry/get-started.md",
           ],
         },
         {
           text: "Ink-Canvas-Reborn",
           link: "ink-canvas-reborn/index.md",
           children: [
-            "ink-canvas-reborn/function.md",
+            "ink-canvas-reborn/get-started.md",
           ],
         },
         {
           text: "SketchNow",
           link: "sketchnow/index.md",
           children: [
-            "sketchnow/function.md",
+            "sketchnow/get-started.md",
           ],
         },
         {
           text: "智绘教Inkeys",
           link: "inkeys/index.md",
           children: [
-            "inkeys/function.md",
+            "inkeys/get-started.md",
           ],
         },
         {
           text: "Inkways-Classic",
           link: "inkways-classic/index.md",
           children: [
-            "inkways-classic/function.md",
+            "inkways-classic/get-started.md",
           ],
         },
       ],
@@ -164,14 +164,14 @@ export const zhSidebar = sidebar({
           text: "Sectionistool",
           link: "sectionistool/index.md",
           children: [
-            "sectionistool/function.md",
+            "sectionistool/get-started.md",
           ],
         },
         {
           text: "SeewoHub",
           link: "seewohub/index.md",
           children: [
-            "seewohub/function.md",
+            "seewohub/get-started.md",
           ],
         },
       ],
