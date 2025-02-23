@@ -14,8 +14,14 @@ export const zhSidebar = sidebar({
       link: "index.md",
       children: [
         {
+          icon: "fa-solid fa-list",
           text: "目录",
           link: "content.md",
+        },
+        {
+          icon: "fa-solid fa-list",
+          text: "聚合",
+          link: "gather.md",
         },
       ],
     },
@@ -82,6 +88,7 @@ export const zhSidebar = sidebar({
         {
           text: "ExamAware",
           link: "examaware/index.md",
+          collapsible: true,
           children: [
             {
               text: "ExamAware 2 Desktop",
