@@ -61,14 +61,17 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     // // 注意：仅用于测试！你必须自行生成并在生产环境中使用自己的评论服务
-    // comment: {
-    //   provider: "Giscus",
-    //   repo: "Jursin/Awesome-Class-Softwares-Web",
-    //   repoId: "R_kgDOMp3pZg",
-    //   category: "Announcements",
-    //   categoryId: "DIC_kwDOMp3pZs4CiBuf",
-    //   mapping: "pathname",
-    // },
+    comment: {
+      provider: "Giscus",
+      repo: "Jursin/Awesome-Class-Softwares-Web",
+      repoId: "R_kgDON6SdCw",
+      category: "Announcements",
+      categoryId: "DIC_kwDON6SdC84CnZcw",
+      mapping: "pathname",
+      inputPosition: "top",
+      lightTheme: "light",
+      darkTheme: "dark",
+    },
     searchPro: {},
     shiki: {
       themes: {
