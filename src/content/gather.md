@@ -1,7 +1,7 @@
 ---
 title: 链接聚合
 index: false
-icon: fa-solid fa-lightbulb
+icon: list
 category:
   - 聚合
 ---

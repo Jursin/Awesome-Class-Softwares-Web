@@ -1,7 +1,7 @@
 ---
 title: 前言
 index: false
-icon: fa-solid fa-lightbulb
+icon: lightbulb
 category:
   - 前言
 ---

@@ -1,7 +1,7 @@
 ---
 title: 目录
 index: false
-icon: list
+icon: book
 category:
   - 目录
 ---
