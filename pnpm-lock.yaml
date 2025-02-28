@@ -33,6 +33,9 @@ importers:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.15
         version: 2.0.0-rc.15(@types/node@22.9.1)(sass-embedded@1.81.0)(typescript@5.6.3)
+      '@vuepress/plugin-comment':
+        specifier: ^2.0.0-rc.15
+        version: 2.0.0-rc.56(typescript@5.6.3)(vuepress@2.0.0-rc.15(@vuepress/bundler-vite@2.0.0-rc.15(@types/node@22.9.1)(sass-embedded@1.81.0)(typescript@5.6.3))(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))
       sass-embedded:
         specifier: ^1.81.0
         version: 1.81.0
