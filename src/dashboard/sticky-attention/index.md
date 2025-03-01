@@ -11,8 +11,8 @@ category:
 ![banner](https://github.com/Sticky-attention/Sticky-attention/blob/master/image/banner.jpg)
 
 ![主界面](images/main-interface.png)
-
-主界面
+![面板](images/faceplate.png)
+主界
 
 ![设置](images/setting.png)
 

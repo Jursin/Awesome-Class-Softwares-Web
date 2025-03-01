@@ -8,7 +8,7 @@ category:
 
 <div align="center">
 
-![主界面](https://github.com/ClassIsland/ClassIsland/assets/55006226/65e2bdba-be83-444c-b42f-b893aaace9c3)
+![主界面](images/main-interface.png)
 
 ![Banner](https://github.com/user-attachments/assets/a815dd7d-8343-4da5-aee4-3f754aa297e4)
 

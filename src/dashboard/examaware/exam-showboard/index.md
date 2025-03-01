@@ -9,6 +9,8 @@ category:
 <div align="center">
 
 ![HomePage](https://github.com/ExamAware/dsz-exam-showboard/blob/master/.Screenshots/HomePage.png)
+![For Android](images/for-android.png)
+![For Web](images/for-web.png)
 ![InfoPage](https://github.com/ExamAware/dsz-exam-showboard/blob/master/.Screenshots/InfoPage.png)
 ![about](images/about.png)
 

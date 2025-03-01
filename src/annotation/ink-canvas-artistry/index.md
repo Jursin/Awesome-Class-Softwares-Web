@@ -9,6 +9,7 @@ category:
 ![Screenshot-1](https://github.com/ChangSakura/Ink-Canvas/blob/master/Images/Screenshot1.png)
 ![Screenshot-2](https://github.com/ChangSakura/Ink-Canvas/blob/master/Images/Screenshot2.png)
 ![Screenshot-3](https://github.com/ChangSakura/Ink-Canvas/blob/master/Images/Screenshot3.png)
+![about](images/about.png)
 
 [![stars](https://img.shields.io/github/stars/ChangSakura/Ink-Canvas?label=Stars)](https://github.com/ChangSakura/Ink-Canvas)
 [![forks](https://img.shields.io/github/forks/ChangSakura/Ink-Canvas?label=Forks)](https://github.com/ChangSakura/Ink-Canvas)
