@@ -10,6 +10,7 @@ category:
 
 ![HomePage](https://github.com/ExamAware/dsz-exam-showboard/blob/master/.Screenshots/HomePage.png)
 ![InfoPage](https://github.com/ExamAware/dsz-exam-showboard/blob/master/.Screenshots/InfoPage.png)
+![about](images/about.png)
 
 [![stars](https://img.shields.io/github/stars/ExamAware/dsz-exam-showboard?label=Stars)](https://github.com/ExamAware/dsz-exam-showboard/stargazers)
 [![forks](https://img.shields.io/github/forks/ExamAware/dsz-exam-showboard?label=Forks)](https://github.com/ExamAware/dsz-exam-showboard/forks)

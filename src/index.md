@@ -12,9 +12,9 @@ bgImageStyle:
 heroText: Awesome-Class-Softwares
 tagline: 适用于班级一体机的优质软件合集
 actions:
-  - text: 目录
-    icon: circle-info
-    link: ./content/
+  - text: 前言
+    icon: book-open
+    link: ./content/foreword.md
     type: primary
 
   - text: GitHub 仓库

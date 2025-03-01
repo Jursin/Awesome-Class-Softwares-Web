@@ -1,7 +1,7 @@
 ---
-title: 目录
+title: 快速导航
 index: false
-icon: book
+icon: list
 category:
   - 目录
 ---
@@ -46,4 +46,4 @@ category:
 | 软件 | 组织/开发者 |
 | - | - |
 | <img src="https://raw.githubusercontent.com/SectionIstool/SectionIstool/main/resources/SectionIstool_icon.png" width="20" height="20"/> [SectionIstool](/downloader/sectionistool/index.md) | <img src="https://avatars.githubusercontent.com/u/183712498?s=200&v=4" width="20" height="20"/> [`SectionIstool`](https://github.com/SectionIstool) <img src="https://avatars.githubusercontent.com/u/139693537?v=4" width="20" height="20"/> [`lzy98276`](https://github.com/lzy98276) |
-| <img src="https://raw.githubusercontent.com/CNwenwen/SeewoHUB/main/ClientProject/public/logo.png" width="20" height="20"/> [SeewoHUB](/downloader/seewohub/index.md) | <img src="https://avatars.githubusercontent.com/u/121096061?v=4" width="20" height="20"/> [`CNwenwen`](https://github.com/CNwenwen) |
+| <img src="https://private-user-images.githubusercontent.com/121096061/376007500-a0d2487f-7c3c-4dce-a3f9-125658d8386f.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA4MzQ1MjEsIm5iZiI6MTc0MDgzNDIyMSwicGF0aCI6Ii8xMjEwOTYwNjEvMzc2MDA3NTAwLWEwZDI0ODdmLTdjM2MtNGRjZS1hM2Y5LTEyNTY1OGQ4Mzg2Zi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzAxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwMVQxMzAzNDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02MjlmZGIzZDQ5N2UzYTE0ZDViY2ZjYjM4MzBhMzEyZWRkYWNhZjM2ZTJiZWZhYzU1NGEzZDgzOTlkODIzYTlmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.TH31Wx1mztq2izRPuQz4X5aKhd3X05NiIP8dOCzbfgY" width="20" height="20"/> [SeewoHUB](/downloader/seewohub/index.md) | <img src="https://avatars.githubusercontent.com/u/121096061?v=4" width="20" height="20"/> [`CNwenwen`](https://github.com/CNwenwen) |

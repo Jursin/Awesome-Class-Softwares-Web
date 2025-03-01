@@ -9,23 +9,29 @@ export const zhSidebar = sidebar({
   ],
   "/content/": [
     {
-      icon: "fa-solid fa-lightbulb",
+      icon: "fa-solid fa-book",
+      text: "目录",
+      link: "index.md",      
+    },
+    {
+      icon: "fa-solid fa-book-open",
       text: "前言",
-      link: "index.md",
-      collapsible: true,
-      collapsed: true,
-      children: [
-        {
-          icon: "fa-solid fa-book",
-          text: "目录",
-          link: "content.md",
-        },
-        {
-          icon: "fa-solid fa-list",
-          text: "链接聚合",
-          link: "gather.md",
-        },
-      ],
+      link: "foreword.md",
+    },
+    {
+      icon: "fa-solid fa-list",
+      text: "快速导航",
+      link: "navigation.md",
+    },
+    {
+      icon: "fa-solid fa-link",
+      text: "链接聚合",
+      link: "gather.md",
+    },
+    {
+      icon: "fa-solid fa-code-commit",
+      text: "贡献指南",
+      link: "contributing.md",
     },
   ],
   "/classschedule/": [
