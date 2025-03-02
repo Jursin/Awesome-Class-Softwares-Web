@@ -7,5 +7,5 @@ category:
 ---
 
 - [前言](/content/foreword.md)
-- [快速导航](/content/navigatio.md)
+- [快速导航](/content/navigation.md)
 - [链接聚合](/content/gather.md)

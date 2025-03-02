@@ -38,7 +38,7 @@ category:
 
 本项目受到[`DuguSand/class_form`](https://github.com/DuguSand/class_form)的启发而开发。
 
-<image src="https://github.com/ClassIsland/ClassIsland/blob/master/ClassIsland/Assets/AppLogo_AppLogo.svg" height="16"/>[ClassIsland 官网](https://classisland.tech/)｜[ClassIsland 文档](https://docs.classisland.tech)｜[ClassIsland 投票](https://github.com/ClassIsland/voting/discussions)
+<image src="https://gh.llkk.cc/https://raw.githubusercontent.com/ClassIsland/ClassIsland/master/ClassIsland/Assets/AppLogo_AppLogo.svg" height="16"/>[ClassIsland 官网](https://classisland.tech/)｜[ClassIsland 文档](https://docs.classisland.tech)｜[ClassIsland 投票](https://github.com/ClassIsland/voting/discussions)
 
 GitHub仓库：[https://github.com/ClassIsland/ClassIsland](https://github.com/ClassIsland/ClassIsland)
 

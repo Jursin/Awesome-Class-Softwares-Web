@@ -52,4 +52,4 @@ category:
 
 ## 还有疑问？
 
-您可以和 [DeepSeek](https://chat.deepseek.com/) 对话获得更新解答。
+您可以和 <img src="/deepseek.png" width="20" height="20"/> [DeepSeek](https://chat.deepseek.com/) 对话获得更多解答。

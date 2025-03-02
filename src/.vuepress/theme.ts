@@ -85,7 +85,7 @@ export default hopeTheme({
     },
 
     components: {
-      components: ["Badge", "VPCard"],
+      components: ["BiliBili", "Badge", "Share", "VPCard"],
     },
     markdownTab: {
       // 启用代码选项卡

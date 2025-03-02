@@ -31,7 +31,7 @@ category:
 
 强大的墨迹分析和优化算法
 
-<img src="/Inkore_Badge_256.png" width="16" height="16">官方网站：[https://inkore.net/zh-cn/products/inkways/](https://inkore.net/zh-cn/products/inkways/)
+<img src="/Inkore_Badge.png" width="16" height="16">官方网站：[https://inkore.net/zh-cn/products/inkways/](https://inkore.net/zh-cn/products/inkways/)
 
 GitHub仓库：[https://github.com/iNKORE-NET/Inkways](https://github.com/iNKORE-NET/Inkways)
 
