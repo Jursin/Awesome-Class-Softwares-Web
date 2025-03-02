@@ -6,11 +6,13 @@ category:
 ---
 
 <div align="center">
+
 [![stars](https://img.shields.io/github/stars/Jursin/Awesome-Class-Softwares?label=Stars)](https://github.com/Jursin/Awesome-Class-Softwares) [![forks](https://img.shields.io/github/forks/Jursin/Awesome-Class-Softwares?label=Forks)](https://github.com/Jursin/Awesome-Class-Softwares) [![Watchers](https://img.shields.io/github/watchers/Jursin/Awesome-Class-Softwares?style=social)](https://github.com/Jursin/Awesome-Class-Softwares/watchers) [![GitHub Issues](https://img.shields.io/github/issues-search/Jursin/Awesome-Class-Softwares?query=is%3Aopen&style=social&logo=github&label=Issues)](https://github.com/Jursin/Awesome-Class-Softwares/issues) [![GitHub Discussions](https://img.shields.io/github/discussions/Jursin/Awesome-Class-Softwares?style=social&logo=Github&label=Discussions)](https://github.com/Jursin/Awesome-Class-Softwares/discussions) [![Created At](https://img.shields.io/github/created-at/Jursin/Awesome-Class-Softwares?style=flat&logo=Github&label=Creat%20at)](https://github.com/Jursin/Awesome-Class-Softwares) [![Github Last Commit](https://img.shields.io/github/last-commit/Jursin/Awesome-Class-Softwares?style=flat&logo=Github&label=Last%20commit)](https://github.com/Jursin/Awesome-Class-Softwares/commits/master) [![All Contributors](https://img.shields.io/github/all-contributors/Jursin/Awesome-Class-Softwares?color=ee8449&style=flat&logo=github&label=All%20Contributors)](#contributors) [![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2FJursin%2FAwesome-Class-Softwares&label=Visitors&countColor=%23263759&style=flat)](https://visitorbadge.io/) [![bilibili](https://img.shields.io/badge/-UP%E4%B8%BB%EF%BD%9CHello__Jursin-%23FB7299?style=flat&logo=bilibili)](https://space.bilibili.com/1575907920)
 
 [![本站 Repobeats](https://repobeats.axiom.co/api/embed/f6ac7e38279ff5cd0551fadf7b4a2f39f520b6e3.svg "本站 Repobeats analytics image")](https://repobeats.axiom.co/)
 
 [![文档 Repobeats](https://repobeats.axiom.co/api/embed/6143732bb42daf7aa015c9f6e993d0e8fbd98913.svg "文档 Repobeats analytics image")](https://repobeats.axiom.co/)
+
 </div>
 
 ::: important

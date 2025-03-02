@@ -6,6 +6,7 @@ category:
 ---
 
 <div align="center">
+
 ![banner](images/inkways_banner.png)
 ![editor](images/image_inkways_10.png)
 ![board](images/image_inkways_6.png)
@@ -26,4 +27,5 @@ category:
 <img src="/Inkore_Badge.png" width="16" height="16">官方网站：[https://inkore.net/zh-cn/products/inkways/](https://inkore.net/zh-cn/products/inkways/)
 
 GitHub仓库：[https://github.com/iNKORE-NET/Inkways](https://github.com/iNKORE-NET/Inkways)
+
 </div>

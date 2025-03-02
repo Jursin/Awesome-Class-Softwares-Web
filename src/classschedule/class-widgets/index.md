@@ -6,6 +6,7 @@ category:
 ---
 
 <div align="center">
+
 ![Banner](https://github.com/Class-Widgets/Class-Widgets/blob/main/img%2FBanner.png)
 
 ![Light](https://github.com/Class-Widgets/Class-Widgets/blob/main/img%2Fscreenshot_0.png)
@@ -18,7 +19,8 @@ category:
 
 [Releases](https://github.com/Class-Widgets/Class-Widgets/releases)｜[使用文档](https://www.yuque.com/rinlit/class-widgets_help)
 
-GitHub仓库：[https://github.com/Class-Widgets/Class-Widgets](https://github.com/Class-Widgets/Class-Widgets) 
+GitHub仓库：[https://github.com/Class-Widgets/Class-Widgets](https://github.com/Class-Widgets/Class-Widgets)
+
 </div>
 
 <BiliBili bvid="BV1SSfDYmEa4" />

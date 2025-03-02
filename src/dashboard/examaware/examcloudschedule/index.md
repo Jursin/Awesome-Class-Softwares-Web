@@ -6,9 +6,11 @@ category:
 ---
 
 <div align="center">
+
 [![stars](https://img.shields.io/github/stars/ExamAware/ExamCloudSechdule?label=Stars)](https://github.com/ExamAware/ExamCloudSechdule/stargazers) [![forks](https://img.shields.io/github/forks/ExamAware/ExamCloudSechdule?label=Forks)](https://github.com/ExamAware/ExamCloudSechdule/forks) [![Watchers](https://img.shields.io/github/watchers/ExamAware/ExamCloudSechdule?style=social)](https://github.com/ExamAware/ExamCloudSechdule/watchers) [![Downloads](https://img.shields.io/github/downloads/ExamAware/ExamCloudSechdule/total?style=social&label=Downloads&logo=github)](https://github.com/ExamAware/ExamCloudSechdule/releases) [![GitHub Issues](https://img.shields.io/github/issues-search/ExamAware/ExamCloudSechdule?query=is%3Aopen&style=flat&logo=github&label=Issues&color=%233fb950)](https://github.com/ExamAware/ExamCloudSechdule/issues) [![Created At](https://img.shields.io/github/created-at/ExamAware/ExamCloudSechdule)](https://github.com/ExamAware/ExamCloudSechdule) [![Github Last Commit](https://img.shields.io/github/last-commit/ExamAware/ExamCloudSechdule)](https://github.com/ExamAware/ExamCloudSechdule/commits/main) [![GitHub Language Count](https://img.shields.io/github/languages/count/ExamAware/ExamCloudSechdule)](https://github.com/ExamAware/ExamCloudSechdule) [![GitHub Top Language](https://img.shields.io/github/languages/top/ExamAware/ExamCloudSechdule)](https://github.com/ExamAware/ExamCloudSechdule) [![LICENSE]((https://img.shields.io/badge/License-MIT-red.svg "LICENSE")](https://github.com/ExamAware/ExamCloudSechdule/blob/main/LICENSE)
 
 ExamCloudSechdule 是一个用于管理和查看考试安排的系统
+
 </div>
 
 ## 功能

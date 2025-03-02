@@ -6,5 +6,5 @@ category:
 ---
 
 <div class="catalog-display-container">
-  <Catalog base='/zh/' />
+  <Catalog base='/downloader/' />
 </div>

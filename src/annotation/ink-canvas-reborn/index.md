@@ -6,6 +6,7 @@ category:
 ---
 
 <div align="center">
+
 [直接下载](https://github.com/dubi906w/Ink-Canvas-Reborn/releases/latest) | [使用指南](https://github.com/dubi906w/Ink-Canvas-Reborn/blob/master/MANUAL.md) | [常见问题](https://github.com/dubi906w/Ink-Canvas-Reborn#FAQ)
 
 [![stars](https://img.shields.io/github/stars/Awesome-Iwb/Ink-Canvas-Reborn?label=Stars)](https://github.com/Awesome-Iwb/Ink-Canvas-Reborn) [![forks](https://img.shields.io/github/forks/Awesome-Iwb/Ink-Canvas-Reborn?label=Forks)](https://github.com/Awesome-Iwb/Ink-Canvas-Reborn) [![Watchers](https://img.shields.io/github/watchers/Awesome-Iwb/Ink-Canvas-Reborn?style=social)](https://github.com/Awesome-Iwb/Ink-Canvas-Reborn/watchers) [![GitHub Issues](https://img.shields.io/github/issues-search/Awesome-Iwb/Ink-Canvas-Reborn?query=is%3Aopen&style=flat&logo=github&label=Issues&color=%233fb950)](https://github.com/Awesome-Iwb/Ink-Canvas-Reborn/issues) [![Created At](https://img.shields.io/github/created-at/Awesome-Iwb/Ink-Canvas-Reborn)](https://github.com/Awesome-Iwb/Ink-Canvas-Reborn) [![Github Last Commit](https://img.shields.io/github/last-commit/Awesome-Iwb/Ink-Canvas-Reborn)](https://github.com/Awesome-Iwb/Ink-Canvas-Reborn/commits/master/) ![Update Status](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E8%BE%83%E4%B8%8D%E6%B4%BB%E8%B7%83-yellow) [![GitHub Language Count](https://img.shields.io/github/languages/count/Awesome-Iwb/Ink-Canvas-Reborn)](https://github.com/Awesome-Iwb/Ink-Canvas-Reborn) [![GitHub Top Language](https://img.shields.io/github/languages/top/Awesome-Iwb/Ink-Canvas-Reborn)](https://github.com/Awesome-Iwb/Ink-Canvas-Reborn) [![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg "LICENSE")](https://github.com/Awesome-Iwb/Ink-Canvas-Reborn/blob/master/LICENSE)
@@ -13,6 +14,7 @@ category:
 A fantastic Ink Canvas in WPF/C#, with fantastic support for Seewo Boards.
 
 GitHub仓库：[https://github.com/Awesome-Iwb/Ink-Canvas-Reborn](https://github.com/Awesome-Iwb/Ink-Canvas-Reborn)
+
 </div>
 
 ## 特性

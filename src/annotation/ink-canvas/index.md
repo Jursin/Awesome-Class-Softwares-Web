@@ -6,6 +6,7 @@ category:
 ---
 
 <div align="center">
+
 ![screen](images/screen.png)
 ![board](images/board.png)
 
@@ -18,6 +19,7 @@ Ink Canvas 画板是一款轻量级画板软件，基于WPF/C#，其针对希沃
 [<img src="https://get.microsoft.com/images/zh-CN%20dark.svg" style="width: 200px;"/>](https://www.microsoft.com/store/apps/9NXJFDD97XJ3?cid=ghreadme)
 
 GitHub仓库：[https://github.com/WXRIW/Ink-Canvas](https://github.com/WXRIW/Ink-Canvas) 
+
 </div>
 
 ## 模式

@@ -6,6 +6,7 @@ category:
 ---
 
 <div align="center">
+
 ![HomePage](https://github.com/ExamAware/dsz-exam-showboard/blob/master/.Screenshots/HomePage.png)
 ![For Android](images/for-android.png)
 ![For Web](images/for-web.png)
@@ -17,6 +18,7 @@ category:
 一款显示当前时间与考试详细信息的显示工具
 
 GitHub仓库：[https://github.com/ExamAware/dsz-exam-showboard](https://github.com/ExamAware/dsz-exam-showboard)
+
 </div>
 
 ## 功能

@@ -6,6 +6,7 @@ category:
 ---
 
 <div align="center">
+
 ![About](https://github.com/SectionIstool/SectionIstool/blob/main/ScreenSots/about_Page.png)
 ![Download](https://github.com/SectionIstool/SectionIstool/blob/main/ScreenSots/ClassIsland_Page.png)
 
@@ -14,6 +15,7 @@ category:
 一款方便、快捷下载适合班级一体机使用的各类软件的下载器
 
 GitHub仓库：[https://github.com/SectionIstool/SectionIstool](https://github.com/SectionIstool/SectionIstool)
+
 </div>
 
 ::: warning

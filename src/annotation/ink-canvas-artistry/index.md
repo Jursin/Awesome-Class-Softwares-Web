@@ -6,6 +6,7 @@ category:
 ---
 
 <div align="center">
+
 ![Screenshot-1](https://github.com/ChangSakura/Ink-Canvas/blob/master/Images/Screenshot1.png)
 ![Screenshot-2](https://github.com/ChangSakura/Ink-Canvas/blob/master/Images/Screenshot2.png)
 ![Screenshot-3](https://github.com/ChangSakura/Ink-Canvas/blob/master/Images/Screenshot3.png)
@@ -18,4 +19,5 @@ category:
 [常见问题](https://github.com/InkCanvas/Ink-Canvas-Artistry?tab=readme-ov-file#-faq)
 
 GitHub仓库：[https://github.com/ChangSakura/Ink-Canvas](https://github.com/ChangSakura/Ink-Canvas)
+
 </div>

@@ -28,9 +28,7 @@ export default hopeTheme({
   
   displayFooter: true,
   copyright: false,
-  print: true,
-  fullscreen: true,
-
+  
   locales: {
     "/": {
       // navbar
@@ -107,9 +105,12 @@ export default hopeTheme({
       attrs: true,
       component: true,
       demo: true,
+      fullscreen: true,
       include: true,
       mark: true,
       plantuml: true,
+      print: true,
+      share: true,
       spoiler: true,
       stylize: [
         {

@@ -6,6 +6,7 @@ category:
 ---
 
 <div align="center">
+
 ![banner](https://github.com/Sticky-attention/Sticky-attention/blob/master/image/banner.jpg)
 
 ![主界面](images/main-interface.png)
@@ -17,6 +18,7 @@ category:
 Sticky-attention 是一款适用于Windows 系统教室一体机的作业显示工具，可以展示各科作业等信息，后续将添加更多新内容。
 
 GitHub仓库：[https://github.com/Sticky-attention/Sticky-attention](https://github.com/Sticky-attention/Sticky-attention)
+
 </div>
 
 <BiliBili bvid="BV1YJ4Fe5EgD" />
