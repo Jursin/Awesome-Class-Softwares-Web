@@ -1,6 +1,5 @@
 ---
 title: 贡献指南
-index: false
 icon: code-commit
 category:
   - 贡献

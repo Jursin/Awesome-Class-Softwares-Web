@@ -1,7 +1,10 @@
 ---
 title: 批注类
-index: false
 icon: pen
 category:
   - 批注类
 ---
+
+<div class="catalog-display-container">
+  <Catalog base='/zh/' />
+</div>

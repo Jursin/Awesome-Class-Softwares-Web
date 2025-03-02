@@ -1,6 +1,5 @@
 ---
 title: 快速导航
-index: false
 icon: list
 category:
   - 目录

@@ -1,13 +1,16 @@
 ---
 title: ExamAware
-index: false
 icon: 
 category:
   - ExamAware
 ---
 
 ExamAware 系列应用可以显示当前时间与考试详细信息，并支持在各平台上运行。
-    
+
+<div class="catalog-display-container">
+  <Catalog base='/zh/' />
+</div>
+
 ## 仓库链接
 
 | 名称 | 简述 | 🚀 发行版 | 🚧 当前构建 |

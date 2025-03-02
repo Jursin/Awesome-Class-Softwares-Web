@@ -1,7 +1,10 @@
 ---
 title: 课表类
-index: false
 icon: calendar-days
 category:
   - 类别
 ---
+
+<div class="catalog-display-container">
+  <Catalog base='/zh/' />
+</div>

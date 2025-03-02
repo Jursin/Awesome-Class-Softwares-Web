@@ -1,6 +1,5 @@
 ---
 title: 链接聚合
-index: false
 icon: link
 category:
   - 聚合

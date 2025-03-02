@@ -1,31 +1,14 @@
 ---
 title: 智绘教Inkeys
-index: false
 icon: 
 category:
   - Inkeys
 ---
 
 <div align="center">
-
 ![cover](https://github.com/Alan-CRL/Inkeys/blob/main/GithubRes/cover2.png)
 
-[![stars](https://img.shields.io/github/stars/Alan-CRL/Inkeys?label=Stars)](https://github.com/Alan-CRL/Inkeys)
-[![forks](https://img.shields.io/github/forks/Alan-CRL/Inkeys?label=Forks)](https://github.com/Alan-CRL/Inkeys)
-[![Watchers](https://img.shields.io/github/watchers/Alan-CRL/Inkeys?style=social)](https://github.com/Alan-CRL/Inkeys/watchers)
-[![Downloads](https://img.shields.io/github/downloads/Alan-CRL/Inkeys/total?style=social&label=Downloads&logo=github)](https://github.com/Alan-CRL/Inkeys/releases/latest)
-[![GitHub Issues](https://img.shields.io/github/issues-search/Alan-CRL/Inkeys?query=is%3Aopen&style=flat&logo=github&label=Issues&color=%233fb950)](https://github.com/Alan-CRL/Inkeys/issues)
-[![GitHub Discussions](https://img.shields.io/github/discussions/Alan-CRL/Inkeys?style=flat&logo=Github&label=Discussions)](https://github.com/Alan-CRL/Inkeys/discussions)
-[![Release](https://img.shields.io/github/v/release/Alan-CRL/Inkeys?style=flat&color=%233fb950&label=正式版)](https://github.com/Alan-CRL/Inkeys/releases/latest)
-[![Created At](https://img.shields.io/github/created-at/Alan-CRL/Inkeys)](https://github.com/Alan-CRL/Inkeys)
-[![Github Last Commit](https://img.shields.io/github/last-commit/Alan-CRL/Inkeys)](https://github.com/Alan-CRL/Inkeys/commits/main)
-![Update Status](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E6%B4%BB%E8%B7%83-blue)
-[![GitHub Language Count](https://img.shields.io/github/languages/count/Alan-CRL/Inkeys)](https://github.com/Alan-CRL/Inkeys)
-[![GitHub Top Language](https://img.shields.io/github/languages/top/Alan-CRL/Inkeys)](https://github.com/Alan-CRL/Inkeys)
-[![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg "LICENSE")](https://github.com/Alan-CRL/Inkeys/blob/main/LICENSE)
-[![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C618720802-blue?style=flat&logo=QQ)](https://qm.qq.com/q/iEDzSL0Wn)
-[![bilibili](https://img.shields.io/badge/-UP%E4%B8%BB%EF%BD%9Calan--CRL-%23FB7299?style=flat&logo=bilibili)](https://space.bilibili.com/1330313497)
-[![bilibili](https://img.shields.io/badge/-bilibili%E8%A7%86%E9%A2%91%EF%BD%9CBV1Tz421z72e-%23FB7299?style=flat&logo=bilibili)](https://www.bilibili.com/video/BV1Tz421z72e)
+[![stars](https://img.shields.io/github/stars/Alan-CRL/Inkeys?label=Stars)](https://github.com/Alan-CRL/Inkeys) [![forks](https://img.shields.io/github/forks/Alan-CRL/Inkeys?label=Forks)](https://github.com/Alan-CRL/Inkeys) [![Watchers](https://img.shields.io/github/watchers/Alan-CRL/Inkeys?style=social)](https://github.com/Alan-CRL/Inkeys/watchers) [![Downloads](https://img.shields.io/github/downloads/Alan-CRL/Inkeys/total?style=social&label=Downloads&logo=github)](https://github.com/Alan-CRL/Inkeys/releases/latest) [![GitHub Issues](https://img.shields.io/github/issues-search/Alan-CRL/Inkeys?query=is%3Aopen&style=flat&logo=github&label=Issues&color=%233fb950)](https://github.com/Alan-CRL/Inkeys/issues) [![GitHub Discussions](https://img.shields.io/github/discussions/Alan-CRL/Inkeys?style=flat&logo=Github&label=Discussions)](https://github.com/Alan-CRL/Inkeys/discussions) [![Release](https://img.shields.io/github/v/release/Alan-CRL/Inkeys?style=flat&color=%233fb950&label=正式版)](https://github.com/Alan-CRL/Inkeys/releases/latest) [![Created At](https://img.shields.io/github/created-at/Alan-CRL/Inkeys)](https://github.com/Alan-CRL/Inkeys) [![Github Last Commit](https://img.shields.io/github/last-commit/Alan-CRL/Inkeys)](https://github.com/Alan-CRL/Inkeys/commits/main) ![Update Status](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E6%B4%BB%E8%B7%83-blue) [![GitHub Language Count](https://img.shields.io/github/languages/count/Alan-CRL/Inkeys)](https://github.com/Alan-CRL/Inkeys) [![GitHub Top Language](https://img.shields.io/github/languages/top/Alan-CRL/Inkeys)](https://github.com/Alan-CRL/Inkeys) [![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg "LICENSE")](https://github.com/Alan-CRL/Inkeys/blob/main/LICENSE) [![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C618720802-blue?style=flat&logo=QQ)](https://qm.qq.com/q/iEDzSL0Wn) [![bilibili](https://img.shields.io/badge/-UP%E4%B8%BB%EF%BD%9Calan--CRL-%23FB7299?style=flat&logo=bilibili)](https://space.bilibili.com/1330313497) [![bilibili](https://img.shields.io/badge/-bilibili%E8%A7%86%E9%A2%91%EF%BD%9CBV1Tz421z72e-%23FB7299?style=flat&logo=bilibili)](https://www.bilibili.com/video/BV1Tz421z72e)
 
 原名 `Intelligent-Drawing-Teaching（简称 IDT）`，Windows 屏幕批注工具，拥有批注高效和功能丰富等特点，适用于触摸设备和PC端。
 
@@ -34,10 +17,9 @@ category:
 <img src="https://github.com/Alan-CRL/Inkeys/blob/main/GithubRes/logo.png" width="16" height="16">官方网站：[https://www.inkeys.top/](https://www.inkeys.top/)
 
 GitHub仓库：[https://github.com/Alan-CRL/Inkeys](https://github.com/Alan-CRL/Inkeys)
-
 </div>
 
-#### 功能
+## 功能
 
 - 动态画板背景、窗口定格与穿透
 - 智能绘图模块
@@ -53,7 +35,7 @@ GitHub仓库：[https://github.com/Alan-CRL/Inkeys](https://github.com/Alan-CRL/
 - 支持多指绘制以及模拟笔锋(均未完善)
 - 可根据电脑环境自动选择 `RTS 触控库`或`鼠标位置 `作为绘制输入
 
-#### 未来目标功能
+## 未来目标功能
 - 快捷键
 - 实时手抖修正（-> 模拟笔锋 -> 模拟压感 -> 笔触压感）
 - UI 3.0

@@ -1,6 +1,5 @@
 ---
 title: 快速开始
-index: false
 icon: fa-solid fa-signs-post
 category:
   - ClassIsland
@@ -37,16 +36,10 @@ category:
 如果您使用 GitHub 下载，您可以选择下载 ClassIsland 的完整版或精简版。文件名为`ClassIsland.zip`的构建是完整版；文件名为`ClassIsland_AssetsTrimmed.zip`的构建是 ClassIsland 的精简版，移除了不必要的资源文件（字体、文档等）以缩小应用体积，同时功能保持不变。
 
 ::: note
+
 AppCenter 下载渠道仅提供完整版。
+
 :::
-
-### 关于 .NET 6 兼容版
-
-为了使 ClassIsland 正常在 Windows 10 以下的低版本系统运行，我们制作了 .NET 6 兼容版本。此兼容版本会不定期与上游主仓库同步。您可以在[此处](https://github.com/ClassIsland/ClassIsland-net6/)查看兼容版仓库。
-
-以下功能在此兼容版不可用：
-
-- 插件功能
 
 ## 解压软件
 
@@ -63,4 +56,6 @@ AppCenter 下载渠道仅提供完整版。
 
 首次启动时，会有一个简短的欢迎向导来引导您完成本软件的基本设置，并展示软件的一些基本操作。
 
-您也可以观看[入门教程视频](https://www.bilibili.com/video/BV1fA4m1A7uZ/)来快速上手本软件。如果您要进一步了解软件。
+入门教程视频
+
+<BiliBili bvid="BV1fA4m1A7uZ" />

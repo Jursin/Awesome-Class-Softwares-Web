@@ -28,6 +28,7 @@ actions:
 ---
 
 欢迎来到 Awesome-Class-Softwares 网站。
+<share :networks="['email', 'qq', 'qrcode']" />
 
 ## 目录
 
