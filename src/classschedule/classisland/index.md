@@ -14,17 +14,24 @@ category:
 
 ![主界面](images/main-interface.png)
 
-一款适用于班级一体机的课程信息显示软件，支持显示当日课表、课程信息与各`组件`信息，具有丰富的`插件系统`，支持各种精细化设置。
+一款适用于班级一体机的课程信息显示软件，支持显示当日课表、课程信息与各 `组件` 信息，具有丰富的 `插件系统` ，支持各种精细化设置。
 
-本项目名称的灵感源于`iOS 灵动岛（Dynamic Island）`
+本项目名称的灵感源于 `iOS 灵动岛（Dynamic Island）` ，受到 [`DuguSand/class_form`](https://github.com/DuguSand/class_form) 的启发而开发。
 
-本项目受到[`DuguSand/class_form`](https://github.com/DuguSand/class_form)的启发而开发。
-
-<image src="https://gh.llkk.cc/https://raw.githubusercontent.com/ClassIsland/ClassIsland/master/ClassIsland/Assets/AppLogo_AppLogo.svg" height="16"/>[ClassIsland 官网](https://classisland.tech/)｜[ClassIsland 文档](https://docs.classisland.tech)｜[ClassIsland 投票](https://github.com/ClassIsland/voting/discussions)
+[ClassIsland 文档](https://docs.classisland.tech)｜[ClassIsland 投票](https://github.com/ClassIsland/voting/discussions)
 
 GitHub仓库：[https://github.com/ClassIsland/ClassIsland](https://github.com/ClassIsland/ClassIsland)
 
 `.NET 6`兼容版仓库：[https://github.com/ClassIsland/ClassIsland-net6](https://github.com/ClassIsland/ClassIsland-net6)（可在`Windows 7`上正常运行）
+
+<SiteInfo
+  name="ClassIsland 官网"
+  desc="一款大屏课表显示工具"
+  url="https://classisland.tech/"
+  logo="https://gh.llkk.cc/https://raw.githubusercontent.com/ClassIsland/ClassIsland/master/ClassIsland/Assets/AppLogo_AppLogo.svg"
+  repo="https://github.com/ClassIsland/ClassIsland"
+  preview="https://classisland.tech/assets/Banner-Web-24-yoxS6EsL.png"
+/>
 
 </div>
 

@@ -14,9 +14,9 @@ category:
 在最新的测试版本（1.1.7-Beta4）之后，软件已迁移至PyQt5，现已全面支持Windows7。
 :::
 
-- 操作系统	Windows 7 及以上
-- 运行内存	≥ 4 GB
-- 运行环境	无特殊要求
+- <Badge text="操作系统" type="info" vertical="middle" />	Windows 7 及以上
+- <Badge text="运行内存" type="tip" vertical="middle" />	≥ 4 GB
+- <Badge text="运行环境" type="note" vertical="middle" />	无特殊要求
 
 若已满足，请进行接下来的步骤。
 
@@ -26,7 +26,7 @@ category:
 
 ⬇️ GitHub ：
 
-| 📃 正式版</br>![正式版](https://img.shields.io/github/v/release/RinLit-233-shiroko/Class-Widgets?style=flat&color=green&label=%E5%BD%93%E5%89%8D%E6%AD%A3%E5%BC%8F%E7%89%88%E6%9C%AC) | 🚧 测试版</br>![测试版](https://img.shields.io/github/v/tag/RinLit-233-shiroko/Class-Widgets?include_prereleases&label=%E5%BD%93%E5%89%8D%E6%B5%8B%E8%AF%95%E7%89%88&color=yellow) |
+| 📃 正式版 <br/>![正式版](https://img.shields.io/github/v/release/RinLit-233-shiroko/Class-Widgets?style=flat&color=green&label=%E5%BD%93%E5%89%8D%E6%AD%A3%E5%BC%8F%E7%89%88%E6%9C%AC) | 🚧 测试版 <br/>![测试版](https://img.shields.io/github/v/tag/RinLit-233-shiroko/Class-Widgets?include_prereleases&label=%E5%BD%93%E5%89%8D%E6%B5%8B%E8%AF%95%E7%89%88&color=yellow) |
 | - | - |
 | [Latest](https://github.com/RinLit-233-shiroko/Class-Widgets/releases/latest) | [Releases](https://github.com/RinLit-233-shiroko/Class-Widgets/releases) |
 
@@ -37,7 +37,7 @@ category:
 | [123 网盘镜像](https://www.123pan.com/s/DCyBTd-RAnxH?) | 密码：RL23 |
 | - | - |
 
-解压和运行
+## 解压和运行
 
 下载完成后，将软件解压到一个独立的文件夹，然后在解压后的文件夹找到 `ClassWidgets.exe` 或 `ClassWidgets` 即可运行。
 
