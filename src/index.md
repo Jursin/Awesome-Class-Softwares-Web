@@ -36,26 +36,31 @@ actions:
 
 <div class="vp-card-container">
   <VPCard
+    logo="/calendar-days-solid.svg"
     title="课表类"
     desc="课表类软件"
     link="./classschedule/"
   />
   <VPCard
+    logo="/puzzle-piece-solid.svg"
     title="多功能类"
     desc="多功能类软件"
     link="./multi-function/"
   />
   <VPCard
+    logo="/chalkboard-solid.svg"
     title="看板类"
     desc="看板类软件"
     link="./dashboard/"
   />
   <VPCard
+    logo="/pen-solid.svg"
     title="批注类"
     desc="批注类软件"
     link="./annotation/"
   />
   <VPCard
+    logo="/download-solid.svg"
     title="下载类"
     desc="下载类软件"
     link="./downloader/"
