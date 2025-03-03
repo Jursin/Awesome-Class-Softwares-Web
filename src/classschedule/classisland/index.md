@@ -65,3 +65,14 @@ GitHub仓库：[https://github.com/ClassIsland/ClassIsland](https://github.com/C
 - 现代化界面风格与丝滑、灵动的过渡动画
 - 自动获取主题色
 - 软件自动更新
+
+## 丰富的主题
+<div align="center">
+
+![classwidgests](images/classwidgets.png)
+![fluent](images/fluent.png)
+![testtheme](images/testtheme.png)
+![testtheme2](images/testtheme2.png)
+![nezha](images/nezha.png)
+
+</div>
