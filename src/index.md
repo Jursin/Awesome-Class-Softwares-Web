@@ -17,14 +17,14 @@ actions:
     link: ./content/foreword.md
     type: primary
 
+  - text: 快速导航
+    icon: list
+    link: ./content/navigation.md
+    type: primary
+
   - text: GitHub 仓库
     icon: fab fa-github
     link: https://github.com/Jursin/Awesome-Class-Softwares-Web
-
-  - text: 本站文档
-    icon: fab fa-github
-    link: https://github.com/Jursin/Awesome-Class-Softwares
-
 ---
 
 欢迎来到 Awesome-Class-Softwares 网站。
