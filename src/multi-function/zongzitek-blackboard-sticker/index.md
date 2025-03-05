@@ -15,7 +15,14 @@ category:
 
 GitHub仓库：[https://github.com/STBBRD/ZongziTEK-Blackboard-Sticker](https://github.com/STBBRD/ZongziTEK-Blackboard-Sticker)
 
-<img src="https://github.com/STBBRD/ZongziTEK-Blackboard-Sticker/blob/master/ZongziTEK_Blackboard_Sticker%2F%E9%BB%91%E6%9D%BF%E8%B4%B4.png" width="16" height="16">官方网站：[https://zztek.top/](https://zztek.top/)
+<SiteInfo
+  name="ZongziTEK黑板贴 官网"
+  desc="使用 ZongziTEK 黑板贴，充分利用每一天"
+  url="https://zztek.top/"
+  logo="https://github.com/STBBRD/ZongziTEK-Blackboard-Sticker/blob/master/ZongziTEK_Blackboard_Sticker%2F%E9%BB%91%E6%9D%BF%E8%B4%B4.png"
+  repo="https://github.com/STBBRD/ZongziTEK-Blackboard-Sticker"
+  preview="images/zongzitek.png"
+/>
 
 </div>
 

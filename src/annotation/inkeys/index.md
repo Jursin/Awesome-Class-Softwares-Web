@@ -19,6 +19,15 @@ category:
 
 GitHub仓库：[https://github.com/Alan-CRL/Inkeys](https://github.com/Alan-CRL/Inkeys)
 
+<SiteInfo
+  name="智绘教Inkeys 官网"
+  desc="网站正在建设中"
+  url="https://www.inkeys.top/"
+  logo="https://gh.llkk.cc/https://raw.githubusercontent.com/Alan-CRL/Inkeys/main/GithubRes/logo.png"
+  repo="https://github.com/Alan-CRL/Inkeys"
+  preview="images/inkeys.png"
+/>
+
 </div>
 
 ## 功能

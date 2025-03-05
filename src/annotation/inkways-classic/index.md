@@ -28,4 +28,13 @@ category:
 
 GitHub仓库：[https://github.com/iNKORE-NET/Inkways](https://github.com/iNKORE-NET/Inkways)
 
+<SiteInfo
+  name="Inkore 官网"
+  desc="正在重构中"
+  url="https://inkore.net/"
+  logo="/Inkore_Badge.png"
+  repo="https://github.com/iNKORE-NET/Inkways"
+  preview="images/inkore.png"
+/>
+
 </div>
