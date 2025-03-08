@@ -60,6 +60,13 @@ export default hopeTheme({
   pure: false,
   // 在这里配置主题提供的插件
   plugins: {
+    catalog: {
+    // 自动生成目录
+      exclude: ["images/"],
+      frontmatter: {
+        title: "目录",
+        icon: "list",
+    },    
     comment: {
       provider: "Giscus",
       repo: "Jursin/Awesome-Class-Softwares-Web",

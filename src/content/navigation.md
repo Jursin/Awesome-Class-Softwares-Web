@@ -5,7 +5,7 @@ category:
   - 目录
 ---
 
-## 🗓️[课表类](/classschedule/index.md)
+## [<i class="fa-solid fa-calendar-days-solid"></i> [课表类](/classschedule/index.md)
 
 | 软件 | 组织/开发者 |
 | - | - |
@@ -14,14 +14,14 @@ category:
 | <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/EnderWolf006/ElectronClassSchedule/main/image/icon.png" width="20" height="20"/> [ElectronClassSchedule](/classschedule/electronclassschedule/index.md) | <img src="https://avatars.githubusercontent.com/u/152008081?v=4" width="20" height="20"/> [`EnderWolf006`](https://github.com/EnderWolf006) |
 
 
-## 🧩[多功能类](/multi-function/index.md)
+## [<i class="fa-solid fa-puzzle-piece-solid"></i> [多功能类](/multi-function/index.md)
 
 | 软件 | 组织/开发者 |
 | - | - |
 | <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/Ris-Soft/Ris_ClassTool/master/Main/logo.png" width="20" height="20"/> [Ris_ClassTool](/multi-function/ris_classtool/index.md) | <img src="https://avatars.githubusercontent.com/u/179907615?s=200&v=4" width="20" height="20"/> [`Ris-Soft`](https://github.com/Ris-Soft) <img src="https://avatars.githubusercontent.com/u/104706823?v=4" width="20" height="20"/> [`PYLXU`](https://github.com/PYLXU)|
 | <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/STBBRD/ZongziTEK-Blackboard-Sticker/master/ZongziTEK_Blackboard_Sticker/%E9%BB%91%E6%9D%BF%E8%B4%B4.png" width="20" height="20"/> [ZongziTEK黑板贴](/multi-function/zongzitek-blackboard-sticker/index.md) | <img src="https://avatars.githubusercontent.com/u/62409850?v=4" width="20" height="20"/> [`STBBRD`](https://github.com/STBBRD) |
 
-## 📊[看板类](/dashboard/index.md)
+## [<i class="fa-solid fa-chalkboard-solid"></i> [看板类](/dashboard/index.md)
 
 | 软件 | 组织/开发者 |
 | - | - |
@@ -29,7 +29,7 @@ category:
 | <img src="https://avatars.githubusercontent.com/u/183182916?s=200&v=4" width="20" height="20"/> [Sticky-attention](/dashboard/sticky-attention/index.md) | <img src="https://avatars.githubusercontent.com/u/183182916?s=200&v=4" width="20" height="20"/> [`Sticky-attention`](https://github.com/Sticky-attention) <img src="https://avatars.githubusercontent.com/u/162853646?v=4" width="20" height="20"/> [`jizilin6732`](https://github.com/jizilin6732) |
 | <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/EnderWolf006/HomeworkBoard/main/ClientProject/public/vite.svg" width="20" height="20"/> [HomeworkBoard](/dashboard/homeworkboard/index.md) | <img src="https://avatars.githubusercontent.com/u/152008081?v=4" width="20" height="20"/> [`EnderWolf006`](https://github.com/EnderWolf006) |
 
-## 🖍️[批注类](/annotation/index.md)
+## [<i class="fa-solid fa-pen-solid"></i> [批注类](/annotation/index.md)
 
 | 软件 | 组织/开发者 |
 | - | - |
@@ -40,7 +40,7 @@ category:
 | <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/Alan-CRL/Inkeys/main/GithubRes/logo.png" width="20" height="20"/> [智绘教Inkeys](/annotation/inkeys/index.md) | <img src="https://avatars.githubusercontent.com/u/92425617?v=4" width="20" height="20"/> [`Alan-CRL`](https://github.com/Alan-CRL) |
 | <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/Jursin/Awesome-Class-Softwares/main/Screenshots/Inkways/Inkways_256.png" width="20" height="20"/> [Inkways-Classic](/annotation/inkways-classic/index.md) | <img src="/Inkore_Badge.png" width="20" height="20"/> [`iNKORE Studios`](https://github.com/iNKORE-NET) |
 
-## ⬇️[下载类](/downloader/index.md)
+## [<i class="fa-solid fa-download-solid"></i> [下载类](/downloader/index.md)
 
 | 软件 | 组织/开发者 |
 | - | - |

@@ -27,7 +27,7 @@ actions:
     link: https://github.com/Jursin/Awesome-Class-Softwares-Web
 ---
 
-欢迎来到 Awesome-Class-Softwares 网站。
+欢迎来到 Awesome-Class-Softwares 网站（以下简称“本站”）。
 <share :networks="['email', 'qq', 'qrcode']" />
 
 ## 目录
