@@ -11,14 +11,11 @@ category:
 
 [![stars](https://img.shields.io/github/stars/ClassIsland/ClassIsland?label=Stars)](https://github.com/ClassIsland/ClassIsland) [![forks](https://img.shields.io/github/forks/ClassIsland/ClassIsland?label=Forks)](https://github.com/ClassIsland/ClassIsland) [![Watchers](https://img.shields.io/github/watchers/ClassIsland/ClassIsland?style=social)](https://github.com/ClassIsland/ClassIsland/watchers) [![Downloads](https://img.shields.io/github/downloads/ClassIsland/ClassIsland/total?style=social&label=Downloads&logo=github)](https://github.com/ClassIsland/ClassIsland/releases/latest) [![GitHub Issues](https://img.shields.io/github/issues-search/ClassIsland/ClassIsland?query=is%3Aopen&style=flat&logo=github&label=Issues&color=%233fb950)](https://github.com/ClassIsland/ClassIsland/issues) [![GitHub Discussions](https://img.shields.io/github/discussions/ClassIsland/ClassIsland?style=flat&logo=Github&label=Discussions)](https://github.com/ClassIsland/ClassIsland/discussions) [![Release](https://img.shields.io/github/v/release/ClassIsland/ClassIsland?style=flat&color=%233fb950&label=正式版)](https://github.com/ClassIsland/ClassIsland/releases/latest) [![Beta](https://img.shields.io/github/v/release/ClassIsland/ClassIsland?include_prereleases&style=flat&label=测试版)](https://github.com/ClassIsland/ClassIsland/releases) [![Created At](https://img.shields.io/github/created-at/ClassIsland/ClassIsland)](https://github.com/ClassIsland/ClassIsland) [![Github Last Commit](https://img.shields.io/github/last-commit/ClassIsland/ClassIsland)](https://github.com/ClassIsland/ClassIsland/commits/master) ![Update Status](https://img.shields.io/badge/%E7%8A%B6%E6%80%81-%E9%9D%9E%E5%B8%B8%E6%B4%BB%E8%B7%83-green) [![GitHub Language Count](https://img.shields.io/github/languages/count/ClassIsland/ClassIsland)](https://github.com/ClassIsland/ClassIsland) [![GitHub Top Language](https://img.shields.io/github/languages/top/ClassIsland/ClassIsland)](https://github.com/ClassIsland/ClassIsland) [![LICENSE](https://img.shields.io/badge/License-MIT-red.svg "LICENSE")](https://github.com/ClassIsland/ClassIsland/blob/master/LICENSE.txt) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHelloWRC%2FClassIsland.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FHelloWRC%2FClassIsland?ref=badge_shield&style=flat) [![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C958840932-blue?style=flat&logo=QQ)](https://qm.qq.com/q/4NsDQKiAuQ) [![QQ频道](https://img.shields.io/badge/-QQ%E9%A2%91%E9%81%93%EF%BD%9Cclassisland-blue?style=flat&logo=QQ)](https://pd.qq.com/s/10sd1flp0) [![bilibili](https://img.shields.io/badge/-UP%E4%B8%BB%EF%BD%9CHelloWRC__dev-%23FB7299?style=flat&logo=bilibili)](https://space.bilibili.com/355897687) [![bilibili](https://img.shields.io/badge/-bilibili%E8%A7%86%E9%A2%91%EF%BD%9CBV12fFoefEGn-%23FB7299?style=flat&logo=bilibili)](https://www.bilibili.com/video/BV12fFoefEGn)
 
-
-![主界面](https://classisland.tech/assets/comps-BImMTOwP.png)
-
 一款适用于班级一体机的课程信息显示软件，支持显示当日课表、课程信息与各 `组件` 信息，具有丰富的 `插件系统` ，支持各种精细化设置。
 
 本项目名称的灵感源于 `iOS 灵动岛（Dynamic Island）` ，受到 [`DuguSand/class_form`](https://github.com/DuguSand/class_form) 的启发而开发。
 
-[ClassIsland 文档](https://docs.classisland.tech)｜[ClassIsland 投票](https://github.com/ClassIsland/voting/discussions)｜[GitHub 仓库主页](https://github.com/ClassIsland/ClassIsland)｜[.NET 6 兼容版仓库](https://github.com/ClassIsland/ClassIsland-net6)
+[GitHub 仓库主页](https://github.com/ClassIsland/ClassIsland)｜[ClassIsland 文档](https://docs.classisland.tech)｜[ClassIsland 投票](https://github.com/ClassIsland/voting/discussions)
 
 <SiteInfo
   name="ClassIsland 官网"
@@ -37,11 +34,19 @@ category:
 
 ## 功能
 - [主界面](https://docs.classisland.tech/app/basic.html#%E4%B8%BB%E7%95%8C%E9%9D%A2)
-  - 显示各[组件](https://docs.classisland.tech/app/basic.html#%E7%BB%84%E4%BB%B6)信息，如当天课表、课程信息
+  <img src="https://classisland.tech/assets/comps-BImMTOwP.png">
+  - 支持通过自定义`隐藏规则集`在特定情况下自动隐藏，灵活应对各种情景
+    <img src="https://classisland.tech/assets/ruleset-DvDC3p49.png">
+  - 通过进行[组件](https://docs.classisland.tech/app/basic.html#%E7%BB%84%E4%BB%B6)配置，自定义主界面显示内容，如日期、时间、课程表、天气简报、倒数日、自定义文本、轮播组件、分组组件
     <img src="https://classisland.tech/assets/comp-settings-CnSSI3ny.png">
-  - 自定义课表隐藏规则集、临时隐藏与鼠标穿透
-- [提醒](https://docs.classisland.tech/app/notifications.html)
-  - 支持[`上下课提醒`、`放学提醒`、`天气/预警提醒`](https://docs.classisland.tech/app/notifications.html#%E6%8F%90%E9%86%92%E8%AE%BE%E7%BD%AE)，可设置提醒优先级，提醒横幅可自选搭配[`提醒音效`、`强调特效`和`提醒语音`](https://docs.classisland.tech/app/notifications.html#%E5%BC%BA%E8%B0%83%E6%8F%90%E9%86%92)
+    - 支持自定义相对行号、隐藏规则集与更多高级设置
+    - 轮播组件、分组组件满足更多需求
+  - 丰富的主题
+  ![classwidgests](images/classwidgets.png)
+  ![fluent](images/fluent.png)
+  ![testtheme](images/testtheme.png)
+  ![testtheme2](images/testtheme2.png)
+  ![nezha](images/nezha.png)
 - [档案编辑](https://docs.classisland.tech/app/profile/)
   - [科目](https://docs.classisland.tech/app/profile/subject.html)
     <img src="https://classisland.tech/assets/4-UASBuuFy.png">
@@ -50,30 +55,71 @@ category:
   - [课表](https://docs.classisland.tech/app/profile/classplan.html)
     <img src="https://classisland.tech/assets/1-UIMlY11K.png">
     <img src="https://classisland.tech/assets/2-D-hk6KM_.png">
-    - 应在编辑好`科目`与`时间表`之后
+    - 应在编辑好`科目`与`时间表`之后编辑`课表`
     - 支持[`临时课表与临时层`](https://docs.classisland.tech/app/profile/classplan.html#%E4%B8%B4%E6%97%B6%E8%AF%BE%E8%A1%A8%E4%B8%8E%E4%B8%B4%E6%97%B6%E5%B1%82)、[`课表群`](https://docs.classisland.tech/app/profile/classplan.html#%E8%AF%BE%E8%A1%A8%E7%BE%A4)
-  - [附加设置](https://docs.classisland.tech/app/profile/attached-settings.html)
-  - [从表格导入](https://docs.classisland.tech/app/profile/#%E4%BB%8E%E8%A1%A8%E6%A0%BC%E5%AF%BC%E5%85%A5)
-  - [从其他软件导入](https://docs.classisland.tech/app/migrate/)
-  - 多周轮换，[临时换课](https://docs.classisland.tech/app/profile/classplan.html#%E6%8D%A2%E8%AF%BE)
-- [组件](https://docs.classisland.tech/app/basic.html#%E7%BB%84%E4%BB%B6)
-  - 日期、时间、课程表、天气简报、倒数日、自定义文本、轮播组件、分组组件
+   - 支持[从表格导入](https://docs.classisland.tech/app/profile/#%E4%BB%8E%E8%A1%A8%E6%A0%BC%E5%AF%BC%E5%85%A5)、[从其他软件导入](https://docs.classisland.tech/app/migrate/)
+   - 支持为课表设置最多4周轮换、分批启用课表群
+   - 支持[当日和跨日换课](https://docs.classisland.tech/app/profile/classplan.html#%E6%8D%A2%E8%AF%BE)
+     <img src="https://classisland.tech/assets/5-Cf_Rqjz-.png">
+   - 支持提前预定要启用的课表、安排调休课表
+     <img src="https://classisland.tech/assets/6-CIhgwWiW.png">
+   - [附加设置](https://docs.classisland.tech/app/profile/attached-settings.html)
+- [提醒](https://docs.classisland.tech/app/notifications.html)
+  - 支持[`上下课提醒`、`放学提醒`、`天气/预警提醒`](https://docs.classisland.tech/app/notifications.html#%E6%8F%90%E9%86%92%E8%AE%BE%E7%BD%AE)，可设置提醒优先级，提醒横幅可自选搭配[`提醒音效`、`强调特效`和`提醒语音`](https://docs.classisland.tech/app/notifications.html#%E5%BC%BA%E8%B0%83%E6%8F%90%E9%86%92)
+  <img src="https://docs.classisland.tech/assets/1694923983253-MA-tarCF.png">
+- [自动化](https://docs.classisland.tech/app/automation.html)
+  - 支持在特定时间节点或情况下执行特定操作，如切换组件配置、运行程序、显示提醒等
+  - 支持多个不同配置方案，可通过拖动进行排序
+    <img src="https://classisland.tech/assets/automatic1-itAmfZ_k.png">
+    - [触发器](https://docs.classisland.tech/app/automation.html#%E8%A7%A6%E5%8F%91%E5%99%A8)
+      <img src="https://docs.classisland.tech/assets/%E8%A7%A6%E5%8F%91%E5%99%A8-BFm_yeqw.png">
+    - [规则集](https://docs.classisland.tech/app/automation.html#%E8%87%AA%E5%8A%A8%E5%8C%96-1)
+      <img src="https://docs.classisland.tech/assets/%E8%A7%84%E5%88%99%E9%9B%86%E7%A4%BA%E4%BE%8B-CsFLEBwL.png">
+    - [行动](https://docs.classisland.tech/app/automation.html#%E8%A7%A6%E5%8F%91%E5%99%A8)
+      <img src="https://docs.classisland.tech/assets/%E8%A1%8C%E5%8A%A8%E7%A4%BA%E4%BE%8B-C2elwscy.png">
 - [插件](https://github.com/ClassIsland/PluginIndex)
+  - 支持通过安装插件的方式扩展应用功能，如添加更多新组件、自动化行动、规则集规则、提醒提供方、认证提供方等
+  - 可在应用内的插件市场中安装插件或从本地安装
+  
+<div class="vp-card-container" style="padding-left: 2rem;">
+  <VPCard
+    logo="https://gh.llkk.cc/https://raw.githubusercontent.com/LiPolymer/ExtraIsland/master/ExtraIsland/icon.png"
+    title="ExtraIsland"
+    desc="为 ClassIsland 提供多种扩展功能！"
+    link="https://github.com/LiPolymer/ExtraIsland"
+  />
+  <VPCard
+    logo="https://gh.llkk.cc/https://raw.githubusercontent.com/ClassIsland/ClassIsland.ThemeLoader/master/ClassIsland.ThemeLoader/icon.png"
+    title="ClassIsland 主题加载器"
+    desc="为 ClassIsland 加载自定义主题，个性化您的界面。"
+    link="https://github.com/ClassIsland/ClassIsland.ThemeLoader/"
+  />
+  <VPCard
+    logo="https://gh.llkk.cc/https://raw.githubusercontent.com/denglihong2007/EarthquakeWarningForClassIsLand/master/EarthquakeWarning/icon.png"
+    title="地震预警"
+    desc="防范于未然，为您争取宝贵避险时间。"
+    link="https://github.com/denglihong2007/EarthquakeWarningForClassIsLand"
+  />
+  <VPCard
+    logo=""
+    title="UIAccess 提权"
+    desc="为 ClassIsland 提升 UIAccess 令牌，使 ClassIsland 可以置顶到全屏 UWP 应用和系统界面上。"
+    link="https://github.com/HelloWRC/GrantUiAccess"
+  />
+</div>
+
 - [集控管理](https://docs.classisland.tech/management/)
   - [集控仓库](https://github.com/ClassIsland/ManagementServer)***（🚧开发中，即将发布）***
+- [附加设置]()
+  - [回声洞](https://docs.qq.com/sheet/DS3pQdk5IRmZnbmhu)、[调试菜单](https://docs.classisland.tech/app/advanced.html#%E8%B0%83%E8%AF%95%E8%8F%9C%E5%8D%95)
+  - [从壁纸提取主题色](https://docs.classisland.tech/app/advanced.html#%E4%BB%8E%E5%A3%81%E7%BA%B8%E6%8F%90%E5%8F%96%E4%B8%BB%E9%A2%98%E8%89%B2)
+  - 运行保障
+    - 支持在发生崩溃时自动退出，不影响教学任务
+  - 自动时间同步
+    - 支持自动从公开的 NTP 服务器或学校广播服务器的 NTP 服务同步时间，提高提醒等功能与学校铃声的同步性
+    - 支持自定义时间偏移和自动调整时间偏移
+  - 密码保护
+    - 支持为部分功能设置密码，如编辑应用设置、档案等，减小应用配置被篡改的可能性
+  - 应用内自动更新
 - [获取调试信息](https://docs.classisland.tech/app/faq/reporting-issue.html)
-- [回声洞](https://docs.qq.com/sheet/DS3pQdk5IRmZnbmhu)、[投票](https://github.com/ClassIsland/voting)
-- 现代化界面风格与丝滑、灵动的过渡动画
-- 自动获取主题色
-- 软件自动更新
 
-## 丰富的主题
-<div align="center">
-
-![classwidgests](images/classwidgets.png)
-![fluent](images/fluent.png)
-![testtheme](images/testtheme.png)
-![testtheme2](images/testtheme2.png)
-![nezha](images/nezha.png)
-
-</div>
