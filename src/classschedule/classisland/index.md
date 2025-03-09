@@ -76,7 +76,7 @@ category:
    - [附加设置](https://docs.classisland.tech/app/profile/attached-settings.html)
 - [提醒](https://docs.classisland.tech/app/notifications.html)
   - 支持[`上下课提醒`、`放学提醒`、`天气/预警提醒`、`行动提醒`](https://docs.classisland.tech/app/notifications.html#%E6%8F%90%E9%86%92%E8%AE%BE%E7%BD%AE)，可设置提醒优先级，提醒横幅可自选搭配[`提醒音效`、`强调特效`和`提醒语音`](https://docs.classisland.tech/app/notifications.html#%E5%BC%BA%E8%B0%83%E6%8F%90%E9%86%92)
-    ![notifications](notifications.png)
+    ![notifications](images/notifications.png)
 - [自动化](https://docs.classisland.tech/app/automation.html)
   - 支持在特定时间节点或情况下执行特定操作，如切换组件配置、运行程序、显示提醒等
   - 支持多个不同配置方案，可通过拖动进行排序
