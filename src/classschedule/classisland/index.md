@@ -34,11 +34,11 @@ category:
 
 ## 功能
 - [主界面](https://docs.classisland.tech/app/basic.html#%E4%B8%BB%E7%95%8C%E9%9D%A2)
-  <img src="https://classisland.tech/assets/comps-BImMTOwP.png">
+  ![主界面](https://classisland.tech/assets/comps-BImMTOwP.png)
   - 支持通过自定义`隐藏规则集`在特定情况下自动隐藏，灵活应对各种情景
-    <img src="https://classisland.tech/assets/ruleset-DvDC3p49.png">
+    ![隐藏规则集](https://classisland.tech/assets/ruleset-DvDC3p49.png)
   - 通过进行[组件](https://docs.classisland.tech/app/basic.html#%E7%BB%84%E4%BB%B6)配置，自定义主界面显示内容，如日期、时间、课程表、天气简报、倒数日、自定义文本、轮播组件、分组组件
-    <img src="https://classisland.tech/assets/comp-settings-CnSSI3ny.png">
+    ![组件设置](https://classisland.tech/assets/comp-settings-CnSSI3ny.png)
     - 支持自定义相对行号、隐藏规则集与更多高级设置
     - 课程表组件
       ![class-schedule](images/class-schedule.png)
@@ -59,20 +59,20 @@ category:
     ![NeZha](images/nezha.png)
 - [档案编辑](https://docs.classisland.tech/app/profile/)
   - [科目](https://docs.classisland.tech/app/profile/subject.html)
-    <img src="https://classisland.tech/assets/4-UASBuuFy.png">
+    ![科目](https://classisland.tech/assets/4-UASBuuFy.png)
   - [时间表](https://docs.classisland.tech/app/profile/time-layout.html)
-    <img src="https://classisland.tech/assets/3-B78pDh2c.png">
+    ![时间表](https://classisland.tech/assets/3-B78pDh2c.png)
   - [课表](https://docs.classisland.tech/app/profile/classplan.html)
-    <img src="https://classisland.tech/assets/1-UIMlY11K.png">
-    <img src="https://classisland.tech/assets/2-D-hk6KM_.png">
+    ![课表](https://classisland.tech/assets/1-UIMlY11K.png)
+    ![课表](https://classisland.tech/assets/2-D-hk6KM_.png)
     - 应在编辑好`科目`与`时间表`之后编辑`课表`
     - 支持[`临时课表与临时层`](https://docs.classisland.tech/app/profile/classplan.html#%E4%B8%B4%E6%97%B6%E8%AF%BE%E8%A1%A8%E4%B8%8E%E4%B8%B4%E6%97%B6%E5%B1%82)、[`课表群`](https://docs.classisland.tech/app/profile/classplan.html#%E8%AF%BE%E8%A1%A8%E7%BE%A4)
    - 支持[从表格导入](https://docs.classisland.tech/app/profile/#%E4%BB%8E%E8%A1%A8%E6%A0%BC%E5%AF%BC%E5%85%A5)、[从其他软件导入](https://docs.classisland.tech/app/migrate/)
    - 支持为课表设置最多4周轮换、分批启用课表群
    - 支持[当日和跨日换课](https://docs.classisland.tech/app/profile/classplan.html#%E6%8D%A2%E8%AF%BE)
-     <img src="https://classisland.tech/assets/5-Cf_Rqjz-.png">
+     ![换课](https://classisland.tech/assets/5-Cf_Rqjz-.png)
    - 支持提前预定要启用的课表、安排调休课表
-     <img src="https://classisland.tech/assets/6-CIhgwWiW.png">
+     ![调休课表](https://classisland.tech/assets/6-CIhgwWiW.png)
    - [附加设置](https://docs.classisland.tech/app/profile/attached-settings.html)
 - [提醒](https://docs.classisland.tech/app/notifications.html)
   - 支持[`上下课提醒`、`放学提醒`、`天气/预警提醒`、`行动提醒`](https://docs.classisland.tech/app/notifications.html#%E6%8F%90%E9%86%92%E8%AE%BE%E7%BD%AE)，可设置提醒优先级，提醒横幅可自选搭配[`提醒音效`、`强调特效`和`提醒语音`](https://docs.classisland.tech/app/notifications.html#%E5%BC%BA%E8%B0%83%E6%8F%90%E9%86%92)
@@ -80,13 +80,13 @@ category:
 - [自动化](https://docs.classisland.tech/app/automation.html)
   - 支持在特定时间节点或情况下执行特定操作，如切换组件配置、运行程序、显示提醒等
   - 支持多个不同配置方案，可通过拖动进行排序
-    <img src="https://classisland.tech/assets/automatic1-itAmfZ_k.png">
+    ![自动化](https://classisland.tech/assets/automatic1-itAmfZ_k.png)
     - [触发器](https://docs.classisland.tech/app/automation.html#%E8%A7%A6%E5%8F%91%E5%99%A8)
-      <img src="https://docs.classisland.tech/assets/%E8%A7%A6%E5%8F%91%E5%99%A8-BFm_yeqw.png">
+      ![触发器](https://docs.classisland.tech/assets/%E8%A7%A6%E5%8F%91%E5%99%A8-BFm_yeqw.png)
     - [规则集](https://docs.classisland.tech/app/automation.html#%E8%87%AA%E5%8A%A8%E5%8C%96-1)
-      <img src="https://docs.classisland.tech/assets/%E8%A7%84%E5%88%99%E9%9B%86%E7%A4%BA%E4%BE%8B-CsFLEBwL.png">
+      ![规则集](https://docs.classisland.tech/assets/%E8%A7%84%E5%88%99%E9%9B%86%E7%A4%BA%E4%BE%8B-CsFLEBwL.png)
     - [行动](https://docs.classisland.tech/app/automation.html#%E8%A7%A6%E5%8F%91%E5%99%A8)
-      <img src="https://docs.classisland.tech/assets/%E8%A1%8C%E5%8A%A8%E7%A4%BA%E4%BE%8B-C2elwscy.png">
+      ![行动](https://docs.classisland.tech/assets/%E8%A1%8C%E5%8A%A8%E7%A4%BA%E4%BE%8B-C2elwscy.png)
 - [插件](https://github.com/ClassIsland/PluginIndex)
   - 支持通过安装插件的方式扩展应用功能，如添加更多新组件、自动化行动、规则集规则、提醒提供方、认证提供方等
   - 可在应用内的插件市场中安装插件或从本地安装
