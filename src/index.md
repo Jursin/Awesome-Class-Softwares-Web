@@ -17,14 +17,28 @@ actions:
     link: ./content/foreword.md
     type: primary
 
-  - text: 快速导航
-    icon: list
-    link: ./content/navigation.md
-    type: primary
-
   - text: GitHub 仓库
     icon: fab fa-github
     link: https://github.com/Jursin/Awesome-Class-Softwares-Web
+features:
+  - text: 快速导航
+    icon: list
+    link: ./content/navigation.md
+    details: 快速导航到对应软件介绍页面/开发者主页
+  
+  - text: 链接聚合
+    icon: link
+    link: ./content/gather.md
+    details: 软件仓库、bilibili视频、QQ群、QQ频道、Telegram、Discord、Facebook、X等链接聚合
+  
+  - text: 详细展示
+    icon: info-circle
+    details: 展示各软件详细信息与功能，文字与图片结合，嵌入相关链接
+  
+  - text: 快速开始
+    icon: signs-post
+    details: 展示软件安装与初步使用教程
+    
 ---
 
 欢迎来到 Awesome-Class-Softwares 网站（以下简称“本站”）。

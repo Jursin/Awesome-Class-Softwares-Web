@@ -93,28 +93,28 @@ category:
   ![plug-in-market](images/plug-in-market.png)
   
 <VPCard
-  style="padding-left: 2rem;"
+  style="padding-left: 4rem;"
   logo="https://gh.llkk.cc/https://raw.githubusercontent.com/LiPolymer/ExtraIsland/master/ExtraIsland/icon.png"
   title="ExtraIsland"
   desc="为 ClassIsland 提供多种扩展功能！"
   link="https://github.com/LiPolymer/ExtraIsland"
 />
 <VPCard
-  style="padding-left: 2rem;"
+  style="padding-left: 4rem;"
   logo="https://gh.llkk.cc/https://raw.githubusercontent.com/ClassIsland/ClassIsland.ThemeLoader/master/ClassIsland.ThemeLoader/icon.png"
   title="ClassIsland 主题加载器"
   desc="为 ClassIsland 加载自定义主题，个性化您的界面。"
   link="https://github.com/ClassIsland/ClassIsland.ThemeLoader"
 />
 <VPCard
-  style="padding-left: 2rem;"
+  style="padding-left: 4rem;"
   logo="https://gh.llkk.cc/https://raw.githubusercontent.com/denglihong2007/EarthquakeWarningForClassIsLand/master/EarthquakeWarning/icon.png"
   title="地震预警"
   desc="防范于未然，为您争取宝贵避险时间。"
   link="https://github.com/denglihong2007/EarthquakeWarningForClassIsLand"
 />
 <VPCard
-  style="padding-left: 2rem;"
+  style="padding-left: 4rem;"
   logo=""
   title="UIAccess 提权"
   desc="为 ClassIsland 提升 UIAccess 令牌，使 ClassIsland 可以置顶到全屏 UWP 应用和系统界面上。"
