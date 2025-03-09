@@ -99,14 +99,6 @@ category:
   desc="为 ClassIsland 提供多种扩展功能！"
   link="https://github.com/LiPolymer/ExtraIsland"
 />
-
-    - 主设置
-      ![主设置](images/extraisland-main-settings.png)
-    - 微功能
-      ![微功能](images/extraisland-microfunction.png)
-    - 值日表
-      ![值日表](images/extraisland-duty-schedule.png)
-
 <VPCard
   style="padding-left: 2rem;"
   logo="https://gh.llkk.cc/https://raw.githubusercontent.com/ClassIsland/ClassIsland.ThemeLoader/master/ClassIsland.ThemeLoader/icon.png"
@@ -128,6 +120,13 @@ category:
   desc="为 ClassIsland 提升 UIAccess 令牌，使 ClassIsland 可以置顶到全屏 UWP 应用和系统界面上。"
   link="https://github.com/HelloWRC/GrantUiAccess"
 />
+
+- ExtraIsland 主设置
+  ![主设置](images/extraisland-main-settings.png)
+- ExtraIsland 微功能
+  ![微功能](images/extraisland-microfunction.png)
+- ExtraIsland 值日表
+  ![值日表](images/extraisland-duty-schedule.png)
 
 - 更多功能
   - [回声洞](https://docs.qq.com/sheet/DS3pQdk5IRmZnbmhu)、[调试菜单](https://docs.classisland.tech/app/advanced.html#%E8%B0%83%E8%AF%95%E8%8F%9C%E5%8D%95)
