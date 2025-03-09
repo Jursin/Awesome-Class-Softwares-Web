@@ -36,8 +36,10 @@ category:
 :::
 
 ::: info 👋同类项目
-[![Awesome-Iwb/Awesome-Iwb](https://github-readme-stats.vercel.app/api/pin/?username=Awesome-Iwb&repo=Awesome-Iwb&show_owner=true)](https://github.com/Awesome-Iwb/Awesome-Iwb)
+
 :::
+
+[![Awesome-Iwb/Awesome-Iwb](https://github-readme-stats.vercel.app/api/pin/?username=Awesome-Iwb&repo=Awesome-Iwb&show_owner=true)](https://github.com/Awesome-Iwb/Awesome-Iwb)
 
 ## Star 历史
 [![本站 Star 历史](https://starchart.cc/Jursin/Awesome-Class-Softwares-Web.svg?variant=adaptive)](https://starchart.cc/Jursin/Awesome-Class-Softwares-Web)

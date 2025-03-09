@@ -42,7 +42,7 @@ category:
     - 支持自定义相对行号、隐藏规则集与更多高级设置
     - 轮播组件、分组组件满足更多需求
   - 丰富的主题
-  ![classwidgests](images/classwidgets.png)
+  ![classwidgests](images/classwidgets.png "Class-Widgests")
   ![fluent](images/fluent.png)
   ![testtheme](images/testtheme.png)
   ![testtheme2](images/testtheme2.png)

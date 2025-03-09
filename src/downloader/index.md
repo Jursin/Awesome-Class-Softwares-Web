@@ -5,6 +5,7 @@ category:
   - 下载类
 ---
 
-<div class="catalog-display-container">
-  <Catalog base='/downloader/' />
-</div>
+- [Sectionistool](/downloader/sectionistool/index.md)
+  - [快速开始](/downloader/sectionistool/get-started.md)
+- [SeewoHub](/downloader/seewohub/index.md)
+  - [快速开始](/downloader/seewohub/get-started.md)

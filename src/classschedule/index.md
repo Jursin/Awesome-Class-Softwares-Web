@@ -5,6 +5,9 @@ category:
   - 类别
 ---
 
-<div class="catalog-display-container">
-  <Catalog base='/classschedule/' />
-</div>
+- [ClassIsland](/classschedule/classisland/index.md)
+  - [快速开始](/classschedule/classisland/get-started.md)
+- [Class-Widgets](/classschedule/class-widgets/index.md)
+  - [快速开始](/classschedule/class-widgets/get-started.md)
+- [ElectronClassSchedule](/classschedule/electronclassschedule/index.md)
+  - [快速开始](/classschedule/electronclassschedule/get-started.md)

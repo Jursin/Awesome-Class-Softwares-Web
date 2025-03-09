@@ -5,6 +5,8 @@ category:
   - 多功能类
 ---
 
-<div class="catalog-display-container">
-  <Catalog base='/multi-function/' />
-</div>
+Ris_Classtool
+- [Ris_Classtool](/multi-function/ris_classtool/index.md)
+  - [快速开始](/multi-function/ris_classtool/get-started.md)
+- [Zongzitek-Blackboard黑板贴](/multi-function/zongzitek-blackboard-sticker/index.md)
+  - [快速开始](/multi-function/zongzitek-blackboard-sticker/get-started.md)
