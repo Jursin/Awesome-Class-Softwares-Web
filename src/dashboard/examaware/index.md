@@ -7,9 +7,16 @@ category:
 
 ExamAware 系列应用可以显示当前时间与考试详细信息，并支持在各平台上运行。
 
-<div class="catalog-display-container">
-  <Catalog base='/zh/' />
-</div>
+[![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C901670561-blue?style=flat&logo=QQ&logoColor=white)](https://qm.qq.com/q/zDiEipHsaI)
+
+- [ExamShowboard](/dashboard/examaware/exam-showboard/index.md)
+  - [快速开始](/dashboard/examaware/exam-showboard/get-started.md)
+- [ExamAware 2 Desktop](/dashboard/examaware/examaware2-desktop/index.md)
+  - [快速开始](/dashboard/examaware/examaware2-desktop/get-started.md)
+- [ExamSchedule](/dashboard/examaware/examschedule/index.md)
+  - [快速开始](/dashboard/examaware/examschedule/get-started.md)
+- [ExamCloudSchedule](/dashboard/examaware/examcloudschedule/index.md)
+  - [快速开始](/dashboard/examaware/examcloudschedule/get-started.md)
 
 ## 仓库链接
 

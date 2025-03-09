@@ -7,7 +7,11 @@ category:
 
 感谢您考虑为本文档做出贡献❤️！在为本文档贡献之前，请先阅读本指南。
 
-本文档基于 [VuePress](https://vuepress.vuejs.org/) 搭建，了解 [VuePress](https://vuepress.vuejs.org/) 的用法对编写本文档很有帮助。
+本文档基于 [VuePress](https://vuepress.vuejs.org/) 搭建，使用[VuePress Theme Hope](https://theme-hope.vuejs.press/zh/) 主题。
+
+首先，你应该已经对以下内容有基本的了解：
+- [Markdown](https://theme-hope.vuejs.press/zh/cookbook/markdown/)（包括 [YAML Frontmatter](https://theme-hope.vuejs.press/zh/cookbook/vuepress/page.html#frontmatter) 概念）
+- [VuePress 基础知识](https://theme-hope.vuejs.press/zh/cookbook/vuepress/)
 
 本文档目前托管在 [GitHub Pages](https://pages.github.com/) 上。
 
@@ -51,4 +55,4 @@ category:
 
 ## 还有疑问？
 
-您可以和 <img src="/deepseek.png" width="20" height="20"/> [DeepSeek](https://chat.deepseek.com/) 对话获得更多解答。
+您可以和 <img src="images/deepseek.png" width="20" height="20"/> [DeepSeek](https://chat.deepseek.com/) 对话获得更多解答。

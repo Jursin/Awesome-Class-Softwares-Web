@@ -2,7 +2,6 @@
 title: 快速开始
 icon: fa-solid fa-signs-post
 category:
-  - SketchNow
   - 快速开始
 ---
 

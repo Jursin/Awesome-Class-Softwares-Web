@@ -2,7 +2,6 @@
 title: 快速开始
 icon: fa-solid fa-signs-post
 category:
-  - Ris_ClassTool
   - 快速开始
 ---
 

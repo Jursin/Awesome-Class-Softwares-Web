@@ -2,6 +2,7 @@
 title: ExamCloudSchedule
 icon: 
 category:
+  - 看板类
   - ExamAware
 ---
 
