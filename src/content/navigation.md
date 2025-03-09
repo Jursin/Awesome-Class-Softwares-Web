@@ -38,7 +38,7 @@ category:
 | <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/Awesome-Iwb/Ink-Canvas-Reborn/main/Ink-Canvas-Reborn-Logo.png" width="20" height="20"/> [Ink-Canvas-Reborn](/annotation/ink-canvas-reborn/index.md) | <img src="https://avatars.githubusercontent.com/u/184760810?s=200&v=4" width="20" height="20"/> [`Awesome-Iwb`](https://github.com/Awesome-Iwb) |
 | <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/SketchNow/SketchNow.WPF/main/SketchNow/Resources/AppIcon.ico" width="20" height="20"/> [SketchNow](/annotation/sketchnow/index.md) | <img src="https://avatars.githubusercontent.com/u/181708430?s=200&v=4" width="20" height="20"/> [`SketchNow`](https://github.com/SketchNow) <img src="https://avatars.githubusercontent.com/u/172874642?v=4" width="20" height="20"/> [`realybin`](https://github.com/realybin) |
 | <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/Alan-CRL/Inkeys/main/GithubRes/logo.png" width="20" height="20"/> [智绘教Inkeys](/annotation/inkeys/index.md) | <img src="https://avatars.githubusercontent.com/u/92425617?v=4" width="20" height="20"/> [`Alan-CRL`](https://github.com/Alan-CRL) |
-| <img src="/annotation/inkways-classic/images/Inkways_Classic.png" width="20" height="20"/> [Inkways-Classic](/annotation/inkways-classic/index.md) | <img src="/annotation/inkways-classic/images/inkore_badge.png" width="20" height="20"/> [`iNKORE Studios`](https://github.com/iNKORE-NET) |
+| <img src="/inkways_classic.png" width="20" height="20"/> [Inkways-Classic](/annotation/inkways-classic/index.md) | <img src="/inkore_badge.png" width="20" height="20"/> [`iNKORE Studios`](https://github.com/iNKORE-NET) |
 
 ## <i class="fa-solid fa-download"></i> [下载类](/downloader/index.md)
 
