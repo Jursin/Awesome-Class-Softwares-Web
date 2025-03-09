@@ -55,4 +55,4 @@ category:
 
 ## 还有疑问？
 
-您可以和 <img src="images/deepseek.png" width="20" height="20"/> [DeepSeek](https://chat.deepseek.com/) 对话获得更多解答。
+您可以和 <img src="https://cdn.deepseek.com/chat/icon.png" width="20" height="20"/> [DeepSeek](https://chat.deepseek.com/) 对话获得更多解答。
