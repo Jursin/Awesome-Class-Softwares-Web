@@ -48,6 +48,7 @@ category:
   - 主题设置
     ![themes](images/themes.png)
     - 丰富的主题*（需要安装 [`ClassIsland 主题加载器`](https://github.com/ClassIsland/ClassIsland.ThemeLoader) 插件）*
+    
     ![Class-Widgests](images/classwidgets.png)
     
     ![Fluent](images/fluent.png)
