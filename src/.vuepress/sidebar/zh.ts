@@ -30,6 +30,7 @@ export const zhSidebar = sidebar({
     },
   ],
   "/classschedule/": [
+    "cses.md",
     {
       prefix: "classisland/",
       text: "ClassIsland",
