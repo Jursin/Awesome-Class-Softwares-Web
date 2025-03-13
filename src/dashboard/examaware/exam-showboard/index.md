@@ -18,6 +18,8 @@ category:
 
 一款显示当前时间与考试详细信息的显示工具
 
+[网页版在线体验](http://examboard.cn/)｜[更多平台下载](https://www.123912.com/s/0l7bVv-gHdAh)
+
 GitHub仓库：[https://github.com/ExamAware/dsz-exam-showboard](https://github.com/ExamAware/dsz-exam-showboard)
 
 </div>

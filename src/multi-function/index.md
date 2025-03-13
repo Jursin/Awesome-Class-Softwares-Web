@@ -1,8 +1,6 @@
 ---
 title: 多功能类
 icon: puzzle-piece
-category:
-  - 多功能类
 ---
 
 - <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/Ris-Soft/Ris_ClassTool/master/Main/logo.png" width="20" height="20"/> [Ris_Classtool](/multi-function/ris_classtool/index.md)

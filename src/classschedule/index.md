@@ -1,8 +1,6 @@
 ---
 title: 课表类
 icon: calendar-days
-category:
-  - 类别
 ---
 
 - <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/ClassIsland/ClassIsland/master/ClassIsland/Assets/AppLogo_AppLogo.svg" width="20" height="20"/> [ClassIsland](/classschedule/classisland/index.md)

@@ -1,8 +1,6 @@
 ---
 title: 批注类
 icon: pen
-category:
-  - 批注类
 ---
 
 - <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/WXRIW/Ink-Canvas/master/Ink%20Canvas/Resources/InkCanvas.png" width="20" height="20"/> [Ink-Canvas](/annotation/ink-canvas/index.md)

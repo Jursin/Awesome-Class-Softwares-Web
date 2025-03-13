@@ -1,8 +1,6 @@
 ---
 title: 下载类
 icon: download
-category:
-  - 下载类
 ---
 
 - <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/SectionIstool/SectionIstool/main/resources/SectionIstool_icon.png" width="20" height="20"/> [Sectionistool](/downloader/sectionistool/index.md)

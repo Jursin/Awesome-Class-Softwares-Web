@@ -57,6 +57,15 @@ export const zhSidebar = sidebar({
         "get-started.md",
       ],
     },
+    {
+      prefix: "iclass/",
+      text: "iClass",
+      link: "index.md",
+      collapsible: true,
+      children: [
+        "get-started.md",
+      ],
+    },
   ],
   "/multi-function/": [
     {
@@ -211,6 +220,17 @@ export const zhSidebar = sidebar({
     {
       prefix: "seewohub/",
       text: "SeewoHub",
+      link: "index.md",
+      collapsible: true,
+      children: [
+        "get-started.md",
+      ],
+    },
+  ],
+  "/miscellany/": [
+    {
+      prefix: "namepicker/",
+      text: "NamePicker",
       link: "index.md",
       collapsible: true,
       children: [

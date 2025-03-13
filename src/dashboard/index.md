@@ -1,8 +1,6 @@
 ---
 title: 看板类
 icon: chalkboard
-category:
-  - 看板类
 ---
 
 - <img src="https://avatars.githubusercontent.com/u/195304368?s=200&v=4" width="20" height="20"/> [ExamAware](/dashboard/examaware/index.md)

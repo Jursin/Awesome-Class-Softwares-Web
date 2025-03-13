@@ -13,6 +13,8 @@ category:
 
 A fantastic Ink Canvas in WPF/C#, with fantastic support for Seewo Boards.
 
+[原 InkCanvasForClass-0610 下载](https://www.123912.com/s/0l7bVv-gHdAh)
+
 GitHub仓库：[https://github.com/Awesome-Iwb/Ink-Canvas-Reborn](https://github.com/Awesome-Iwb/Ink-Canvas-Reborn)
 
 </div>
