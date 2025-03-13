@@ -37,6 +37,7 @@ export const zhSidebar = sidebar({
       collapsible: true,
       children: [
         "get-started.md",
+        "extraisland.md",
       ],
     },
     {

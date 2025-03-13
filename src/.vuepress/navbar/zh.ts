@@ -8,4 +8,5 @@ export const zhNavbar = navbar([
   "/dashboard/",
   "/annotation/",
   "/downloader/",
+  "/miscellany/",
 ]);

@@ -78,4 +78,10 @@ features:
     desc="下载类软件"
     link="./downloader/"
   />
+  <VPCard
+    logo="/miscellany-solid.svg"
+    title="杂类"
+    desc="杂类软件"
+    link="./miscellany/"
+  />
 </div>
