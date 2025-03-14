@@ -3,6 +3,7 @@ title: 课表类
 icon: calendar-days
 ---
 
+- <i class="fa-solid fa-file-pen"></i> [CSES 课程表编辑器](/classschedule/cses.md)
 - <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/ClassIsland/ClassIsland/master/ClassIsland/Assets/AppLogo_AppLogo.svg" width="20" height="20"/> [ClassIsland](/classschedule/classisland/index.md)
   - <i class="fa-solid fa-signs-post"></i> [快速开始](/classschedule/classisland/get-started.md)
   - <img src="https://docs.lipoly.ink/ExtraIsland/images/extraIslandFull.svg" width="20" height="20"/> [ExtraIsland](/classschedule/classisland/extraisland.md)

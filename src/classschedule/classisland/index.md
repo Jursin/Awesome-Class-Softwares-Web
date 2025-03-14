@@ -55,7 +55,7 @@ category:
 ![themes](images/themes.png)
 
 ::: note
-具有丰富的主题，需要先安装 [`ClassIsland 主题加载器`](https://github.com/ClassIsland/ClassIsland.ThemeLoader) 插件），[主题聚合](https://www.123912.com/s/0l7bVv-qHdAh)
+具有丰富的主题，需要先安装 [`ClassIsland 主题加载器`](https://github.com/ClassIsland/ClassIsland.ThemeLoader) 插件，[主题聚合](https://www.123912.com/s/0l7bVv-qHdAh)
 :::
     
 ![Class-Widgests](images/classwidgets.png)
