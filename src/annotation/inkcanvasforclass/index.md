@@ -22,3 +22,7 @@ GitHub仓库：[https://github.com/InkCanvas/InkCanvasForClass](https://github.c
 - 基于[Ink-Canvas-Artistry](https://github.com/ChangSakura/Ink-Canvas)重绘 UI
   ![toolbar](images/toolbar.png)
   ![board](images/board.png)
+
+::: warning
+InkCanvasForClass 和 Ink-Canvas-reborn 已停更，使用过程中遇到的问题将没有开发者解决。
+:::
