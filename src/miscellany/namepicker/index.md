@@ -20,7 +20,7 @@ GitHub仓库：[https://github.com/NamePickerOrg/NamePicker](https://github.com/
 ## 功能
 - [x] 随机抽取
 - [x] 可视化配置菜单
-  <img src="./images/config.png" height="700"/>
+  <img src="./images/config.png" style="max-width: 50%; height: auto;">
 - [x] 从外部读取名单
 - [x] 特殊点名规则
 - [ ] 概率内定

@@ -173,8 +173,8 @@ export const zhSidebar = sidebar({
       ],
     },
     {
-      prefix: "ink-canvas-reborn/",
-      text: "Ink-Canvas-Reborn5",
+      prefix: "inkcanvasforclass/",
+      text: "InkCanvasForClass",
       link: "index.md",
       collapsible: true,
       children: [

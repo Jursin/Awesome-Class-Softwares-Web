@@ -46,6 +46,19 @@ GitHub仓库：[https://github.com/Class-Widgets/Class-Widgets](https://github.c
   <img src="https://classwidgets.rinlit.cn/assets/img/screenshots/macos.png">
 - 近乎完美的兼容性
   - 兼容 Windows、Linux、macOS 三大主流操作系统
-    <img src="https://classwidgets.rinlit.cn/assets/img/screenshots/win.png">
-    <img src="https://classwidgets.rinlit.cn/assets/img/screenshots/win7.png">
-    <img src="https://classwidgets.rinlit.cn/assets/img/screenshots/linux.png">
+  
+::: tabs
+
+@tab Windows 11
+
+![Windows 11](https://classwidgets.rinlit.cn/assets/img/screenshots/win.png)
+    
+@tab Windows 7
+
+![Windows 7](https://classwidgets.rinlit.cn/assets/img/screenshots/win7.png)
+
+@tab Linux
+
+![Linux](https://classwidgets.rinlit.cn/assets/img/screenshots/linux.png)
+
+:::
