@@ -46,3 +46,9 @@ category:
 | - | - |
 | <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/SectionIstool/SectionIstool/main/resources/SectionIstool_icon.png" width="20" height="20"/> [SectionIstool](/downloader/sectionistool/index.md) | <img src="https://avatars.githubusercontent.com/u/183712498?s=200&v=4" width="20" height="20"/> [`SectionIstool`](https://github.com/SectionIstool) <img src="https://avatars.githubusercontent.com/u/139693537?v=4" width="20" height="20"/> [`lzy98276`](https://github.com/lzy98276) |
 | <img src="../downloader/seewohub/images/seewohub.jpg" width="20" height="20"/> [SeewoHUB](/downloader/seewohub/index.md) | <img src="https://avatars.githubusercontent.com/u/121096061?v=4" width="20" height="20"/> [`CNwenwen`](https://github.com/CNwenwen) |
+
+## <i class="fa-solid fa-cubes"></i> [杂类](/miscellany/index.md)
+
+| 软件 | 组织/开发者 |
+| - | - |
+| <img src="https://avatars.githubusercontent.com/u/202290706?s=200&v=4" width="20" height="20"/> [NamePicker](/miscellany/namepicker/index.md) | <img src="https://avatars.githubusercontent.com/u/202290706?s=200&v=4" width="20" height="20"/> [`NamePicker`](https://github.com/NamePickerOrg) |

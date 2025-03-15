@@ -70,14 +70,26 @@ category:
 
 ## [档案编辑](https://docs.classisland.tech/app/profile/)
 
+::: tabs
+
+@tab 科目
+
 - [科目](https://docs.classisland.tech/app/profile/subject.html)
   ![科目](https://classisland.tech/assets/4-UASBuuFy.png)
+
+@tab 时间表
+
 - [时间表](https://docs.classisland.tech/app/profile/time-layout.html)
   ![时间表](https://classisland.tech/assets/3-B78pDh2c.png)
+
+@tab 课表
+
 - [课表](https://docs.classisland.tech/app/profile/classplan.html)
   ![课表](https://classisland.tech/assets/1-UIMlY11K.png)
   ![课表](https://classisland.tech/assets/2-D-hk6KM_.png)
-  
+
+:::
+
 ::: tip
 应在编辑好`科目`与`时间表`之后编辑`课表`
 :::
@@ -85,10 +97,20 @@ category:
 - 支持[`临时课表与临时层`](https://docs.classisland.tech/app/profile/classplan.html#%E4%B8%B4%E6%97%B6%E8%AF%BE%E8%A1%A8%E4%B8%8E%E4%B8%B4%E6%97%B6%E5%B1%82)、[`课表群`](https://docs.classisland.tech/app/profile/classplan.html#%E8%AF%BE%E8%A1%A8%E7%BE%A4)
 - 支持[从表格导入](https://docs.classisland.tech/app/profile/#%E4%BB%8E%E8%A1%A8%E6%A0%BC%E5%AF%BC%E5%85%A5)、[从其他软件导入](https://docs.classisland.tech/app/migrate/)
 - 支持为课表设置最多4周轮换、分批启用课表群
+
+::: tabs
+
+@tab 换课
+
 - 支持[当日和跨日换课](https://docs.classisland.tech/app/profile/classplan.html#%E6%8D%A2%E8%AF%BE)
   ![换课](https://classisland.tech/assets/5-Cf_Rqjz-.png)
+
+@tab 调休
+
 - 支持提前预定要启用的课表、安排调休课表
   ![调休课表](https://classisland.tech/assets/6-CIhgwWiW.png)
+
+:::
 
 ## [附加设置](https://docs.classisland.tech/app/profile/attached-settings.html)
 
@@ -100,12 +122,25 @@ category:
 - 支持在特定时间节点或情况下执行特定操作，如切换组件配置、运行程序、显示提醒等
 - 支持多个不同配置方案，可通过拖动进行排序
   ![自动化](https://classisland.tech/assets/automatic1-itAmfZ_k.png)
-  - [触发器](https://docs.classisland.tech/app/automation.html#%E8%A7%A6%E5%8F%91%E5%99%A8)
-    ![触发器](https://docs.classisland.tech/assets/%E8%A7%A6%E5%8F%91%E5%99%A8-BFm_yeqw.png)
-  - [规则集](https://docs.classisland.tech/app/automation.html#%E8%87%AA%E5%8A%A8%E5%8C%96-1)
-    ![规则集](https://docs.classisland.tech/assets/%E8%A7%84%E5%88%99%E9%9B%86%E7%A4%BA%E4%BE%8B-CsFLEBwL.png)
-  - [行动](https://docs.classisland.tech/app/automation.html#%E8%A7%A6%E5%8F%91%E5%99%A8)
-    ![行动](https://docs.classisland.tech/assets/%E8%A1%8C%E5%8A%A8%E7%A4%BA%E4%BE%8B-C2elwscy.png)
+
+::: tabs
+
+@tab 触发器
+
+- [触发器](https://docs.classisland.tech/app/automation.html#%E8%A7%A6%E5%8F%91%E5%99%A8)
+  ![触发器](https://docs.classisland.tech/assets/%E8%A7%A6%E5%8F%91%E5%99%A8-BFm_yeqw.png)
+
+@tab 规则集
+
+- [规则集](https://docs.classisland.tech/app/automation.html#%E8%87%AA%E5%8A%A8%E5%8C%96-1)
+  ![规则集](https://docs.classisland.tech/assets/%E8%A7%84%E5%88%99%E9%9B%86%E7%A4%BA%E4%BE%8B-CsFLEBwL.png)
+
+@tab 行动
+
+- [行动](https://docs.classisland.tech/app/automation.html#%E8%A7%A6%E5%8F%91%E5%99%A8)
+  ![行动](https://docs.classisland.tech/assets/%E8%A1%8C%E5%8A%A8%E7%A4%BA%E4%BE%8B-C2elwscy.png)
+
+:::
     
 ### [插件](https://github.com/ClassIsland/PluginIndex)
 - 支持通过安装插件的方式扩展应用功能，如添加更多新组件、自动化行动、规则集规则、提醒提供方、认证提供方等

@@ -14,7 +14,7 @@ category:
 一款简洁的点名软件
 
 GitHub仓库：[https://github.com/NamePickerOrg/NamePicker](https://github.com/NamePickerOrg/NamePicker)
-
+NamePicker x Class-Widgets：[https://github.com/NamePickerOrg/NamePicker4CW](https://github.com/NamePickerOrg/NamePicker4CW)
 </div>
 
 ## 功能
@@ -22,6 +22,13 @@ GitHub仓库：[https://github.com/NamePickerOrg/NamePicker](https://github.com/
 - [x] 可视化配置菜单
   <img src="./images/config.png" style="max-width: 50%; height: auto;">
 - [x] 从外部读取名单
+  - [在线名单编辑器](https://np-nameeditor.streamlit.app/)
+  - [可视化名单编辑器](https://github.com/NamePickerOrg/NP-NameEditor)
+  - 示例：（0=男，1=女）
+    ```csv
+    name,sex,no
+    example,0,1
+    ```
 - [x] 特殊点名规则
 - [ ] 概率内定
 - [ ] 悬浮窗（点击展开主界面）

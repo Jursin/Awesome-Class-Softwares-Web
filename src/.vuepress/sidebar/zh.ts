@@ -34,8 +34,9 @@ export const zhSidebar = sidebar({
     {
       prefix: "classisland/",
       text: "ClassIsland",
-      link: "index.md",
+      link: "classisland/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         "get-started.md",
         "extraisland.md",
@@ -44,8 +45,9 @@ export const zhSidebar = sidebar({
     {
       prefix: "class-widgets/",
       text: "Class-Widgets",
-      link: "index.md",
+      link: "class-widgets/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         "get-started.md",
       ],
@@ -53,8 +55,9 @@ export const zhSidebar = sidebar({
     {
       prefix: "electronclassschedule/",
       text: "ElectronClassSchedule",
-      link: "index.md",
+      link: "electronclassschedule/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         "get-started.md",
       ],
@@ -62,8 +65,9 @@ export const zhSidebar = sidebar({
     {
       prefix: "iclass/",
       text: "iClass",
-      link: "index.md",
+      link: "iclass/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         "get-started.md",
       ],
@@ -73,8 +77,9 @@ export const zhSidebar = sidebar({
     {
       prefix: "ris_classtool/",
       text: "Ris_Classtool",
-      link: "index.md",
+      link: "ris_classtool/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         "get-started.md",
       ],
@@ -82,8 +87,9 @@ export const zhSidebar = sidebar({
     {
       prefix: "zongzitek-blackboard-sticker/",
       text: "Zongzitek-Blackboard黑板贴",
-      link: "index.md",
+      link: "zongzitek-blackboard-sticker/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         "get-started.md",
       ],
@@ -93,14 +99,16 @@ export const zhSidebar = sidebar({
     {
       prefix: "examaware/",
       text: "ExamAware",
-      link: "index.md",
+      link: "examaware/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         {
           prefix: "exam-showboard/",
           text: "ExamShowboard",
-          link: "index.md",
+          link: "exam-showboard/index.md",
           collapsible: true,
+          expanded: true,
           children: [
             "get-started.md",
           ],
@@ -108,8 +116,9 @@ export const zhSidebar = sidebar({
         {
           prefix: "examaware2-desktop/",
           text: "ExamAware 2 Desktop",
-          link: "index.md",
+          link: "examaware2-desktop/index.md",
           collapsible: true,
+          expanded: true,
           children: [
             "get-started.md",
           ],
@@ -117,8 +126,9 @@ export const zhSidebar = sidebar({
         {
           prefix: "examschedule/",
           text: "ExamSchedule",
-          link: "index.md",
+          link: "examschedule/index.md",
           collapsible: true,
+          expanded: true,
           children: [
             "get-started.md",
           ],
@@ -126,8 +136,9 @@ export const zhSidebar = sidebar({
         {
           prefix: "examcloudschedule/",
           text: "ExamCloudSchedule",
-          link: "index.md",
+          link: "examcloudschedule/index.md",
           collapsible: true,
+          expanded: true,
           children: [
             "get-started.md",
           ],
@@ -137,8 +148,9 @@ export const zhSidebar = sidebar({
     {
       prefix: "sticky-attention/",
       text: "Sticky-attention",
-      link: "index.md",
+      link: "sticky-attention/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         "get-started.md",
       ],
@@ -146,8 +158,9 @@ export const zhSidebar = sidebar({
     {
       prefix: "homeworkboard/",
       text: "HomeworkBoard",
-      link: "index.md",
+      link: "homeworkboard/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         "get-started.md",
       ],
@@ -157,8 +170,9 @@ export const zhSidebar = sidebar({
     {
       prefix: "ink-canvas/",
       text: "Ink-Canvas",
-      link: "index.md",
+      link: "ink-canvas/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         "get-started.md",
       ],
@@ -166,8 +180,9 @@ export const zhSidebar = sidebar({
     {
       prefix: "ink-canvas-artistry/",
       text: "Ink-Canvas-Artistry",
-      link: "index.md",
+      link: "ink-canvas-artistry/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         "get-started.md",
       ],
@@ -175,8 +190,9 @@ export const zhSidebar = sidebar({
     {
       prefix: "inkcanvasforclass/",
       text: "InkCanvasForClass",
-      link: "index.md",
+      link: "inkcanvasforclass/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         "get-started.md",
       ],
@@ -184,8 +200,9 @@ export const zhSidebar = sidebar({
     {
       prefix: "sketchnow/",
       text: "SketchNow",
-      link: "index.md",
+      link: "sketchnow/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         "get-started.md",
       ],
@@ -193,8 +210,9 @@ export const zhSidebar = sidebar({
     {
       prefix: "inkeys/",
       text: "智绘教Inkeys",
-      link: "index.md",
+      link: "inkeys/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         "get-started.md",
       ],
@@ -202,8 +220,9 @@ export const zhSidebar = sidebar({
     {
       prefix: "inkways-classic/",
       text: "Inkways-Classic",
-      link: "index.md",
+      link: "inkways-classic/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         "get-started.md",
       ],
@@ -213,8 +232,9 @@ export const zhSidebar = sidebar({
     {
       prefix: "sectionistool/",
       text: "Sectionistool",
-      link: "index.md",
+      link: "sectionistool/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         "get-started.md",
       ],
@@ -222,8 +242,9 @@ export const zhSidebar = sidebar({
     {
       prefix: "seewohub/",
       text: "SeewoHub",
-      link: "index.md",
+      link: "seewohub/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         "get-started.md",
       ],
@@ -233,8 +254,9 @@ export const zhSidebar = sidebar({
     {
       prefix: "namepicker/",
       text: "NamePicker",
-      link: "index.md",
+      link: "namepicker/index.md",
       collapsible: true,
+      expanded: true,
       children: [
         "get-started.md",
       ],
