@@ -51,4 +51,4 @@ category:
 
 | 软件 | 组织/开发者 |
 | - | - |
-| <img src="https://avatars.githubusercontent.com/u/202290706?s=200&v=4" width="20" height="20"/> [NamePicker](/miscellany/namepicker/index.md) | <img src="https://avatars.githubusercontent.com/u/202290706?s=200&v=4" width="20" height="20"/> [`NamePicker`](https://github.com/NamePickerOrg) |
+| <img src="https://avatars.githubusercontent.com/u/202290706?s=200&v=4" width="20" height="20"/> [NamePicker](/miscellany/namepicker/index.md) | <img src="https://avatars.githubusercontent.com/u/202290706?s=200&v=4" width="20" height="20"/> [`NamePicker`](https://github.com/NamePickerOrg) <img src="https://avatars.githubusercontent.com/u/92249708?v=4" width="20" height="20"/> [LHGS-github](https://github.com/LHGS-github) |

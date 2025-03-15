@@ -7,7 +7,7 @@ category:
 
 <div align="center">
 
-![banner](https://github.com/Sticky-attention/Sticky-attention/blob/master/image/banner.jpg)
+![banner](https://gh.llkk.cc/https://raw.githubusercontent.com/Sticky-attention/Sticky-attention/master/image/banner.jpg)
 
 ![主界面](images/main-interface.png)
 ![面板](images/faceplate.png)
@@ -25,13 +25,13 @@ GitHub仓库：[https://github.com/Sticky-attention/Sticky-attention](https://gi
 
 ## 功能
 
-- [X] 布置与修改作业
-- [X] 富文本支持（字体及其大小、颜色等）
-- [X] 按科目分类，科目预设
-- [X] 为作业添加标签
-- [X] 主界面全局缩放
-- [X] 一键清理/恢复过期作业
-- [X] 导出作业面板截图
-- [X] 支持软件自动更新
-- [X] 界面圆角
-- [X] 插入图片、表情
+- 布置与修改作业
+- 富文本支持（字体及其大小、颜色等）
+- 按科目分类，科目预设
+- 为作业添加标签
+- 主界面全局缩放
+- 一键清理/恢复过期作业
+- 导出作业面板截图
+- 支持软件自动更新
+- 界面圆角
+- 插入图片、表情

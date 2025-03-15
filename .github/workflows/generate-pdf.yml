@@ -35,4 +35,4 @@ jobs:
     - name: Upload PDF to Release
       uses: softprops/action-gh-release@v2
       with:
-        files: ./pdf/ClassIsland-Docs.pdf
+        files: ./pdf/Awesome-Class-Softwares-Web.pdf

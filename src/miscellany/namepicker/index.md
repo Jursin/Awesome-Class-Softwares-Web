@@ -9,7 +9,7 @@ category:
 
 ![main](images/main.png)
 
-[![stars](https://img.shields.io/github/stars/NamePickerOrg/NamePicker?label=Stars)](https://github.com/NamePickerOrg/NamePicker) [![forks](https://img.shields.io/github/forks/NamePickerOrg/NamePicker?label=Forks)](https://github.com/NamePickerOrg/NamePicker) [![Watchers](https://img.shields.io/github/watchers/NamePickerOrg/NamePicker?style=social)](https://github.com/NamePickerOrg/NamePicker/watchers) [![Downloads](https://img.shields.io/github/downloads/NamePickerOrg/NamePicker/total?style=social&label=Downloads&logo=github)](https://github.com/NamePickerOrg/NamePicker/releases/latest) [![GitHub Issues](https://img.shields.io/github/issues-search/NamePickerOrg/NamePicker?query=is%3Aopen&style=flat&logo=github&label=Issues&color=%233fb950)](https://github.com/NamePickerOrg/NamePicker/issues) [![Release](https://img.shields.io/github/v/release/NamePickerOrg/NamePicker?style=flat&color=%233fb950&label=正式版)](https://github.com/NamePickerOrg/NamePicker/releases/latest)  [![Created At](https://img.shields.io/github/created-at/NamePickerOrg/NamePicker)](https://github.com/NamePickerOrg/NamePicker) [![Github Last Commit](https://img.shields.io/github/last-commit/NamePickerOrg/NamePicker)](https://github.com/NamePickerOrg/NamePicker/commits/master) [![GitHub Top Language](https://img.shields.io/github/languages/top/NamePickerOrg/NamePicker)](https://github.com/NamePickerOrg/NamePicker) [![LICENSE](https://img.shields.io/badge/License-MIT-red.svg "LICENSE")](https://github.com/NamePickerOrg/NamePicker/blob/master/LICENSE)
+[![stars](https://img.shields.io/github/stars/NamePickerOrg/NamePicker?label=Stars)](https://github.com/NamePickerOrg/NamePicker) [![forks](https://img.shields.io/github/forks/NamePickerOrg/NamePicker?label=Forks)](https://github.com/NamePickerOrg/NamePicker) [![Watchers](https://img.shields.io/github/watchers/NamePickerOrg/NamePicker?style=social)](https://github.com/NamePickerOrg/NamePicker/watchers) [![Downloads](https://img.shields.io/github/downloads/NamePickerOrg/NamePicker/total?style=social&label=Downloads&logo=github)](https://github.com/NamePickerOrg/NamePicker/releases/latest) [![GitHub Issues](https://img.shields.io/github/issues-search/NamePickerOrg/NamePicker?query=is%3Aopen&style=flat&logo=github&label=Issues&color=%233fb950)](https://github.com/NamePickerOrg/NamePicker/issues) [![Release](https://img.shields.io/github/v/release/NamePickerOrg/NamePicker?style=flat&color=%233fb950&label=正式版)](https://github.com/NamePickerOrg/NamePicker/releases/latest)  [![Created At](https://img.shields.io/github/created-at/NamePickerOrg/NamePicker)](https://github.com/NamePickerOrg/NamePicker) [![Github Last Commit](https://img.shields.io/github/last-commit/NamePickerOrg/NamePicker)](https://github.com/NamePickerOrg/NamePicker/commits/master) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat) [![LICENSE](https://img.shields.io/badge/License-MIT-red.svg "LICENSE")](https://github.com/NamePickerOrg/NamePicker/blob/master/LICENSE)
 
 一款简洁的点名软件
 
@@ -30,8 +30,8 @@ NamePicker x Class-Widgets：[https://github.com/NamePickerOrg/NamePicker4CW](ht
     example,0,1
     ```
 - [x] 特殊点名规则
+- [x] 支持非二元性别
 - [ ] 概率内定
 - [ ] 悬浮窗（点击展开主界面）
 - [ ] 软件内更新
-- [ ] 支持非二元性别
 - [ ] 同时抽选多个

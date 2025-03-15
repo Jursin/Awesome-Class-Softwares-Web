@@ -17,12 +17,20 @@ GitHub仓库：[https://github.com/InkCanvas/InkCanvasForClass](https://github.c
 一切化成了灰烬。这曾经也是美好的一抹遐思...
 :::
 
+::: warning
+- [Ink-Canvas-reborn](https://github.com/Awesome-Iwb/Ink-Canvas-Reborn)
+- [InkCanvasForClass](https://github.com/Awesome-Iwb/InkCanvasForClass)
+- [icc-0610fix](https://github.com/Awesome-Iwb/icc-0610fix)
+
+以上仓库均已存档，后续将无人维护。
+
+![announce](images/announce.jpg)
+:::
+
+
 </div>
 
 - 基于[Ink-Canvas-Artistry](https://github.com/ChangSakura/Ink-Canvas)重绘 UI
   ![toolbar](images/toolbar.png)
   ![board](images/board.png)
 
-::: warning
-InkCanvasForClass 和 Ink-Canvas-reborn 已停更，使用过程中遇到的问题将没有开发者解决。
-:::
