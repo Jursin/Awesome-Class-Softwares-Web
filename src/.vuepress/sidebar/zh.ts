@@ -165,6 +165,16 @@ export const zhSidebar = sidebar({
         "get-started.md",
       ],
     },
+    {
+      prefix: "classworks/",
+      text: "Classworks",
+      link: "classworks/index.md",
+      collapsible: true,
+      expanded: true,
+      children: [
+        "get-started.md",
+      ],
+    },
   ],
   "/annotation/": [
     {
@@ -255,6 +265,16 @@ export const zhSidebar = sidebar({
       prefix: "namepicker/",
       text: "NamePicker",
       link: "namepicker/index.md",
+      collapsible: true,
+      expanded: true,
+      children: [
+        "get-started.md",
+      ],
+    },
+    {
+      prefix: "rand/",
+      text: "Rand",
+      link: "rand/index.md",
       collapsible: true,
       expanded: true,
       children: [

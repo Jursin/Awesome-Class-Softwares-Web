@@ -28,6 +28,7 @@ category:
 | <img src="https://avatars.githubusercontent.com/u/195304368?s=200&v=4" width="20" height="20"/> [ExamAware](/dashboard/examaware/index.md) | <img src="https://avatars.githubusercontent.com/u/88492699?v=4" width="20" height="20"/> [`Hello8693`](https://github.com/Hello8693) |
 | <img src="https://avatars.githubusercontent.com/u/183182916?s=200&v=4" width="20" height="20"/> [Sticky-attention](/dashboard/sticky-attention/index.md) | <img src="https://avatars.githubusercontent.com/u/183182916?s=200&v=4" width="20" height="20"/> [`Sticky-attention`](https://github.com/Sticky-attention) <img src="https://avatars.githubusercontent.com/u/162853646?v=4" width="20" height="20"/> [`jizilin6732`](https://github.com/jizilin6732) |
 | <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/EnderWolf006/HomeworkBoard/main/ClientProject/public/vite.svg" width="20" height="20"/> [HomeworkBoard](/dashboard/homeworkboard/index.md) | <img src="https://avatars.githubusercontent.com/u/152008081?v=4" width="20" height="20"/> [`EnderWolf006`](https://github.com/EnderWolf006) |
+| <img src="https://zerocat.houlangs.com/favicon.png" width="20" height="20"/> [Classworks](/dashboard/classworks/index.md) | <img src="https://avatars.githubusercontent.com/u/203372263?s=200&v=4" width="20" height="20"/> [ClassworksDev](https://github.com/ClassworksDev) <img src="https://avatars.githubusercontent.com/u/88357633?v=4" width="20" height="20"/> [SunWuyuan](https://github.com/SunWuyuan) |
 
 ## <i class="fa-solid fa-pen"></i> [批注类](/annotation/index.md)
 
@@ -52,3 +53,4 @@ category:
 | 软件 | 组织/开发者 |
 | - | - |
 | <img src="https://avatars.githubusercontent.com/u/202290706?s=200&v=4" width="20" height="20"/> [NamePicker](/miscellany/namepicker/index.md) | <img src="https://avatars.githubusercontent.com/u/202290706?s=200&v=4" width="20" height="20"/> [`NamePicker`](https://github.com/NamePickerOrg) <img src="https://avatars.githubusercontent.com/u/92249708?v=4" width="20" height="20"/> [LHGS-github](https://github.com/LHGS-github) |
+| <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/LuoYunXi0407/Rand/main/Assets%2Fwpfui-icon-1024.png" width="20" height="20"/> [Rand](/miscellany/rand/index.md) | <img src="https://avatars.githubusercontent.com/u/201465393?v=4" width="20" height="20"/> [LuoYunXi0407](https://github.com/LuoYunXi0407) |

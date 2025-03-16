@@ -13,6 +13,8 @@ category:
 
 GitHub仓库：[https://github.com/InkCanvas/InkCanvasForClass](https://github.com/InkCanvas/InkCanvasForClass)
 
+</div>
+
 :::
 一切化成了灰烬。这曾经也是美好的一抹遐思...
 :::
@@ -26,9 +28,6 @@ GitHub仓库：[https://github.com/InkCanvas/InkCanvasForClass](https://github.c
 
 ![announce](images/announce.jpg)
 :::
-
-
-</div>
 
 - 基于[Ink-Canvas-Artistry](https://github.com/ChangSakura/Ink-Canvas)重绘 UI
   ![toolbar](images/toolbar.png)
