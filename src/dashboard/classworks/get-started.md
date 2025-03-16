@@ -16,7 +16,7 @@ category:
   ```bash
   cd Classworks
   ```
--开始使用
+- 开始使用
 
 ::: tabs
 

@@ -18,8 +18,6 @@ category:
 
 GitHub仓库：[https://github.com/ClassworksDev/Classworks](https://github.com/ClassworksDev/Classworks)
 
-</div>
-
 <SiteInfo
   name="ZeroCat 官网"
   desc="新一代，开源，编程社区"
@@ -28,6 +26,8 @@ GitHub仓库：[https://github.com/ClassworksDev/Classworks](https://github.com/
   repo="https://github.com/ClassworksDev/Classworks"
   preview=""
 />
+
+</div>
 
 ## ✨ 特性
 - 🎯 TypeScript 支持

@@ -59,13 +59,13 @@ GitHub仓库：[https://github.com/LuoYunXi0407/Rand](https://github.com/LuoYunX
 
 ![个性化](https://github.com/user-attachments/assets/7c3c09a0-66fe-4fcb-9b1c-8f31c2a552e3)
 
-- **主题：**可以自定义颜色模式（主题色随系统设置，暂时无法更改）
-- **显示设置：**设置座号、姓名显示格式
+- **主题：** 可以自定义颜色模式（主题色随系统设置，暂时无法更改）
+- **显示设置：** 设置座号、姓名显示格式
 
 ## 更多设置
-- **平衡设置:**使抽到的学生不重复，直到抽完全部学生为止（未来会上线更优化的平衡机制，防止学生抽到后高枕无忧）
+- **平衡设置:** 使抽到的学生不重复，直到抽完全部学生为止（未来会上线更优化的平衡机制，防止学生抽到后高枕无忧）
   ![平衡设置](https://github.com/user-attachments/assets/a5ea23f6-feb3-474f-a9bf-8b858faa0d65)
-- **抽号模式:**可以为不同的抽号模式配置不同的自定义设置
+- **抽号模式:** 可以为不同的抽号模式配置不同的自定义设置
   ![image](https://github.com/user-attachments/assets/502eaaac-c47f-40fb-b427-f4e472a893f2)
 - **多人模式**
   ![image](https://github.com/user-attachments/assets/bf4fa15f-a1ea-495b-a924-f6f91192387c)
