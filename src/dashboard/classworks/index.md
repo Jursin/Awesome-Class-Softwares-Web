@@ -26,6 +26,7 @@ GitHub仓库：[https://github.com/ClassworksDev/Classworks](https://github.com/
   url="https://zerocat.houlangs.com"
   logo="https://zerocat.houlangs.com/favicon.png"
   repo="https://github.com/ClassworksDev/Classworks"
+  preview=""
 />
 
 ## ✨ 特性
