@@ -15,9 +15,8 @@ GitHub仓库：[https://github.com/InkCanvas/InkCanvasForClass](https://github.c
 
 </div>
 
-::: details
-一切化成了灰烬。这曾经也是美好的一抹遐思...
-:::
+> 一切化成了灰烬。这曾经也是美好的一抹遐思...
+
 
 ::: warning
 - [Ink-Canvas-reborn](https://github.com/Awesome-Iwb/Ink-Canvas-Reborn)
@@ -32,4 +31,3 @@ GitHub仓库：[https://github.com/InkCanvas/InkCanvasForClass](https://github.c
 - 基于[Ink-Canvas-Artistry](https://github.com/ChangSakura/Ink-Canvas)重绘 UI
   ![toolbar](images/toolbar.png)
   ![board](images/board.png)
-

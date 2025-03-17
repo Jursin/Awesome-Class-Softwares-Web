@@ -15,7 +15,7 @@ category:
 
 GitHub仓库：[https://github.com/NamePickerOrg/NamePicker](https://github.com/NamePickerOrg/NamePicker)
 
-![NamePicker x ClassIsland](https://github.com/NamePickerOrg/NamePicker4CI)｜[NamePicker x Class-Widgets](https://github.com/NamePickerOrg/NamePicker4CW)
+[NamePicker x ClassIsland](https://github.com/NamePickerOrg/NamePicker4CI)｜[NamePicker x Class-Widgets](https://github.com/NamePickerOrg/NamePicker4CW)
 
 </div>
 
