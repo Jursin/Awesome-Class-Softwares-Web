@@ -19,6 +19,10 @@ GitHub仓库：[https://github.com/EnderWolf006/HomeworkBoard](https://github.co
 
 </div>
 
+::: note
+该项作者已停更，建议使用 Classworks 。
+:::
+
 ## 功能
 - 学校作业板：`SchoolProject-release.zip`
   - 在班级内快捷输入并排版清晰地展示作业
