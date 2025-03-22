@@ -16,7 +16,7 @@ category:
 
 基于[Ink Canvas](https://github.com/WXRIW/Ink-Canvas)二次开发，优化了界面 UI，是一款好用的屏幕批注/板书/PPT批注工具。
 
-[常见问题](https://github.com/InkCanvas/Ink-Canvas-Artistry?tab=readme-ov-file#-faq)
+[常见问题](https://github.com/InkCanvas/Ink-Canvas-Artistry?tab=readme-ov-file#-faq)｜[最新测试版下载](https://www.123912.com/s/0l7bVv-kkdAh)
 
 GitHub仓库：[https://github.com/ChangSakura/Ink-Canvas](https://github.com/ChangSakura/Ink-Canvas)
 
