@@ -15,7 +15,7 @@ category:
 
 GitHub仓库：[https://github.com/NamePickerOrg/NamePicker](https://github.com/NamePickerOrg/NamePicker)
 
-[NamePicker x ClassIsland](https://github.com/NamePickerOrg/NamePicker4CI)｜[NamePicker x Class-Widgets](https://github.com/NamePickerOrg/NamePicker4CW)
+[NamePicker x ClassIsland](https://github.com/NamePickerOrg/NamePicker4CI) *（多次抽选时必定崩溃）* ｜[NamePicker x Class-Widgets](https://github.com/NamePickerOrg/NamePicker4CW) *（二者均已上架对应插件市场）*
 
 </div>
 
@@ -33,7 +33,11 @@ GitHub仓库：[https://github.com/NamePickerOrg/NamePicker](https://github.com/
     ```
 - [x] 特殊点名规则
 - [x] 支持非二元性别
+- [X] 同时抽选多个
+- [X] 悬浮窗（点击展开主界面）
 - [ ] 概率内定
-- [ ] 悬浮窗（点击展开主界面）
 - [ ] 软件内更新
-- [ ] 同时抽选多个
+- [ ] 播报抽选结果
+- [ ] 手机遥控抽选
+
+> 改用 PyQt（工作量约等于重写，作者大概率会拖到中考后，小概率直接忽视）

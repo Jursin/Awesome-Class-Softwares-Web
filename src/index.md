@@ -17,6 +17,10 @@ actions:
     link: ./content/foreword.md
     type: primary
 
+  - text: 文档仓库
+    icon: fab fa-github
+    link: https://github.com/Jursin/Awesome-Class-Softwares
+
   - text: GitHub 仓库
     icon: fab fa-github
     link: https://github.com/Jursin/Awesome-Class-Softwares-Web
