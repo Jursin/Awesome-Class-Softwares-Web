@@ -237,6 +237,16 @@ export const zhSidebar = sidebar({
         "get-started.md",
       ],
     },
+    {
+      prefix: "lemonxnote/",
+      text: "LemonxNote",
+      link: "lemonxnote/index.md",
+      collapsible: true,
+      expanded: true,
+      children: [
+        "get-started.md",
+      ],
+    },
   ],
   "/downloader/": [
     {

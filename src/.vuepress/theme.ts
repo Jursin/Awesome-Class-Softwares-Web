@@ -60,6 +60,7 @@ export default hopeTheme({
   pure: false,
   // 在这里配置主题提供的插件
   plugins: {
+    blog: true,
     catalog: true,
     comment: {
       provider: "Giscus",
