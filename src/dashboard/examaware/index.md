@@ -1,7 +1,6 @@
 ---
 title: ExamAware
-icon: 
-category:
+tag:
   - ExamAware
 ---
 
