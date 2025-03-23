@@ -20,7 +20,7 @@ GitHub仓库：[https://github.com/EnderWolf006/HomeworkBoard](https://github.co
 </div>
 
 ::: note
-该项作者已停更，建议使用 Classworks 。
+该项作者已停更，建议使用 [Classworks](/dashboard/classworks/) 。
 :::
 
 ## 功能

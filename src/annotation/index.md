@@ -15,3 +15,5 @@ icon: pen
   - <i class="fa-solid fa-signs-post"></i> [快速开始](/annotation/inkeys/get-started.md)
 - <img src="./inkways-classic/images/inkways_classic.png" width="20" height="20"/> [Inkways-Classic](/annotation/inkways-classic/index.md)
   - <i class="fa-solid fa-signs-post"></i> [快速开始](/annotation/inkways-classic/get-started.md)
+- <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/lh11117/LemonxNote/main/lemonxnote.ico" width="20" height="20"/> [LemonxNote](/annotation/lemonxnote/index.md)
+  - <i class="fa-solid fa-signs-post"></i> [快速开始](/annotation/lemonxnote/get-started.md)

@@ -29,12 +29,12 @@ category:
 
 - 将图片放置在仓库文件中
 
-    插入图片时请尽量直接将源文件插入到仓库文件中，不使用额外的 CDN / 图床承载图片，以便发布文档时自动将图片等文件打包到 GitHub Pages 上。插入的图片请放置在 `(文档目录)/image/(文档文件名)`下，例如：
+    插入图片时请尽量直接将源文件插入到仓库文件中，不使用额外的 CDN / 图床承载图片，以便发布文档时自动将图片等文件打包到 GitHub Pages 上。插入的图片请放置在 `(文档目录)/images/(文档文件名)`下，例如：
 
     ``` plaintext
     example-doc.md
     example-doc-2.md
-    image/
+    images/
         |- example-doc/
         |   |- image1.png
         |   |- image2.png

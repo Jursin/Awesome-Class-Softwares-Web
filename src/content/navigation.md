@@ -40,6 +40,7 @@ category:
 | <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/SketchNow/SketchNow.WPF/main/SketchNow/Resources/AppIcon.ico" width="20" height="20"/> [SketchNow](/annotation/sketchnow/index.md) | <img src="https://avatars.githubusercontent.com/u/181708430?s=200&v=4" width="20" height="20"/> [`SketchNow`](https://github.com/SketchNow) <img src="https://avatars.githubusercontent.com/u/172874642?v=4" width="20" height="20"/> [`realybin`](https://github.com/realybin) |
 | <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/Alan-CRL/Inkeys/main/GithubRes/logo.png" width="20" height="20"/> [智绘教Inkeys](/annotation/inkeys/index.md) | <img src="https://avatars.githubusercontent.com/u/92425617?v=4" width="20" height="20"/> [`Alan-CRL`](https://github.com/Alan-CRL) |
 | <img src="../annotation/inkways-classic/images/inkways_classic.png" width="20" height="20"/> [Inkways-Classic](/annotation/inkways-classic/index.md) | <img src="../annotation/inkways-classic/images/inkore_badge.png" width="20" height="20"/> [`iNKORE Studios`](https://github.com/iNKORE-NET) |
+| <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/lh11117/LemonxNote/main/lemonxnote.ico" width="20" height="20"/> [LemonxNote](/annotation/lemonxnote/index.md) | <img src="https://avatars.githubusercontent.com/u/99455215?v=4" width="20" height="20"/> [`lh11117`](https://github.com/lh11117) |
 
 ## <i class="fa-solid fa-download"></i> [下载类](/downloader/index.md)
 
