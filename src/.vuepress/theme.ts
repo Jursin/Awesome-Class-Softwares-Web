@@ -28,7 +28,8 @@ export default hopeTheme({
   
   displayFooter: true,
   copyright: false,
-  
+  fullscreen: true,
+  print: true,
   locales: {
     "/": {
       // navbar
