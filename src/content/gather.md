@@ -36,7 +36,7 @@ category:
 | [HomeworkBoard](https://github.com/EnderWolf006/HomeworkBoard) | | [951996041](https://qm.qq.com/q/9nRFURLYJ2)*（与 `ElectronClassSchedule` 同群）*| | |
 | [Ink-Canvas](https://github.com/WXRIW/Ink-Canvas) | | [891913576](https://jq.qq.com/?_wv=1027&k=NvlM1Rgg) | | |
 | [Ink-Canvas-Artistry](https://github.com/ChangSakura/Ink-Canvas) | | [617707731](https://qm.qq.com/q/AC777tzmEw) | | |
-| [InkCanvasForClass](https://github.com/InkCanvas/InkCanvasForClass) | | [195404368](https://qm.qq.com/q/9OCaHHfh7O)*（非官方交流群）* | | |
+| [InkCanvasForClass](https://github.com/InkCanvas/InkCanvasForClass) | | [1046602129](https://qm.qq.com/q/w7v2ZSfWfI)<br/>[195404368](https://qm.qq.com/q/9OCaHHfh7O)*（非官方交流群）* | | |
 | [Inkeys](https://github.com/Alan-CRL/Inkeys) | [BV1Tz421z72e](https://www.bilibili.com/video/BV1Tz421z72e) | [618720802](https://qm.qq.com/q/iEDzSL0Wn) | | |
 | [Inkways-Classic](https://github.com/iNKORE-NET/Inkways) | | [655979143](https://qm.qq.com/q/wzFUnRBF9C)| [1nkoreStudios](https://pd.qq.com/s/g3o1pmidm)| [![Telegram](https://img.shields.io/badge/-Telegram%EF%BD%9C@iNKORE_Studios-blue?style=flat&logo=Telegram)](https://t.me/iNKORE)<br/>[![Facebook](https://img.shields.io/badge/-Facebook%EF%BD%9C@iNKORE_Studios-blue?style=flat&logo=Facebook)](https://www.facebook.com/iNKORE.NET)<br/>[![X](https://img.shields.io/badge/-X%EF%BD%9C@iNKORE_NET-black?style=flat&logo=X)](https://x.com/iNKORE_NET)<br/>[![Discord](https://img.shields.io/badge/-Discord%EF%BD%9Cm6NPNVk4bs-white?style=flat&logo=Discord)](https://discord.com/invite/m6NPNVk4bs) |
 | [SectionIstool](https://github.com/SectionIstool/SectionIstool) | | [833875216](https://qm.qq.com/q/ASRSNUJuve) | | |
