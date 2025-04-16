@@ -8,7 +8,7 @@
 
 </div>
 
-这是 [Awesome-Class-Softwares-Web-Web](https://github.com/Jursin/Awesome-Class-Softwares-Web) 仓库，本站基于 [VuePress](https://vuejs.press/) 搭建，使用 [VuePress Theme Hope](https://theme-hope.vuejs.press/zh/) 主题
+本站内容从 [Awesome-Class-Softwares](https://github.com/Jursin/Awesome-Class-Softwares) 仓库迁移而来，基于 [VuePress](https://vuejs.press/) 搭建，使用 [VuePressThemeHope](https://theme-hope.vuejs.press/zh/) 主题
 
 [查看在线网站](https://jursin.github.io/Awesome-Class-Softwares-Web)
 
