@@ -35,6 +35,7 @@ category:
 | [Sticky-attention](https://github.com/Sticky-attention/Sticky-attention) | [BV1YJ4Fe5EgD](https://www.bilibili.com/video/BV1YJ4Fe5EgD) | [680019081](https://qm.qq.com/q/neHPnfBSJq) | | |
 | [HomeworkBoard](https://github.com/EnderWolf006/HomeworkBoard) | | [951996041](https://qm.qq.com/q/9nRFURLYJ2)*（与 `ElectronClassSchedule` 同群）*| | |
 | [Ink-Canvas](https://github.com/WXRIW/Ink-Canvas) | | [891913576](https://jq.qq.com/?_wv=1027&k=NvlM1Rgg) | | |
+| [Ink-Canvas-Plus](https://github.com/clover-yan/Ink-Canvas-Plus) | | [996760298](https://qm.qq.com/q/yVzprKLfbi) | | |
 | [Ink-Canvas-Artistry](https://github.com/ChangSakura/Ink-Canvas) | | [617707731](https://qm.qq.com/q/AC777tzmEw) | | |
 | [InkCanvasForClass](https://github.com/InkCanvas/InkCanvasForClass) | | [1046602129](https://qm.qq.com/q/w7v2ZSfWfI)<br/>[195404368](https://qm.qq.com/q/9OCaHHfh7O)*（非官方交流群）* | | |
 | [Inkeys](https://github.com/Alan-CRL/Inkeys) | [BV1Tz421z72e](https://www.bilibili.com/video/BV1Tz421z72e) | [618720802](https://qm.qq.com/q/iEDzSL0Wn) | | |

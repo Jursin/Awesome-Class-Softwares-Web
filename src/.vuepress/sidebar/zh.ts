@@ -188,6 +188,16 @@ export const zhSidebar = sidebar({
       ],
     },
     {
+      prefix: "ink-canvas-plus/",
+      text: "Ink-Canvas-Plus",
+      link: "ink-canvas-plus/index.md",
+      collapsible: true,
+      expanded: true,
+      children: [
+        "get-started.md",
+      ],
+    },
+    {
       prefix: "ink-canvas-artistry/",
       text: "Ink-Canvas-Artistry",
       link: "ink-canvas-artistry/index.md",

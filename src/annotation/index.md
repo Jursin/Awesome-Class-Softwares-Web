@@ -5,6 +5,8 @@ icon: pen
 
 - <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/WXRIW/Ink-Canvas/master/Ink%20Canvas/Resources/InkCanvas.png" width="20" height="20"/> [Ink-Canvas](/annotation/ink-canvas/index.md)
   - <i class="fa-solid fa-signs-post"></i> [快速开始](/annotation/ink-canvas/get-started.md)
+- <img src="https://raw.githubusercontent.com/clover-yan/Ink-Canvas-Plus/refs/heads/master/Ink%20Canvas/Resources/InkCanvas.png" width="20" height="20"/> [Ink-Canvas-Plus](/annotation/ink-canvas-plus/index.md)
+  - <i class="fa-solid fa-signs-post"></i> [快速开始](/annotation/ink-canvas-plus/get-started.md)
 - <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/ChangSakura/Ink-Canvas/master/Images/Ink%20Canvas%20Artistry.png" width="20" height="20"/> [Ink-Canvas-Artistry](/annotation/ink-canvas-artistry/index.md)
   - <i class="fa-solid fa-signs-post"></i> [快速开始](/annotation/ink-canvas-artistry/get-started.md)
 - <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/InkCanvas/InkCanvasForClass/master/InkCanvasForClass/icc.png" width="20" height="20"/> [InkCanvasForClass](/annotation/inkcanvasforclass/index.md)
