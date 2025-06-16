@@ -301,5 +301,15 @@ export const zhSidebar = sidebar({
         "get-started.md",
       ],
     },
+    {
+      prefix: "secrandom/",
+      text: "SecRandom",
+      link: "secrandom/index.md",
+      collapsible: true,
+      expanded: true,
+      children: [
+        "get-started.md",
+      ],
+    },
   ],
 });

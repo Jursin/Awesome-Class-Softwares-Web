@@ -10,7 +10,7 @@
 
 本站内容从 [Awesome-Class-Softwares](https://github.com/Jursin/Awesome-Class-Softwares) 仓库迁移而来，基于 [VuePress](https://vuejs.press/) 搭建，使用 [VuePressThemeHope](https://theme-hope.vuejs.press/zh/) 主题
 
-[查看在线网站](https://jursin.github.io/Awesome-Class-Softwares-Web)
+## [查看在线网站](https://jursin.github.io/Awesome-Class-Softwares-Web)
 
 ## 开始编写文档
 
@@ -27,7 +27,7 @@
     pnpm run docs:dev
     ```
 
-5. 在浏览器中访问终端输出的链接（默认是[http://localhost:8080](http://localhost:8080)），即可浏览文档。当本地文档做出更改时，浏览器中的文档将自动刷新。
+5. 在浏览器中访问终端输出的链接（默认是[http://localhost:8080](http://localhost:8080)）即可浏览文档。当本地文档做出更改时，浏览器中的文档将自动刷新。
 
 ## 常用命令
 | 命令 | 作用 |
@@ -38,10 +38,11 @@
 | `pnpm run docs:update-package` | 更新 VuePress 和相关依赖包 |
 | `pnpm run export-pdf` | 将文档导出为 PDF 文件 |
 
-本文档使用了 vuepress-plugin-md-enhance
+> [!tip]
+> 本文档使用了 vuepress-plugin-md-enhance
  的一些扩展语法，请尽量直接编辑 Markdown 文件，而不是使用可视化 Markdown 编辑器。建议使用 [Visual Studio Code](https://code.visualstudio.com/) 编辑文档。
-
-关于 VuePress 和 vuepress-plugin-md-enhance
+>
+> 关于 VuePress 和 vuepress-plugin-md-enhance
  的用法，请参见 [VuePress 文档](https://vuejs.press/) 和 [vuepress-plugin-md-enhance 文档](https://plugin-md-enhance.vuejs.press/zh/)。
 
 ## 做出贡献

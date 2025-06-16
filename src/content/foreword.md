@@ -26,9 +26,3 @@ category:
 ::: info 👋同类项目
 [![Awesome-Iwb/Awesome-Iwb](https://github-readme-stats.vercel.app/api/pin/?username=Awesome-Iwb&repo=Awesome-Iwb&show_owner=true)](https://github.com/Awesome-Iwb/Awesome-Iwb)
 :::
-
-::: details
-本站基本内容迁移至原 [Awesome-Class-Softwares 仓库](https://github.com/Jursin/Awesome-Class-Softwares)。因本人能力有限，在编写过程中，难免会遇到一些配置问题，因而耽误一些时间，只能尽量将精力放在文档本身。
-
-高考将至，时间精力有限，只能抽出些许零碎时间。在完成网站主体部分后，将不再添加更多内容，不过会审核并合并 `Pull Requests` 。计划在高考结束后重建本文档站，并收集更多软件。
-:::
