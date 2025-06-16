@@ -14,7 +14,7 @@ icon: chalkboard
     ◦ <i class="fa-solid fa-signs-post"></i> [快速开始](/dashboard/examaware/examcloudschedule/get-started.md)
 - <img src="https://avatars.githubusercontent.com/u/183182916?s=200&v=4" width="20" height="20"/> [Sticky-attention](/dashboard/sticky-attention/index.md)
   - <i class="fa-solid fa-signs-post"></i> [快速开始](/dashboard/sticky-attention/get-started.md)
-- <img src="https://gh.llkk.cc/https://raw.githubusercontent.com/EnderWolf006/HomeworkBoard/main/ClientProject/public/vite.svg" width="20" height="20"/> [HomeworkBoard](/dashboard/homeworkboard/index.md)
+- <img src="https://raw.githubusercontent.com/EnderWolf006/HomeworkBoard/main/ClientProject/public/vite.svg" width="20" height="20"/> [HomeworkBoard](/dashboard/homeworkboard/index.md)
   - <i class="fa-solid fa-signs-post"></i> [快速开始](/dashboard/homeworkboard/get-started.md)
 - <img src="https://zerocat.houlangs.com/favicon.png" width="20" height="20"/> [Classworks](/dashboard/classworks/index.md)
   - <i class="fa-solid fa-signs-post"></i> [快速开始](/dashboard/classworks/get-started.md)

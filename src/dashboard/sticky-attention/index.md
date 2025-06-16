@@ -7,7 +7,7 @@ category:
 
 <div align="center">
 
-![banner](https://gh.llkk.cc/https://raw.githubusercontent.com/Sticky-attention/Sticky-attention/master/image/banner.jpg)
+![banner](https://raw.githubusercontent.com/Sticky-attention/Sticky-attention/master/image/banner.jpg)
 
 ![主界面](images/main-interface.png)
 ![面板](images/faceplate.png)

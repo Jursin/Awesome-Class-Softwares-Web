@@ -7,7 +7,7 @@ category:
 
 <div align="center">
 
-![Banner](https://gh.llkk.cc/https://raw.githubusercontent.com/Class-Widgets/Class-Widgets/main/img%2FBanner.png)
+![Banner](https://raw.githubusercontent.com/Class-Widgets/Class-Widgets/main/img%2FBanner.png)
 
 [![stars](https://img.shields.io/github/stars/Class-Widgets/Class-Widgets?label=Stars)](https://github.com/Class-Widgets/Class-Widgets) [![forks](https://img.shields.io/github/forks/Class-Widgets/Class-Widgets?label=Forks)](https://github.com/Class-Widgets/Class-Widgets) [![Watchers](https://img.shields.io/github/watchers/Class-Widgets/Class-Widgets?style=social)](https://github.com/Class-Widgets/Class-Widgets/watchers) [![Downloads](https://img.shields.io/github/downloads/Class-Widgets/Class-Widgets/total?style=social&label=Downloads&logo=github)](https://github.com/Class-Widgets/Class-Widgets/releases/latest) [![GitHub Issues](https://img.shields.io/github/issues-search/Class-Widgets/Class-Widgets?query=is%3Aopen&style=flat&logo=github&label=Issues&color=%233fb950)](https://github.com/Class-Widgets/Class-Widgets/issues) [![GitHub Discussions](https://img.shields.io/github/discussions/Class-Widgets/Class-Widgets?style=flat&logo=Github&label=Discussions)](https://github.com/Class-Widgets/Class-Widgets/discussions) [![Release](https://img.shields.io/github/v/release/Class-Widgets/Class-Widgets?style=flat&color=%233fb950&label=正式版)](https://github.com/Class-Widgets/Class-Widgets/releases/latest)  [![Beta](https://img.shields.io/github/v/release/Class-Widgets/Class-Widgets?include_prereleases&style=flat&label=测试版)](https://github.com/Class-Widgets/Class-Widgets/releases) [![Created At](https://img.shields.io/github/created-at/Class-Widgets/Class-Widgets)](https://github.com/Class-Widgets/Class-Widgets) [![Github Last Commit](https://img.shields.io/github/last-commit/Class-Widgets/Class-Widgets)](https://github.com/Class-Widgets/Class-Widgets/commits/main/) ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat) [![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg "LICENSE")](https://github.com/Class-Widgets/Class-Widgets/blob/main/LICENSE) [![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C169200380-blue?style=flat&logo=QQ)](https://qm.qq.com/q/EuDtwzURQA) [![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C698599898%EF%BC%882%E7%BE%A4%EF%BC%89-blue?style=flat&logo=QQ)](https://qm.qq.com/q/qSnRH8ycWQ) [![Discord](https://img.shields.io/badge/-Discord%EF%BD%9CxT7v7FGZ-white?style=flat&logo=Discord)](https://discord.gg/xT7v7FGZ)
 
@@ -19,7 +19,7 @@ GitHub仓库：[https://github.com/Class-Widgets/Class-Widgets](https://github.c
   name="Class-Widgets 官网"
   desc="全新桌面课表"
   url="https://classwidgets.rinlit.cn/"
-  logo="https://gh.llkk.cc/https://raw.githubusercontent.com/Class-Widgets/Class-Widgets/main/img/Logo.png"
+  logo="https://raw.githubusercontent.com/Class-Widgets/Class-Widgets/main/img/Logo.png"
   repo="https://github.com/Class-Widgets/Class-Widgets"
   preview="https://classwidgets.rinlit.cn/assets/img/banner.png"
 />

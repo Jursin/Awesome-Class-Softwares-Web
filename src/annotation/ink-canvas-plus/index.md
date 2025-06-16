@@ -17,8 +17,6 @@ Ink Canvas Plus (IC+) 是一款由 Clover Yan 维护、复刻自 WXRIW/Ink Canva
 
 GitHub仓库：[https://github.com/clover-yan/Ink-Canvas-Plus](https://github.com/clover-yan/Ink-Canvas-Plus) 
 
-</div>
-
 <SiteInfo
   name="Ink-Canvas-Plus 官网"
   desc="一款画板应用"
@@ -27,6 +25,8 @@ GitHub仓库：[https://github.com/clover-yan/Ink-Canvas-Plus](https://github.co
   repo="https://github.com/clover-yan/Ink-Canvas-Plus"
   preview=""
 />
+
+</div>
 
 ## 模式
 - 幻灯片模式

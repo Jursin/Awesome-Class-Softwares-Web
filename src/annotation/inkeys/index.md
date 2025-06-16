@@ -7,7 +7,7 @@ category:
 
 <div align="center">
 
-![cover](https://gh.llkk.cc/https://raw.githubusercontent.com/Alan-CRL/Inkeys/main/GithubRes/cover2.png)
+![cover](https://raw.githubusercontent.com/Alan-CRL/Inkeys/main/GithubRes/cover2.png)
 
 [![stars](https://img.shields.io/github/stars/Alan-CRL/Inkeys?label=Stars)](https://github.com/Alan-CRL/Inkeys) [![forks](https://img.shields.io/github/forks/Alan-CRL/Inkeys?label=Forks)](https://github.com/Alan-CRL/Inkeys) [![Watchers](https://img.shields.io/github/watchers/Alan-CRL/Inkeys?style=social)](https://github.com/Alan-CRL/Inkeys/watchers) [![Downloads](https://img.shields.io/github/downloads/Alan-CRL/Inkeys/total?style=social&label=Downloads&logo=github)](https://github.com/Alan-CRL/Inkeys/releases/latest) [![GitHub Issues](https://img.shields.io/github/issues-search/Alan-CRL/Inkeys?query=is%3Aopen&style=flat&logo=github&label=Issues&color=%233fb950)](https://github.com/Alan-CRL/Inkeys/issues) [![GitHub Discussions](https://img.shields.io/github/discussions/Alan-CRL/Inkeys?style=flat&logo=Github&label=Discussions)](https://github.com/Alan-CRL/Inkeys/discussions) [![Release](https://img.shields.io/github/v/release/Alan-CRL/Inkeys?style=flat&color=%233fb950&label=正式版)](https://github.com/Alan-CRL/Inkeys/releases/latest) [![Created At](https://img.shields.io/github/created-at/Alan-CRL/Inkeys)](https://github.com/Alan-CRL/Inkeys) [![Github Last Commit](https://img.shields.io/github/last-commit/Alan-CRL/Inkeys)](https://github.com/Alan-CRL/Inkeys/commits/main) ![C++](https://img.shields.io/badge/C%2B%2B-00599C?logo=c%2B%2B&logoColor=white&style=flat) [![LICENSE](https://img.shields.io/badge/License-GPL--3.0-red.svg "LICENSE")](https://github.com/Alan-CRL/Inkeys/blob/main/LICENSE) [![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C618720802-blue?style=flat&logo=QQ)](https://qm.qq.com/q/iEDzSL0Wn) [![bilibili](https://img.shields.io/badge/-UP%E4%B8%BB%EF%BD%9Calan--CRL-%23FB7299?style=flat&logo=bilibili)](https://space.bilibili.com/1330313497)
 
@@ -19,9 +19,9 @@ GitHub仓库：[https://github.com/Alan-CRL/Inkeys](https://github.com/Alan-CRL/
 
 <SiteInfo
   name="智绘教Inkeys 官网"
-  desc="网站正在建设中"
+  desc="使用 VitePress 搭建"
   url="https://www.inkeys.top/"
-  logo="https://gh.llkk.cc/https://raw.githubusercontent.com/Alan-CRL/Inkeys/main/GithubRes/logo.png"
+  logo="https://raw.githubusercontent.com/Alan-CRL/Inkeys/main/GithubRes/logo.png"
   repo="https://github.com/Alan-CRL/Inkeys"
   preview="images/inkeys.png"
 />

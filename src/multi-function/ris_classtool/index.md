@@ -21,7 +21,7 @@ GitHub仓库：[https://github.com/Ris-Soft/Ris_ClassTool](https://github.com/Ri
   name="Ris_ClassTool 下载站"
   desc="智慧教育，触手可及。"
   url="https://app.3r60.top/Ris_ClassTool"
-  logo="https://gh.llkk.cc/https://raw.githubusercontent.com/Ris-Soft/Ris_ClassTool/master/Main/logo.png"
+  logo="https://raw.githubusercontent.com/Ris-Soft/Ris_ClassTool/master/Main/logo.png"
   repo="https://github.com/Ris-Soft/Ris_ClassTool"
   preview="https://github.com/user-attachments/assets/c7c2b95a-22cb-4763-8f37-6cb6db603918"
 />

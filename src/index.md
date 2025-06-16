@@ -33,7 +33,7 @@ features:
   - text: 链接聚合
     icon: link
     link: ./content/gather.md
-    details: 软件仓库、bilibili视频、QQ群、QQ频道、Telegram、Discord、Facebook、X等链接聚合
+    details: 软件仓库、bilibili视频、QQ群、QQ频道、Telegram、Discord、Facebook、X 等链接聚合
   
   - text: 详细展示
     icon: info-circle
