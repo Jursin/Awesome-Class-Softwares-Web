@@ -45,7 +45,7 @@ features:
     
 ---
 
-欢迎来到 Awesome-Class-Softwares 网站（以下简称“本站”）。
+欢迎来到 Awesome-Class-Softwares 网站，在这里汇集了适用于班级一体机的各种优质软件，快来体验吧，记得给心爱的项目 Star 哦 🌟
 
 ## 目录
 

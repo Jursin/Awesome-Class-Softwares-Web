@@ -198,6 +198,6 @@ category:
 
 支持通过静态配置文件或集控服务器部署，统一管理档案配置、应用策略等，提高管理多个实例的便利性
 
-- [官方集控服务器](https://github.com/ClassIsland/ManagementServer)***（🚧开发中，即将发布）***
+- [官方集控服务器](https://github.com/ClassIsland/ManagementServer)***（🚧开发中）***
 - [基于 Python 的第三方集控服务器](https://github.com/kaokao221/ClassIslandManagementServer.py)
 - [开始使用](https://docs.classisland.tech/management/#%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8)
