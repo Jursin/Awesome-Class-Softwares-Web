@@ -53,6 +53,16 @@ export const zhSidebar = sidebar({
       ],
     },
     {
+      prefix: "lingyun-class-widgets/",
+      text: "LingYun-Class-Widgets",
+      link: "lingyun-class-widgets/index.md",
+      collapsible: true,
+      expanded: true,
+      children: [
+        "get-started.md",
+      ],
+    },
+    {
       prefix: "electronclassschedule/",
       text: "ElectronClassSchedule",
       link: "electronclassschedule/index.md",
