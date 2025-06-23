@@ -27,12 +27,15 @@ category:
 以上二次开发仓库均已存档。
 :::
 
-::: important
-- [icc-ce](https://github.com/awesome-iwb/icc-ce)是在 `icc-20240610-stable` 基础上二次开发的又一个版本，目前仍在积极维护
-:::
+## <Badge text="社区版本" type="tip" vertical="middle" /> [InkCanvasForClass Community Edition](https://github.com/InkCanvasForClass/community)
+在 [`icc-20240610-stable`](https://github.com/Awesome-Iwb/icc-20240610-stable) 基础上二次开发的又一个版本，目前仍在积极维护
 
-::: details
-发生了什么？
+[![stars](https://img.shields.io/github/stars/InkCanvasForClass/community?label=Stars)](https://github.com/InkCanvasForClass/community) [![forks](https://img.shields.io/github/forks/InkCanvasForClass/community?label=Forks)](https://github.com/InkCanvasForClass/community) [![Watchers](https://img.shields.io/github/watchers/InkCanvasForClass/community?style=social)](https://github.com/InkCanvasForClass/community/watchers) [![Downloads](https://img.shields.io/github/downloads/InkCanvasForClass/community/total?style=social&label=Downloads&logo=github)](https://github.com/InkCanvasForClass/community/releases/latest) [![GitHub Issues](https://img.shields.io/github/issues-search/InkCanvasForClass/community?query=is%3Aopen&style=flat&logo=github&label=Issues&color=%233fb950)](https://github.com/InkCanvasForClass/community/issues) [![Release](https://img.shields.io/github/v/release/InkCanvasForClass/community?style=flat&color=%233fb950&label=正式版)](https://github.com/InkCanvasForClass/community/releases/latest) [![Created At](https://img.shields.io/github/created-at/InkCanvasForClass/community)](https://github.com/InkCanvasForClass/community) [![Github Last Commit](https://img.shields.io/github/last-commit/InkCanvasForClass/community)](https://github.com/InkCanvasForClass/community/commits/master/) [![QQ群](https://img.shields.io/badge/-QQ%E7%BE%A4%EF%BD%9C1054377349-blue?style=flat&logo=QQ)](https://qm.qq.com/q/qo32AclNh6)
 
-详情请在相关 QQ 群询问…
+::: details 🤔发生了什么？
+由于众所周知的原因，[DotteringDoge471](https://github.com/DotteringDoge471) 不再积极负责 InkCanvasForClass 旧版本的开发与维护工作，而刚好 [CJKmkp](https://github,com/CJK-mkp) 又维护了这个社区版本的 InkCanvasForClass，经过沟通后这个社区版本就顺理成章地成为了 InkCanvasForClass 的官方版本。该分支版本 **目前还在开发之中** ，可能存在潜在的问题，请在出现问题后与当前开发者或与 [DotteringDoge471](https://github.com/DotteringDoge471) 反映，方便迅速诊断并解决问题。
+
+> ⚠️ 请注意：[DotteringDoge471](https://github.com/DotteringDoge471) 不积极负责 **社区版本** 的开发与维护工作，仅会在有空时为该项目开发新功能或修复 Bug。因此，对于任何问题反馈/功能建议等，请优先向该项目主要维护者 [CJKmkp](https://github,com/CJK-mkp) 反馈或在 GitHub 仓库内提 Issue！
+
+转自 [GitHub:InkCanvasForClass/community README](https://github.com/InkCanvasForClass/community?tab=readme-ov-file#-%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88)
 :::
