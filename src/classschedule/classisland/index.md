@@ -56,10 +56,6 @@ category:
 
 > 通过主题设置高度定制应用主界面外观（[**主题下载**](https://www.123912.com/s/0l7bVv-qHdAh)）
 
-::: note
-需要保证应用版本为 1.5.3.1 及以上，且安装 [`ClassIsland 主题加载器`](https://github.com/ClassIsland/ClassIsland.ThemeLoader) 插件
-:::
-
 ![Class-Widgests](images/classwidgets.png)
     
 ![Fluent](images/fluent.png)

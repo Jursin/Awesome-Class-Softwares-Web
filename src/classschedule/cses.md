@@ -27,7 +27,7 @@ GitHub 仓库：[https://github.com/SmartTeachCN/CsesWebEditor](https://github.c
 - 🖥️ 浅色主题界面
 - 📋 快捷键操作支持
 
-## 快速开始
+## <i class="fa-solid fa-signs-post"></i> 快速开始
 
 1. 使用浏览器打开文件 `csesEditor.html`
 2. 通过左侧导航切换功能：
