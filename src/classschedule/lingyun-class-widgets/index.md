@@ -18,7 +18,7 @@ GitHub仓库：[https://github.com/Yamikani-Flipped/LingYun-Class-Widgets](https
 <SiteInfo
   name="LingYun-Class-Widgets 官网"
   desc="临时官网，建设中"
-  url="https://lingyun-6e2.pages.dev/)"
+  url="https://lingyun-6e2.pages.dev/"
   logo="https://raw.githubusercontent.com/Yamikani-Flipped/LingYun-Class-Widgets/main/LINGYUN.ico"
   repo="https://github.com/Yamikani-Flipped/LingYun-Class-Widgets"
   preview=""

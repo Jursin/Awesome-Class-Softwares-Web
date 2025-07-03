@@ -9,6 +9,7 @@ category:
 
 | 软件 | 组织/开发者 |
 | - | - |
+| [CsesWebEditor](/classschedule/cses.md) |  <img src="https://avatars.githubusercontent.com/u/197048605?s=200&v=4" width="20" height="20"> [`SmartTeachCN`](https://github.com/SmartTeachCN) <img src="https://avatars.githubusercontent.com/u/104706823?v=4" width="20" height="20"> [`PYLXU`](https://github.com/PYLXU) |
 | <img src="https://raw.githubusercontent.com/ClassIsland/ClassIsland/master/ClassIsland/Assets/AppLogo_AppLogo.svg" width="20" height="20"> [ClassIsland](/classschedule/classisland/index.md) |  <img src="https://avatars.githubusercontent.com/u/170740237?s=200&v=4" width="20" height="20"> [`ClassIsland`](https://github.com/ClassIsland) <img src="https://avatars.githubusercontent.com/u/55006226?v=4" width="20" height="20"> [`HelloWRC`](https://github.com/HelloWRC) |
 | <img src="https://raw.githubusercontent.com/Class-Widgets/Class-Widgets/main/img/Logo.png" width="20" height="20">[Class-Widgets](/classschedule/class-widgets/index.md) | <img src="https://avatars.githubusercontent.com/u/189744676?s=200&v=4" width="20" height="20"> [`Class-Widgets`](https://github.com/Class-Widgets) <img src="https://avatars.githubusercontent.com/u/177950371?v=4" width="20" height="20"> [`RinLit-233-shiroko`](https://github.com/RinLit-233-shiroko) |
 | <img src="https://raw.githubusercontent.com/Yamikani-Flipped/LingYun-Class-Widgets/main/LINGYUN.ico" width="20" height="20">[LingYun-Class-Widgets](/classschedule/lingyun-class-widgets/index.md) | <img src="https://avatars.githubusercontent.com/u/196129825?v=4" width="20" height="20"> [`Yamikani-Flipped`](https://github.com/Yamikani-Flipped) |
@@ -20,7 +21,7 @@ category:
 
 | 软件 | 组织/开发者 |
 | - | - |
-| <img src="https://raw.githubusercontent.com/Ris-Soft/Ris_ClassTool/master/Main/logo.png" width="20" height="20"> [Ris_ClassTool](/multi-function/ris_classtool/index.md) | <img src="https://avatars.githubusercontent.com/u/179907615?s=200&v=4" width="20" height="20"> [`Ris-Soft`](https://github.com/Ris-Soft) <img src="https://avatars.githubusercontent.com/u/104706823?v=4" width="20" height="20"> [`PYLXU`](https://github.com/PYLXU)|
+| <img src="https://raw.githubusercontent.com/Ris-Soft/Ris_ClassTool/refs/heads/RisClassTool_Alpha/Main/logo.png" width="20" height="20"> [Ris_ClassTool](/multi-function/ris_classtool/index.md) | <img src="https://avatars.githubusercontent.com/u/179907615?s=200&v=4" width="20" height="20"> [`Ris-Soft`](https://github.com/Ris-Soft) <img src="https://avatars.githubusercontent.com/u/104706823?v=4" width="20" height="20"> [`PYLXU`](https://github.com/PYLXU)|
 | <img src="https://raw.githubusercontent.com/STBBRD/ZongziTEK-Blackboard-Sticker/master/ZongziTEK_Blackboard_Sticker/%E9%BB%91%E6%9D%BF%E8%B4%B4.png" width="20" height="20"> [ZongziTEK黑板贴](/multi-function/zongzitek-blackboard-sticker/index.md) | <img src="https://avatars.githubusercontent.com/u/62409850?v=4" width="20" height="20"> [`STBBRD`](https://github.com/STBBRD) |
 
 ## <i class="fa-solid fa-chalkboard"></i> [看板类](/dashboard/index.md)

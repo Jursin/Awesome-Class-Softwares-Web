@@ -4,7 +4,9 @@ import theme from "./theme.js";
 
 export default defineUserConfig({
   base: "/Awesome-Class-Softwares-Web/",
-
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: 'https://theme-hope-assets.vuejs.press/logo.svg' }]
+  ],
   locales: {
     "/": {
       lang: "zh-CN",

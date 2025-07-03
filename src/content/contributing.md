@@ -52,7 +52,3 @@ category:
 您可以向本项目发起 [Pull Request](https://github.com/Jursin/Awesome-Class-Softwares-Web/pulls) 并简要地描述您的更改，等待审核后合并。
 
 更改合并以后，您可以在 [在线文档](https://jursin.github.io/Awesome-Class-Softwares-Web/) 中看到您的更改。
-
-## 还有疑问？
-
-您可以和 <img src="https://cdn.deepseek.com/chat/icon.png" width="20" height="20"/> [DeepSeek](https://chat.deepseek.com/) 对话获得更多解答。
