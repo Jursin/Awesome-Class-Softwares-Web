@@ -23,6 +23,7 @@ category:
 | - | - |
 | <img src="https://raw.githubusercontent.com/Ris-Soft/Ris_ClassTool/refs/heads/RisClassTool_Alpha/Main/logo.png" width="20" height="20"> [Ris_ClassTool](/multi-function/ris_classtool/index.md) | <img src="https://avatars.githubusercontent.com/u/179907615?s=200&v=4" width="20" height="20"> [`Ris-Soft`](https://github.com/Ris-Soft) <img src="https://avatars.githubusercontent.com/u/104706823?v=4" width="20" height="20"> [`PYLXU`](https://github.com/PYLXU)|
 | <img src="https://raw.githubusercontent.com/STBBRD/ZongziTEK-Blackboard-Sticker/master/ZongziTEK_Blackboard_Sticker/%E9%BB%91%E6%9D%BF%E8%B4%B4.png" width="20" height="20"> [ZongziTEK黑板贴](/multi-function/zongzitek-blackboard-sticker/index.md) | <img src="https://avatars.githubusercontent.com/u/62409850?v=4" width="20" height="20"> [`STBBRD`](https://github.com/STBBRD) |
+| <img src="https://github.com/Return-Log/Education-Clock/blob/master/icon/icon.PNG?raw=true" width="20" height="20"> [Education Clock](/multi-function/education-clock/index.md) | <img src="https://avatars.githubusercontent.com/u/101696633?v=4" width="20" height="20"> [`Return-Log`](https://github.com/Return-Log) |
 
 ## <i class="fa-solid fa-chalkboard"></i> [看板类](/dashboard/index.md)
 
@@ -32,6 +33,8 @@ category:
 | <img src="https://avatars.githubusercontent.com/u/183182916?s=200&v=4" width="20" height="20"> [Sticky-attention](/dashboard/sticky-attention/index.md) | <img src="https://avatars.githubusercontent.com/u/183182916?s=200&v=4" width="20" height="20"> [`Sticky-attention`](https://github.com/Sticky-attention) <img src="https://avatars.githubusercontent.com/u/162853646?v=4" width="20" height="20"> [`jizilin6732`](https://github.com/jizilin6732) |
 | <img src="https://raw.githubusercontent.com/EnderWolf006/HomeworkBoard/main/ClientProject/public/vite.svg" width="20" height="20"> [HomeworkBoard](/dashboard/homeworkboard/index.md) | <img src="https://avatars.githubusercontent.com/u/152008081?v=4" width="20" height="20"> [`EnderWolf006`](https://github.com/EnderWolf006) |
 | <img src="https://zerocat.houlangs.com/favicon.png" width="20" height="20"> [Classworks](/dashboard/classworks/index.md) | <img src="https://avatars.githubusercontent.com/u/203372263?s=200&v=4" width="20" height="20"> [`ClassworksDev`](https://github.com/ClassworksDev) <img src="https://avatars.githubusercontent.com/u/88357633?v=4" width="20" height="20"> [`SunWuyuan`](https://github.com/SunWuyuan) |
+| <img src="https://raw.githubusercontent.com/Candlest/ClassBoardSharp/refs/heads/main/Resources/icon.ico" width="20" height="20"> [ClassBoardSharp](/dashboard/classboardsharp/index.md) | <img src="https://avatars.githubusercontent.com/u/125652899?v=4" width="20" height="20"> [`Candlest`](https://githhttps://github.com/Candlest) |
+| <img src="https://raw.githubusercontent.com/cjhdevact/LockTime/refs/heads/main/Src/LockTime/Resources/appicon.png" width="20" height="20"> [LockTime](/dashboard/locktime/index.md) | <img src="https://avatars.githubusercontent.com/u/101956507?v=4" width="20" height="20"> [`cjhdevact`](https://github.com/cjhdevact) |
 
 ## <i class="fa-solid fa-pen"></i> [批注类](/annotation/index.md)
 
