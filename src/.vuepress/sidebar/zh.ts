@@ -104,6 +104,16 @@ export const zhSidebar = sidebar({
         "get-started.md",
       ],
     },
+      {
+      prefix: "education-clock/",
+      text: "Education-Clock",
+      link: "education-clock/index.md",
+      collapsible: true,
+      expanded: true,
+      children: [
+        "get-started.md",
+      ],
+    },
   ],
   "/dashboard/": [
     {
@@ -111,7 +121,7 @@ export const zhSidebar = sidebar({
       text: "ExamAware",
       link: "examaware/index.md",
       collapsible: true,
-      expanded: true,
+      expanded: false,
       children: [
         {
           prefix: "exam-showboard/",
@@ -179,6 +189,26 @@ export const zhSidebar = sidebar({
       prefix: "classworks/",
       text: "Classworks",
       link: "classworks/index.md",
+      collapsible: true,
+      expanded: true,
+      children: [
+        "get-started.md",
+      ],
+    },
+    {
+      prefix: "classboardsharp/",
+      text: "ClassBoardSharp",
+      link: "classboardsharp/index.md",
+      collapsible: true,
+      expanded: true,
+      children: [
+        "get-started.md",
+      ],
+    },
+        {
+      prefix: "locktime/",
+      text: "LockTime",
+      link: "locktime/index.md",
       collapsible: true,
       expanded: true,
       children: [

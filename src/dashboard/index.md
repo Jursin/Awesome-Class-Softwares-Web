@@ -18,3 +18,7 @@ icon: chalkboard
   - <i class="fa-solid fa-signs-post"></i> [快速开始](/dashboard/homeworkboard/get-started.md)
 - <img src="https://zerocat.houlangs.com/favicon.png" width="20" height="20"/> [Classworks](/dashboard/classworks/index.md)
   - <i class="fa-solid fa-signs-post"></i> [快速开始](/dashboard/classworks/get-started.md)
+- <img src="https://raw.githubusercontent.com/Candlest/ClassBoardSharp/refs/heads/main/Resources/icon.ico" width="20" height="20"/> [ClassBoardSharp](/dashboard/classboardsharp/index.md)
+  - <i class="fa-solid fa-signs-post"></i> [快速开始](/dashboard/classboardsharp/get-started.md)
+- <img src="https://raw.githubusercontent.com/cjhdevact/LockTime/refs/heads/main/Src/LockTime/Resources/appicon.png" width="20" height="20"/> [LockTime](/dashboard/locktime/index.md)
+  - <i class="fa-solid fa-signs-post"></i> [快速开始](/dashboard/locktime/get-started.md)
