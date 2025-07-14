@@ -3,7 +3,7 @@ import { searchProPlugin } from "vuepress-plugin-search-pro";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/Awesome-Class-Softwares-Web/",
+  base: "/",
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: 'https://theme-hope-assets.vuejs.press/logo.svg' }]
   ],
