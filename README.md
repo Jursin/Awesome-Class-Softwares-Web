@@ -10,8 +10,6 @@
 
 本站内容从 [Awesome-Class-Softwares](https://github.com/Jursin/Awesome-Class-Softwares) 仓库迁移而来，基于 [VuePress](https://vuejs.press/) 搭建，使用 [VuePressThemeHope](https://theme-hope.vuejs.press/zh/) 主题
 
-## [查看在线网站](https://jursin.github.io/Awesome-Class-Softwares-Web)
-
 ## 开始编写文档
 
 1. 安装 Node 20 环境（推荐使用NVM）
