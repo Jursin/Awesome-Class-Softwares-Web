@@ -1,5 +1,5 @@
 ---
-title: ElectronClassSchedule
+title: HomeworkBoard
 icon: 
 category:
   - 看板类

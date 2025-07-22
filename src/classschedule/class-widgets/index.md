@@ -30,7 +30,7 @@ GitHub仓库：[https://github.com/Class-Widgets/Class-Widgets](https://github.c
 
 <BiliBili bvid="BV1xwW9eyEGu" />
 ## 主界面
-![主界面](https://classwidgets.rinlit.cn/assets/intro/cw_layout_1.png)
+![主界面](https://classwidgets.rinlit.cn/_astro/desktop.W-gixhu7.png)
 
 ## 小组件
 以小组件形式显示：
@@ -71,7 +71,7 @@ GitHub仓库：[https://github.com/Class-Widgets/Class-Widgets](https://github.c
 
 ## 插件
 - 提供基于 Python 的插件系统，内置 `插件广场` ，便于安装插件以及个性化主题
-  ![插件](https://classwidgets.rinlit.cn/assets/intro/theme&plugin_1.png)
+  ![插件](https://classwidgets.rinlit.cn/_astro/personalization.x6z9Oegr.png)
   ![插件设置](images/插件设置.png)
   ![插件广场](images/插件广场.png)
 
@@ -82,14 +82,14 @@ GitHub仓库：[https://github.com/Class-Widgets/Class-Widgets](https://github.c
 
 @tab Windows 11
 
-![Windows 11](https://classwidgets.rinlit.cn/assets/img/screenshots/win.png)
+![Windows 11](https://classwidgets.rinlit.cn/_astro/win11.B04mGR57.webp)
     
 @tab Windows 7
 
-![Windows 7](https://classwidgets.rinlit.cn/assets/img/screenshots/win7.png)
+![Windows 7](https://classwidgets.rinlit.cn/_astro/win7.BMLvAuLT.webp)
 
 @tab Linux
 
-![Linux](https://classwidgets.rinlit.cn/assets/img/screenshots/linux.png)
+![Linux](https://classwidgets.rinlit.cn/_astro/linux.BFd0906F.webp)
 
 :::
