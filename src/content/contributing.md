@@ -13,8 +13,6 @@ category:
 - [Markdown](https://theme-hope.vuejs.press/zh/cookbook/markdown/)（包括 [YAML Frontmatter](https://theme-hope.vuejs.press/zh/cookbook/vuepress/page.html#frontmatter) 概念）
 - [VuePress 基础知识](https://theme-hope.vuejs.press/zh/cookbook/vuepress/)
 
-本文档目前托管在 [GitHub Pages](https://pages.github.com/) 上。
-
 ## 贡献准则
 
 - 使用小写文件名
