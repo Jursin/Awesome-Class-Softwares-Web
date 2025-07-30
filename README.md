@@ -10,6 +10,8 @@
 
 本站内容从 [Awesome-Class-Softwares](https://github.com/Jursin/Awesome-Class-Softwares) 仓库迁移而来，基于 [VuePress](https://vuejs.press/) 搭建，使用 [VuePressThemeHope](https://theme-hope.vuejs.press/zh/) 主题
 
+> 该主题配置较复杂，启动速度较慢，遂改用 [VitePress 搭建](https://github.com/Jursin/MyNav)，什么时候学明白了再重新用这搭建吧，目前只会更新过时信息
+
 ## 开始编写文档
 
 1. 安装 Node 20 环境（推荐使用NVM）
