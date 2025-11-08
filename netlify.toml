@@ -1,0 +1,9 @@
+# prevent Netlify npm install
+
+[build]
+publish = "docs/.vuepress/dist"
+command = "pnpm run docs:build"
+
+[build.environment]
+NODE_VERSION = "22"
+NPM_FLAGS = "--version"
