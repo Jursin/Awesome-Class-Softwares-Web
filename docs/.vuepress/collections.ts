@@ -2,14 +2,6 @@
 
 import { defineCollection, defineCollections } from 'vuepress-theme-plume'
 
-const Details = defineCollection({
-  type: 'doc',
-  dir: 'details',
-  linkPrefix: '/details/',
-  title: '详情',
-  sidebar: 'auto',
-});
-
 const Faq = defineCollection({
   type: 'post',
   dir: 'faq',
@@ -25,6 +17,5 @@ const Faq = defineCollection({
 })
 
 export default defineCollections([
-  Details,
-  Faq
+  Faq,
 ])

@@ -9,4 +9,5 @@ import { defineNavbarConfig } from 'vuepress-theme-plume'
 export default defineNavbarConfig([
   { text: '首页', link: '/' },
   { text: '问题', link: '/faq/' },
+  { text: '友链', link: '/friends' },
 ])

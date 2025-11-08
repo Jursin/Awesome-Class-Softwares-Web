@@ -18,12 +18,12 @@ import collections from './collections'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: 'https://theme-plume.vuejs.press/plume.png',
+  logo: '/Aiwb.png',
 
   appearance: true,  // 配置 深色模式
 
   social: [
-    { icon: 'github', link: '/' },
+    { icon: 'github', link: 'https://github.com/awesome-iwb/awesome-iwb' },
   ],
   // navbarSocialInclude: ['github'], // 允许显示在导航栏的 social 社交链接
   // aside: true, // 页内侧边栏， 默认显示在右侧
@@ -44,18 +44,6 @@ export default defineThemeConfig({
   //   message: 'Power by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
   //   copyright: '',
   // },
-
-  /**
-   * @see https://theme-plume.vuejs.press/config/basic/#profile
-   */
-  profile: {
-    avatar: 'https://theme-plume.vuejs.press/plume.png',
-    name: 'Aiwb',
-    description: '',
-    // circle: true,
-    // location: '',
-    // organization: '',
-  },
 
   navbar,
   collections,
