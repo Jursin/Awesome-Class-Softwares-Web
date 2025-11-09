@@ -63,6 +63,10 @@
   max-width: 1400px !important;
 }
 
+.vp-friend {
+  border-radius: 16px !important;
+}
+
 .friends-list {
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
 }
@@ -71,7 +75,7 @@
   width: auto;
   height: auto;
   padding: 8px;
-  border-radius: 8px !important;
+  border-radius: 16px !important;
   display: flex;
   align-items: center;
   justify-content: center;

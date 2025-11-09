@@ -159,7 +159,7 @@ onMounted(async () => {
 
   if (foundSoftware) {
     // 设置页面标题
-    document.title = `${foundSoftware.name} - 开发者导航站`
+    document.title = `Awesome Iwb - ${foundSoftware.name}`
 
     try {
         // 如果有GitHub仓库信息，则从API获取最新数据

@@ -3,7 +3,6 @@ title: Markdown
 tags:
   - markdown
 createTime: 2025/11/08 13:44:26
-permalink: /faq/lp0308a3/
 ---
 
 ## 标题H2
@@ -82,7 +81,7 @@ H~2~O
 
 [外部链接](https://github.com/pengzhanbo)
 
-![plume](/plume.svg)
+![Aiwb](/Aiwb.png)
 
 **Badge：**
 
@@ -342,7 +341,7 @@ const c = a + b
 
 **代码演示：**
 
-:::: demo title="常规示例" desc="一个常规示例"
+:::: demo-wrapper title="常规示例"
 
 ::: code-tabs
 @tab HTML
