@@ -73,13 +73,24 @@ const getTagSize = (tag) => {
   return `${baseSize - 2}px`
 }
 
+// 获取作者GitHub头像
+const getAuthorAvatar = (githubRepo, author) => {
+  // 尝试从githubRepo中提取用户名
+  if (githubRepo && githubRepo.includes('/')) {
+    const username = githubRepo.split('/')[0]
+    return `https://github.com/${username}.png?size=40`
+  }
+  // 如果无法从githubRepo中提取，使用默认头像
+  return `https://ui-avatars.com/api/?name=${encodeURIComponent(author || 'Unknown')}&background=random&size=40`
+}
+
 // 从GitHub API获取仓库详细信息
 const fetchRepoDetail = async (repoName) => {
   try {
     // 获取仓库基本信息
     const response = await fetch(`https://api.github.com/repos/${repoName}`)
     const data = await response.json()
-    
+
     // 从GitHub API获取所需字段
     const githubData = {
       stars: data.stargazers_count || 0,
@@ -89,19 +100,19 @@ const fetchRepoDetail = async (repoName) => {
       createdAt: data.created_at || '',
       updatedAt: data.updated_at || ''
     }
-    
+
     // 计算所有releases的所有assets下载量总和
     let downloads = '未知'
-    
+
     // 获取所有releases信息并计算总下载量
     try {
       const releasesResponse = await fetch(`https://api.github.com/repos/${repoName}/releases`)
       const releasesData = await releasesResponse.json()
-      
+
       if (releasesData && Array.isArray(releasesData) && releasesData.length > 0) {
         // 统计所有releases中所有assets的下载量总和
         let totalDownloads = 0;
-        
+
         for (const release of releasesData) {
           if (release && release.assets && Array.isArray(release.assets)) {
             for (const asset of release.assets) {
@@ -109,7 +120,7 @@ const fetchRepoDetail = async (repoName) => {
             }
           }
         }
-        
+
         if (totalDownloads > 0) {
           downloads = formatNumber(totalDownloads)
         } else if (githubData.stars > 0) {
@@ -120,7 +131,7 @@ const fetchRepoDetail = async (repoName) => {
     } catch (releaseError) {
       console.warn(`获取 ${repoName} 的releases信息失败:`, releaseError)
     }
-    
+
     return {
       githubData,
       language: githubData.language,
@@ -145,54 +156,54 @@ const fetchRepoDetail = async (repoName) => {
 onMounted(async () => {
   // 查找软件数据
   const foundSoftware = softwareList.find(item => item.id === softwareId.value)
-  
+
   if (foundSoftware) {
     // 设置页面标题
     document.title = `${foundSoftware.name} - 开发者导航站`
-    
+
     try {
-      // 如果有GitHub仓库信息，则从API获取最新数据
-      if (foundSoftware.githubRepo) {
-        const githubData = await fetchRepoDetail(foundSoftware.githubRepo)
-        // 使用API获取的字段覆盖本地数据
-        software.value = {
-          ...foundSoftware,
-          ...githubData
+        // 如果有GitHub仓库信息，则从API获取最新数据
+        if (foundSoftware.githubRepo) {
+          const githubData = await fetchRepoDetail(foundSoftware.githubRepo)
+          // 使用API获取的字段覆盖本地数据
+          software.value = {
+            ...foundSoftware,
+            ...githubData
+          }
+        } else {
+          // 如果没有GitHub仓库信息，使用本地数据
+          software.value = foundSoftware
         }
-      } else {
-        // 如果没有GitHub仓库信息，使用本地数据
+      } catch (error) {
+        console.error('加载GitHub数据失败:', error)
+        // 发生错误时使用本地数据
         software.value = foundSoftware
+      } finally {
+        loading.value = false
       }
-    } catch (error) {
-      console.error('加载GitHub数据失败:', error)
-      // 发生错误时使用本地数据
-      software.value = foundSoftware
-    } finally {
-      loading.value = false
-    }
   } else {
     // 添加一个错误信息以便在页面上显示
     software.value = {
-      id: softwareId.value,
-      name: '软件未找到',
-      description: `无法找到ID为"${softwareId.value}"的软件信息。`,
-      icon: '',
-      githubData: {},
-      downloads: '',
-      createdAt: '',
-      author: '',
-      language: '',
-      license: '',
-      lastUpdated: '',
-      category: '',
-      review: '',
-      repoUrl: '',
-      website: '',
-      downloadUrl: '',
-      groupLink: '',
-      screenshots: [],
-      tags: []
-    }
+        id: softwareId.value,
+        name: '软件未找到',
+        description: `无法找到ID为"${softwareId.value}"的软件信息。`,
+        icon: '',
+        githubData: {},
+        downloads: '',
+        createdAt: '',
+        author: '',
+        language: '',
+        license: '',
+        lastUpdated: '',
+        category: '',
+        features: [],
+
+        website: '',
+        downloadUrl: '',
+        groupLink: '',
+        screenshots: [],
+        tags: []
+      }
     loading.value = false
   }
 })
@@ -221,19 +232,27 @@ onMounted(async () => {
           </div>
           <div class="header-stats">
             <div class="stat-badge">
-              <span class="stat-title"><Icon name="octicon:star-fill-16" size="1.3em" color="#E3B341" /> 星标</span>
+              <span class="stat-title">
+                <Icon name="octicon:star-fill-16" size="1.3em" color="#E3B341" /> 星标
+              </span>
               <span class="stat-value">{{ formatNumber(software.githubData?.stars) }}</span>
             </div>
             <div class="stat-badge">
-              <span class="stat-title"><Icon name="octicon:issue-opened-16" size="1.3em" color="#3FB950" /> 议题</span>
+              <span class="stat-title">
+                <Icon name="octicon:issue-opened-16" size="1.3em" color="#3FB950" /> 议题
+              </span>
               <span class="stat-value">{{ formatNumber(software.githubData?.issues) }}</span>
             </div>
             <div class="stat-badge">
-              <span class="stat-title"><Icon name="octicon:download-16" size="1.3em" color="#4493F8" /> 下载量</span>
+              <span class="stat-title">
+                <Icon name="octicon:download-16" size="1.3em" color="#4493F8" /> 下载量
+              </span>
               <span class="stat-value">{{ software.downloads }}</span>
             </div>
             <div class="stat-badge">
-              <span class="stat-title"><Icon name="octicon:code-16" size="1.3em" /> 语言</span>
+              <span class="stat-title">
+                <Icon name="octicon:code-16" size="1.3em" /> 语言
+              </span>
               <span class="stat-value language-tag" style="display: flex; align-items: center; gap: 4px;">
                 <span class="language-dot" :style="{ backgroundColor: getLanguageColor(software.language) }"></span>
                 {{ software.language }}
@@ -255,19 +274,31 @@ onMounted(async () => {
             </h2>
             <div class="info-grid">
               <div class="info-item">
-                <label class="info-label"><Icon name="octicon:clock-16" size="1em" /> 创建日期</label>
+                <label class="info-label">
+                  <Icon name="octicon:clock-16" size="1em" /> 创建日期
+                </label>
                 <span class="info-value">{{ formatDate(software.createdAt) }}</span>
               </div>
               <div class="info-item">
-                <label class="info-label"><Icon name="material-symbols:update-rounded" size="1em" /> 上次更新</label>
+                <label class="info-label">
+                  <Icon name="material-symbols:update-rounded" size="1em" /> 上次更新
+                </label>
                 <span class="info-value">{{ formatDate(software.lastUpdated) }}</span>
               </div>
               <div class="info-item">
-                <label class="info-label"><Icon name="octicon:person-16" size="1em" /> 作者</label>
-                <span class="info-value">{{ software.author }}</span>
+                <label class="info-label">
+                  <Icon name="octicon:person-16" size="1em" /> 作者
+                </label>
+                <div class="author-info">
+                  <img :src="software.avatar || getAuthorAvatar(software.githubRepo, software.author)"
+                    :alt="software.author" class="author-avatar" />
+                  <span class="info-value">{{ software.author }}</span>
+                </div>
               </div>
               <div class="info-item">
-                <label class="info-label"><Icon name="lucide:scale" size="1.3em" /> 许可协议</label>
+                <label class="info-label">
+                  <Icon name="lucide:scale" size="1.3em" /> 许可协议
+                </label>
                 <span class="info-value">{{ software.license }}</span>
               </div>
             </div>
@@ -288,11 +319,16 @@ onMounted(async () => {
           <!-- 简评卡片 -->
           <section class="info-card">
             <h2 class="section-title">
-              <Icon name="octicon:comment-16" size="1em" />
-              项目简评
+              <Icon name="octicon:list-unordered-16" size="1em" />
+              功能简述
             </h2>
-            <div class="review-content">
-              <p>{{ software.review }}</p>
+            <div class="features-content">
+              <ul v-if="software.features && software.features.length > 0" class="features-list">
+                <li v-for="(feature, index) in software.features" :key="index" class="feature-item">
+                  {{ feature }}
+                </li>
+              </ul>
+              <p v-else>暂无功能描述</p>
             </div>
           </section>
         </main>
@@ -306,7 +342,7 @@ onMounted(async () => {
               快速链接
             </h3>
             <div class="link-buttons">
-              <a :href="software.repoUrl" target="_blank" class="link-btn github">
+              <a :href="`https://github.com/${software.githubRepo}`" target="_blank" class="link-btn github">
                 <Icon name="octicon:repo-16" size="1em" />
                 <span class="link-text">GitHub 仓库</span>
                 <Icon name="octicon:arrow-right-16" size="1em" />
@@ -321,12 +357,7 @@ onMounted(async () => {
                 <span class="link-text">下载地址</span>
                 <Icon name="octicon:arrow-right-16" size="1em" />
               </a>
-              <a 
-                v-if="software.groupLink" 
-                :href="software.groupLink" 
-                target="_blank" 
-                class="link-btn community"
-              >
+              <a v-if="software.groupLink" :href="software.groupLink" target="_blank" class="link-btn community">
                 <Icon name="octicon:comment-discussion-16" size="1em" />
                 <span class="link-text">交流群组</span>
                 <Icon name="octicon:arrow-right-16" size="1em" />
@@ -344,19 +375,14 @@ onMounted(async () => {
             <div class="category-container">
               <span class="tag">{{ software.category }}</span>
             </div>
-            
+
             <!-- 标签信息 -->
             <h3 class="sidebar-title">
               <Icon name="octicon:tag-16" size="1em" />
               标签
             </h3>
             <div class="tags-cloud">
-              <span 
-                v-for="tag in software.tags" 
-                :key="tag"
-                class="tag"
-                :style="{ fontSize: getTagSize(tag) }"
-              >
+              <span v-for="tag in software.tags" :key="tag" class="tag" :style="{ fontSize: getTagSize(tag) }">
                 {{ tag }}
               </span>
             </div>
@@ -516,7 +542,7 @@ onMounted(async () => {
 /* 主要内容区域 */
 .detail-content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   gap: 2rem;
 }
 
@@ -557,35 +583,53 @@ onMounted(async () => {
 }
 
 .screenshot-count {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: var(--vp-c-text-3);
-  margin-left: 0.5rem;
+  margin-left: 0.25rem;
 }
 
 /* 信息网格 */
 .info-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
-    gap: 1rem;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
 
-  .info-item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-  }
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.author-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
 .info-label {
   display: flex;
   align-items: center;
-  font-size: 0.85rem;
+  justify-content: center;
+  font-size: 1.1rem;
   color: var(--vp-c-text-3);
   font-weight: 500;
+  text-align: center;
+  padding-bottom: 0.25rem;
 }
 
 .info-value {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--vp-c-text-1);
+  text-align: center;
 }
 
 .language-tag {
@@ -602,13 +646,35 @@ onMounted(async () => {
 }
 
 /* 简评内容 */
-.review-content {
+.features-content {
   line-height: 1.7;
   color: var(--vp-c-text-1);
 }
 
-.review-content p {
+.features-content p {
   margin: 0;
+}
+
+.features-content ul.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-content li.feature-item {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.features-content li.feature-item::before {
+  content: '•';
+  color: var(--vp-c-brand-1);
+  font-size: 1.5em;
+  position: absolute;
+  left: 0;
+  top: -0.25em;
 }
 
 /* 截图容器 */
@@ -738,8 +804,13 @@ onMounted(async () => {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* 404状态 */
@@ -774,21 +845,21 @@ onMounted(async () => {
   .detail-content {
     grid-template-columns: 1fr;
   }
-  
+
   .sidebar {
     position: static;
   }
-  
+
   .detail-header {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .header-main {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .header-stats {
     justify-content: center;
     margin-top: 1rem;
@@ -799,17 +870,17 @@ onMounted(async () => {
   .info-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .lightbox-nav {
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
   }
-  
+
   .lightbox-prev {
     left: 1rem;
   }
-  
+
   .lightbox-next {
     right: 1rem;
   }

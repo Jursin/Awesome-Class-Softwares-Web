@@ -8,10 +8,6 @@ const props = defineProps({
     required: true,
     default: () => []
   },
-  height: {
-    type: String,
-    default: '400px'
-  },
   autoplay: {
     type: Boolean,
     default: true
@@ -91,7 +87,6 @@ onUnmounted(() => {
 <template>
   <div 
     class="swiper-container"
-    :style="{ height }"
     @mouseenter="handleMouseEnter"
     @mouseleave="handleMouseLeave"
   >
@@ -153,12 +148,16 @@ onUnmounted(() => {
   background: transparent;
   border-radius: 8px;
   border: 1px solid var(--vp-c-border);
+  padding-bottom: 56.25%; /* 16:9 比例 (9/16 = 0.5625) */
+  height: 0;
 }
 
 .swiper-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  position: relative;
 }
 
 .swiper-slide {
@@ -169,11 +168,13 @@ onUnmounted(() => {
   height: 100%;
   opacity: 0;
   transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .swiper-slide.active {
   opacity: 1;
-  position: relative;
 }
 
 .swiper-image {

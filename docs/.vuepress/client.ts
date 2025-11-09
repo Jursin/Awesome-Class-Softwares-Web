@@ -1,13 +1,13 @@
 import { defineClientConfig } from 'vuepress/client'
-import SoftwareHome from './theme/components/SoftwareHome.vue'
-import SoftwareDetail from './theme/components/SoftwareDetail.vue'
+import Home from './theme/components/Home.vue'
+import Detail from './theme/components/Detail.vue'
 
 import './theme/styles/index.css'
 import './theme/styles/custom.css'
 
 export default defineClientConfig({
   enhance({ app }) {
-    app.component('SoftwareHome', SoftwareHome)
-    app.component('SoftwareDetail', SoftwareDetail)
+    app.component('Home', Home)
+    app.component('Detail', Detail)
   },
 })

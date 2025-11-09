@@ -1,7 +1,3 @@
 ---
-title: 软件列表
-pageLayout: SoftwareHome
+pageLayout: Home
 ---
-
-# 软件列表
-这里是所有软件的详细信息。

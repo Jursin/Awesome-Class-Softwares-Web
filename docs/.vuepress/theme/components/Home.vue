@@ -220,7 +220,6 @@ onMounted(async () => {
           <span class="meta-item">
             更新于: {{ formatDate(software.lastUpdated) }}
           </span>
-          <span class="tag">{{ software.category }}</span>
         </div>
         
         <div class="software-tags">

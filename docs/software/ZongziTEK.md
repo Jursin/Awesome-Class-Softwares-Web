@@ -1,4 +1,3 @@
 ---
 pageLayout: Detail
-id: ClassIsland
 ---

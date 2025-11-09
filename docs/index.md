@@ -1,3 +1,3 @@
 ---
-pageLayout: SoftwareHome
+pageLayout: Home
 ---
