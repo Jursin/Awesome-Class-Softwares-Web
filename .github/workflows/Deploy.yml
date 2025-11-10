@@ -30,14 +30,10 @@ jobs:
       - name: Build VuePress
         run: pnpm run docs:build
 
-      - name: Deploy to Aliyun Server via SSH
-        uses: appleboy/scp-action@v1
-        with:
-          host: ${{ secrets.REMOTE_HOST }}
-          username: ${{ secrets.REMOTE_USER }}
-          key: ${{ secrets.SERVER_SSH_KEY }}
-          port: ${{ secrets.REMOTE_PORT }}
-          source: "docs/.vuepress/dist/*"
-          target: "/www/wwwroot/${{ secrets.DEPLOY_TARGET }}"
-          strip_components: 1
-          overwrite: true
+      - name: Setup SSH and deploy with rsync
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -p 5372 -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
+          rsync -avz -e "ssh -p 5372" --delete docs/.vuepress/dist/ ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:/www/wwwroot/${{ secrets.DEPLOY_TARGET }}/
