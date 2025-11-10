@@ -17,3 +17,12 @@
 .vp-content {
   background: var(--vp-c-bg);
 }
+
+/*  Image Display Light / Dark Mode  */
+[data-theme="dark"] .vp-doc img:is(.light) {
+  display: none;
+}
+
+[data-theme="light"] .vp-doc img:is(.dark) {
+  display: none;
+}

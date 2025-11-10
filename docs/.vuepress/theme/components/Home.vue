@@ -144,7 +144,7 @@ onMounted(async () => {
 <template>
   <div class="software-home">
     <header class="home-header">
-      <img src="/Aiwb.png" alt="Awesome Iwb" class="home-logo">
+      <img src="/icon/Aiwb.png" alt="Awesome Iwb" class="home-logo">
       <h1 class="home-title">Awesome Iwb</h1>
       <p class="home-subtitle">一站式软件推荐清单和实用知识手册，助你在新学期快速上手班级一体机新玩法！<br/>为广大电教倾情撰写，让班级大屏更好用！<br/>🌟 风带来故事的种子，时间使之发芽 🌟</p>
       <div class="home-controls">
@@ -453,6 +453,7 @@ onMounted(async () => {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  line-clamp: 2;
   overflow: hidden;
 }
 

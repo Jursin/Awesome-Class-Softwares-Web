@@ -253,7 +253,7 @@ onMounted(async () => {
               <span class="stat-title">
                 <Icon name="octicon:code-16" size="1.3em" /> 语言
               </span>
-              <span class="stat-value language-tag" style="display: flex; align-items: center; gap: 4px;">
+              <span class="stat-value language-tag" style="display: flex; align-items: center; gap: 6px;">
                 <span class="language-dot" :style="{ backgroundColor: getLanguageColor(software.language) }"></span>
                 {{ software.language }}
               </span>
@@ -635,7 +635,6 @@ onMounted(async () => {
 .language-tag {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .language-dot {
