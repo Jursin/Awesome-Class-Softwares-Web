@@ -35,8 +35,8 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -p 5372 -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
-          rsync -avz -e "ssh -p 5372" \
+          ssh-keyscan -p ${{ secrets.REMOTE_PORT }} -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
+          rsync -avz -e "ssh -p ${{ secrets.REMOTE_PORT }}" \
           --delete \
           docs/.vuepress/dist/ \
           ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:/www/wwwroot/${{ secrets.DEPLOY_TARGET }}/
