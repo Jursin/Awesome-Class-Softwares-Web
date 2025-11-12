@@ -1,0 +1,3 @@
+*.vue linguist-language=Vue
+*.md linguist-language=Markdown
+*.ts linguist-language=TypeScript
