@@ -18,7 +18,7 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
-    // hostname: 'https://your_site_url',
+    hostname: 'https://aiwb.jursin.top',
 
     /* 文档仓库配置，用于 editLink */
     docsRepo: 'https://github.com/awesome-iwb/awesome-iwb',
@@ -110,12 +110,12 @@ export default defineUserConfig({
     //   echarts: true,      // 启用 ECharts
     //   mermaid: true,      // 启用 mermaid
     //   flowchart: true,    // 启用 flowchart
-    //   image: {
+    image: {
     //     figure: true,     // 启用 figure
-    //     lazyload: true,   // 启用图片懒加载
+        lazyload: true,   // 启用图片懒加载
     //     mark: true,       // 启用图片标记
     //     size: true,       // 启用图片大小
-    //   },
+    },
     //   include: true,      // 在 Markdown 文件中导入其他 markdown 文件内容
     //   imageSize: 'local', // 启用 自动填充 图片宽高属性，避免页面抖动
     },
