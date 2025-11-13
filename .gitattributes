@@ -1,3 +1,2 @@
-*.vue linguist-language=Vue
-*.md linguist-language=Markdown
-*.ts linguist-language=TypeScript
+*.md linguist-detectable=true
+*.md linguist-documentation=false
