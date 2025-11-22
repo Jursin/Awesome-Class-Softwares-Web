@@ -5,9 +5,7 @@ title: 关于
 
 <div align="center">
 
-<img width="156" src="/icon/douxiba-awesome-iwb.png" /><br/>
-<img src="/aiwb-font-dark.png" alt="浅色主题" class="light">
-<img src="/aiwb-font-light.png" alt="深色主题" class="dark">
+<img width="156" src="/icon/douxiba-awesome-iwb.png" />
 
 ✨ **「Awesome Iwb」** 是专为广大中小学电教打造的班级希沃/鸿合等一体机/数字白板/班班通一站式软件推荐清单和实用知识手册，助你在新学期快速上手班级一体机新玩法！
 

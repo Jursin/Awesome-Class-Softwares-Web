@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import { softwareList } from '../data/software'
+import { softwareList, categories as categoryData } from '../data/index'
 
 const router = useRouter()
 
@@ -12,7 +12,10 @@ const softwareData = ref([])
 const loading = ref(true)
 
 // 计算属性
-const categories = computed(() => ['全部', ...new Set(softwareList.map(item => item.category))])
+const categories = computed(() => [
+  { name: '全部', icon: 'material-symbols:select-all' },
+  ...categoryData
+])
 
 const filteredSoftware = computed(() => {
   return softwareData.value.filter(item => {
@@ -72,7 +75,7 @@ onMounted(async () => {
     softwareData.value = await Promise.all(
       softwareList.map(async (software) => {
         try {
-          const response = await fetch(`https://api.github.com/repos/${software.githubRepo}`)
+          const response = await fetch(`https://api.github.com/repos/${software.repo}`)
           const data = await response.json()
           
           // 从GitHub API获取所需字段
@@ -90,7 +93,7 @@ onMounted(async () => {
           
           // 获取所有releases信息并计算总下载量
           try {
-            const releasesResponse = await fetch(`https://api.github.com/repos/${software.githubRepo}/releases`)
+            const releasesResponse = await fetch(`https://api.github.com/repos/${software.repo}/releases`)
             const releasesData = await releasesResponse.json()
             
             if (releasesData && Array.isArray(releasesData) && releasesData.length > 0) {
@@ -113,7 +116,7 @@ onMounted(async () => {
               }
             }
           } catch (releaseError) {
-            console.warn(`获取 ${software.githubRepo} 的releases信息失败:`, releaseError)
+            console.warn(`获取 ${software.repo} 的releases信息失败:`, releaseError)
           }
           
           return { 
@@ -127,7 +130,7 @@ onMounted(async () => {
             downloads
           }
         } catch (error) {
-          console.warn(`获取 ${software.githubRepo} 数据失败:`, error)
+          console.warn(`获取 ${software.repo} 数据失败:`, error)
           return { ...software, githubData: { stars: 0, issues: 0, language: '', license: '', createdAt: '', updatedAt: '' } }
         }
       })
@@ -145,7 +148,10 @@ onMounted(async () => {
   <div class="software-home">
     <header class="home-header">
       <img src="/icon/Aiwb.png" alt="Awesome Iwb" class="home-logo">
-      <h1 class="home-title">Awesome Iwb</h1>
+      <div class="home-title">
+        <img src="/aiwb-font-dark.png" alt="浅色主题" class="light">
+        <img src="/aiwb-font-light.png" alt="深色主题" class="dark">
+      </div>
       <p class="home-subtitle">一站式软件推荐清单和实用知识手册，助你在新学期快速上手班级一体机新玩法！<br/>为广大电教倾情撰写，让班级大屏更好用！<br/>🌟 风带来故事的种子，时间使之发芽 🌟</p>
       <div class="home-controls">
         <input 
@@ -157,12 +163,13 @@ onMounted(async () => {
         
         <div class="category-buttons">
           <button 
-            v-for="category in categories" 
-            :key="category"
-            :class="['category-btn', activeCategory === category ? 'active' : '']"
-            @click="setCategory(category)"
+            v-for="cat in categories" 
+            :key="cat.name"
+            :class="['category-btn', activeCategory === cat.name ? 'active' : '']"
+            @click="setCategory(cat.name)"
           >
-            {{ category }}
+            <Icon :name="cat.icon" size="1.1em" />
+            {{ cat.name }}
           </button>
         </div>
       </div>
@@ -218,6 +225,7 @@ onMounted(async () => {
             {{ software.license }}
           </span>
           <span class="meta-item">
+            <Icon name="material-symbols:update-rounded" size="1.3em" />
             更新于: {{ formatDate(software.lastUpdated) }}
           </span>
         </div>
@@ -255,19 +263,20 @@ onMounted(async () => {
 .home-logo {
   display: block;
   margin: 0 auto 1rem;
-  width: 80px;
+  width: 100px;
   height: auto;
 }
 
 .home-title {
-  font-size: 2.5rem;
-  color: var(--vp-c-brand-1);
+  display: flex;
+  justify-content: center;
   padding-bottom: 1rem;
 }
 
 .home-subtitle {
   font-size: 1.2rem;
-  color: var(--vp-c-text-3);
+  line-height: 1.5;
+  color: var(--vp-c-text-2);
   margin-bottom: 2rem;
 }
 

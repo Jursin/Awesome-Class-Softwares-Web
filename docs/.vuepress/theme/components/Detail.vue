@@ -1,9 +1,9 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { softwareList } from '../data/software'
+import { softwareList } from '../data/index'
 import Swiper from './Swiper.vue'
-
+import VPComment from '@theme/VPComment.vue'
 const route = useRoute()
 const router = useRouter()
 
@@ -157,53 +157,38 @@ onMounted(async () => {
   // 查找软件数据
   const foundSoftware = softwareList.find(item => item.id === softwareId.value)
 
-  if (foundSoftware) {
-    // 设置页面标题
-    document.title = `Awesome Iwb - ${foundSoftware.name}`
-
-    try {
-        // 如果有GitHub仓库信息，则从API获取最新数据
-        if (foundSoftware.githubRepo) {
-          const githubData = await fetchRepoDetail(foundSoftware.githubRepo)
-          // 使用API获取的字段覆盖本地数据
-          software.value = {
-            ...foundSoftware,
-            ...githubData
-          }
-        } else {
-          // 如果没有GitHub仓库信息，使用本地数据
-          software.value = foundSoftware
-        }
-      } catch (error) {
-        console.error('加载GitHub数据失败:', error)
-        // 发生错误时使用本地数据
-        software.value = foundSoftware
-      } finally {
-        loading.value = false
+  try {
+    // 如果找到软件且有GitHub仓库信息
+    if (foundSoftware && foundSoftware.repo) {
+      // 设置页面标题
+      document.title = `Awesome Iwb - ${foundSoftware.name}`
+      
+      // 从API获取最新数据
+      const githubData = await fetchRepoDetail(foundSoftware.repo)
+      // 使用API获取的字段覆盖本地数据
+      software.value = {
+        ...foundSoftware,
+        ...githubData
       }
-  } else {
-    // 添加一个错误信息以便在页面上显示
-    software.value = {
+    } else {
+      // 如果未找到软件或没有GitHub仓库信息，显示软件未找到
+      software.value = {
         id: softwareId.value,
         name: '软件未找到',
-        description: `无法找到ID为"${softwareId.value}"的软件信息。`,
-        icon: '',
-        githubData: {},
-        downloads: '',
-        createdAt: '',
-        author: '',
-        language: '',
-        license: '',
-        lastUpdated: '',
-        category: '',
-        features: [],
-
-        website: '',
-        downloadUrl: '',
-        groupLink: '',
-        screenshots: [],
-        tags: []
+        description: foundSoftware 
+          ? `软件"${foundSoftware.name}"缺少必要的仓库信息。` 
+          : `无法找到ID为"${softwareId.value}"的软件信息。`
       }
+    }
+  } catch (error) {
+    console.error('加载数据失败:', error)
+    // 发生错误时显示软件未找到
+    software.value = {
+      id: softwareId.value,
+      name: '软件未找到',
+      description: '加载软件数据时发生错误。'
+    }
+  } finally {
     loading.value = false
   }
 })
@@ -216,7 +201,7 @@ onMounted(async () => {
       <nav class="breadcrumb">
         <button class="back-btn" @click="goBack">
           <Icon name="material-symbols:arrow-back-rounded" size="1em" />
-          返回列表
+          返回主页
         </button>
         <span class="breadcrumb-separator">/</span>
         <span class="current-page">{{ software.name }}</span>
@@ -342,22 +327,27 @@ onMounted(async () => {
               快速链接
             </h3>
             <div class="link-buttons">
-              <a :href="`https://github.com/${software.githubRepo}`" target="_blank" class="link-btn github">
+              <a :href="`https://github.com/${software.repo}`" target="_blank" class="link-btn github">
                 <Icon name="octicon:repo-16" size="1em" />
                 <span class="link-text">GitHub 仓库</span>
                 <Icon name="octicon:arrow-right-16" size="1em" />
               </a>
-              <a :href="software.website" target="_blank" class="link-btn website">
-                <Icon name="octicon:book-16" size="1em" />
+              <a v-if="software.website" :href="software.website" target="_blank" class="link-btn website">
+                <Icon name="streamline-plump:web" size="1em" />
+                <span class="link-text">官方网站</span>
+                <Icon name="octicon:arrow-right-16" size="1em" />
+              </a>
+              <a v-if="software.docs" :href="software.docs" target="_blank" class="link-btn docs">
+                <Icon name="qlementine-icons:book-16" size="1em" />
                 <span class="link-text">官方文档</span>
                 <Icon name="octicon:arrow-right-16" size="1em" />
               </a>
-              <a :href="software.downloadUrl" target="_blank" class="link-btn download">
+              <a v-if="software.releases" :href="software.releases" target="_blank" class="link-btn download">
                 <Icon name="octicon:download-16" size="1em" />
-                <span class="link-text">下载地址</span>
+                <span class="link-text">发行版下载</span>
                 <Icon name="octicon:arrow-right-16" size="1em" />
               </a>
-              <a v-if="software.groupLink" :href="software.groupLink" target="_blank" class="link-btn community">
+              <a v-if="software.group" :href="software.group" target="_blank" class="link-btn community">
                 <Icon name="octicon:comment-discussion-16" size="1em" />
                 <span class="link-text">交流群组</span>
                 <Icon name="octicon:arrow-right-16" size="1em" />
@@ -408,13 +398,22 @@ onMounted(async () => {
       <button @click="goBack" class="back-home-btn">返回首页</button>
     </div>
   </div>
+  <div class="comment-container">
+    <VPComment />
+  </div>
 </template>
 
 <style scoped>
 .software-detail {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 1rem 2rem;
+  padding: 0 0 2rem;
+}
+
+.comment-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 0 2rem;
 }
 
 .detail-container {
