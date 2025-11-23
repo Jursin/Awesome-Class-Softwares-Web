@@ -53,7 +53,8 @@
 
 /* page */
 .vp-page {
-  padding: 48px 150px !important;
+  max-width: 1660px !important;
+  padding: 32px 150px !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -61,6 +62,13 @@
     padding: 24px 16px !important;
     min-width: 300px;
   }
+}
+
+.page-title {
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  padding: 0 20px 0 !important;
+  margin: 0 !important;
 }
 
 /* friends */
@@ -81,6 +89,11 @@
 
 .vp-friend {
   border-radius: 16px !important;
+  transition: transform 0.3s;
+}
+
+.vp-friend:hover {
+  transform: translateY(-5px);
 }
 
 .friends-list {

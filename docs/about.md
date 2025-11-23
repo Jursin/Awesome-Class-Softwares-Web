@@ -7,7 +7,7 @@ title: 关于
 
 <img width="156" src="/icon/douxiba-awesome-iwb.png" />
 
-✨ **「Awesome Iwb」** 是专为广大中小学电教打造的班级希沃/鸿合等一体机/数字白板/班班通一站式软件推荐清单和实用知识手册，助你在新学期快速上手班级一体机新玩法！
+✨ ==Awesome Iwb== 是专为广大中小学电教打造的班级希沃/鸿合等一体机/数字白板/班班通一站式软件推荐清单和实用知识手册，助你在新学期快速上手班级一体机新玩法！
 
 --- ✨ Useful Open-Sources Softwares & Tutorials for Iwb Devices (Bytello/MAXHUB/HiteVision)
 

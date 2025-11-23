@@ -1,7 +1,7 @@
 import type { CategoryConfig } from './types';
 
 export const course: CategoryConfig = {
-  name: '课表类',
+  name: '课程表类',
   icon: 'fa6-solid:calendar-days',
   items: [
     {

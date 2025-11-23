@@ -1,9 +1,11 @@
 import type { Software, CategoryConfig } from './types';
 import { course } from './course';
+import { annotation } from './annotation';
 
 // 导入所有分类配置
 export const categories: CategoryConfig[] = [
-  course
+  course,
+  annotation
 ];
 
 // 生成softwareList

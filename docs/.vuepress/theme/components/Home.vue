@@ -17,6 +17,15 @@ const categories = computed(() => [
   ...categoryData
 ])
 
+// 计算每个分类的软件数量
+const categoryCounts = computed(() => {
+  const counts = { '全部': softwareList.length }
+  softwareList.forEach(item => {
+    counts[item.category] = (counts[item.category] || 0) + 1
+  })
+  return counts
+})
+
 const filteredSoftware = computed(() => {
   return softwareData.value.filter(item => {
     // 分类筛选
@@ -170,6 +179,7 @@ onMounted(async () => {
           >
             <Icon :name="cat.icon" size="1.1em" />
             {{ cat.name }}
+            <span>({{ categoryCounts[cat.name] }})</span>
           </button>
         </div>
       </div>
@@ -263,13 +273,15 @@ onMounted(async () => {
 .home-logo {
   display: block;
   margin: 0 auto 1rem;
-  width: 100px;
+  width: 120px;
   height: auto;
 }
 
 .home-title {
   display: flex;
   justify-content: center;
+  width: auto;
+  height: 60px;
   padding-bottom: 1rem;
 }
 
@@ -322,6 +334,9 @@ onMounted(async () => {
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .category-btn:hover {
