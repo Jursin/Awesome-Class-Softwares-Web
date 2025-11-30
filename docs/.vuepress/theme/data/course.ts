@@ -28,8 +28,8 @@ export const course: CategoryConfig = {
       ]
     },
     {
-      id: "ZongziTEK",
-      name: "ZongziTEK",
+      id: "ZongziTEK-Blackboard-Sticker",
+      name: "ZongziTEK 黑板贴",
       icon: "/icon/ZongziTEK.png",
       repo: "STBBRD/ZongziTEK-Blackboard-Sticker",
       description: "用于白板一体机的桌面小部件",
