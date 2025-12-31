@@ -1,7 +1,8 @@
 import type { CategoryConfig } from './types';
 
-export const annotation: CategoryConfig = {
+export const Annotation: CategoryConfig = {
   name: '批注类',
+  route: 'Annotation',
   icon: 'fa6-solid:pen',
   items: [
     {

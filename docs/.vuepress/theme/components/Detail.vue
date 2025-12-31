@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { softwareList } from '../data/index'
+import { softwareList } from '../data/class/index'
 import Swiper from './Swiper.vue'
 import VPComment from '@theme/VPComment.vue'
 const route = useRoute()
@@ -161,7 +161,7 @@ onMounted(async () => {
     // 如果找到软件且有GitHub仓库信息
     if (foundSoftware && foundSoftware.repo) {
       // 设置页面标题
-      document.title = `Awesome Iwb - ${foundSoftware.name}`
+      document.title = `${foundSoftware.name} | ACS`
       
       // 从API获取最新数据
       const githubData = await fetchRepoDetail(foundSoftware.repo)

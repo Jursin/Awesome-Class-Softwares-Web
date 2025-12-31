@@ -13,10 +13,13 @@ export interface Software {
   docs?: string;
   screenshots: string[];
   releases?: string;
+  category?: string;
+  categorySlug?: string;
 }
 
 export interface CategoryConfig {
   name: string;
   icon: string;
+  route?: string;
   items: Software[];
 }

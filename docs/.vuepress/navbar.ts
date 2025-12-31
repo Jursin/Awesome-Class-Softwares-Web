@@ -3,7 +3,6 @@ import { defineNavbarConfig } from 'vuepress-theme-plume'
 export default defineNavbarConfig([
   { text: '首页', icon: 'octicon:home-16', link: '/' },
   { text: '社群表格', icon: 'octicon:table-16', link: '/social' },
-  { text: '关于', icon: 'octicon:info-16', link: '/about' },
   { text: '贡献指南', icon: 'octicon:git-branch-16', link: '/contributing' },
   { text: '友链', icon: 'octicon:link-16', link: '/friends' }
 ])

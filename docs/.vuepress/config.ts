@@ -5,12 +5,12 @@ import { plumeTheme } from 'vuepress-theme-plume'
 export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
-  title: 'Awesome Iwb',
-  description: '',
+  title: 'ACS',
+  description: '适用于班级一体机的优质软件合集🌟',
 
   head: [
     // 配置站点图标
-    ['link', { rel: 'icon', type: 'image/png', href: '/icon/Aiwb.png' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
   ],
 
   bundler: viteBundler(),
@@ -18,10 +18,10 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
-    hostname: 'https://aiwb.jursin.top',
+    hostname: 'https://acs.jursin.top',
 
     /* 文档仓库配置，用于 editLink */
-    docsRepo: 'https://github.com/awesome-iwb/awesome-iwb',
+    docsRepo: 'https://github.com/Jursin/Awesome-Class-Softwares-Web',
     docsDir: 'docs',
     docsBranch: 'main',
 
@@ -52,17 +52,19 @@ export default defineUserConfig({
     /* 本地搜索, 默认启用 */
     search: { provider: 'local' },
 
-    /**
-     * Algolia DocSearch
-     * 启用此搜索需要将 本地搜索 search 设置为 false
-     * @see https://theme-plume.vuejs.press/config/plugins/search/#algolia-docsearch
-     */
-    // search: {
-    //   provider: 'algolia',
-    //   appId: '',
-    //   apiKey: '',
-    //   indices: [''],
-    // },
+    bulletin: {
+      layout: 'top-right',
+      lifetime: 'session',
+      contentType: 'markdown',
+      content: `> [!important]
+      > - **本项目旨在推荐优质教辅软件，如欲提出问题，请前往对应仓库/交流平台**
+      > - **本项目仅供参考，信息可能会更新不及时，请前往对应仓库查看最新动态**
+      > - **以下软件均为免费，如遇收费提示请注意甄别！**
+      `,
+      enablePage: (page) => {
+        return page.path === '/' || page.path === '/index.html';
+      }
+    },
 
     /**
      * Shiki 代码高亮

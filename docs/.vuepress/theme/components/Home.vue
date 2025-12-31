@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import { softwareList, categories as categoryData } from '../data/index'
+import { softwareList, categories as categoryData } from '../data/class/index'
 
 const router = useRouter()
 
@@ -54,8 +54,8 @@ const clearFilters = () => {
   activeCategory.value = '全部'
 }
 
-const goToDetail = (id) => {
-  router.push(`/software/${id}`)
+const goToDetail = (categorySlug, id) => {
+  router.push(`/Class/${categorySlug}/${id}`)
 }
 
 const formatDate = (dateString) => {
@@ -156,12 +156,9 @@ onMounted(async () => {
 <template>
   <div class="software-home">
     <header class="home-header">
-      <img src="/icon/Aiwb.png" alt="Awesome Iwb" class="home-logo">
-      <div class="home-title">
-        <img src="/aiwb-font-dark.png" alt="浅色主题" class="light">
-        <img src="/aiwb-font-light.png" alt="深色主题" class="dark">
-      </div>
-      <p class="home-subtitle">一站式软件推荐清单和实用知识手册，助你在新学期快速上手班级一体机新玩法！<br/>为广大电教倾情撰写，让班级大屏更好用！<br/>🌟 风带来故事的种子，时间使之发芽 🌟</p>
+      <img src="/icon/ACS.png" alt="ACS" class="home-logo">
+      <h1 class="home-title">Awesome-Class-Softwares</h1>
+      <p class="home-subtitle">适用于班级一体机的优质软件合集🌟</p>
       <div class="home-controls">
         <input 
           v-model="searchQuery" 
@@ -200,7 +197,7 @@ onMounted(async () => {
         v-for="software in filteredSoftware" 
         :key="software.id"
         class="software-card"
-        @click="goToDetail(software.id)"
+        @click="goToDetail(software.categorySlug, software.id)"
       >
         <div class="card-header">
           <img :src="software.icon" :alt="software.name" class="software-icon" @error="handleImageError">
@@ -252,6 +249,9 @@ onMounted(async () => {
       </article>
     </div>
   </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&amp;family=Google+Sans+Flex:opsz,wght@6..144,1..1000&amp;display=swap" rel="stylesheet">
 </template>
 
 <style scoped>
@@ -266,35 +266,35 @@ onMounted(async () => {
 /* 页面头部样式 */
 .home-header {
   text-align: center;
-  padding: 2rem 0;
+  padding-top: 2rem 0;
   background: var(--vp-c-bg);
 }
 
 .home-logo {
   display: block;
-  margin: 0 auto 1rem;
-  width: 120px;
+  margin: 0 auto 0;
+  width: 200px;
   height: auto;
 }
 
 .home-title {
-  display: flex;
-  justify-content: center;
-  width: auto;
-  height: 60px;
-  padding-bottom: 1rem;
+  font-family: 'Google Sans Code', sans-serif;
+  font-size: 2.5rem;
+  line-height: 2rem;
+  padding-bottom: 10px;
+  color: var(--vp-c-text-1);
 }
 
 .home-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   color: var(--vp-c-text-2);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* 搜索和过滤样式 */
 .home-controls {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -323,6 +323,7 @@ onMounted(async () => {
   gap: 0.5rem;
   justify-content: center;
   padding-top: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .category-btn {
