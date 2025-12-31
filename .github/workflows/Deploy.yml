@@ -39,5 +39,6 @@ jobs:
           rsync -avz -e "ssh -p ${{ secrets.REMOTE_PORT }}" \
           --delete \
           --exclude='proxy_cache_dir/' \
+          --exclude='.user.ini' \
           docs/.vuepress/dist/ \
           ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:/www/wwwroot/${{ secrets.DEPLOY_TARGET }}/
