@@ -74,13 +74,11 @@ const getTagSize = (tag) => {
 }
 
 // 获取作者GitHub头像
-const getAuthorAvatar = (githubRepo, author) => {
-  // 尝试从githubRepo中提取用户名
-  if (githubRepo && githubRepo.includes('/')) {
-    const username = githubRepo.split('/')[0]
+const getAuthorAvatar = (repo, author) => {
+  if (repo && repo.includes('/')) {
+    const username = repo.split('/')[0]
     return `https://github.com/${username}.png?size=40`
   }
-  // 如果无法从githubRepo中提取，使用默认头像
   return `https://ui-avatars.com/api/?name=${encodeURIComponent(author || 'Unknown')}&background=random&size=40`
 }
 
@@ -272,12 +270,21 @@ onMounted(async () => {
               </div>
               <div class="info-item">
                 <label class="info-label">
-                  <Icon name="octicon:person-16" size="1em" /> 作者
+                  <Icon name="octicon:person-16" size="1em" /> 贡献者
                 </label>
                 <div class="author-info">
-                  <img :src="software.avatar || getAuthorAvatar(software.githubRepo, software.author)"
-                    :alt="software.author" class="author-avatar" />
-                  <span class="info-value">{{ software.author }}</span>
+                  <a v-if="software.author"
+                    :href="`https://github.com/${software.author}`" target="_blank"
+                    rel="noreferrer" class="author-link">
+                    <img :src="software.avatar || getAuthorAvatar(software.repo, software.author)"
+                      :alt="software.author" class="author-avatar" />
+                    <span class="info-value">{{ software.author }}</span>
+                  </a>
+                  <a v-if="software.repo"
+                    :href="`https://github.com/${software.repo}/graphs/contributors`" target="_blank"
+                    rel="noreferrer" class="author-link more-link" aria-label="Contributors">
+                    <Icon name="fluent:more-circle-16-regular" size="1.5em" />
+                  </a>
                 </div>
               </div>
               <div class="info-item">
@@ -334,17 +341,17 @@ onMounted(async () => {
               </a>
               <a v-if="software.website" :href="software.website" target="_blank" class="link-btn website">
                 <Icon name="streamline-plump:web" size="1em" />
-                <span class="link-text">官方网站</span>
+                <span class="link-text">网站</span>
                 <Icon name="octicon:arrow-right-16" size="1em" />
               </a>
               <a v-if="software.docs" :href="software.docs" target="_blank" class="link-btn docs">
                 <Icon name="qlementine-icons:book-16" size="1em" />
-                <span class="link-text">官方文档</span>
+                <span class="link-text">文档</span>
                 <Icon name="octicon:arrow-right-16" size="1em" />
               </a>
               <a v-if="software.releases" :href="software.releases" target="_blank" class="link-btn download">
                 <Icon name="octicon:download-16" size="1em" />
-                <span class="link-text">发行版下载</span>
+                <span class="link-text">发行版</span>
                 <Icon name="octicon:arrow-right-16" size="1em" />
               </a>
               <a v-if="software.group" :href="software.group" target="_blank" class="link-btn community">
@@ -604,7 +611,21 @@ onMounted(async () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+}
+
+.author-link {
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+.author-link:hover .info-value {
+  color: var(--vp-c-brand-1);
+}
+
+.more-link:hover {
+  color: var(--vp-c-brand-1);
 }
 
 .author-avatar {
@@ -612,6 +633,7 @@ onMounted(async () => {
   height: 24px;
   border-radius: 50%;
   object-fit: cover;
+  margin-right: 8px;
 }
 
 .info-label {
@@ -851,6 +873,7 @@ onMounted(async () => {
   .detail-header {
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
 
   .header-main {
@@ -866,7 +889,7 @@ onMounted(async () => {
 
 @media (max-width: 768px) {
   .info-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 
   .lightbox-nav {
@@ -881,6 +904,14 @@ onMounted(async () => {
 
   .lightbox-next {
     right: 1rem;
+  }
+
+  .stat-title, .stat-value {
+    font-size: 15px;
+  }
+
+  .info-label, .info-value, .author-avatar, .author-link {
+    font-size: 15px;
   }
 }
 </style>

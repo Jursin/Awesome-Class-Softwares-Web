@@ -514,7 +514,11 @@ onMounted(async () => {
   }
   
   .home-title {
-    font-size: 2rem;
+    font-size: 28px;
+  }
+
+  .home-subtitle {
+    font-size: 20px;
   }
   
   .category-buttons {

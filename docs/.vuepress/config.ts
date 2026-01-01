@@ -56,7 +56,7 @@ export default defineUserConfig({
       layout: 'top-right',
       lifetime: 'session',
       contentType: 'markdown',
-      content: `> [!important]
+      content: `> [!tip]
       > - **本项目旨在推荐优质教辅软件，如欲提出问题，请前往对应仓库/交流平台**
       > - **本项目仅供参考，信息可能会更新不及时，请前往对应仓库查看最新动态**
       > - **以下软件均为免费，如遇收费提示请注意甄别！**
@@ -139,7 +139,7 @@ export default defineUserConfig({
     comment: {
       provider: 'Giscus', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
       comment: true,
-      repo: 'Jursin/Aiwb-Web',
+      repo: 'Jursin/Awesome-Class-Softwares-Web',
       repoId: 'R_kgDOQR4OzQ',
       category: 'General',
       categoryId: 'DIC_kwDOQR4Ozc4CyFSe',
