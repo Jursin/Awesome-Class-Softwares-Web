@@ -280,6 +280,7 @@ onMounted(async () => {
 .home-title {
   font-family: 'Google Sans Code', sans-serif;
   font-size: 2.5rem;
+  font-weight: 500;
   line-height: 2rem;
   padding-bottom: 10px;
   color: var(--vp-c-text-1);
@@ -287,6 +288,7 @@ onMounted(async () => {
 
 .home-subtitle {
   font-size: 1.5rem;
+  font-weight: 500;
   line-height: 1.5;
   color: var(--vp-c-text-2);
   margin-bottom: 1rem;
@@ -338,6 +340,9 @@ onMounted(async () => {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex: 0 1 160px;
+  justify-content: center;
+  text-align: center;
 }
 
 .category-btn:hover {

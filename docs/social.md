@@ -16,6 +16,7 @@ title: 社群表格
 | [LingYun-Class-Widgets](https://github.com/Yamikani-Flipped/LingYun-Class-Widgets) | [BV1hGrnYDEhN](https://www.bilibili.com/video/BV1hGrnYDEhN) | [917509031](https://qm.qq.com/q/BDeDL7K8kE) | |
 | [ElectronClassSchedule](https://github.com/EnderWolf006/ElectronClassSchedule) | [BV1Wm411k7n8](https://www.bilibili.com/video/BV1Wm411k7n8) | [951996041](https://qm.qq.com/q/9nRFURLYJ2) [914887202（2群）](https://qm.qq.com/q/JarnP6AD2a) | <Icon name="logos:telegram" /> [Telegram｜@ElectronClassSchedule](https://t.me/ECSchedule) |
 | [Ris_ClassTool](https://github.com/Ris-Soft/Ris_ClassTool) | [BV1A96SYHEnz](https://www.bilibili.com/video/BV1A96SYHEnz) | [939571490](https://qm.qq.com/q/nl64TDpnk6) | |
+| [OrbiBoard](https://github.com/OrbiBoard/OrbiBoard) | | [535667394](https://qm.qq.com/q/gztxUbUf1m) | |
 | [ZongziTEK-Blackboard-Sticker](https://github.com/STBBRD/ZongziTEK-Blackboard-Sticker) | [BV1Lz4UeREEW](https://www.bilibili.com/video/BV1Lz4UeREEW) | [1101582374](https://jq.qq.com/?_wv=1027&k=epb9KDPe) | |
 | [ExamAware](https://github.com/ExamAware) | | [901670561](https://qm.qq.com/q/zDiEipHsaI) | |
 | [StickyHomeworks2](https://github.com/StickyHomeworks2/StickyHomeworks2) | [BV1YJ4Fe5EgD](https://www.bilibili.com/video/BV1YJ4Fe5EgD) | [680019081](https://qm.qq.com/q/9wa05P0BYQ) | |
@@ -27,9 +28,8 @@ title: 社群表格
 | [InkCanvasForClass Community Edition](https://github.com/InkCanvasForClass/community) | [BV1yH8ezcEKk](https://www.bilibili.com/video/BV1yH8ezcEKk) | [1054377349](https://qm.qq.com/q/GHhrl4hKG6) | |
 | [Inkeys](https://github.com/Alan-CRL/Inkeys) | [BV17duZzYEsE](https://www.bilibili.com/video/BV17duZzYEsE) | [618720802](https://qm.qq.com/q/iEDzSL0Wn) | |
 | [Inkways-Classic](https://github.com/iNKORE-NET/Inkways) | | [655979143](https://qm.qq.com/q/wzFUnRBF9C) [1nkoreStudios](https://pd.qq.com/s/g3o1pmidm) | <Icon name="logos:telegram" /> [Telegram｜@iNKORE_Studios](https://t.me/iNKORE)<br/><Icon name="logos:facebook" /> [Facebook｜@iNKORE_Studios](https://www.facebook.com/iNKORE.NET)<br/><Icon name="logos:x" /> [X｜@iNKORE_NET](https://x.com/iNKORE_NET)<br/><Icon name="logos:discord-icon" /> [Discord｜@iNKORE!](https://discord.com/invite/m6NPNVk4bs) |
+| [Kazuha](https://github.com/Kazuha-Organ/Kazuha) | | [1051180166](https://qm.qq.com/q/m4OXI55gvm) | |
 | [NamePicker](https://github.com/NamePickerOrg/NamePicker) | [BV1tZGwzvEra](https://www.bilibili.com/video/BV1tZGwzvEra) | [2153027375](https://qm.qq.com/q/flUZy9cJMs) | |
 | [SECTL](https://github.com/SECTL) | [BV1kt81zdEoR](https://www.bilibili.com/video/BV1kt81zdEoR) | [833875216](https://qm.qq.com/q/Y8tx1BxnmG) [SECTL20250321](https://pd.qq.com/s/ddy1ie3e9) | <Icon name="logos:discord-icon" /> [Discord｜@SECTL Studio](https://discord.gg/aRYzV5ZUZ2) |
 | [Immersive Clock](https://github.com/QQHKX/Immersive-clock) | | [965931796](https://qm.qq.com/q/xmTWgMPFio) | |
-| [OrbiBoard](https://github.com/OrbiBoard/OrbiBoard) | | [535667394](https://qm.qq.com/q/gztxUbUf1m) | |
-| [Kazuha](https://github.com/Haraguse/Kazuha) | | [1051180166](https://qm.qq.com/q/m4OXI55gvm) | |
 :::

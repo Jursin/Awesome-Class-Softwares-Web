@@ -538,6 +538,7 @@ onMounted(async () => {
   align-items: center;
   gap: 4px;
   padding-bottom: 0.25rem;
+  white-space: nowrap;
 }
 
 .stat-value {
@@ -889,7 +890,7 @@ onMounted(async () => {
 
 @media (max-width: 768px) {
   .info-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 
   .lightbox-nav {
