@@ -1,3 +1,11 @@
+export interface Badge {
+  type?: 'info' | 'tip' | 'warning' | 'danger' | string;
+  text?: string;
+  color?: string;
+  bgColor?: string;
+  borderColor?: string;
+}
+
 export interface Software {
   id: string;
   name: string;
@@ -6,6 +14,7 @@ export interface Software {
   description: string;
   author: string;
   avatar: string;
+  badge?: Badge[];
   tags: string[];
   features: string[];
   group?: SocialLinks;

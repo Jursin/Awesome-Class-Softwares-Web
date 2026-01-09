@@ -38,6 +38,9 @@ export const Schedule: CategoryConfig = {
       description: "一款适用于班级多媒体屏幕的课表信息显示工具",
       author: "HelloWRC",
       avatar: "https://github.com/HelloWRC.png",
+      badge: [
+        { type: "danger", text: "🔥 推荐" },
+      ],
       tags: ["课程表", "单双周支持", "多行支持", "上下课提醒", "插件支持", "自动化", "提醒特效"],
       features: [
         "可显示当天的课表信息",

@@ -180,7 +180,7 @@ onMounted(async () => {
     <header class="home-header">
       <img src="/icon/ACS.png" alt="ACS" class="home-logo">
       <h1 class="home-title">Awesome-Class-Softwares</h1>
-      <p class="home-subtitle">适用于班级一体机的优质软件合集🌟</p>
+      <p class="home-subtitle">适用于班级一体机的<mark class="vp-mark-visible">优质软件合集</mark>🌟</p>
       <div class="home-controls">
         <input 
           v-model="searchQuery" 
@@ -233,6 +233,17 @@ onMounted(async () => {
           class="software-card"
           @click="goToDetail(software.categorySlug, software.id)"
         >
+          <div class="card-badges" v-if="software.badge && software.badge.length > 0">
+            <Badge 
+              v-for="(badge, index) in software.badge" 
+              :key="index"
+              :type="badge.type"
+              :text="badge.text"
+              :color="badge.color"
+              :bg-color="badge.bgColor"
+              :border-color="badge.borderColor"
+            />
+          </div>
           <div class="card-header">
             <img :src="software.icon" :alt="software.name" class="software-icon" @error="handleImageError">
             <div class="card-title-section">
@@ -499,6 +510,23 @@ onMounted(async () => {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  position: relative;
+}
+
+.card-badges {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+.card-badges .vp-badge {
+  font-size: 13px !important;
+  padding: 2px 8px !important;
 }
 
 .software-card:hover {
@@ -583,7 +611,7 @@ onMounted(async () => {
   background: var(--vp-c-brand-soft);
   color: var(--vp-c-text-2);
   padding: 0.2rem 0.6rem;
-  border-radius: 12px;
+  border-radius: 8px;
   font-size: 0.75rem;
   font-weight: 500;
 }

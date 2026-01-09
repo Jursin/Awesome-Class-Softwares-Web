@@ -52,8 +52,9 @@
   }
 }
 
-.vp-icon {
-  height: unset !important;
+.vp-social-link .vp-icon {
+  width : 20px !important;
+  height: 20px !important;
 }
 
 .vp-bulletin .container {
