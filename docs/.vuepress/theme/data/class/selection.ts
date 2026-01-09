@@ -30,12 +30,13 @@ export const Selection: CategoryConfig = {
         "现代化UI设计",
         "插件支持"
       ],
-      group: "https://qm.qq.com/q/Y8tx1BxnmG",
+      group: { qqGroup: "https://qm.qq.com/q/Y8tx1BxnmG", qqChannel: "https://pd.qq.com/s/ddy1ie3e9", discord: "https://discord.gg/aRYzV5ZUZ2" },
       docs: "https://secrandom-docs.netlify.app/",
       screenshots: [
         "/screenshots/SecRandom/1.png",
         "/screenshots/SecRandom/2.png",
-      ]
+      ],
+      bvid: ["BV1kt81zdEoR"],
     },
   ]
 };

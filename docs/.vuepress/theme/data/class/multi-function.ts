@@ -21,13 +21,14 @@ export const MultiFunction: CategoryConfig = {
         "便捷的课程管理工具",
         "多项实用功能，满足班级各种需求"
       ],
-      group: "https://jq.qq.com/?_wv=1027&k=epb9KDPe",
+      group: { qqGroup: "https://jq.qq.com/?_wv=1027&k=epb9KDPe" },
       website: "https://zztek.top/",
       screenshots: [
         "/screenshots/ZongziTEK-Blackboard-Sticker/light.png",
         "/screenshots/ZongziTEK-Blackboard-Sticker/dark.png",
         "/screenshots/ZongziTEK-Blackboard-Sticker/simple.png",
-      ]
+      ],
+      bvid: ["BV1Lz4UeREEW"],
     },
     {
       id: "Education-Clock",

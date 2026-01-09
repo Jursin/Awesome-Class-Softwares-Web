@@ -10,6 +10,15 @@ const router = useRouter()
 // 响应式数据
 const software = ref(null)
 const loading = ref(true)
+const mediaItems = computed(() => {
+  const items = []
+  const vids = software.value?.bvid
+  if (Array.isArray(vids)) {
+    vids.filter(Boolean).forEach(v => items.push(`video:${v}`))
+  }
+  const shots = software.value?.screenshots || []
+  return [...items, ...shots]
+})
 
 // 计算属性
 const softwareId = computed(() => {
@@ -28,7 +37,15 @@ const goBack = () => {
 
 const formatDate = (dateString) => {
   try {
-    return new Date(dateString).toLocaleDateString('zh-CN')
+    const date = new Date(dateString)
+    if (Number.isNaN(date.getTime())) return dateString
+    return date.toLocaleString('zh-CN', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit'
+    })
   } catch {
     return dateString
   }
@@ -198,9 +215,11 @@ onMounted(async () => {
       <!-- 返回按钮 -->
       <nav class="breadcrumb">
         <button class="back-btn" @click="goBack">
-          <Icon name="material-symbols:arrow-back-rounded" size="1em" />
+          <Icon name="material-symbols:arrow-back-rounded" size="1.2em" />
           返回主页
         </button>
+        <span class="breadcrumb-separator">/</span>
+        <span class="current-page">{{ software.category }}</span>
         <span class="breadcrumb-separator">/</span>
         <span class="current-page">{{ software.name }}</span>
       </nav>
@@ -216,25 +235,25 @@ onMounted(async () => {
           <div class="header-stats">
             <div class="stat-badge">
               <span class="stat-title">
-                <Icon name="octicon:star-fill-16" size="1.3em" color="#E3B341" /> 星标
+                <Icon name="octicon:star-fill-16" size="1.1em" color="#E3B341" /> 星标
               </span>
               <span class="stat-value">{{ formatNumber(software.githubData?.stars) }}</span>
             </div>
             <div class="stat-badge">
               <span class="stat-title">
-                <Icon name="octicon:issue-opened-16" size="1.3em" color="#3FB950" /> 议题
+                <Icon name="octicon:issue-opened-16" size="1.1em" color="#3FB950" /> 议题
               </span>
               <span class="stat-value">{{ formatNumber(software.githubData?.issues) }}</span>
             </div>
             <div class="stat-badge">
               <span class="stat-title">
-                <Icon name="octicon:download-16" size="1.3em" color="#4493F8" /> 下载量
+                <Icon name="octicon:download-16" size="1.1em" color="#4493F8" /> 下载量
               </span>
               <span class="stat-value">{{ software.downloads }}</span>
             </div>
             <div class="stat-badge">
               <span class="stat-title">
-                <Icon name="octicon:code-16" size="1.3em" /> 语言
+                <Icon name="octicon:code-16" size="1.1em" /> 语言
               </span>
               <span class="stat-value language-tag" style="display: flex; align-items: center; gap: 6px;">
                 <span class="language-dot" :style="{ backgroundColor: getLanguageColor(software.language) }"></span>
@@ -249,28 +268,77 @@ onMounted(async () => {
       <div class="detail-content">
         <!-- 左侧主要内容 -->
         <main class="main-content">
+          <!-- 软件截图 -->
+          <section class="info-card" v-if="mediaItems.length > 0">
+            <h2 class="section-title">
+              <Icon name="mingcute:pic-fill" />
+              软件截图
+              <span class="screenshot-count">({{ software.screenshots.length }})</span>
+            </h2>
+            <div class="screenshots-container">
+              <Swiper
+                :items="mediaItems"
+                height="400px"
+              />
+            </div>
+          </section>
+
+          <!-- 简评卡片 -->
+          <section class="info-card">
+            <h2 class="section-title">
+              <Icon name="octicon:list-unordered-16" />
+              功能简述
+            </h2>
+            <div class="features-content">
+              <ul v-if="software.features && software.features.length > 0" class="features-list">
+                <li v-for="(feature, index) in software.features" :key="index" class="feature-item">
+                  {{ feature }}
+                </li>
+              </ul>
+              <p v-else>暂无功能描述</p>
+            </div>
+          </section>
+
+          <!-- Star 历史 -->
+           <section class="info-card">
+              <h2 class="section-title">
+                <Icon name="octicon:star-fill-16" color="#E3B341" />
+                Star 历史
+              </h2>
+              <img
+                v-if="software.repo"
+                class="star-history-img"
+                :src="`https://starchart.cc/${software.repo}.svg?variant=adaptive`"
+                :alt="`${software.name} Star 历史`"
+                loading="lazy"
+              >
+           </section>
+        </main>
+
+        <!-- 右侧边栏 -->
+        <aside class="sidebar">
           <!-- 项目信息卡片 -->
           <section class="info-card">
             <h2 class="section-title">
-              <Icon name="codicon:github-project" size="1em" />
+              <Icon name="codicon:github-project" />
               项目信息
             </h2>
             <div class="info-grid">
               <div class="info-item">
                 <label class="info-label">
-                  <Icon name="octicon:clock-16" size="1em" /> 创建日期
+                  <Icon name="octicon:clock-16" /> 创建日期
                 </label>
                 <span class="info-value">{{ formatDate(software.createdAt) }}</span>
               </div>
               <div class="info-item">
                 <label class="info-label">
-                  <Icon name="material-symbols:update-rounded" size="1em" /> 上次更新
+                  <Icon name="material-symbols:update-rounded" /> 上次更新
                 </label>
                 <span class="info-value">{{ formatDate(software.lastUpdated) }}</span>
               </div>
               <div class="info-item">
                 <label class="info-label">
-                  <Icon name="octicon:person-16" size="1em" /> 贡献者
+                  <Icon name="octicon:person-16" /> 贡献者
                 </label>
                 <div class="author-info">
                   <a v-if="software.author"
@@ -296,68 +364,68 @@ onMounted(async () => {
             </div>
           </section>
 
-          <!-- 软件截图 -->
-          <section class="info-card" v-if="software.screenshots && software.screenshots.length > 0">
-            <h2 class="section-title">
-              <Icon name="mingcute:pic-fill" size="1em" />
-              软件截图
-              <span class="screenshot-count">({{ software.screenshots.length }})</span>
-            </h2>
-            <div class="screenshots-container">
-              <Swiper :items="software.screenshots" height="400px" />
-            </div>
-          </section>
-
-          <!-- 简评卡片 -->
-          <section class="info-card">
-            <h2 class="section-title">
-              <Icon name="octicon:list-unordered-16" size="1em" />
-              功能简述
-            </h2>
-            <div class="features-content">
-              <ul v-if="software.features && software.features.length > 0" class="features-list">
-                <li v-for="(feature, index) in software.features" :key="index" class="feature-item">
-                  {{ feature }}
-                </li>
-              </ul>
-              <p v-else>暂无功能描述</p>
-            </div>
-          </section>
-        </main>
-
-        <!-- 右侧边栏 -->
-        <aside class="sidebar">
-          <!-- 快速链接 -->
+          <!-- 链接 -->
           <div class="sidebar-card">
             <h3 class="sidebar-title">
-              <Icon name="octicon:link-16" size="1em" />
+              <Icon name="octicon:link-16" />
               快速链接
             </h3>
             <div class="link-buttons">
               <a :href="`https://github.com/${software.repo}`" target="_blank" class="link-btn github">
-                <Icon name="octicon:repo-16" size="1em" />
+                <Icon name="octicon:repo-16" />
                 <span class="link-text">GitHub 仓库</span>
-                <Icon name="octicon:arrow-right-16" size="1em" />
+                <Icon name="octicon:arrow-right-16" />
               </a>
               <a v-if="software.website" :href="software.website" target="_blank" class="link-btn website">
-                <Icon name="streamline-plump:web" size="1em" />
+                <Icon name="streamline-plump:web" />
                 <span class="link-text">网站</span>
-                <Icon name="octicon:arrow-right-16" size="1em" />
+                <Icon name="octicon:arrow-right-16" />
               </a>
               <a v-if="software.docs" :href="software.docs" target="_blank" class="link-btn docs">
-                <Icon name="qlementine-icons:book-16" size="1em" />
+                <Icon name="qlementine-icons:book-16" />
                 <span class="link-text">文档</span>
-                <Icon name="octicon:arrow-right-16" size="1em" />
+                <Icon name="octicon:arrow-right-16" />
               </a>
               <a v-if="software.releases" :href="software.releases" target="_blank" class="link-btn download">
-                <Icon name="octicon:download-16" size="1em" />
+                <Icon name="octicon:download-16" />
                 <span class="link-text">发行版</span>
-                <Icon name="octicon:arrow-right-16" size="1em" />
+                <Icon name="octicon:arrow-right-16" />
               </a>
-              <a v-if="software.group" :href="software.group" target="_blank" class="link-btn community">
-                <Icon name="octicon:comment-discussion-16" size="1em" />
-                <span class="link-text">交流群组</span>
-                <Icon name="octicon:arrow-right-16" size="1em" />
+            </div>
+            <h3 class="sidebar-title">
+              <Icon name="octicon:comment-discussion-16" />
+              交流群组
+            </h3>
+            <div class="social-links">
+              <a v-if="software.group?.qqGroup" :href="software.group.qqGroup" target="_blank" class="link-btn community">
+                <Icon name="simple-icons:qq" color="#369BCE" />
+                <span class="link-text">QQ 群</span>
+                <Icon name="octicon:arrow-right-16" />
+              </a>
+              <a v-if="software.group?.qqChannel" :href="software.group.qqChannel" target="_blank" class="link-btn community">
+                <Icon name="simple-icons:qq" color="#369BCE" />
+                <span class="link-text">QQ 频道</span>
+                <Icon name="octicon:arrow-right-16" />
+              </a>
+              <a v-if="software.group?.telegram" :href="software.group.telegram" target="_blank" class="link-btn community">
+                <Icon name="logos:telegram" />
+                <span class="link-text">Telegram</span>
+                <Icon name="octicon:arrow-right-16" />
+              </a>
+              <a v-if="software.group?.discord" :href="software.group.discord" target="_blank" class="link-btn community">
+                <Icon name="logos:discord-icon" />
+                <span class="link-text">Discord</span>
+                <Icon name="octicon:arrow-right-16" />
+              </a>
+              <a v-if="software.group?.facebook" :href="software.group.facebook" target="_blank" class="link-btn community">
+                <Icon name="logos:facebook" />
+                <span class="link-text">Facebook</span>
+                <Icon name="octicon:arrow-right-16" />
+              </a>
+              <a v-if="software.group?.x" :href="software.group.x" target="_blank" class="link-btn community">
+                <Icon name="logos:x" />
+                <span class="link-text">X</span>
+                <Icon name="octicon:arrow-right-16" />
               </a>
             </div>
           </div>
@@ -366,7 +434,7 @@ onMounted(async () => {
           <div class="sidebar-card">
             <!-- 分类信息 -->
             <h3 class="sidebar-title">
-              <Icon name="material-symbols:category-outline-rounded" size="1em" />
+              <Icon name="material-symbols:category-outline-rounded" />
               分类
             </h3>
             <div class="category-container">
@@ -375,7 +443,7 @@ onMounted(async () => {
 
             <!-- 标签信息 -->
             <h3 class="sidebar-title">
-              <Icon name="octicon:tag-16" size="1em" />
+              <Icon name="octicon:tag-16" />
               标签
             </h3>
             <div class="tags-cloud">
@@ -412,13 +480,7 @@ onMounted(async () => {
 
 <style scoped>
 .software-detail {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 0 2rem;
-}
-
-.comment-container {
-  max-width: 1400px;
+  max-width: 1460px;
   margin: 0 auto;
   padding: 0 0 2rem;
 }
@@ -454,10 +516,6 @@ onMounted(async () => {
 .back-btn:hover {
   border-color: var(--vp-c-brand-1);
   color: var(--vp-c-brand-1);
-}
-
-.back-icon {
-  font-size: 1.1rem;
 }
 
 .breadcrumb-separator {
@@ -520,7 +578,7 @@ onMounted(async () => {
 .header-stats {
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 2rem;
   flex-shrink: 0;
 }
 
@@ -528,7 +586,7 @@ onMounted(async () => {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.5rem;
 }
 
 .stat-title {
@@ -549,7 +607,7 @@ onMounted(async () => {
 /* 主要内容区域 */
 .detail-content {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2.8fr 1.2fr;
   gap: 2rem;
 }
 
@@ -585,27 +643,94 @@ onMounted(async () => {
   border-bottom: 2px solid var(--vp-c-brand-1);
 }
 
-.section-icon {
-  font-size: 1.2rem;
-}
-
 .screenshot-count {
   font-size: 1.1rem;
   color: var(--vp-c-text-3);
   margin-left: 0.25rem;
 }
 
+/* 截图容器 */
+.screenshots-container {
+  margin-top: 1rem;
+}
+
+.video-embed {
+  margin-bottom: 1rem;
+}
+
+.video-iframe {
+  width: 100%;
+  height: 435px;
+  border: none;
+  border-radius: 12px;
+  background: #000;
+}
+
+/* 简评内容 */
+.features-content {
+  line-height: 1.7;
+  color: var(--vp-c-text-1);
+}
+
+.features-content p {
+  margin: 0;
+}
+
+.features-content ul.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-content li.feature-item {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.features-content li.feature-item::before {
+  content: '•';
+  color: var(--vp-c-brand-1);
+  font-size: 1.5em;
+  position: absolute;
+  left: 0;
+  top: -0.25em;
+}
+
+/* 侧边栏 */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: static;
+  height: auto;
+}
+
+.sidebar-card {
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.sidebar-title {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
 /* 信息网格 */
 .info-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  row-gap: 1rem;
 }
 
 .info-item {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  font-size: 17px;
 }
 
 .author-info {
@@ -641,15 +766,13 @@ onMounted(async () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
   color: var(--vp-c-text-3);
   font-weight: 500;
   text-align: center;
-  padding-bottom: 0.25rem;
+  padding-bottom: 9px;
 }
 
 .info-value {
-  font-size: 1.2rem;
   color: var(--vp-c-text-1);
   text-align: center;
 }
@@ -666,87 +789,22 @@ onMounted(async () => {
   display: inline-block;
 }
 
-/* 简评内容 */
-.features-content {
-  line-height: 1.7;
-  color: var(--vp-c-text-1);
-}
-
-.features-content p {
-  margin: 0;
-}
-
-.features-content ul.features-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.features-content li.feature-item {
-  position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.6;
-}
-
-.features-content li.feature-item::before {
-  content: '•';
-  color: var(--vp-c-brand-1);
-  font-size: 1.5em;
-  position: absolute;
-  left: 0;
-  top: -0.25em;
-}
-
-/* 截图容器 */
-.screenshots-container {
-  margin-top: 1rem;
-}
-
-/* 响应式调整 */
-@media (max-width: 768px) {
-  .screenshots-container {
-    margin-top: 0.5rem;
-  }
-}
-
-/* 侧边栏 */
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  position: static;
-  height: auto;
-}
-
-.sidebar-card {
-  background: var(--vp-c-bg);
-  border: 1px solid var(--vp-c-border);
-  border-radius: 12px;
-  padding: 1.5rem;
-}
-
-.sidebar-title {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
-
-.sidebar-icon {
-  font-size: 1rem;
-}
-
 /* 链接按钮 */
-.link-buttons {
-  display: flex;
-  flex-direction: column;
+.link-buttons, .social-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.75rem;
+}
+
+.link-buttons {
+  margin-bottom: 1rem;
 }
 
 .link-btn {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.75rem 1rem;
+  gap: 0.45rem;
+  padding: 0.75rem;
   background: var(--vp-c-bg);
   border: 1px solid var(--vp-c-border);
   border-radius: 8px;
@@ -767,15 +825,6 @@ onMounted(async () => {
 .link-text {
   flex: 1;
   font-weight: 500;
-}
-
-.link-arrow {
-  color: var(--vp-c-text-3);
-  transition: transform 0.3s ease;
-}
-
-.link-btn:hover .link-arrow {
-  transform: translateX(2px);
 }
 
 /* 标签云 */
@@ -861,14 +910,42 @@ onMounted(async () => {
   font-size: 1rem;
 }
 
+/* 评论容器 */
+.comment-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 0 2rem;
+}
+
 /* 响应式设计 */
-@media (max-width: 968px) {
+@media (max-width: 768px) {
+  .screenshots-container {
+    margin-top: 0.5rem;
+  }
+
+  .header-stats {
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .link-btn {
+    font-size: 15px;
+    padding: 0.5rem;
+    gap: 0.25rem;
+  }
+
   .detail-content {
     grid-template-columns: 1fr;
   }
 
   .sidebar {
     position: static;
+    order: 1;
+  }
+
+  .main-content {
+    order: 2;
   }
 
   .detail-header {
@@ -882,37 +959,16 @@ onMounted(async () => {
     text-align: center;
   }
 
-  .header-stats {
-    justify-content: center;
-    margin-top: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
   .info-grid {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 
-  .lightbox-nav {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-  }
-
-  .lightbox-prev {
-    left: 1rem;
-  }
-
-  .lightbox-next {
-    right: 1rem;
-  }
-
   .stat-title, .stat-value {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .info-label, .info-value, .author-avatar, .author-link {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 </style>

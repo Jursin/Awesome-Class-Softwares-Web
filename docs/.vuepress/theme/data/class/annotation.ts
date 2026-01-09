@@ -29,11 +29,12 @@ export const Annotation: CategoryConfig = {
         "支持多指绘制以及模拟笔锋",
         "快捷键"
       ],
-      group: "https://qm.qq.com/q/iEDzSL0Wn",
+      group: { qqGroup: "https://qm.qq.com/q/iEDzSL0Wn" },
       docs: "https://www.inkeys.top/",
       screenshots: [
         "/screenshots/Inkeys/banner.png",
-      ]
+      ],
+      bvid: ["BV17duZzYEsE"],
     }
   ]
 };

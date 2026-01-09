@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 
 // 定义组件的属性
 const props = defineProps({
@@ -29,38 +29,53 @@ const currentItem = computed(() => {
   return props.items[currentIndex.value] || ''
 })
 
+const isVideo = computed(() => {
+  return typeof currentItem.value === 'string' && currentItem.value.startsWith('video:')
+})
+
+const currentVideoSrc = computed(() => {
+  if (!isVideo.value) return ''
+  const bvid = currentItem.value.replace(/^video:/, '')
+  return `https://player.bilibili.com/player.html?bvid=${bvid}&autoplay=0&high_quality=1`
+})
+
 // 下一张图片
 const nextSlide = () => {
   currentIndex.value = (currentIndex.value + 1) % itemsCount.value
+  scheduleAutoplay()
 }
 
 // 上一张图片
 const prevSlide = () => {
   currentIndex.value = (currentIndex.value - 1 + itemsCount.value) % itemsCount.value
+  scheduleAutoplay()
 }
 
 // 跳转到指定索引
 const goToSlide = (index) => {
   if (index >= 0 && index < itemsCount.value) {
     currentIndex.value = index
+    scheduleAutoplay()
   }
 }
 
 // 设置自动播放
 let autoplayTimer = null
 
-const setupAutoplay = () => {
-  if (props.autoplay && itemsCount.value > 1) {
-    autoplayTimer = setInterval(() => {
-      nextSlide()
-    }, props.interval)
+const clearAutoplay = () => {
+  if (autoplayTimer) {
+    clearTimeout(autoplayTimer)
+    autoplayTimer = null
   }
 }
 
-const clearAutoplay = () => {
-  if (autoplayTimer) {
-    clearInterval(autoplayTimer)
-    autoplayTimer = null
+const scheduleAutoplay = () => {
+  clearAutoplay()
+  if (props.autoplay && itemsCount.value > 1) {
+    const extraDelay = isVideo.value ? 1000 : 0
+    autoplayTimer = setTimeout(() => {
+      nextSlide()
+    }, props.interval + extraDelay)
   }
 }
 
@@ -71,11 +86,18 @@ const handleMouseEnter = () => {
 
 // 鼠标离开时恢复自动播放
 const handleMouseLeave = () => {
-  setupAutoplay()
+  scheduleAutoplay()
 }
 
 // 初始化时设置自动播放
-setupAutoplay()
+scheduleAutoplay()
+
+// 当开关或条目数变化时重新调度
+watch(
+  () => [props.autoplay, itemsCount.value],
+  () => scheduleAutoplay(),
+  { immediate: false }
+)
 
 // 组件卸载时清理定时器
 import { onUnmounted } from 'vue'
@@ -92,15 +114,27 @@ onUnmounted(() => {
   >
     <!-- 轮播内容 -->
     <div class="swiper-wrapper" v-if="itemsCount > 0">
-      <!-- 当前展示的图片 -->
-      <div class="swiper-slide active">
-        <img 
-          :src="currentItem" 
-          alt="轮播图片" 
-          class="swiper-image"
-          loading="lazy"
-        />
-      </div>
+      <transition name="fade-slide" mode="out-in">
+        <div class="swiper-slide active" :key="currentIndex">
+          <template v-if="isVideo">
+            <iframe
+              class="swiper-video"
+              :src="currentVideoSrc"
+              title="Bilibili"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </template>
+          <template v-else>
+            <img 
+              :src="currentItem" 
+              alt="轮播图片" 
+              class="swiper-image"
+              loading="lazy"
+            />
+          </template>
+        </div>
+      </transition>
     </div>
 
     <!-- 导航按钮 -->
@@ -166,15 +200,9 @@ onUnmounted(() => {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.swiper-slide.active {
-  opacity: 1;
 }
 
 .swiper-image {
@@ -182,6 +210,28 @@ onUnmounted(() => {
   height: 100%;
   object-fit: contain;
   background: transparent;
+}
+
+.swiper-video {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+  transition: opacity 0.4s ease;
+}
+
+.fade-slide-enter-from,
+.fade-slide-leave-to {
+  opacity: 0;
+}
+
+.fade-slide-enter-to,
+.fade-slide-leave-from {
+  opacity: 1;
 }
 
 .swiper-nav {

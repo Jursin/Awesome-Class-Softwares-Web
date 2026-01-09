@@ -22,7 +22,7 @@ export const Board: CategoryConfig = {
         "支持集控",
         "详细的日志记录功能",
       ],
-      group: "https://qm.qq.com/q/zDiEipHsaI",
+      group: { qqGroup: "https://qm.qq.com/q/zDiEipHsaI" },
       docs: "https://docs.examaware.tech/",
       screenshots: [
         "/screenshots/ExamAware2/1.png",
@@ -45,7 +45,7 @@ export const Board: CategoryConfig = {
         "右侧展示考试科目列表，包括科目、开始、结束、状态",
         "考试结束前15分钟黄字提醒",
       ],
-      group: "https://qm.qq.com/q/zDiEipHsaI",
+      group: { qqGroup: "https://qm.qq.com/q/zDiEipHsaI" },
       docs: "https://docs.examaware.tech/",
       screenshots: [
         "/screenshots/Exam-Showboard/HomePage.png",
@@ -67,7 +67,7 @@ export const Board: CategoryConfig = {
         "多种主题可选",
         "支持设置时间偏移",
       ],
-      group: "https://qm.qq.com/q/zDiEipHsaI",
+      group: { qqGroup: "https://qm.qq.com/q/zDiEipHsaI" },
       website: "https://es.examaware.tech/",
       docs: "https://docs.examaware.tech/",
       screenshots: [
@@ -96,13 +96,14 @@ export const Board: CategoryConfig = {
         "支持软件自动更新",
         "插入图片、表情",
       ],
-      group: "https://qm.qq.com/q/neHPnfBSJq",
+      group: { qqGroup: "https://qm.qq.com/q/neHPnfBSJq" },
       docs: "https://sh2.xn--fjqu59cvx0aoqi.icu/",
       screenshots: [
         "/screenshots/StickyHomeworks2/1.png",
         "/screenshots/StickyHomeworks2/2.png",
         "/screenshots/StickyHomeworks2/3.png",
-      ]
+      ],
+      bvid: ["BV1YJ4Fe5EgD"],
     },
     {
       id: "Zooni",
@@ -151,7 +152,7 @@ export const Board: CategoryConfig = {
         "🔑 完善的权限管理系统",
         "🎉 丰富的组件和功能模块",
       ],
-      group: "https://qm.qq.com/q/AdQJCgNOsS",
+      group: { qqGroup: "https://qm.qq.com/q/AdQJCgNOsS", telegram: "https://t.me/zerocatdev", discord: "https://discord.gg/YmW2JWnbdy" },
       website: "https://zerocat.dev/",
       screenshots: [
         "/screenshots/Classworks/banner.png",
@@ -182,7 +183,7 @@ export const Board: CategoryConfig = {
         "若部署在公网服务器，请放行17312端口",
         "若部署在学校内网，则上述内容均只能在学校内网访问",
       ],
-      group: "https://qm.qq.com/q/9nRFURLYJ2",
+      group: { qqGroup: "https://qm.qq.com/q/9nRFURLYJ2" },
       screenshots: [
         "/screenshots/HomeworkBoard/banner.png",
       ]
@@ -206,7 +207,7 @@ export const Board: CategoryConfig = {
         "励志金句：频道管理与刷新间隔设置",
         "目标年份倒计时（如高考倒计时）",
       ],
-      group: "https://qm.qq.com/q/xmTWgMPFio",
+      group: { qqGroup: "https://qm.qq.com/q/xmTWgMPFio" },
       website: "https://clock.qqhkx.com/",
       screenshots: [
         "/screenshots/Immersive-clock/1.png",

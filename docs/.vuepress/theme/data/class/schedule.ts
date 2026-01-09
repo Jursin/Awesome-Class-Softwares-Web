@@ -23,7 +23,7 @@ export const Schedule: CategoryConfig = {
         "🖥️ 浅色主题界面",
         "📋 快捷键操作支持",
       ],
-      group: "https://qm.qq.com/q/SWZWhvBmQC",
+      group: { qqGroup: "https://qm.qq.com/q/SWZWhvBmQC" },
       website: "https://cloud.smart-teach.cn/",
       screenshots: [
         "/screenshots/CsesWebEditor/Home.png",
@@ -46,13 +46,14 @@ export const Schedule: CategoryConfig = {
         "自选搭配音效、强调特效",
         "支持语音增强提醒功能",
       ],
-      group: "https://qm.qq.com/q/4NsDQKiAuQ",
+      group: { qqGroup: "https://qm.qq.com/q/4NsDQKiAuQ", qqChannel: "https://pd.qq.com/s/10sd1flp0" },
       website: "https://www.classisland.tech/",
       docs: "https://docs.classisland.tech/",
       screenshots: [
         "/screenshots/ClassIsland/banner.png",
         "/screenshots/ClassIsland/themes.png",
-      ]
+      ],
+      bvid: ["BV1EEsNeYEc9"],
     },
     {
       id: "Class-Widgets",
@@ -70,7 +71,7 @@ export const Schedule: CategoryConfig = {
         "全新的隐藏方式——浮窗，能够让 Class Widgets 的重要信息浓缩为一块浮动的窗口，更轻巧便捷，尽量减小其对教学工作的干扰",
         "极致的设计语言：采用了由微软推出的 Fluent Design 设计语言，且使用了 QFluentWidgets UI库，这让界面更加简洁、舒适和流畅",
       ],
-      group: "https://qm.qq.com/q/LrSAgiQvu",
+      group: { qqGroup: "https://qm.qq.com/q/LrSAgiQvu", discord: "https://discord.gg/EFF4PpqpqZ" },
       website: "https://classwidgets.rinlit.cn/zh/",
       docs: "https://cwdocs.rinlit.cn/about/",
       screenshots: [
@@ -79,7 +80,8 @@ export const Schedule: CategoryConfig = {
         "/screenshots/Class-Widgets/Windows7.png",
         "/screenshots/Class-Widgets/Linux.png",
         "/screenshots/Class-Widgets/macOS.png",
-      ]
+      ],
+      bvid: ["BV1SSfDYmEa4", "BV1xwW9eyEGu"],
     },
     {
       id: "LingYun-Class-Widgets",
@@ -104,7 +106,7 @@ export const Schedule: CategoryConfig = {
         "自动匹配系统深浅色模式",
         "软件高度定制化，大部分功能支持设置中修改",
       ],
-      group: "https://qm.qq.com/q/BDeDL7K8kE",
+      group: { qqGroup: "https://qm.qq.com/q/BDeDL7K8kE" },
       website: "https://www.yamikani.cn/",
       docs: "https://www.yamikani.cn/docs",
       screenshots: [
@@ -112,7 +114,8 @@ export const Schedule: CategoryConfig = {
         "/screenshots/LingYun-Class-Widgets/2.png",
         "/screenshots/LingYun-Class-Widgets/3.png",
         "/screenshots/LingYun-Class-Widgets/4.png",
-      ]
+      ],
+      bvid: ["BV1hGrnYDEhN"],
     },
     {
       id: "ElectronClassSchedule",
@@ -134,10 +137,11 @@ export const Schedule: CategoryConfig = {
         "显示本周课表",
         "图形化配置界面(通知, 配置, 课表)",
       ],
-      group: "https://qm.qq.com/q/9nRFURLYJ2",
+      group: { qqGroup: "https://qm.qq.com/q/9nRFURLYJ2", telegram: "https://t.me/ECSchedule" },
       screenshots: [
         "/screenshots/ElectronClassSchedule/view.png",
-      ]
+      ],
+      bvid: ["BV1Wm411k7n8"],
     },
     {
       id: "iClass",

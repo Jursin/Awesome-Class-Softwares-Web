@@ -10,6 +10,8 @@ const searchQuery = ref('')
 const activeCategory = ref('全部')
 const softwareData = ref([])
 const loading = ref(true)
+const layoutMode = ref('default')
+const sortMode = ref('default')
 
 // 计算属性
 const categories = computed(() => [
@@ -27,13 +29,10 @@ const categoryCounts = computed(() => {
 })
 
 const filteredSoftware = computed(() => {
-  return softwareData.value.filter(item => {
-    // 分类筛选
+  const filtered = softwareData.value.filter(item => {
     const matchesCategory = activeCategory.value === '全部' || item.category === activeCategory.value
-    
-    // 搜索筛选
     if (!searchQuery.value.trim()) return matchesCategory
-    
+
     const query = searchQuery.value.toLowerCase().trim()
     return matchesCategory && (
       item.name.toLowerCase().includes(query) || 
@@ -42,6 +41,13 @@ const filteredSoftware = computed(() => {
       item.language.toLowerCase().includes(query)
     )
   })
+
+  if (sortMode.value === 'alpha') {
+    const collator = new Intl.Collator('zh-Hans-u-co-pinyin', { numeric: true, sensitivity: 'base' })
+    return [...filtered].sort((a, b) => collator.compare(a.name, b.name))
+  }
+
+  return filtered
 })
 
 // 方法
@@ -52,6 +58,22 @@ const setCategory = (category) => {
 const clearFilters = () => {
   searchQuery.value = ''
   activeCategory.value = '全部'
+}
+
+const setLayout = (mode) => {
+  layoutMode.value = mode
+}
+
+const setSort = (mode) => {
+  sortMode.value = mode
+}
+
+const toggleLayout = () => {
+  layoutMode.value = layoutMode.value === 'default' ? 'cozy' : 'default'
+}
+
+const toggleSort = () => {
+  sortMode.value = sortMode.value === 'default' ? 'alpha' : 'default'
 }
 
 const goToDetail = (categorySlug, id) => {
@@ -192,61 +214,74 @@ onMounted(async () => {
       <button @click="clearFilters" class="clear-filters-btn">清除筛选条件</button>
     </div>
     
-    <div v-else class="software-grid">
-      <article 
-        v-for="software in filteredSoftware" 
-        :key="software.id"
-        class="software-card"
-        @click="goToDetail(software.categorySlug, software.id)"
-      >
-        <div class="card-header">
-          <img :src="software.icon" :alt="software.name" class="software-icon" @error="handleImageError">
-          <div class="card-title-section">
-            <h3 class="software-name">{{ software.name }}</h3>
-            <div class="github-stats">
-              <span class="stat-item">
-                <Icon name="octicon:star-fill-16" size="1.3em" color="#E3B341" /> 
-                {{ formatNumber(software.githubData?.stars) }}
-              </span>
-              <span class="stat-item">
-                <Icon name="octicon:issue-opened-16" size="1.3em" color="#3FB950" />
-                {{ formatNumber(software.githubData?.issues) }}
-              </span>
-              <span class="stat-item">
-                <Icon name="octicon:download-16" size="1.3em" color="#4493F8" />
-                {{ software.downloads }}
-              </span>
+    <div v-else>
+      <div class="grid-toolbar">
+        <div class="toggle-chip layout-toggle" @click="toggleLayout">
+          <span :class="['toggle-option', layoutMode === 'default' && 'active']">默认</span>
+          <span :class="['toggle-option', layoutMode === 'cozy' && 'active']">宽松</span>
+        </div>
+        <div class="toggle-chip" @click="toggleSort">
+          <span :class="['toggle-option', sortMode === 'default' && 'active']">原顺序</span>
+          <span :class="['toggle-option', sortMode === 'alpha' && 'active']">首字母</span>
+        </div>
+      </div>
+
+      <div :class="['software-grid', layoutMode === 'cozy' ? 'grid-cozy' : 'grid-default']">
+        <article 
+          v-for="software in filteredSoftware" 
+          :key="software.id"
+          class="software-card"
+          @click="goToDetail(software.categorySlug, software.id)"
+        >
+          <div class="card-header">
+            <img :src="software.icon" :alt="software.name" class="software-icon" @error="handleImageError">
+            <div class="card-title-section">
+              <h3 class="software-name">{{ software.name }}</h3>
+              <div class="github-stats">
+                <span class="stat-item">
+                  <Icon name="octicon:star-fill-16" size="1.3em" color="#E3B341" /> 
+                  {{ formatNumber(software.githubData?.stars) }}
+                </span>
+                <span class="stat-item">
+                  <Icon name="octicon:issue-opened-16" size="1.3em" color="#3FB950" />
+                  {{ formatNumber(software.githubData?.issues) }}
+                </span>
+                <span class="stat-item">
+                  <Icon name="octicon:download-16" size="1.3em" color="#4493F8" />
+                  {{ software.downloads }}
+                </span>
+              </div>
             </div>
           </div>
-        </div>
-        
-        <p class="software-description">{{ software.description }}</p>
-        
-        <div class="software-meta">
-          <span class="meta-item">
-            <Icon name="octicon:code-16" size="1.3em" />
-            {{ software.language }}
-          </span>
-          <span class="meta-item">
-            <Icon name="lucide:scale" size="1.3em" />
-            {{ software.license }}
-          </span>
-          <span class="meta-item">
-            <Icon name="material-symbols:update-rounded" size="1.3em" />
-            更新于: {{ formatDate(software.lastUpdated) }}
-          </span>
-        </div>
-        
-        <div class="software-tags">
-          <span 
-            v-for="tag in software.tags" 
-            :key="tag"
-            class="tag"
-          >
-            {{ tag }}
-          </span>
-        </div>
-      </article>
+          
+          <p class="software-description">{{ software.description }}</p>
+          
+          <div class="software-meta">
+            <span class="meta-item">
+              <Icon name="octicon:code-16" size="1.3em" />
+              {{ software.language }}
+            </span>
+            <span class="meta-item">
+              <Icon name="lucide:scale" size="1.3em" />
+              {{ software.license }}
+            </span>
+            <span class="meta-item">
+              <Icon name="material-symbols:update-rounded" size="1.3em" />
+              更新于: {{ formatDate(software.lastUpdated) }}
+            </span>
+          </div>
+          
+          <div class="software-tags">
+            <span 
+              v-for="tag in software.tags" 
+              :key="tag"
+              class="tag"
+            >
+              {{ tag }}
+            </span>
+          </div>
+        </article>
+      </div>
     </div>
   </div>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -255,7 +290,7 @@ onMounted(async () => {
 </template>
 
 <style scoped>
-/* 主容器样式 */
+/* 主容器与头部 */
 .software-home {
   max-width: 1400px;
   margin: 0 auto;
@@ -263,7 +298,6 @@ onMounted(async () => {
   background: var(--vp-c-bg);
 }
 
-/* 页面头部样式 */
 .home-header {
   text-align: center;
   padding-top: 2rem 0;
@@ -294,7 +328,7 @@ onMounted(async () => {
   margin-bottom: 1rem;
 }
 
-/* 搜索和过滤样式 */
+/* 搜索与分类 */
 .home-controls {
   max-width: 1200px;
   margin: 0 auto;
@@ -302,7 +336,7 @@ onMounted(async () => {
 
 .search-input {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   padding: 0.75rem 1rem;
   border: 2px solid var(--vp-c-border);
   border-radius: 25px;
@@ -318,7 +352,6 @@ onMounted(async () => {
   box-shadow: 0 0 0 3px var(--vp-c-brand-soft);
 }
 
-/* 类别按钮样式 */
 .category-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -361,7 +394,7 @@ onMounted(async () => {
   border-color: var(--vp-c-brand-3);
 }
 
-/* 状态显示样式 */
+/* 状态与空态 */
 .loading-state {
   text-align: center;
   padding: 4rem 0;
@@ -382,7 +415,6 @@ onMounted(async () => {
   100% { transform: rotate(360deg); }
 }
 
-/* 清除筛选按钮 */
 .clear-filters-btn {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
@@ -393,7 +425,59 @@ onMounted(async () => {
   cursor: pointer;
 }
 
-/* 软件卡片网格 */
+/* 工具栏与切换 */
+.grid-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.toggle-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem;
+  border: 1px solid var(--vp-c-border);
+  background: var(--vp-c-bg);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.toggle-chip:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.toggle-option {
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+  transition: all 0.2s ease;
+}
+
+.toggle-option.active {
+  background: var(--vp-c-brand-1);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: toggle-activate 0.22s ease;
+}
+
+@keyframes toggle-activate {
+  from {
+    transform: translateY(4px) scale(0.97);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* 软件网格与卡片 */
 .software-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -401,7 +485,10 @@ onMounted(async () => {
   margin-bottom: 2rem;
 }
 
-/* 软件卡片样式 */
+.grid-cozy {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .software-card {
   background: var(--vp-c-bg);
   border: 1px solid var(--vp-c-border);
@@ -420,7 +507,6 @@ onMounted(async () => {
   border-color: var(--vp-c-brand-1);
 }
 
-/* 卡片头部样式 */
 .card-header {
   display: flex;
   align-items: flex-start;
@@ -447,13 +533,11 @@ onMounted(async () => {
   line-height: 1.3;
 }
 
-/* 统计信息样式 */
 .github-stats {
   display: flex;
   gap: 1rem;
 }
 
-/* 统计项目和元数据项目样式 */
 .stat-item,
 .meta-item {
   display: flex;
@@ -470,12 +554,6 @@ onMounted(async () => {
   font-size: 0.8rem;
 }
 
-.stat-icon,
-.meta-icon {
-  font-size: 0.9rem;
-}
-
-/* 软件描述样式 */
 .software-description {
   color: var(--vp-c-text-2);
   margin: 0;
@@ -487,7 +565,6 @@ onMounted(async () => {
   overflow: hidden;
 }
 
-/* 元数据和标签样式 */
 .software-meta,
 .software-tags {
   display: flex;
@@ -511,8 +588,12 @@ onMounted(async () => {
   font-weight: 500;
 }
 
-/* 响应式设计 */
+/* 响应式 */
 @media (max-width: 768px) {
+  .layout-toggle {
+    display: none;
+  }
+
   .software-grid {
     grid-template-columns: 1fr;
     gap: 1rem;

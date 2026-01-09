@@ -8,13 +8,23 @@ export interface Software {
   avatar: string;
   tags: string[];
   features: string[];
-  group?: string;
+  group?: SocialLinks;
   website?: string;
   docs?: string;
   screenshots: string[];
+  bvid?: string[];
   releases?: string;
   category?: string;
   categorySlug?: string;
+}
+
+export interface SocialLinks {
+  qqGroup?: string;
+  qqChannel?: string;
+  telegram?: string;
+  discord?: string;
+  facebook?: string;
+  x?: string;
 }
 
 export interface CategoryConfig {
