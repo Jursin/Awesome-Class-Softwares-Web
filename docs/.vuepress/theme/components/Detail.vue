@@ -130,7 +130,7 @@ const fetchRepoDetail = async (repoName) => {
     }
 
     // 计算所有releases的所有assets下载量总和
-    let downloads = '未知'
+    let downloads = '0'
 
     // 获取所有releases信息并计算总下载量
     try {
@@ -151,9 +151,6 @@ const fetchRepoDetail = async (repoName) => {
 
         if (totalDownloads > 0) {
           downloads = formatNumber(totalDownloads)
-        } else if (githubData.stars > 0) {
-          // 如果没有下载数据，基于star数估算
-          downloads = formatNumber(Math.floor(githubData.stars * 1.5))
         }
       }
     } catch (releaseError) {
