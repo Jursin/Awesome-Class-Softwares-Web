@@ -56,7 +56,7 @@ export const Schedule: CategoryConfig = {
         "/screenshots/ClassIsland/banner.png",
         "/screenshots/ClassIsland/themes.png",
       ],
-      bvid: ["BV1EEsNeYEc9"],
+      bvid: ["BV1y2Jxz1Et7"],
     },
     {
       id: "Class-Widgets",
@@ -66,6 +66,9 @@ export const Schedule: CategoryConfig = {
       description: "一款使用 Python 开发的 Qt 风格的全新桌面课表软件",
       author: "RinLit-233-shiroko",
       avatar: "https://github.com/RinLit-233-shiroko.png",
+      badge: [
+        { type: "danger", text: "推荐" },
+      ],
       tags: ["桌面小组件", "课程浮窗", "PyQt", "多平台支持", "上下课提醒", "单双周支持"],
       features: [
         "插件 & 主题：极致的自定义",
@@ -118,7 +121,7 @@ export const Schedule: CategoryConfig = {
         "/screenshots/LingYun-Class-Widgets/3.png",
         "/screenshots/LingYun-Class-Widgets/4.png",
       ],
-      bvid: ["BV1hGrnYDEhN"],
+      bvid: ["BV1wLfyYmEwW"],
     },
     {
       id: "ElectronClassSchedule",

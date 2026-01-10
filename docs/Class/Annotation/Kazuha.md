@@ -1,0 +1,4 @@
+---
+pageLayout: Detail
+title: Kazuha
+---

@@ -13,6 +13,9 @@ export const Board: CategoryConfig = {
       description: "一款易用、跨平台的大屏考试信息展示工具",
       author: "hello8693",
       avatar: "https://github.com/hello8693.png",
+      badge: [
+        { type: "danger", text: "推荐" },
+      ],
       tags: ["考试看板", "多平台支持", "Electron"],
       features: [
         "展示考试信息与考试列表",
@@ -84,6 +87,9 @@ export const Board: CategoryConfig = {
       description: "一款支持富文本的桌面作业贴工具",
       author: "jizilin6732",
       avatar: "https://github.com/jizilin6732.png",
+      badge: [
+        { type: "danger", text: "推荐" },
+      ],
       tags: ["作业展示", "富文本支持"],
       features: [
         "布置与修改作业",
@@ -143,6 +149,9 @@ export const Board: CategoryConfig = {
       description: "基于 Vue 3 + Vuetify 的现代化作业管理系统前端项目",
       author: "Sunwuyuan",
       avatar: "https://github.com/Sunwuyuan.png",
+      badge: [
+        { type: "danger", text: "推荐" },
+      ],
       tags: ["作业看板", "出勤看板", "随机点名", "Web", "Vue"],
       features: [
         "🎯 TypeScript 支持",
@@ -166,6 +175,9 @@ export const Board: CategoryConfig = {
       description: "一款支持云同步的作业展示板软件",
       author: "EnderWolf006",
       avatar: "https://github.com/EnderWolf006.png",
+      badge: [
+        { type: "info", text: "已停更" },
+      ],
       tags: ["作业展示", "云同步"],
       features: [
         "学校作业板",
@@ -213,6 +225,63 @@ export const Board: CategoryConfig = {
         "/screenshots/Immersive-clock/1.png",
         "/screenshots/Immersive-clock/2.png",
         "/screenshots/Immersive-clock/3.png",
+      ]
+    },
+    {
+      id: "ClassBoard",
+      name: "ClassBoard",
+      icon: "/icon/ClassBoard.png",
+      repo: "Candlest/ClassBoard",
+      description: "一款高自由度的，用于显示教学信息的壁纸软件，功能包括高考倒计时、公告栏、以及能够提示当前课程的课程表",
+      author: "Candlest",
+      avatar: "https://github.com/Candlest.png",
+      tags: ["桌面小组件", "课程表", "倒计日", "作业发布", "动态壁纸"],
+      features: [
+        "课程表展示",
+        "时间、日期、周数显示",
+        "倒数日、公告栏展示",
+      ],
+      screenshots: [
+        "/screenshots/ClassBoard/preview.png",
+      ]
+    },
+    {
+      id: "LockTime",
+      name: "时钟锁屏",
+      icon: "/icon/LockTime.png",
+      repo: "cjhdevact/LockTime",
+      description: "一个具有深/浅色主题，云母/亚克力背景，Fluent UI 2界面的时钟锁屏（屏保），可以作为屏保使用，也可以自习时在教学白板上使用",
+      author: "cjhdevact",
+      avatar: "https://github.com/cjhdevact.png",
+      tags: ["时钟", "锁屏", "屏保"],
+      features: [
+        "显示时间",
+        "支持改变时间的位置，避免因屏幕被遮挡而导致时间被遮挡问题（支持通过参数启动）",
+        "支持自定义显示格式",
+        "支持自定义显示字体、大小、颜色",
+        "支持窗口/全屏模式",
+        "多种背景效果，深/浅色主题",
+        "隐藏底部工具栏（单击时间文字隐藏或显示底部工具栏）",
+      ],
+      screenshots: [
+        "/screenshots/LockTime/MainUI.png",
+      ]
+    },
+    {
+      id: "ClassWindow",
+      name: "ClassWindow",
+      icon: "/icon/ClassWindow.png",
+      repo: "xinghai-smartedu/classwindow",
+      description: "一个美丽、精巧的用于班级的桌面悬浮窗软件，基于Electron构建，用于显示信息等",
+      author: "yeying-xingchen",
+      avatar: "https://github.com/yeying-xingchen.png",
+      tags: ["桌面小组件", "信息展示", "Electron"],
+      features: [
+        "桌面悬浮窗显示时间、作业等"
+      ],
+      group: { qqGroup: "https://qm.qq.com/q/PRsFaOVk4u" },
+      screenshots: [
+        "/screenshots/ClassWindow/main.png",
       ]
     },
   ]

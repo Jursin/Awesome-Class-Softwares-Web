@@ -1,0 +1,5 @@
+
+---
+pageLayout: Detail
+title: ClassWindow
+---

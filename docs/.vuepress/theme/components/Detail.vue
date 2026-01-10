@@ -20,6 +20,19 @@ const mediaItems = computed(() => {
   return [...items, ...shots]
 })
 
+const hasGroupLinks = computed(() => {
+  const group = software.value?.group
+  if (!group) return false
+  return Boolean(
+    group.qqGroup ||
+    group.qqChannel ||
+    group.telegram ||
+    group.discord ||
+    group.facebook ||
+    group.x
+  )
+})
+
 // 计算属性
 const softwareId = computed(() => {
   const pathSegments = route.path.split('/')
@@ -392,41 +405,43 @@ onMounted(async () => {
                 <Icon name="octicon:arrow-right-16" />
               </a>
             </div>
-            <h3 class="sidebar-title">
-              <Icon name="octicon:comment-discussion-16" />
-              交流群组
-            </h3>
-            <div class="social-links">
-              <a v-if="software.group?.qqGroup" :href="software.group.qqGroup" target="_blank" class="link-btn community">
-                <Icon name="simple-icons:qq" color="#369BCE" />
-                <span class="link-text">QQ 群</span>
-                <Icon name="octicon:arrow-right-16" />
-              </a>
-              <a v-if="software.group?.qqChannel" :href="software.group.qqChannel" target="_blank" class="link-btn community">
-                <Icon name="simple-icons:qq" color="#369BCE" />
-                <span class="link-text">QQ 频道</span>
-                <Icon name="octicon:arrow-right-16" />
-              </a>
-              <a v-if="software.group?.telegram" :href="software.group.telegram" target="_blank" class="link-btn community">
-                <Icon name="logos:telegram" />
-                <span class="link-text">Telegram</span>
-                <Icon name="octicon:arrow-right-16" />
-              </a>
-              <a v-if="software.group?.discord" :href="software.group.discord" target="_blank" class="link-btn community">
-                <Icon name="logos:discord-icon" />
-                <span class="link-text">Discord</span>
-                <Icon name="octicon:arrow-right-16" />
-              </a>
-              <a v-if="software.group?.facebook" :href="software.group.facebook" target="_blank" class="link-btn community">
-                <Icon name="logos:facebook" />
-                <span class="link-text">Facebook</span>
-                <Icon name="octicon:arrow-right-16" />
-              </a>
-              <a v-if="software.group?.x" :href="software.group.x" target="_blank" class="link-btn community">
-                <Icon name="logos:x" />
-                <span class="link-text">X</span>
-                <Icon name="octicon:arrow-right-16" />
-              </a>
+            <div v-if="hasGroupLinks">
+              <h3 class="sidebar-title">
+                <Icon name="octicon:comment-discussion-16" />
+                交流群组
+              </h3>
+              <div class="social-links">
+                <a v-if="software.group?.qqGroup" :href="software.group.qqGroup" target="_blank" class="link-btn community">
+                  <Icon name="simple-icons:qq" color="#369BCE" />
+                  <span class="link-text">QQ 群</span>
+                  <Icon name="octicon:arrow-right-16" />
+                </a>
+                <a v-if="software.group?.qqChannel" :href="software.group.qqChannel" target="_blank" class="link-btn community">
+                  <Icon name="simple-icons:qq" color="#369BCE" />
+                  <span class="link-text">QQ 频道</span>
+                  <Icon name="octicon:arrow-right-16" />
+                </a>
+                <a v-if="software.group?.telegram" :href="software.group.telegram" target="_blank" class="link-btn community">
+                  <Icon name="logos:telegram" />
+                  <span class="link-text">Telegram</span>
+                  <Icon name="octicon:arrow-right-16" />
+                </a>
+                <a v-if="software.group?.discord" :href="software.group.discord" target="_blank" class="link-btn community">
+                  <Icon name="logos:discord-icon" />
+                  <span class="link-text">Discord</span>
+                  <Icon name="octicon:arrow-right-16" />
+                </a>
+                <a v-if="software.group?.facebook" :href="software.group.facebook" target="_blank" class="link-btn community">
+                  <Icon name="logos:facebook" />
+                  <span class="link-text">Facebook</span>
+                  <Icon name="octicon:arrow-right-16" />
+                </a>
+                <a v-if="software.group?.x" :href="software.group.x" target="_blank" class="link-btn community">
+                  <Icon name="logos:x" />
+                  <span class="link-text">X</span>
+                  <Icon name="octicon:arrow-right-16" />
+                </a>
+              </div>
             </div>
           </div>
 

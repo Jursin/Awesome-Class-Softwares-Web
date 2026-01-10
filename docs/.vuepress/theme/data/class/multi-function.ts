@@ -31,6 +31,50 @@ export const MultiFunction: CategoryConfig = {
       bvid: ["BV1Lz4UeREEW"],
     },
     {
+      id: "Ris_ClassTool",
+      name: "课堂工具框架",
+      icon: "/icon/Ris_ClassTool.png",
+      repo: "Ris-Soft/Ris_ClassTool",
+      description: "瑞思课堂工具",
+      author: "PYLXU",
+      avatar: "https://github.com/PYLXU.png",
+      tags: ["课堂工具", "瑞思"],
+      features: [
+        "左侧导航栏设计，支持项目快速切换",
+        "响应式布局，适配不同屏幕尺寸",
+        "插件热加载和依赖管理",
+        "文件系统安全访问控制",
+        "统一的UI/UX设计规范"
+      ],
+      group: { qqGroup: "https://qm.qq.com/q/nl64TDpnk6" },
+      website: "https://3r60.top/",
+      docs: "https://docs.3r60.top/",
+      screenshots: [
+        "/screenshots/Ris_ClassTool/banner.png",
+      ],
+      bvid: ["BV1A96SYHEnz"],
+    },
+    {
+      id: "OrbiBoard",
+      name: "课枢",
+      icon: "/icon/OrbiBoard.png",
+      repo: "OrbiBoard/OrbiBoard",
+      description: "基于 Electron 的以 JavaScript 为核心的插件化大屏课堂辅助工具",
+      author: "PYLXU",
+      avatar: "https://github.com/PYLXU.png",
+      tags: ["课堂工具", "大屏辅助", "插件化", "Electron", "JavaScript"],
+      features: [
+        "精美启动页：展示插件加载状态日志",
+        "系统托盘：支持从托盘打开设置窗口、退出应用",
+        "插件管理",
+      ],
+      group: { qqGroup: "https://qm.qq.com/q/yHZQ0LQipq" },
+      website: "https://orbiboard.3r60.top/",
+      screenshots: [
+        "/screenshots/OrbiBoard/preview.png",
+      ]
+    },
+    {
       id: "Education-Clock",
       name: "Education Clock",
       icon: "/icon/Education-Clock.png",
