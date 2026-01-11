@@ -216,7 +216,7 @@ export const Annotation: CategoryConfig = {
       author: "lh11117",
       avatar: "https://github.com/lh11117.png",
       badge: [
-        { type: "info", text: "长时间未更新" },
+        { type: "info", text: "已停更" },
       ],
       tags: ["C++", "Qt", "屏幕画板", "轻量"],
       features: [

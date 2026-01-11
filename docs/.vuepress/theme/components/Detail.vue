@@ -6,6 +6,7 @@ import Swiper from './Swiper.vue'
 import VPComment from '@theme/VPComment.vue'
 const route = useRoute()
 const router = useRouter()
+const API_BASE = 'https://gh-api.jursin.top/api/github'
 
 // 响应式数据
 const software = ref(null)
@@ -116,7 +117,7 @@ const getAuthorAvatar = (repo, author) => {
 const fetchRepoDetail = async (repoName) => {
   try {
     // 获取仓库基本信息
-    const response = await fetch(`https://api.github.com/repos/${repoName}`)
+    const response = await fetch(`${API_BASE}/repos/${repoName}`)
     const data = await response.json()
 
     // 从GitHub API获取所需字段
@@ -134,7 +135,7 @@ const fetchRepoDetail = async (repoName) => {
 
     // 获取所有releases信息并计算总下载量
     try {
-      const releasesResponse = await fetch(`https://api.github.com/repos/${repoName}/releases`)
+      const releasesResponse = await fetch(`${API_BASE}/repos/${repoName}/releases`)
       const releasesData = await releasesResponse.json()
 
       if (releasesData && Array.isArray(releasesData) && releasesData.length > 0) {

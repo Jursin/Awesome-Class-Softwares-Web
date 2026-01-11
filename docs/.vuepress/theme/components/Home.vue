@@ -4,6 +4,7 @@ import { useRouter } from 'vue-router'
 import { softwareList, categories as categoryData } from '../data/class/index'
 
 const router = useRouter()
+const API_BASE = 'https://gh-api.jursin.top/api/github'
 
 // 响应式数据
 const searchQuery = ref('')
@@ -106,7 +107,7 @@ onMounted(async () => {
     softwareData.value = await Promise.all(
       softwareList.map(async (software) => {
         try {
-          const response = await fetch(`https://api.github.com/repos/${software.repo}`)
+          const response = await fetch(`${API_BASE}/repos/${software.repo}`)
           const data = await response.json()
           
           // 从GitHub API获取所需字段
@@ -124,7 +125,7 @@ onMounted(async () => {
           
           // 获取所有releases信息并计算总下载量
           try {
-            const releasesResponse = await fetch(`https://api.github.com/repos/${software.repo}/releases`)
+            const releasesResponse = await fetch(`${API_BASE}/repos/${software.repo}/releases`)
             const releasesData = await releasesResponse.json()
             
             if (releasesData && Array.isArray(releasesData) && releasesData.length > 0) {
