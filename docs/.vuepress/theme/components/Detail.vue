@@ -118,6 +118,10 @@ const fetchRepoDetail = async (repoName) => {
   try {
     // 获取仓库基本信息
     const response = await fetch(`${API_BASE}/repos/${repoName}`)
+    if (!response.ok) {
+      throw new Error(`获取 ${repoName} 仓库失败: ${response.status}`)
+    }
+
     const data = await response.json()
 
     // 从GitHub API获取所需字段
@@ -164,7 +168,8 @@ const fetchRepoDetail = async (repoName) => {
       license: githubData.license,
       createdAt: githubData.createdAt,
       lastUpdated: githubData.updatedAt,
-      downloads
+      downloads,
+      status: 'success'
     }
   } catch (error) {
     console.warn(`获取 ${repoName} 数据失败:`, error)
@@ -174,7 +179,8 @@ const fetchRepoDetail = async (repoName) => {
       license: '',
       createdAt: '',
       lastUpdated: '',
-      downloads: '未知'
+      downloads: '未知',
+      status: 'error'
     }
   }
 }
@@ -184,17 +190,21 @@ onMounted(async () => {
   const foundSoftware = softwareList.find(item => item.id === softwareId.value)
 
   try {
-    // 如果找到软件且有GitHub仓库信息
-    if (foundSoftware && foundSoftware.repo) {
-      // 设置页面标题
-      document.title = `${foundSoftware.name} | ACS`
-      
-      // 从API获取最新数据
-      const githubData = await fetchRepoDetail(foundSoftware.repo)
-      // 使用API获取的字段覆盖本地数据
+    if (foundSoftware) {
       software.value = {
         ...foundSoftware,
-        ...githubData
+        githubStatus: foundSoftware.repo ? 'loading' : 'error',
+        downloads: foundSoftware.downloads ?? '0'
+      }
+      document.title = `${foundSoftware.name} | ACS`
+      loading.value = false
+
+      if (foundSoftware.repo) {
+        const githubData = await fetchRepoDetail(foundSoftware.repo)
+
+        software.value = githubData.status === 'success'
+          ? { ...software.value, ...githubData, githubStatus: 'success' }
+          : { ...software.value, githubStatus: 'error' }
       }
     } else {
       // 如果未找到软件或没有GitHub仓库信息，显示软件未找到
@@ -205,6 +215,7 @@ onMounted(async () => {
           ? `软件"${foundSoftware.name}"缺少必要的仓库信息。` 
           : `无法找到ID为"${softwareId.value}"的软件信息。`
       }
+      loading.value = false
     }
   } catch (error) {
     console.error('加载数据失败:', error)
@@ -212,8 +223,10 @@ onMounted(async () => {
     software.value = {
       id: softwareId.value,
       name: '软件未找到',
-      description: '加载软件数据时发生错误。'
+      description: '加载软件数据时发生错误。',
+      githubStatus: 'error'
     }
+    loading.value = false
   } finally {
     loading.value = false
   }
@@ -248,27 +261,43 @@ onMounted(async () => {
               <span class="stat-title">
                 <Icon name="octicon:star-fill-16" size="1.1em" color="#E3B341" /> 星标
               </span>
-              <span class="stat-value">{{ formatNumber(software.githubData?.stars) }}</span>
+              <span class="stat-value">
+                <template v-if="software.githubStatus === 'success'">{{ formatNumber(software.githubData?.stars) }}</template>
+                <template v-else-if="software.githubStatus === 'error'">获取失败</template>
+                <template v-else>加载中...</template>
+              </span>
             </div>
             <div class="stat-badge">
               <span class="stat-title">
                 <Icon name="octicon:issue-opened-16" size="1.1em" color="#3FB950" /> 议题
               </span>
-              <span class="stat-value">{{ formatNumber(software.githubData?.issues) }}</span>
+              <span class="stat-value">
+                <template v-if="software.githubStatus === 'success'">{{ formatNumber(software.githubData?.issues) }}</template>
+                <template v-else-if="software.githubStatus === 'error'">获取失败</template>
+                <template v-else>加载中...</template>
+              </span>
             </div>
             <div class="stat-badge">
               <span class="stat-title">
                 <Icon name="octicon:download-16" size="1.1em" color="#4493F8" /> 下载量
               </span>
-              <span class="stat-value">{{ software.downloads }}</span>
+              <span class="stat-value">
+                <template v-if="software.githubStatus === 'success'">{{ software.downloads }}</template>
+                <template v-else-if="software.githubStatus === 'error'">获取失败</template>
+                <template v-else>加载中...</template>
+              </span>
             </div>
             <div class="stat-badge">
               <span class="stat-title">
                 <Icon name="octicon:code-16" size="1.1em" /> 语言
               </span>
               <span class="stat-value language-tag" style="display: flex; align-items: center; gap: 6px;">
-                <span class="language-dot" :style="{ backgroundColor: getLanguageColor(software.language) }"></span>
-                {{ software.language }}
+                <template v-if="software.githubStatus === 'success'">
+                  <span class="language-dot" :style="{ backgroundColor: getLanguageColor(software.language) }"></span>
+                  {{ software.language }}
+                </template>
+                <template v-else-if="software.githubStatus === 'error'">获取失败</template>
+                <template v-else>加载中...</template>
               </span>
             </div>
           </div>
@@ -284,7 +313,7 @@ onMounted(async () => {
             <h2 class="section-title">
               <Icon name="mingcute:pic-fill" />
               软件截图
-              <span class="screenshot-count">({{ software.screenshots.length }})</span>
+              <span class="screenshot-count">({{ (software.screenshots && software.screenshots.length) || 0 }})</span>
             </h2>
             <div class="screenshots-container">
               <Swiper
@@ -339,13 +368,21 @@ onMounted(async () => {
                 <label class="info-label">
                   <Icon name="octicon:clock-16" /> 创建日期
                 </label>
-                <span class="info-value">{{ formatDate(software.createdAt) }}</span>
+                <span class="info-value">
+                  <template v-if="software.githubStatus === 'success'">{{ formatDate(software.createdAt) }}</template>
+                  <template v-else-if="software.githubStatus === 'error'">获取失败</template>
+                  <template v-else>加载中...</template>
+                </span>
               </div>
               <div class="info-item">
                 <label class="info-label">
                   <Icon name="material-symbols:update-rounded" /> 上次更新
                 </label>
-                <span class="info-value">{{ formatDate(software.lastUpdated) }}</span>
+                <span class="info-value">
+                  <template v-if="software.githubStatus === 'success'">{{ formatDate(software.lastUpdated) }}</template>
+                  <template v-else-if="software.githubStatus === 'error'">获取失败</template>
+                  <template v-else>加载中...</template>
+                </span>
               </div>
               <div class="info-item">
                 <label class="info-label">
@@ -370,7 +407,11 @@ onMounted(async () => {
                 <label class="info-label">
                   <Icon name="lucide:scale" size="1.3em" /> 许可协议
                 </label>
-                <span class="info-value">{{ software.license }}</span>
+                <span class="info-value">
+                  <template v-if="software.githubStatus === 'success'">{{ software.license }}</template>
+                  <template v-else-if="software.githubStatus === 'error'">获取失败</template>
+                  <template v-else>加载中...</template>
+                </span>
               </div>
             </div>
           </section>

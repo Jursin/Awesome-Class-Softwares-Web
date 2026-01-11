@@ -99,77 +99,94 @@ const handleImageError = (event) => {
   event.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjUwIiBoZWlnaHQ9IjUwIiBmaWxsPSIjRjBGMEYwIi8+CjxwYXRoIGQ9Ik0yNSAxNkMyOC44NjYgMTYgMzIgMTkuMTM0IDMyIDIzQzMyIDI2Ljg2NiAyOC44NjYgMzAgMjUgMzBDMjEuMTM0IDMwIDE4IDI2Ljg2NiAxOCAyM0MxOCAxOS4xMzQgMjEuMTM0IDE2IDI1IDE2WiIgZmlsbD0iIzk5OTk5OSIvPgo8cGF0aCBkPSJNMTUgMzRDMzUgMzQgMzUgMzQgMzUgMzRDMzUgMzQgMzUgMzYgMzUgMzhDMTUgMzggMTUgMzggMTUgMzhDMTUgMzggMTUgMzYgMTUgMzRaIiBmaWxsPSIjOTk5OTk5Ii8+Cjwvc3ZnPgo='
 }
 
+const fetchRepoData = async (software) => {
+  const response = await fetch(`${API_BASE}/repos/${software.repo}`)
+  if (!response.ok) {
+    throw new Error(`获取 ${software.repo} 仓库失败: ${response.status}`)
+  }
+
+  const data = await response.json()
+  const githubData = {
+    stars: data.stargazers_count || 0,
+    issues: data.open_issues_count || 0,
+    language: data.language || '',
+    license: data.license?.spdx_id || data.license?.name || '',
+    createdAt: data.created_at || '',
+    updatedAt: data.updated_at || ''
+  }
+
+  let downloads = software.downloads ?? '0'
+
+  try {
+    const releasesResponse = await fetch(`${API_BASE}/repos/${software.repo}/releases`)
+    if (releasesResponse.ok) {
+      const releasesData = await releasesResponse.json()
+
+      if (Array.isArray(releasesData) && releasesData.length > 0) {
+        let totalDownloads = 0
+
+        for (const release of releasesData) {
+          if (release && Array.isArray(release.assets)) {
+            for (const asset of release.assets) {
+              totalDownloads += asset.download_count || 0
+            }
+          }
+        }
+
+        if (totalDownloads > 0) {
+          downloads = formatNumber(totalDownloads)
+        }
+      }
+    }
+  } catch (releaseError) {
+    console.warn(`获取 ${software.repo} 的releases信息失败:`, releaseError)
+  }
+
+  return {
+    githubData,
+    language: githubData.language || software.language,
+    license: githubData.license || software.license,
+    createdAt: githubData.createdAt || software.createdAt,
+    lastUpdated: githubData.updatedAt || software.lastUpdated,
+    downloads
+  }
+}
+
 // 初始化
 onMounted(async () => {
   loading.value = true
-  try {
-    // 为每个软件获取GitHub数据
-    softwareData.value = await Promise.all(
-      softwareList.map(async (software) => {
-        try {
-          const response = await fetch(`${API_BASE}/repos/${software.repo}`)
-          const data = await response.json()
-          
-          // 从GitHub API获取所需字段
-          const githubData = {
-            stars: data.stargazers_count || 0,
-            issues: data.open_issues_count || 0,
-            language: data.language || '',
-            license: data.license?.spdx_id || data.license?.name || '',
-            createdAt: data.created_at || '',
-            updatedAt: data.updated_at || ''
-          }
-          
-          // 计算所有releases的所有assets下载量总和
-          let downloads = software.downloads ?? '0'
-          
-          // 获取所有releases信息并计算总下载量
-          try {
-            const releasesResponse = await fetch(`${API_BASE}/repos/${software.repo}/releases`)
-            const releasesData = await releasesResponse.json()
-            
-            if (releasesData && Array.isArray(releasesData) && releasesData.length > 0) {
-              // 统计所有releases中所有assets的下载量总和
-              let totalDownloads = 0;
-              
-              for (const release of releasesData) {
-                if (release && release.assets && Array.isArray(release.assets)) {
-                  for (const asset of release.assets) {
-                    totalDownloads += asset.download_count || 0;
-                  }
-                }
-              }
-              
-              if (totalDownloads > 0) {
-                downloads = formatNumber(totalDownloads)
-              }
-            }
-          } catch (releaseError) {
-            console.warn(`获取 ${software.repo} 的releases信息失败:`, releaseError)
-          }
-          
-          return { 
-            ...software, 
-            githubData,
-            // 使用API获取的字段覆盖本地数据
-            language: githubData.language || software.language,
-            license: githubData.license || software.license,
-            createdAt: githubData.createdAt || software.createdAt,
-            lastUpdated: githubData.updatedAt || software.lastUpdated,
-            downloads
-          }
-        } catch (error) {
-          console.warn(`获取 ${software.repo} 数据失败:`, error)
-          return { ...software, githubData: { stars: 0, issues: 0, language: '', license: '', createdAt: '', updatedAt: '' } }
-        }
-      })
-    )
-  } catch (error) {
-    console.error('初始化失败:', error)
-    softwareData.value = softwareList // 使用基础数据
-  } finally {
-    loading.value = false
-  }
+
+  // 先显示所有卡片的基础信息
+  softwareData.value = softwareList.map((software) => ({
+    ...software,
+    tags: software.tags || [],
+    githubStatus: software.repo ? 'loading' : 'error',
+    githubData: { stars: null, issues: null },
+    downloads: software.downloads ?? '0'
+  }))
+
+  loading.value = false
+
+  // 分开获取GitHub信息，获取中/失败单独显示
+  softwareData.value.forEach(async (_, index) => {
+    const current = softwareData.value[index]
+    if (!current.repo) {
+      softwareData.value[index] = { ...current, githubStatus: 'error' }
+      return
+    }
+
+    try {
+      const repoData = await fetchRepoData(current)
+      softwareData.value[index] = {
+        ...softwareData.value[index],
+        ...repoData,
+        githubStatus: 'success'
+      }
+    } catch (error) {
+      console.warn(`获取 ${current.repo} 数据失败:`, error)
+      softwareData.value[index] = { ...softwareData.value[index], githubStatus: 'error' }
+    }
+  })
 })
 </script>
 
@@ -249,15 +266,21 @@ onMounted(async () => {
               <div class="github-stats">
                 <span class="stat-item">
                   <Icon name="octicon:star-fill-16" size="1.3em" color="#E3B341" /> 
-                  {{ formatNumber(software.githubData?.stars) }}
+                  <template v-if="software.githubStatus === 'success'">{{ formatNumber(software.githubData?.stars) }}</template>
+                  <template v-else-if="software.githubStatus === 'error'">获取失败</template>
+                  <template v-else>加载中...</template>
                 </span>
                 <span class="stat-item">
                   <Icon name="octicon:issue-opened-16" size="1.3em" color="#3FB950" />
-                  {{ formatNumber(software.githubData?.issues) }}
+                  <template v-if="software.githubStatus === 'success'">{{ formatNumber(software.githubData?.issues) }}</template>
+                  <template v-else-if="software.githubStatus === 'error'">获取失败</template>
+                  <template v-else>加载中...</template>
                 </span>
                 <span class="stat-item">
                   <Icon name="octicon:download-16" size="1.3em" color="#4493F8" />
-                  {{ software.downloads }}
+                  <template v-if="software.githubStatus === 'success'">{{ software.downloads }}</template>
+                  <template v-else-if="software.githubStatus === 'error'">获取失败</template>
+                  <template v-else>加载中...</template>
                 </span>
               </div>
             </div>
@@ -268,15 +291,21 @@ onMounted(async () => {
           <div class="software-meta">
             <span class="meta-item">
               <Icon name="octicon:code-16" size="1.3em" />
-              {{ software.language }}
+              <template v-if="software.githubStatus === 'success'">{{ software.language }}</template>
+              <template v-else-if="software.githubStatus === 'error'">获取失败</template>
+              <template v-else>加载中...</template>
             </span>
             <span class="meta-item">
               <Icon name="lucide:scale" size="1.3em" />
-              {{ software.license }}
+              <template v-if="software.githubStatus === 'success'">{{ software.license }}</template>
+              <template v-else-if="software.githubStatus === 'error'">获取失败</template>
+              <template v-else>加载中...</template>
             </span>
             <span class="meta-item">
               <Icon name="material-symbols:update-rounded" size="1.3em" />
-              更新于: {{ formatDate(software.lastUpdated) }}
+              <template v-if="software.githubStatus === 'success'">更新于: {{ formatDate(software.lastUpdated) }}</template>
+              <template v-else-if="software.githubStatus === 'error'">获取失败</template>
+              <template v-else>加载中...</template>
             </span>
           </div>
           
