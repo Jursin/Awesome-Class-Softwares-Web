@@ -1,14 +1,16 @@
 # Awesome-Class-Softwares-Web
 
-[Awesome-Class-Softwares](https://github.com/Jursin/Awesome-Class-Softwares) 网站，使用 [vuepress](https://vuepress.vuejs.org/) 和 [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume) 构建生成。
+[![Deploy to Server](https://github.com/Jursin/Awesome-Class-Softwares-Web/actions/workflows/Deploy.yml/badge.svg)](https://github.com/Jursin/Awesome-Class-Softwares-Web/actions/workflows/Deploy.yml)
 
-## 安装
+[Awesome-Class-Softwares](https://github.com/Jursin/Awesome-Class-Softwares) 网站源码，使用 [vuepress](https://vuepress.vuejs.org/) 和 [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume) 构建生成。
+
+## 安装依赖
 
 ```sh
 pnpm i
 ```
 
-## 使用
+## 开发
 
 ```sh
 # 启动开发服务
