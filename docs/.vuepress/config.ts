@@ -97,6 +97,7 @@ export default defineUserConfig({
       table: {
         align: 'center',
       },
+      field: true,
     //   codepen: true,      // 启用嵌入 codepen 语法 @[codepen](user/slash)
     //   replit: true,       // 启用嵌入 replit 语法 @[replit](user/repl-name)
     //   codeSandbox: true,  // 启用嵌入 codeSandbox 语法 @[codeSandbox](id)

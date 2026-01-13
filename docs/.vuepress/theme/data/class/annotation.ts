@@ -189,8 +189,8 @@ export const Annotation: CategoryConfig = {
       icon: "/icon/Kazuha.svg",
       repo: "Yunofactory/Kazuha",
       description: "适用于智慧黑板/交互智能平板的演示助手工具",
-      author: "Yunofactory",
-      avatar: "https://github.com/Yunofactory.png",
+      author: "Haraguse",
+      avatar: "https://github.com/Haraguse.png",
       tags: ["屏幕批注", "重点框选"],
       features: [
         "自由绘制： 支持自由地进行批注。",
