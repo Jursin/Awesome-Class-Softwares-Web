@@ -83,7 +83,7 @@ const goToDetail = (categorySlug, id) => {
 
 const formatDate = (dateString) => {
   try {
-    return new Date(dateString).toLocaleDateString('zh-CN')
+    return new Date(dateString).toLocaleDateString('zh-CN', { timeZone: 'Asia/Shanghai' })
   } catch {
     return dateString
   }
@@ -112,10 +112,34 @@ const fetchRepoData = async (software) => {
     language: data.language || '',
     license: data.license?.spdx_id || data.license?.name || '',
     createdAt: data.created_at || '',
-    updatedAt: data.updated_at || ''
+    last_commit: '',
+    defaultBranch: data.default_branch || ''
   }
 
+  let lastCommitDate = ''
   let downloads = software.downloads ?? '0'
+
+  try {
+    if (githubData.defaultBranch) {
+      const commitsResponse = await fetch(`${API_BASE}/repos/${software.repo}/commits?per_page=1&sha=${githubData.defaultBranch}`)
+      if (commitsResponse.ok) {
+        const commitsData = await commitsResponse.json()
+        const latestCommit = Array.isArray(commitsData) ? commitsData[0] : null
+        const commitDate = latestCommit?.commit?.author?.date || latestCommit?.commit?.committer?.date
+        if (commitDate) {
+          lastCommitDate = commitDate
+        }
+      }
+    }
+  } catch (commitError) {
+    console.warn(`获取 ${software.repo} 的最新提交失败:`, commitError)
+  }
+
+  if (!lastCommitDate) {
+    lastCommitDate = software.last_commit || software.lastUpdated || software.lastCommit || ''
+  }
+
+  githubData.last_commit = lastCommitDate
 
   try {
     const releasesResponse = await fetch(`${API_BASE}/repos/${software.repo}/releases`)
@@ -147,7 +171,7 @@ const fetchRepoData = async (software) => {
     language: githubData.language || software.language,
     license: githubData.license || software.license,
     createdAt: githubData.createdAt || software.createdAt,
-    lastUpdated: githubData.updatedAt || software.lastUpdated,
+    last_commit: lastCommitDate,
     downloads
   }
 }
@@ -162,7 +186,8 @@ onMounted(async () => {
     tags: software.tags || [],
     githubStatus: software.repo ? 'loading' : 'error',
     githubData: { stars: null, issues: null },
-    downloads: software.downloads ?? '0'
+    downloads: software.downloads ?? '0',
+    last_commit: software.last_commit || software.lastUpdated || software.lastCommit || ''
   }))
 
   loading.value = false
@@ -303,7 +328,7 @@ onMounted(async () => {
             </span>
             <span class="meta-item">
               <Icon name="material-symbols:update-rounded" size="1.3em" />
-              <template v-if="software.githubStatus === 'success'">更新于: {{ formatDate(software.lastUpdated) }}</template>
+              <template v-if="software.githubStatus === 'success'">更新于: {{ formatDate(software.last_commit) }}</template>
               <template v-else-if="software.githubStatus === 'error'">获取失败</template>
               <template v-else>加载中...</template>
             </span>

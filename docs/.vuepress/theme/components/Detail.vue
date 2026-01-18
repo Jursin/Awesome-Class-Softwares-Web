@@ -58,7 +58,8 @@ const formatDate = (dateString) => {
       month: '2-digit',
       day: '2-digit',
       hour: '2-digit',
-      minute: '2-digit'
+      minute: '2-digit',
+      timeZone: 'Asia/Shanghai'
     })
   } catch {
     return dateString
@@ -131,8 +132,33 @@ const fetchRepoDetail = async (repoName) => {
       language: data.language || '',
       license: data.license?.spdx_id || data.license?.name || '',
       createdAt: data.created_at || '',
-      updatedAt: data.updated_at || ''
+      last_commit: '',
+      defaultBranch: data.default_branch || ''
     }
+
+    let lastCommitDate = ''
+
+    try {
+      if (githubData.defaultBranch) {
+        const commitsResponse = await fetch(`${API_BASE}/repos/${repoName}/commits?per_page=1&sha=${githubData.defaultBranch}`)
+        if (commitsResponse.ok) {
+          const commitsData = await commitsResponse.json()
+          const latestCommit = Array.isArray(commitsData) ? commitsData[0] : null
+          const commitDate = latestCommit?.commit?.author?.date || latestCommit?.commit?.committer?.date
+          if (commitDate) {
+            lastCommitDate = commitDate
+          }
+        }
+      }
+    } catch (commitError) {
+      console.warn(`获取 ${repoName} 的最新提交失败:`, commitError)
+    }
+
+    if (!lastCommitDate) {
+      lastCommitDate = data.updated_at || ''
+    }
+
+    githubData.last_commit = lastCommitDate
 
     // 计算所有releases的所有assets下载量总和
     let downloads = '0'
@@ -167,18 +193,18 @@ const fetchRepoDetail = async (repoName) => {
       language: githubData.language,
       license: githubData.license,
       createdAt: githubData.createdAt,
-      lastUpdated: githubData.updatedAt,
+      last_commit: lastCommitDate,
       downloads,
       status: 'success'
     }
   } catch (error) {
     console.warn(`获取 ${repoName} 数据失败:`, error)
     return {
-      githubData: { stars: 0, issues: 0, language: '', license: '', createdAt: '', updatedAt: '' },
+      githubData: { stars: 0, issues: 0, language: '', license: '', createdAt: '', last_commit: '' },
       language: '',
       license: '',
       createdAt: '',
-      lastUpdated: '',
+      last_commit: '',
       downloads: '未知',
       status: 'error'
     }
@@ -194,7 +220,8 @@ onMounted(async () => {
       software.value = {
         ...foundSoftware,
         githubStatus: foundSoftware.repo ? 'loading' : 'error',
-        downloads: foundSoftware.downloads ?? '0'
+        downloads: foundSoftware.downloads ?? '0',
+        last_commit: foundSoftware.last_commit || foundSoftware.lastUpdated || foundSoftware.lastCommit || ''
       }
       document.title = `${foundSoftware.name} | ACS`
       loading.value = false
@@ -366,7 +393,7 @@ onMounted(async () => {
             <div class="info-grid">
               <div class="info-item">
                 <label class="info-label">
-                  <Icon name="octicon:clock-16" /> 创建日期
+                  <Icon name="octicon:clock-16" /> 创建于
                 </label>
                 <span class="info-value">
                   <template v-if="software.githubStatus === 'success'">{{ formatDate(software.createdAt) }}</template>
@@ -376,10 +403,10 @@ onMounted(async () => {
               </div>
               <div class="info-item">
                 <label class="info-label">
-                  <Icon name="material-symbols:update-rounded" /> 上次更新
+                  <Icon name="material-symbols:update-rounded" /> 更新于
                 </label>
                 <span class="info-value">
-                  <template v-if="software.githubStatus === 'success'">{{ formatDate(software.lastUpdated) }}</template>
+                  <template v-if="software.githubStatus === 'success'">{{ formatDate(software.last_commit) }}</template>
                   <template v-else-if="software.githubStatus === 'error'">获取失败</template>
                   <template v-else>加载中...</template>
                 </span>
@@ -438,7 +465,7 @@ onMounted(async () => {
                 <span class="link-text">文档</span>
                 <Icon name="octicon:arrow-right-16" />
               </a>
-              <a v-if="software.releases" :href="software.releases" target="_blank" class="link-btn download">
+              <a v-if="software.repo" :href="`https://ghproxy.jursin.top/?url=https://github.com/${software.repo}&fetchReleases=true`" target="_blank" class="link-btn download">
                 <Icon name="octicon:download-16" />
                 <span class="link-text">发行版</span>
                 <Icon name="octicon:arrow-right-16" />

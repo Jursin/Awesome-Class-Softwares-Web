@@ -15,6 +15,10 @@ title: 贡献指南
 ## 项目推荐
 如果您想要推荐自己或他人的项目，请参考已有配置文件并按照以下模板提交 [Issues](https://github.com/Jursin/Awesome-Class-Softwares/issues) 或 Fork 后提交 [Pull Requests](https://github.com/Jursin/Awesome-Class-Softwares/pulls) 等待审核后合并。
 
+::: note
+配置文件目录 `docs/.vuepress/theme/data/class`
+:::
+
 :::: field-group
 ::: field name="id" type="string" required
 唯一标识（即 `Repository name`）
