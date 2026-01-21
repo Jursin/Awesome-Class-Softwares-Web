@@ -4,7 +4,11 @@ import { useRouter } from 'vue-router'
 import { softwareList, categories as categoryData } from '../data/class/index'
 
 const router = useRouter()
-const API_BASE = 'https://gh-api.jursin.top/api/github'
+const API_BASES = [
+  'https://ghfile.geekertao.top/https://api.github.com',
+  'https://gh-api.jursin.top/api/github',
+  'https://api.github.com'
+]
 
 // 响应式数据
 const searchQuery = ref('')
@@ -13,6 +17,7 @@ const softwareData = ref([])
 const loading = ref(true)
 const layoutMode = ref('default')
 const sortMode = ref('default')
+const iconLoadStatus = ref({})
 
 // 计算属性
 const categories = computed(() => [
@@ -28,6 +33,23 @@ const categoryCounts = computed(() => {
   })
   return counts
 })
+
+const fetchWithFallback = async (path, options = {}) => {
+  let lastError
+  for (const base of API_BASES) {
+    try {
+      const response = await fetch(`${base}${path}`, options)
+      if (!response.ok) {
+        lastError = new Error(`请求失败 ${response.status}`)
+        continue
+      }
+      return await response.json()
+    } catch (error) {
+      lastError = error
+    }
+  }
+  throw lastError || new Error('请求失败')
+}
 
 const filteredSoftware = computed(() => {
   const filtered = softwareData.value.filter(item => {
@@ -61,14 +83,6 @@ const clearFilters = () => {
   activeCategory.value = '全部'
 }
 
-const setLayout = (mode) => {
-  layoutMode.value = mode
-}
-
-const setSort = (mode) => {
-  sortMode.value = mode
-}
-
 const toggleLayout = () => {
   layoutMode.value = layoutMode.value === 'default' ? 'cozy' : 'default'
 }
@@ -95,17 +109,20 @@ const formatNumber = (num) => {
   return num.toString()
 }
 
-const handleImageError = (event) => {
-  event.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjUwIiBoZWlnaHQ9IjUwIiBmaWxsPSIjRjBGMEYwIi8+CjxwYXRoIGQ9Ik0yNSAxNkMyOC44NjYgMTYgMzIgMTkuMTM0IDMyIDIzQzMyIDI2Ljg2NiAyOC44NjYgMzAgMjUgMzBDMjEuMTM0IDMwIDE4IDI2Ljg2NiAxOCAyM0MxOCAxOS4xMzQgMjEuMTM0IDE2IDI1IDE2WiIgZmlsbD0iIzk5OTk5OSIvPgo8cGF0aCBkPSJNMTUgMzRDMzUgMzQgMzUgMzQgMzUgMzRDMzUgMzQgMzUgMzYgMzUgMzhDMTUgMzggMTUgMzggMTUgMzhDMTUgMzggMTUgMzYgMTUgMzRaIiBmaWxsPSIjOTk5OTk5Ii8+Cjwvc3ZnPgo='
+const handleIconLoad = (id) => {
+  iconLoadStatus.value[id] = 'success'
+}
+
+const handleIconError = (id) => {
+  iconLoadStatus.value[id] = 'error'
+}
+
+const getIconLoadStatus = (id) => {
+  return iconLoadStatus.value[id] || 'loading'
 }
 
 const fetchRepoData = async (software) => {
-  const response = await fetch(`${API_BASE}/repos/${software.repo}`)
-  if (!response.ok) {
-    throw new Error(`获取 ${software.repo} 仓库失败: ${response.status}`)
-  }
-
-  const data = await response.json()
+  const data = await fetchWithFallback(`/repos/${software.repo}`)
   const githubData = {
     stars: data.stargazers_count || 0,
     issues: data.open_issues_count || 0,
@@ -121,14 +138,11 @@ const fetchRepoData = async (software) => {
 
   try {
     if (githubData.defaultBranch) {
-      const commitsResponse = await fetch(`${API_BASE}/repos/${software.repo}/commits?per_page=1&sha=${githubData.defaultBranch}`)
-      if (commitsResponse.ok) {
-        const commitsData = await commitsResponse.json()
-        const latestCommit = Array.isArray(commitsData) ? commitsData[0] : null
-        const commitDate = latestCommit?.commit?.author?.date || latestCommit?.commit?.committer?.date
-        if (commitDate) {
-          lastCommitDate = commitDate
-        }
+      const commitsData = await fetchWithFallback(`/repos/${software.repo}/commits?per_page=1&sha=${githubData.defaultBranch}`)
+      const latestCommit = Array.isArray(commitsData) ? commitsData[0] : null
+      const commitDate = latestCommit?.commit?.author?.date || latestCommit?.commit?.committer?.date
+      if (commitDate) {
+        lastCommitDate = commitDate
       }
     }
   } catch (commitError) {
@@ -142,24 +156,21 @@ const fetchRepoData = async (software) => {
   githubData.last_commit = lastCommitDate
 
   try {
-    const releasesResponse = await fetch(`${API_BASE}/repos/${software.repo}/releases`)
-    if (releasesResponse.ok) {
-      const releasesData = await releasesResponse.json()
+    const releasesData = await fetchWithFallback(`/repos/${software.repo}/releases`)
 
-      if (Array.isArray(releasesData) && releasesData.length > 0) {
-        let totalDownloads = 0
+    if (Array.isArray(releasesData) && releasesData.length > 0) {
+      let totalDownloads = 0
 
-        for (const release of releasesData) {
-          if (release && Array.isArray(release.assets)) {
-            for (const asset of release.assets) {
-              totalDownloads += asset.download_count || 0
-            }
+      for (const release of releasesData) {
+        if (release && Array.isArray(release.assets)) {
+          for (const asset of release.assets) {
+            totalDownloads += asset.download_count || 0
           }
         }
+      }
 
-        if (totalDownloads > 0) {
-          downloads = formatNumber(totalDownloads)
-        }
+      if (totalDownloads > 0) {
+        downloads = formatNumber(totalDownloads)
       }
     }
   } catch (releaseError) {
@@ -176,6 +187,11 @@ const fetchRepoData = async (software) => {
   }
 }
 
+// 拼接作者头像 URL
+const getAvatarUrl = (author) => {
+  return `https://github.com/${author}.png`
+}
+
 // 初始化
 onMounted(async () => {
   loading.value = true
@@ -183,6 +199,7 @@ onMounted(async () => {
   // 先显示所有卡片的基础信息
   softwareData.value = softwareList.map((software) => ({
     ...software,
+    avatar: getAvatarUrl(software.author),
     tags: software.tags || [],
     githubStatus: software.repo ? 'loading' : 'error',
     githubData: { stars: null, issues: null },
@@ -285,7 +302,15 @@ onMounted(async () => {
             />
           </div>
           <div class="card-header">
-            <img :src="software.icon" :alt="software.name" class="software-icon" @error="handleImageError">
+            <img v-if="getIconLoadStatus(software.id) !== 'error'" 
+              :src="software.icon" 
+              :alt="software.name" 
+              class="software-icon" 
+              @load="handleIconLoad(software.id)"
+              @error="handleIconError(software.id)">
+            <svg v-else xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none" class="software-icon">
+              <rect width="50" height="50" fill="#F0F0F0"/>
+            </svg>
             <div class="card-title-section">
               <h3 class="software-name">{{ software.name }}</h3>
               <div class="github-stats">
@@ -320,7 +345,9 @@ onMounted(async () => {
               <template v-else-if="software.githubStatus === 'error'">获取失败</template>
               <template v-else>加载中...</template>
             </span>
-            <span class="meta-item">
+            <span 
+              v-if="software.githubStatus !== 'success' || software.license"
+              class="meta-item">
               <Icon name="lucide:scale" size="1.3em" />
               <template v-if="software.githubStatus === 'success'">{{ software.license }}</template>
               <template v-else-if="software.githubStatus === 'error'">获取失败</template>

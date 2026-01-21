@@ -12,7 +12,6 @@ export const Annotation: CategoryConfig = {
       repo: "Alan-CRL/Inkeys",
       description: "Windows 屏幕批注工具，拥有批注高效和功能丰富等特点，适用于触摸设备和PC端",
       author: "Alan-CRL",
-      avatar: "https://github.com/Alan-CRL.png",
       badge: [
         { type: "danger", text: "🔥 推荐" },
       ],
@@ -46,7 +45,6 @@ export const Annotation: CategoryConfig = {
       repo: "WXRIW/Ink-Canvas",
       description: "一款轻量级画板软件，基于WPF/C#，其针对希沃一体机进行了特别优化，与预装的“希沃白板 5”软件相比，启动速度大幅度提升（提升5-10 倍），系统资源占用更小，使用体验更佳",
       author: "WXRIW",
-      avatar: "https://github.com/WXRIW.png",
       tags: ["屏幕批注", "屏幕画板", "形状识别"],
       badge: [
         { type: "info", text: "已停更" },
@@ -81,7 +79,6 @@ export const Annotation: CategoryConfig = {
       repo: "clover-yan/Ink-Canvas-Plus",
       description: "一款复刻自 WXRIW/Ink Canvas 的 Windows 画板应用，旨在优化各方面的使用体验，并尽可能保留原版 Ink Canvas 的操作体验",
       author: "clover-yan",
-      avatar: "https://github.com/clover-yan.png",
       tags: ["屏幕批注", "屏幕画板", "形状识别", "Ink-Canvas"],
       features: [
         "Ink-Canvas 的全部功能",
@@ -102,7 +99,6 @@ export const Annotation: CategoryConfig = {
       repo: "WuChanging/Ink-Canvas",
       description: "基于Ink Canvas二次开发，优化了界面 UI，是一款好用的屏幕批注/板书/PPT批注工具",
       author: "WuChanging",
-      avatar: "https://github.com/WuChanging.png",
       badge: [
         { type: "info", text: "已停更" },
       ],
@@ -127,7 +123,6 @@ export const Annotation: CategoryConfig = {
       repo: "BaiYang2238/Ink-Canvas-Better",
       description: "一款在 Ink-Canvas-Artistry 的基础上对 Ink-Canvas 进行了二次修改的软件，且移除了点名和计时器工具等非画板软件的核心功能",
       author: "BaiYang2238",
-      avatar: "https://github.com/BaiYang2238.png",
       tags: ["屏幕批注", "屏幕画板", "形状识别", "Ink-Canvas-Artistry"],
       features: [
         "Ink-Canvas-Artistry 的基本功能",
@@ -146,7 +141,6 @@ export const Annotation: CategoryConfig = {
       repo: "InkCanvas/InkCanvasForClass",
       description: "一款开源易用的电子教鞭软件，专为课堂教学场景优化设计，这将会是最后一次基于 InkCanvas 控件的倔强",
       author: "segf4ultk1nger",
-      avatar: "https://github.com/segf4ultk1nger.png",
       badge: [
         { type: "info", text: "已停更" },
       ],
@@ -169,7 +163,6 @@ export const Annotation: CategoryConfig = {
       repo: "InkCanvasForClass/community",
       description: "InkCanvasForClass 社区版",
       author: "",
-      avatar: "https://github.com/.png",
       tags: ["屏幕批注", "屏幕画板", "形状识别", "InkCanvasForClass"],
       features: [
         "InkCanvasForClass 的全部功能",
@@ -190,7 +183,6 @@ export const Annotation: CategoryConfig = {
       repo: "Yunofactory/Kazuha",
       description: "适用于智慧黑板/交互智能平板的演示助手工具",
       author: "Haraguse",
-      avatar: "https://github.com/Haraguse.png",
       tags: ["屏幕批注", "重点框选"],
       features: [
         "自由绘制： 支持自由地进行批注。",
@@ -214,7 +206,6 @@ export const Annotation: CategoryConfig = {
       repo: "lh11117/LemonxNote",
       description: "一款用 C++ 和 Qt 开发的轻量白板软件",
       author: "lh11117",
-      avatar: "https://github.com/lh11117.png",
       badge: [
         { type: "info", text: "已停更" },
       ],

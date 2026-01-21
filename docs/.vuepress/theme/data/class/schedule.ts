@@ -12,7 +12,6 @@ export const Schedule: CategoryConfig = {
       repo: "SmartTeachCN/CsesWebEditor",
       description: "一个基于 Web 的课程表编辑器，全称 Course Schedule Exchange Schema，支持 CSES 格式的课程表创建、管理和导出",
       author: "PYLXU",
-      avatar: "https://github.com/PYLXU.png",
       tags: ["CSES", "课表编辑器", "Web 应用"],
       features: [
         "📅 可视化课程表编辑",
@@ -37,7 +36,6 @@ export const Schedule: CategoryConfig = {
       repo: "ClassIsland/ClassIsland",
       description: "一款适用于班级多媒体屏幕的课表信息显示工具",
       author: "HelloWRC",
-      avatar: "https://github.com/HelloWRC.png",
       badge: [
         { type: "danger", text: "🔥 推荐" },
       ],
@@ -65,7 +63,6 @@ export const Schedule: CategoryConfig = {
       repo: "Class-Widgets/Class-Widgets",
       description: "一款使用 Python 开发的 Qt 风格的全新桌面课表软件",
       author: "RinLit-233-shiroko",
-      avatar: "https://github.com/RinLit-233-shiroko.png",
       badge: [
         { type: "danger", text: "推荐" },
       ],
@@ -96,7 +93,7 @@ export const Schedule: CategoryConfig = {
       repo: "Yamikani-Flipped/LingYun-Class-Widgets",
       description: "一款功能丰富的桌面工具，支持在桌面显示各种组件，支持 CSES 通用课程表格式",
       author: "Yamikani-Flipped",
-      avatar: "https://github.com/Yamikani-Flipped.png",
+
       tags: ["桌面显示", "课程表管理", "息屏显示", "桌面小组件"],
       features: [
         "桌面显示时间、日期",
@@ -130,7 +127,7 @@ export const Schedule: CategoryConfig = {
       repo: "EnderWolf006/ElectronClassSchedule",
       description: "一款电子课程表软件",
       author: "EnderWolf006",
-      avatar: "https://github.com/EnderWolf006.png",
+
       tags: ["桌面小组件", "课程表", "单双周轮换", "Electron"],
       features: [
         "显示当天课程表、星期，倒数日",
@@ -156,7 +153,6 @@ export const Schedule: CategoryConfig = {
       repo: "GPUawa/iClass",
       description: "一个使用 Electron 和 Vue 3 构建的教室大屏实用工具箱。",
       author: "GPUawa",
-      avatar: "https://github.com/GPUawa.png",
       tags: ["课程表", "Electron", "Vue 3"],
       features: [
         "展示当日课程、当前状态倒计时、星期、天气、一言",

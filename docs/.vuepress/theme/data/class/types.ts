@@ -13,7 +13,6 @@ export interface Software {
   repo: string;
   description: string;
   author: string;
-  avatar: string;
   badge?: Badge[];
   tags: string[];
   features: string[];

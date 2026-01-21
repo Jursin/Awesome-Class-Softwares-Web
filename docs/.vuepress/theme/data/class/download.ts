@@ -12,7 +12,6 @@ export const Download: CategoryConfig = {
       repo: "SECTL/SectionIstool",
       description: "一款方便、快捷下载适合班级一体机使用的各类软件的下载器",
       author: "lzy98276",
-      avatar: "https://github.com/lzy98276.png",
       badge: [
         { type: "info", text: "长时间未更新" },
       ],
@@ -36,7 +35,6 @@ export const Download: CategoryConfig = {
       repo: "CNwenwen/SeewoHUB",
       description: "一款方便、快捷下载适合班级一体机使用的各类软件的下载器",
       author: "CNwenwen",
-      avatar: "https://github.com/CNwenwen.png",
       badge: [
         { type: "info", text: "长时间未更新" },
       ],

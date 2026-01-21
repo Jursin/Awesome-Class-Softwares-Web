@@ -12,7 +12,6 @@ export const Board: CategoryConfig = {
       repo: "ExamAware/ExamAware2",
       description: "一款易用、跨平台的大屏考试信息展示工具",
       author: "hello8693",
-      avatar: "https://github.com/hello8693.png",
       badge: [
         { type: "danger", text: "推荐" },
       ],
@@ -40,7 +39,6 @@ export const Board: CategoryConfig = {
       repo: "ExamAware/ExamShowboard-Legacy",
       description: "旧版考试看板",
       author: "hello8693",
-      avatar: "https://github.com/hello8693.png",
       tags: ["考试看板", "多平台支持", "Electron"],
       features: [
         "上方展示考试标题、信息",
@@ -62,7 +60,6 @@ export const Board: CategoryConfig = {
       repo: "ExamAware/ExamSchedule",
       description: "静态网页版本的考试看板，可自行部署",
       author: "MKStoler1024",
-      avatar: "https://github.com/MKStoler1024.png",
       tags: ["考试看板", "电子钟表", "Web"],
       features: [
         "Exam-Showboard 所有功能",
@@ -86,7 +83,6 @@ export const Board: CategoryConfig = {
       repo: "StickyHomeworks2/StickyHomeworks2",
       description: "一款支持富文本的桌面作业贴工具",
       author: "jizilin6732",
-      avatar: "https://github.com/jizilin6732.png",
       badge: [
         { type: "danger", text: "推荐" },
       ],
@@ -118,7 +114,6 @@ export const Board: CategoryConfig = {
       repo: "Xwei1645/zooni",
       description: "一个 Previous Gen 的教室大屏作业看板",
       author: "Xwei1645",
-      avatar: "https://github.com/Xwei1645.png",
       tags: ["左右看板", "多平台支持", "Flutter"],
       features: [
         "作业管理",
@@ -148,7 +143,6 @@ export const Board: CategoryConfig = {
       repo: "ZeroCatDev/Classworks",
       description: "基于 Vue 3 + Vuetify 的现代化作业管理系统前端项目",
       author: "Sunwuyuan",
-      avatar: "https://github.com/Sunwuyuan.png",
       badge: [
         { type: "danger", text: "推荐" },
       ],
@@ -174,7 +168,6 @@ export const Board: CategoryConfig = {
       repo: "EnderWolf006/HomeworkBoard",
       description: "一款支持云同步的作业展示板软件",
       author: "EnderWolf006",
-      avatar: "https://github.com/EnderWolf006.png",
       badge: [
         { type: "info", text: "已停更" },
       ],
@@ -207,7 +200,6 @@ export const Board: CategoryConfig = {
       repo: "QQHKX/Immersive-clock",
       description: "一款基于 React + TypeScript + Vite 构建的轻量化桌面 / 网页时钟应用",
       author: "QQHKX",
-      avatar: "https://github.com/QQHKX.png",
       tags: ["时钟", "Web"],
       features: [
         "时间管理模式",
@@ -234,7 +226,7 @@ export const Board: CategoryConfig = {
       repo: "Candlest/ClassBoard",
       description: "一款高自由度的，用于显示教学信息的壁纸软件，功能包括高考倒计时、公告栏、以及能够提示当前课程的课程表",
       author: "Candlest",
-      avatar: "https://github.com/Candlest.png",
+
       tags: ["桌面小组件", "课程表", "倒计日", "作业发布", "动态壁纸"],
       features: [
         "课程表展示",
@@ -252,7 +244,6 @@ export const Board: CategoryConfig = {
       repo: "cjhdevact/LockTime",
       description: "一个具有深/浅色主题，云母/亚克力背景，Fluent UI 2界面的时钟锁屏（屏保），可以作为屏保使用，也可以自习时在教学白板上使用",
       author: "cjhdevact",
-      avatar: "https://github.com/cjhdevact.png",
       tags: ["时钟", "锁屏", "屏保"],
       features: [
         "显示时间",
@@ -274,7 +265,7 @@ export const Board: CategoryConfig = {
       repo: "xinghai-smartedu/classwindow",
       description: "一个美丽、精巧的用于班级的桌面悬浮窗软件，基于Electron构建，用于显示信息等",
       author: "yeying-xingchen",
-      avatar: "https://github.com/yeying-xingchen.png",
+
       tags: ["桌面小组件", "信息展示", "Electron"],
       features: [
         "桌面悬浮窗显示时间、作业等"

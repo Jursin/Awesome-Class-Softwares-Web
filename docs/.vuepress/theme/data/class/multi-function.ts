@@ -12,7 +12,7 @@ export const MultiFunction: CategoryConfig = {
       repo: "STBBRD/ZongziTEK-Blackboard-Sticker",
       description: "用于白板一体机的桌面小部件",
       author: "STBBRD",
-      avatar: "https://github.com/STBBRD.png",
+
       tags: ["课程表", "黑板贴", "粽子科技", "上下课提醒", "天气提醒", "快速黑板", "启动台"],
       features: [
         "适用于白板一体机的桌面小部件",
@@ -37,7 +37,7 @@ export const MultiFunction: CategoryConfig = {
       repo: "Ris-Soft/Ris_ClassTool",
       description: "瑞思课堂工具",
       author: "PYLXU",
-      avatar: "https://github.com/PYLXU.png",
+
       tags: ["课堂工具", "瑞思"],
       features: [
         "左侧导航栏设计，支持项目快速切换",
@@ -61,7 +61,6 @@ export const MultiFunction: CategoryConfig = {
       repo: "OrbiBoard/OrbiBoard",
       description: "基于 Electron 的以 JavaScript 为核心的插件化大屏课堂辅助工具",
       author: "PYLXU",
-      avatar: "https://github.com/PYLXU.png",
       tags: ["课堂工具", "大屏辅助", "插件化", "Electron", "JavaScript"],
       features: [
         "精美启动页：展示插件加载状态日志",
@@ -81,7 +80,7 @@ export const MultiFunction: CategoryConfig = {
       repo: "Return-Log/Education-Clock",
       description: "一个实用的班级信息看板",
       author: "Return-Log",
-      avatar: "https://github.com/Return-Log.png",
+
       tags: ["桌面小组件", "课程表", "倒计日", "天气预报", "PyQt", "公告板", "桌面时钟软件"],
       features: [
         "桌面时钟",
@@ -104,7 +103,6 @@ export const MultiFunction: CategoryConfig = {
       repo: "laoshuikaixue/VoiceHub",
       description: "一个使用 Nuxt 3 全栈框架开发的现代化校园广播站点歌管理系统",
       author: "laoshuikaixue",
-      avatar: "https://github.com/laoshuikaixue.png",
       tags: ["广播站", "点歌系统", "Nuxt3"],
       features: [
         "智能点歌系统：用户可以点歌或给已有歌曲投票，支持网易云音乐和QQ音乐搜索，可选择期望播出时段",

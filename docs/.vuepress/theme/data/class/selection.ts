@@ -12,7 +12,6 @@ export const Selection: CategoryConfig = {
       repo: "SECTL/SecRandom",
       description: "一款能以多种方式进行完全公平的随机抽取的软件",
       author: "lzy98276",
-      avatar: "https://github.com/lzy98276.png",
       badge: [
         { type: "danger", text: "推荐" },
       ],
@@ -48,7 +47,6 @@ export const Selection: CategoryConfig = {
       repo: "NamePickerOrg/NamePicker",
       description: "一款简洁的点名软件",
       author: "LHGS-github",
-      avatar: "https://github.com/LHGS-github.png",
       tags: ["点名", "Flutter"],
       features: [
         "基础的点名功能",
@@ -76,7 +74,6 @@ export const Selection: CategoryConfig = {
       repo: "LuoYunXi0407/Rand",
       description: "一款美观、易用、强大的抽号软件",
       author: "LuoYunXi0407",
-      avatar: "https://github.com/LuoYunXi0407.png",
       badge: [
         { type: "info", text: "长时间未更新" },
       ],
@@ -97,7 +94,6 @@ export const Selection: CategoryConfig = {
       repo: "typed-sigterm/ex-caller",
       description: "一个简约风格的随机点名工具",
       author: "typed-sigterm",
-      avatar: "https://github.com/typed-sigterm.png",
       tags: ["随机点名", "网页"],
       features: [
         "🔄️ 随机点名，可自定义过号时间",

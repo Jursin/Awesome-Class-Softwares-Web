@@ -6,11 +6,19 @@ import Swiper from './Swiper.vue'
 import VPComment from '@theme/VPComment.vue'
 const route = useRoute()
 const router = useRouter()
-const API_BASE = 'https://gh-api.jursin.top/api/github'
+const API_BASES = [
+  'https://ghfile.geekertao.top/https://api.github.com',
+  'https://gh-api.jursin.top/api/github',
+  'https://api.github.com'
+]
+const LANGUAGE_COLOR_URL = 'https://gh.llkk.cc/https://raw.githubusercontent.com/ozh/github-colors/master/colors.json'
 
 // 响应式数据
 const software = ref(null)
 const loading = ref(true)
+const avatarLoadStatus = ref({})
+const languageColors = ref({})
+const iconLoadStatus = ref('loading')
 const mediaItems = computed(() => {
   const items = []
   const vids = software.value?.bvid
@@ -45,8 +53,21 @@ const softwareId = computed(() => {
 })
 
 // 方法
-const goBack = () => {
-  router.back()
+const fetchWithFallback = async (path, options = {}) => {
+  let lastError
+  for (const base of API_BASES) {
+    try {
+      const response = await fetch(`${base}${path}`, options)
+      if (!response.ok) {
+        lastError = new Error(`请求失败 ${response.status}`)
+        continue
+      }
+      return await response.json()
+    } catch (error) {
+      lastError = error
+    }
+  }
+  throw lastError || new Error('请求失败')
 }
 
 const formatDate = (dateString) => {
@@ -74,27 +95,48 @@ const formatNumber = (num) => {
   return num.toString()
 }
 
-const handleImageError = (event) => {
-  event.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjRjBGMEYwIi8+CjxwYXRoIGQ9Ik01MCAzMkM2MC40ODUzIDMyIDY5IDQwLjUxNDcgNjkgNTFDNjkgNjEuNDg1MyA2MC40ODUzIDcwIDUwIDcwQzM5LjUxNDcgNzAgMzEgNjEuNDg1MyAzMSA1MUMzMSA0MC41MTQ3IDM5LjUxNDcgMzIgNTAgMzJaIiBmaWxsPSIjOTk5OTk5Ii8+CjxwYXRoIGQ9Ik0zMCA2OEM3MCA2OCA3MCA2OCA3MCA2OEM3MCA2OCA3MCA3MiA3MCA3NkMzMCA3NiAzMCA3NiAzMCA3NkMzMCA3NiAzMCA3MiAzMCA2OFoiIGZpbGw9IiM5OTk5OTkiLz4KPC9zdmc+Cg=='
+const handleIconLoad = () => {
+  iconLoadStatus.value = 'success'
+}
+
+const handleIconError = () => {
+  iconLoadStatus.value = 'error'
+}
+
+const handleAvatarLoad = (author) => {
+  avatarLoadStatus.value[author] = 'success'
+}
+
+const handleAvatarError = (author) => {
+  avatarLoadStatus.value[author] = 'error'
+}
+
+const getAvatarLoadStatus = (author) => {
+  return avatarLoadStatus.value[author] || 'loading'
 }
 
 const getLanguageColor = (language) => {
-  const colors = {
-    'JavaScript': '#f1e05a',
-    'TypeScript': '#2b7489',
-    'Python': '#3572A5',
-    'Java': '#b07219',
-    'Go': '#00ADD8',
-    'Rust': '#dea584',
-    'C++': '#f34b7d',
-    'C#': '#178600',
-    'PHP': '#777bb3',
-    'HTML': '#e34c26',
-    'CSS': '#563d7c',
-    'Vue': '#41b883',
-    'React': '#61dafb'
+  if (!language) return '#cccccc'
+  return languageColors.value[language] || '#cccccc'
+}
+
+// 加载 GitHub 语言颜色映射
+const loadLanguageColors = async () => {
+  try {
+    const res = await fetch(LANGUAGE_COLOR_URL)
+    if (!res.ok) throw new Error(`语言颜色请求失败 ${res.status}`)
+    const data = await res.json()
+    const map = {}
+    for (const [lang, info] of Object.entries(data)) {
+      if (info && typeof info === 'object' && info.color) {
+        map[lang] = info.color
+      }
+    }
+    languageColors.value = map
+  } catch (e) {
+    console.warn('加载语言颜色失败，使用默认颜色:', e)
+    languageColors.value = {}
   }
-  return colors[language] || '#cccccc'
 }
 
 const getTagSize = (tag) => {
@@ -105,25 +147,16 @@ const getTagSize = (tag) => {
   return `${baseSize - 2}px`
 }
 
-// 获取作者GitHub头像
-const getAuthorAvatar = (repo, author) => {
-  if (repo && repo.includes('/')) {
-    const username = repo.split('/')[0]
-    return `https://github.com/${username}.png?size=40`
-  }
-  return `https://ui-avatars.com/api/?name=${encodeURIComponent(author || 'Unknown')}&background=random&size=40`
+// 拼接作者头像 URL
+const getAvatarUrl = (author) => {
+  return `https://github.com/${author}.png`
 }
 
 // 从GitHub API获取仓库详细信息
 const fetchRepoDetail = async (repoName) => {
   try {
     // 获取仓库基本信息
-    const response = await fetch(`${API_BASE}/repos/${repoName}`)
-    if (!response.ok) {
-      throw new Error(`获取 ${repoName} 仓库失败: ${response.status}`)
-    }
-
-    const data = await response.json()
+    const data = await fetchWithFallback(`/repos/${repoName}`)
 
     // 从GitHub API获取所需字段
     const githubData = {
@@ -140,14 +173,11 @@ const fetchRepoDetail = async (repoName) => {
 
     try {
       if (githubData.defaultBranch) {
-        const commitsResponse = await fetch(`${API_BASE}/repos/${repoName}/commits?per_page=1&sha=${githubData.defaultBranch}`)
-        if (commitsResponse.ok) {
-          const commitsData = await commitsResponse.json()
-          const latestCommit = Array.isArray(commitsData) ? commitsData[0] : null
-          const commitDate = latestCommit?.commit?.author?.date || latestCommit?.commit?.committer?.date
-          if (commitDate) {
-            lastCommitDate = commitDate
-          }
+        const commitsData = await fetchWithFallback(`/repos/${repoName}/commits?per_page=1&sha=${githubData.defaultBranch}`)
+        const latestCommit = Array.isArray(commitsData) ? commitsData[0] : null
+        const commitDate = latestCommit?.commit?.author?.date || latestCommit?.commit?.committer?.date
+        if (commitDate) {
+          lastCommitDate = commitDate
         }
       }
     } catch (commitError) {
@@ -165,8 +195,7 @@ const fetchRepoDetail = async (repoName) => {
 
     // 获取所有releases信息并计算总下载量
     try {
-      const releasesResponse = await fetch(`${API_BASE}/repos/${repoName}/releases`)
-      const releasesData = await releasesResponse.json()
+      const releasesData = await fetchWithFallback(`/repos/${repoName}/releases`)
 
       if (releasesData && Array.isArray(releasesData) && releasesData.length > 0) {
         // 统计所有releases中所有assets的下载量总和
@@ -200,25 +229,30 @@ const fetchRepoDetail = async (repoName) => {
   } catch (error) {
     console.warn(`获取 ${repoName} 数据失败:`, error)
     return {
-      githubData: { stars: 0, issues: 0, language: '', license: '', createdAt: '', last_commit: '' },
+      stars: 0,
+      issues: 0,
       language: '',
       license: '',
       createdAt: '',
       last_commit: '',
-      downloads: '未知',
+      downloads: '',
       status: 'error'
     }
   }
 }
 
 onMounted(async () => {
+  // 并行加载语言颜色映射（不阻塞页面）
+  loadLanguageColors()
   // 查找软件数据
   const foundSoftware = softwareList.find(item => item.id === softwareId.value)
 
   try {
     if (foundSoftware) {
+      iconLoadStatus.value = 'loading'
       software.value = {
         ...foundSoftware,
+        avatar: getAvatarUrl(foundSoftware.author),
         githubStatus: foundSoftware.repo ? 'loading' : 'error',
         downloads: foundSoftware.downloads ?? '0',
         last_commit: foundSoftware.last_commit || foundSoftware.lastUpdated || foundSoftware.lastCommit || ''
@@ -263,11 +297,10 @@ onMounted(async () => {
 <template>
   <div class="software-detail" v-if="software">
     <div class="detail-container">
-      <!-- 返回按钮 -->
       <nav class="breadcrumb">
-        <button class="back-btn" @click="goBack">
-          <Icon name="material-symbols:arrow-back-rounded" size="1.2em" />
-          返回主页
+        <button class="home-btn" @click="router.push('/')">
+          <Icon name="octicon:home-16" size="1em" />
+          主页
         </button>
         <span class="breadcrumb-separator">/</span>
         <span class="current-page">{{ software.category }}</span>
@@ -278,7 +311,15 @@ onMounted(async () => {
       <!-- 头部信息 -->
       <header class="detail-header">
         <div class="header-main">
-          <img :src="software.icon" :alt="software.name" class="detail-icon" @error="handleImageError">
+          <img v-if="iconLoadStatus !== 'error'" 
+            :src="software.icon" 
+            :alt="software.name" 
+            class="detail-icon" 
+            @load="handleIconLoad"
+            @error="handleIconError">
+          <svg v-else xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 100 100" fill="none" class="detail-icon">
+            <rect width="100" height="100" fill="#F0F0F0"/>
+          </svg>
           <div class="header-content">
             <h1 class="software-title">{{ software.name }}</h1>
             <p class="software-description">{{ software.description }}</p>
@@ -419,8 +460,14 @@ onMounted(async () => {
                   <a v-if="software.author"
                     :href="`https://github.com/${software.author}`" target="_blank"
                     rel="noreferrer" class="author-link">
-                    <img :src="software.avatar || getAuthorAvatar(software.repo, software.author)"
-                      :alt="software.author" class="author-avatar" />
+                    <img v-if="getAvatarLoadStatus(software.author) !== 'error'"
+                      :src="software.avatar"
+                      :alt="software.author" class="author-avatar"
+                      @load="handleAvatarLoad(software.author)"
+                      @error="handleAvatarError(software.author)" />
+                    <svg v-else xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="author-avatar">
+                      <path fill="currentColor" d="M12 19.2c-2.5 0-4.71-1.28-6-3.2c.03-2 4-3.1 6-3.1s5.97 1.1 6 3.1a7.23 7.23 0 0 1-6 3.2M12 5a3 3 0 0 1 3 3a3 3 0 0 1-3 3a3 3 0 0 1-3-3a3 3 0 0 1 3-3m0-3A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10c0-5.53-4.5-10-10-10" />
+                    </svg>
                     <span class="info-value">{{ software.author }}</span>
                   </a>
                   <a v-if="software.repo"
@@ -430,7 +477,7 @@ onMounted(async () => {
                   </a>
                 </div>
               </div>
-              <div class="info-item">
+              <div class="info-item" v-if="software.githubStatus !== 'success' || software.license">
                 <label class="info-label">
                   <Icon name="lucide:scale" size="1.3em" /> 许可协议
                 </label>
@@ -575,37 +622,28 @@ onMounted(async () => {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 2rem;
-  padding: 1rem 0;
-  font-size: 0.9rem;
-  color: var(--vp-c-text-3);
+  margin: 1.8rem 0;
 }
 
-.back-btn {
+.home-btn {
+  font-size: 1.1rem;
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  background: none;
-  border: 1px solid var(--vp-c-border);
-  border-radius: 6px;
-  padding: 0.5rem 1rem;
   color: var(--vp-c-text-1);
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 
-.back-btn:hover {
-  border-color: var(--vp-c-brand-1);
+.home-btn:hover {
   color: var(--vp-c-brand-1);
 }
 
 .breadcrumb-separator {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--vp-c-text-3);
 }
 
 .current-page {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--vp-c-text-1);
 }
 
