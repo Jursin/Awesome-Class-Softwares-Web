@@ -13,15 +13,6 @@ export const Schedule: CategoryConfig = {
       description: "一个基于 Web 的课程表编辑器，全称 Course Schedule Exchange Schema，支持 CSES 格式的课程表创建、管理和导出",
       author: "PYLXU",
       tags: ["CSES", "课表编辑器", "Web 应用"],
-      features: [
-        "📅 可视化课程表编辑",
-        "📚 科目信息管理（名称/简称/教师/教室）",
-        "🔄 拖拽排序课程时段",
-        "📥 导入/导出 yaml/json/ClassIsland 档案 格式配置文件",
-        "🗓️ 支持单双周不同安排",
-        "🖥️ 浅色主题界面",
-        "📋 快捷键操作支持",
-      ],
       group: { qqGroup: "https://qm.qq.com/q/SWZWhvBmQC" },
       website: "https://cloud.smart-teach.cn/",
       screenshots: [
@@ -40,13 +31,6 @@ export const Schedule: CategoryConfig = {
         { type: "danger", text: "🔥 推荐" },
       ],
       tags: ["课程表", "单双周支持", "多行支持", "上下课提醒", "插件支持", "自动化", "提醒特效"],
-      features: [
-        "可显示当天的课表信息",
-        "展示当前进行课程的详细信息",
-        "在上下课等重要时间点发出提醒",
-        "自选搭配音效、强调特效",
-        "支持语音增强提醒功能",
-      ],
       group: { qqGroup: "https://qm.qq.com/q/4NsDQKiAuQ", qqChannel: "https://pd.qq.com/s/10sd1flp0" },
       website: "https://www.classisland.tech/",
       docs: "https://docs.classisland.tech/",
@@ -67,13 +51,6 @@ export const Schedule: CategoryConfig = {
         { type: "danger", text: "推荐" },
       ],
       tags: ["桌面小组件", "课程浮窗", "PyQt", "多平台支持", "上下课提醒", "单双周支持"],
-      features: [
-        "插件 & 主题：极致的自定义",
-        "近乎完美的兼容性：Windows、Linux、macOS",
-        "强大的通知系统：提供了强大的通知系统，能够在上下课等时间点推出提醒；此外，插件也可调用通知接口，使其更加实用",
-        "全新的隐藏方式——浮窗，能够让 Class Widgets 的重要信息浓缩为一块浮动的窗口，更轻巧便捷，尽量减小其对教学工作的干扰",
-        "极致的设计语言：采用了由微软推出的 Fluent Design 设计语言，且使用了 QFluentWidgets UI库，这让界面更加简洁、舒适和流畅",
-      ],
       group: { qqGroup: "https://qm.qq.com/q/LrSAgiQvu", discord: "https://discord.gg/EFF4PpqpqZ" },
       website: "https://classwidgets.rinlit.cn/zh/",
       docs: "https://cwdocs.rinlit.cn/about/",
@@ -95,20 +72,6 @@ export const Schedule: CategoryConfig = {
       author: "Yamikani-Flipped",
 
       tags: ["桌面显示", "课程表管理", "息屏显示", "桌面小组件"],
-      features: [
-        "桌面显示时间、日期",
-        "支持展示值日表、今明日课程(需支持的UI)、倒计时已经当前课程",
-        "适合在自习、专注情况下使用的“息屏显示”组件",
-        "支持集中控制，大部分设置项均支持云同步，完善的多班管理",
-        "支持自动更新、手动更新，支持不同的更新频道",
-        "便捷的课表、时间线编辑",
-        "支持 CSES通用课程表格式（Course Schedule Exchange Schema）",
-        "遇到节假日等等情况的调课管理",
-        "上下课提醒、预备铃提醒",
-        "支持存储多个课表文件，并且可以快速导入导出和切换",
-        "自动匹配系统深浅色模式",
-        "软件高度定制化，大部分功能支持设置中修改",
-      ],
       group: { qqGroup: "https://qm.qq.com/q/BDeDL7K8kE" },
       website: "https://www.yamikani.cn/",
       docs: "https://www.yamikani.cn/docs",
@@ -129,17 +92,6 @@ export const Schedule: CategoryConfig = {
       author: "EnderWolf006",
 
       tags: ["桌面小组件", "课程表", "单双周轮换", "Electron"],
-      features: [
-        "显示当天课程表、星期，倒数日",
-        "下课/上课倒计时(v2: 支持单独置顶, 具有关闭按钮)",
-        "支持动态调整课表，支持多周(最多四周)课表轮换",
-        "窗口置顶，可点击穿透",
-        "编辑配置文件以编辑时间/课表",
-        "v2 新增:",
-        "显示作业等通知内容",
-        "显示本周课表",
-        "图形化配置界面(通知, 配置, 课表)",
-      ],
       group: { qqGroup: "https://qm.qq.com/q/9nRFURLYJ2", telegram: "https://t.me/ECSchedule" },
       screenshots: [
         "/screenshots/ElectronClassSchedule/view.png",
@@ -154,10 +106,6 @@ export const Schedule: CategoryConfig = {
       description: "一个使用 Electron 和 Vue 3 构建的教室大屏实用工具箱。",
       author: "GPUawa",
       tags: ["课程表", "Electron", "Vue 3"],
-      features: [
-        "展示当日课程、当前状态倒计时、星期、天气、一言",
-        "内置CSES 课程表编辑器",
-      ],
       screenshots: [
         "/screenshots/iClass/main.png",
       ]

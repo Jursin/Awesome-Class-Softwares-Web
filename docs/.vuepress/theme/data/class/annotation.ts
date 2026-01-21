@@ -16,21 +16,6 @@ export const Annotation: CategoryConfig = {
         { type: "danger", text: "🔥 推荐" },
       ],
       tags: ["屏幕批注", "C++", "EasyX", "多指书写", "屏幕画板", "桌面批注", "荧光笔", "PPT批注"],
-      features: [
-        "动态画板背景、窗口定格与穿透",
-        "智能直线绘制/直线吸附/矩形吸附/平滑笔迹/智能粗细橡皮擦",
-        "炫彩全 RGBA 绘图，1-500 粗细调节",
-        "全新 UI 与可打断动画",
-        "PPT 联动，翻页/笔迹保留/插件",
-        "标准笔迹/荧光笔迹",
-        "撤回和超级恢复",
-        "画板绘制内容自动保存本地",
-        "PPT 演示组件",
-        "超级置顶",
-        "同类软件悬浮窗拦截助手 快捷方式保障助手",
-        "支持多指绘制以及模拟笔锋",
-        "快捷键"
-      ],
       group: { qqGroup: "https://qm.qq.com/q/iEDzSL0Wn" },
       docs: "https://www.inkeys.top/",
       screenshots: [
@@ -49,23 +34,6 @@ export const Annotation: CategoryConfig = {
       badge: [
         { type: "info", text: "已停更" },
       ],
-      features: [
-        "模式",
-        "幻灯片模式",
-        "画板模式（黑/白板模式）",
-        "屏幕画笔模式",
-        "小工具",
-        "倒计时",
-        "美观的 UI，并可以以接近全屏的大小显示",
-        "抽奖",
-        "可导入名单（建议搭配 Excel 使用），可设置抽取人数",
-        "保存墨迹",
-        "截图",
-        "任意模式模式下（包括鼠标）下点击相机图标截图并自动保存，可在设置中开启“截图时自动保存墨迹”",
-        "幻灯片自动保存墨迹",
-        "墨迹回放",
-        "从头自动书写一遍屏中墨迹"
-      ],
       group: { qqGroup: "https://qm.qq.com/q/DmsQH58eqc" },
       screenshots: [
         "/screenshots/Ink-Canvas/screen.png",
@@ -80,11 +48,6 @@ export const Annotation: CategoryConfig = {
       description: "一款复刻自 WXRIW/Ink Canvas 的 Windows 画板应用，旨在优化各方面的使用体验，并尽可能保留原版 Ink Canvas 的操作体验",
       author: "clover-yan",
       tags: ["屏幕批注", "屏幕画板", "形状识别", "Ink-Canvas"],
-      features: [
-        "Ink-Canvas 的全部功能",
-        "优化的 UI 界面",
-        "其它优化",
-      ],
       group: { qqGroup: "https://qm.qq.com/q/yVzprKLfbi" },
       website: "https://www.khyan.top/apps/Ink-Canvas-Plus/",
       screenshots: [
@@ -103,12 +66,6 @@ export const Annotation: CategoryConfig = {
         { type: "info", text: "已停更" },
       ],
       tags: ["屏幕批注", "屏幕画板", "形状识别", "Ink-Canvas"],
-      features: [
-        "Ink-Canvas 的全部功能",
-        "不同的 UI 界面",
-        "支持插入图片",
-        "其它优化",
-      ],
       group: { qqGroup: "https://qm.qq.com/q/AC777tzmEw" },
       screenshots: [
         "/screenshots/Ink-Canvas-Artistry/1.png",
@@ -124,12 +81,6 @@ export const Annotation: CategoryConfig = {
       description: "一款在 Ink-Canvas-Artistry 的基础上对 Ink-Canvas 进行了二次修改的软件，且移除了点名和计时器工具等非画板软件的核心功能",
       author: "BaiYang2238",
       tags: ["屏幕批注", "屏幕画板", "形状识别", "Ink-Canvas-Artistry"],
-      features: [
-        "Ink-Canvas-Artistry 的基本功能",
-        "移除了点名和计时器工具等非画板软件的核心功能",
-        "不同的 UI 界面",
-        "其它优化",
-      ],
       screenshots: [
         "/screenshots/Ink-Canvas-Better/preview.png",
       ]
@@ -145,12 +96,6 @@ export const Annotation: CategoryConfig = {
         { type: "info", text: "已停更" },
       ],
       tags: ["屏幕批注", "屏幕画板", "形状识别", "Ink-Canvas-Artistry"],
-      features: [
-        "Ink-Canvas 的全部功能",
-        "不同的 UI 界面",
-        "右上角支持显示时间、一言",
-        "其它优化",
-      ],
       screenshots: [
         "/screenshots/InkCanvasForClass/toolbar.png",
         "/screenshots/InkCanvasForClass/board.png",
@@ -164,10 +109,6 @@ export const Annotation: CategoryConfig = {
       description: "InkCanvasForClass 社区版",
       author: "",
       tags: ["屏幕批注", "屏幕画板", "形状识别", "InkCanvasForClass"],
-      features: [
-        "InkCanvasForClass 的全部功能",
-        "社区版特性",
-      ],
       group: { qqGroup: "https://qm.qq.com/q/qo32AclNh6", discord: "https://discord.gg/XzwQWcBqTK" },
       website: "https://www.iccce.dpdns.org/",
       docs: "https://inkcanvasforclass.github.io/website",
@@ -184,13 +125,6 @@ export const Annotation: CategoryConfig = {
       description: "适用于智慧黑板/交互智能平板的演示助手工具",
       author: "Haraguse",
       tags: ["屏幕批注", "重点框选"],
-      features: [
-        "自由绘制： 支持自由地进行批注。",
-        "颜色选择： 拥有便捷的颜色选择工具。",
-        "聚焦： 框选屏幕区域后，重点区域以外的内容将自动被压暗。",
-        "教学辅助： 极其适用于课堂中要求学生记录知识点时，便于学生方便地找出何处应该记录。",
-        "提供了灵活的界面布局，可根据个人习惯和演示需求调整元素位置。",
-      ],
       group: { qqGroup: "https://qm.qq.com/q/ikLWTHv39e" },
       screenshots: [
         "/screenshots/Kazuha/1.png",
@@ -210,10 +144,6 @@ export const Annotation: CategoryConfig = {
         { type: "info", text: "已停更" },
       ],
       tags: ["C++", "Qt", "屏幕画板", "轻量"],
-      features: [
-        "批注、擦除，移动画布、多页码等基础功能",
-        "内存占用非常小",
-      ],
       screenshots: [
         "/screenshots/LemonxNote/main.png",
       ]

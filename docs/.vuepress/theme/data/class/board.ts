@@ -16,14 +16,6 @@ export const Board: CategoryConfig = {
         { type: "danger", text: "推荐" },
       ],
       tags: ["考试看板", "多平台支持", "Electron"],
-      features: [
-        "展示考试信息与考试列表",
-        "内置编辑器，方便快捷地添加考试信息",
-        "点击放映，全屏展示考试信息",
-        "支持从 URL 放映",
-        "支持集控",
-        "详细的日志记录功能",
-      ],
       group: { qqGroup: "https://qm.qq.com/q/zDiEipHsaI" },
       docs: "https://docs.examaware.tech/",
       screenshots: [
@@ -40,12 +32,6 @@ export const Board: CategoryConfig = {
       description: "旧版考试看板",
       author: "hello8693",
       tags: ["考试看板", "多平台支持", "Electron"],
-      features: [
-        "上方展示考试标题、信息",
-        "左侧展示当前时间、当前科目、考试时间、考试状态",
-        "右侧展示考试科目列表，包括科目、开始、结束、状态",
-        "考试结束前15分钟黄字提醒",
-      ],
       group: { qqGroup: "https://qm.qq.com/q/zDiEipHsaI" },
       docs: "https://docs.examaware.tech/",
       screenshots: [
@@ -61,12 +47,6 @@ export const Board: CategoryConfig = {
       description: "静态网页版本的考试看板，可自行部署",
       author: "MKStoler1024",
       tags: ["考试看板", "电子钟表", "Web"],
-      features: [
-        "Exam-Showboard 所有功能",
-        "电子钟表",
-        "多种主题可选",
-        "支持设置时间偏移",
-      ],
       group: { qqGroup: "https://qm.qq.com/q/zDiEipHsaI" },
       website: "https://es.examaware.tech/",
       docs: "https://docs.examaware.tech/",
@@ -87,17 +67,6 @@ export const Board: CategoryConfig = {
         { type: "danger", text: "推荐" },
       ],
       tags: ["作业展示", "富文本支持"],
-      features: [
-        "布置与修改作业",
-        "富文本支持（字体及其大小、颜色等）",
-        "按科目分类，科目预设",
-        "为作业添加标签",
-        "主界面全局缩放",
-        "一键清理/恢复过期作业",
-        "导出作业面板截图",
-        "支持软件自动更新",
-        "插入图片、表情",
-      ],
       group: { qqGroup: "https://qm.qq.com/q/neHPnfBSJq" },
       docs: "https://sh2.xn--fjqu59cvx0aoqi.icu/",
       screenshots: [
@@ -115,22 +84,6 @@ export const Board: CategoryConfig = {
       description: "一个 Previous Gen 的教室大屏作业看板",
       author: "Xwei1645",
       tags: ["左右看板", "多平台支持", "Flutter"],
-      features: [
-        "作业管理",
-        "富文本编辑: 支持格式化文本的作业内容编辑",
-        "截止日期管理: 清晰的日期显示和过期提醒",
-        "状态跟踪: 自动标识过期、即将到期的作业",
-        "快速操作: 便捷的编辑、删除功能",
-        "分类系统",
-        "学科管理: 自定义学科分类，支持增删改查",
-        "标签系统: 灵活的标签管理，支持多标签分类",
-        "智能分组: 按学科自动分组显示作业",
-        "界面定制",
-        "主题切换: 支持明暗主题切换",
-        "界面缩放: 50%-200% 自由缩放界面",
-        "列数调整: 1-5 列灵活布局",
-        "透明度控制: 可调节背景透明度",
-      ],
       screenshots: [
         "/screenshots/Zooni/1.png",
         "/screenshots/Zooni/2.png",
@@ -147,14 +100,6 @@ export const Board: CategoryConfig = {
         { type: "danger", text: "推荐" },
       ],
       tags: ["作业看板", "出勤看板", "随机点名", "Web", "Vue"],
-      features: [
-        "🎯 TypeScript 支持",
-        "🎨 基于 Vuetify 3 的精美 UI",
-        "📱 响应式设计，完美适配多端",
-        "⚡️ Vite 提供的极速开发体验",
-        "🔑 完善的权限管理系统",
-        "🎉 丰富的组件和功能模块",
-      ],
       group: { qqGroup: "https://qm.qq.com/q/AdQJCgNOsS", telegram: "https://t.me/zerocatdev", discord: "https://discord.gg/YmW2JWnbdy" },
       website: "https://zerocat.dev/",
       screenshots: [
@@ -172,22 +117,6 @@ export const Board: CategoryConfig = {
         { type: "info", text: "已停更" },
       ],
       tags: ["作业展示", "云同步"],
-      features: [
-        "学校作业板",
-        "在班级内快捷输入并排版清晰地展示作业",
-        "快捷记录并展示出勤情况(可选板块)",
-        "在浏览器中运行，可以进行云同步",
-        "关闭后打开自动恢复之前记录的作业（自动拉取以当天时间为文件名的json文件的内容）",
-        "支持自定义科目排版顺序、学生列表",
-        "查作业界面",
-        "在任何设备的浏览器中运行(需部署在服务器上并通过ip或域名访问)",
-        "可以方便查询当前作业以及历史作业",
-        "可以查询出勤情况(可选板块)",
-        "API服务端",
-        "在任何支持运行Python的服务器运行",
-        "若部署在公网服务器，请放行17312端口",
-        "若部署在学校内网，则上述内容均只能在学校内网访问",
-      ],
       group: { qqGroup: "https://qm.qq.com/q/9nRFURLYJ2" },
       screenshots: [
         "/screenshots/HomeworkBoard/banner.png",
@@ -201,16 +130,6 @@ export const Board: CategoryConfig = {
       description: "一款基于 React + TypeScript + Vite 构建的轻量化桌面 / 网页时钟应用",
       author: "QQHKX",
       tags: ["时钟", "Web"],
-      features: [
-        "时间管理模式",
-        "时钟 / 倒计时 / 秒表 / 晚自习 模式自由切换",
-        "HUD 智能控制层：点击或按键显示，约 8 秒自动隐藏",
-        "学习辅助看板",
-        "天气展示与手动刷新",
-        "噪音监测：麦克风校准、基线调整、报告与历史记录",
-        "励志金句：频道管理与刷新间隔设置",
-        "目标年份倒计时（如高考倒计时）",
-      ],
       group: { qqGroup: "https://qm.qq.com/q/xmTWgMPFio" },
       website: "https://clock.qqhkx.com/",
       screenshots: [
@@ -228,11 +147,6 @@ export const Board: CategoryConfig = {
       author: "Candlest",
 
       tags: ["桌面小组件", "课程表", "倒计日", "作业发布", "动态壁纸"],
-      features: [
-        "课程表展示",
-        "时间、日期、周数显示",
-        "倒数日、公告栏展示",
-      ],
       screenshots: [
         "/screenshots/ClassBoard/preview.png",
       ]
@@ -245,15 +159,6 @@ export const Board: CategoryConfig = {
       description: "一个具有深/浅色主题，云母/亚克力背景，Fluent UI 2界面的时钟锁屏（屏保），可以作为屏保使用，也可以自习时在教学白板上使用",
       author: "cjhdevact",
       tags: ["时钟", "锁屏", "屏保"],
-      features: [
-        "显示时间",
-        "支持改变时间的位置，避免因屏幕被遮挡而导致时间被遮挡问题（支持通过参数启动）",
-        "支持自定义显示格式",
-        "支持自定义显示字体、大小、颜色",
-        "支持窗口/全屏模式",
-        "多种背景效果，深/浅色主题",
-        "隐藏底部工具栏（单击时间文字隐藏或显示底部工具栏）",
-      ],
       screenshots: [
         "/screenshots/LockTime/MainUI.png",
       ]
@@ -267,9 +172,6 @@ export const Board: CategoryConfig = {
       author: "yeying-xingchen",
 
       tags: ["桌面小组件", "信息展示", "Electron"],
-      features: [
-        "桌面悬浮窗显示时间、作业等"
-      ],
       group: { qqGroup: "https://qm.qq.com/q/PRsFaOVk4u" },
       screenshots: [
         "/screenshots/ClassWindow/main.png",

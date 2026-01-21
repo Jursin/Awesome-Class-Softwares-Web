@@ -7,8 +7,8 @@ import VPComment from '@theme/VPComment.vue'
 const route = useRoute()
 const router = useRouter()
 const API_BASES = [
-  'https://ghfile.geekertao.top/https://api.github.com',
   'https://gh-api.jursin.top/api/github',
+  'https://ghfile.geekertao.top/https://api.github.com',
   'https://api.github.com'
 ]
 const LANGUAGE_COLOR_URL = 'https://gh.llkk.cc/https://raw.githubusercontent.com/ozh/github-colors/master/colors.json'
@@ -391,20 +391,13 @@ onMounted(async () => {
             </div>
           </section>
 
-          <!-- 简评卡片 -->
+          <!-- 功能简述 -->
           <section class="info-card">
             <h2 class="section-title">
               <Icon name="octicon:list-unordered-16" />
               功能简述
             </h2>
-            <div class="features-content">
-              <ul v-if="software.features && software.features.length > 0" class="features-list">
-                <li v-for="(feature, index) in software.features" :key="index" class="feature-item">
-                  {{ feature }}
-                </li>
-              </ul>
-              <p v-else>暂无功能描述</p>
-            </div>
+            <Content class="vp-doc plume-content" vp-content />
           </section>
 
           <!-- Star 历史 -->
@@ -785,37 +778,6 @@ onMounted(async () => {
   background: #000;
 }
 
-/* 简评内容 */
-.features-content {
-  line-height: 1.7;
-  color: var(--vp-c-text-1);
-}
-
-.features-content p {
-  margin: 0;
-}
-
-.features-content ul.features-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.features-content li.feature-item {
-  position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.6;
-}
-
-.features-content li.feature-item::before {
-  content: '•';
-  color: var(--vp-c-brand-1);
-  font-size: 1.5em;
-  position: absolute;
-  left: 0;
-  top: -0.25em;
-}
 
 /* 侧边栏 */
 .sidebar {

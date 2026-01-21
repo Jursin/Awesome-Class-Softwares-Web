@@ -16,12 +16,6 @@ export const Download: CategoryConfig = {
         { type: "info", text: "长时间未更新" },
       ],
       tags: ["下载器"],
-      features: [
-        "自动获取已适配推荐的软件",
-        "方便、快速地下载软件",
-        "自定义添加 Github 项目中的软件",
-        "自动安装已下载完成的软件",
-      ],
       group: { qqGroup: "https://qm.qq.com/q/Y8tx1BxnmG" },
       screenshots: [
         "/screenshots/SectionIstool/1.png",
@@ -39,17 +33,6 @@ export const Download: CategoryConfig = {
         { type: "info", text: "长时间未更新" },
       ],
       tags: ["下载器"],
-      features: [
-        "下载与安装",
-        "自动获取已适配推荐的软件",
-        "方便、快速地下载软件",
-        "设置",
-        "自定义下载保存路径",
-        "特点",
-        "界面美观",
-        "亮色主题",
-        "使用方便"
-      ],
       screenshots: [
         "/screenshots/SeewoHUB/1.png",
         "/screenshots/SeewoHUB/2.png",

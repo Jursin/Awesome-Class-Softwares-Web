@@ -15,7 +15,6 @@ export interface Software {
   author: string;
   badge?: Badge[];
   tags: string[];
-  features: string[];
   group?: SocialLinks;
   website?: string;
   docs?: string;

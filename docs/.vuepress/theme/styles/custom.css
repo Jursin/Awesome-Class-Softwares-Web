@@ -65,6 +65,10 @@
   background: var(--vp-c-bg);
 }
 
+ul li::marker {
+  color: var(--vp-c-brand-1) !important;
+}
+
 /* page */
 .vp-page {
   max-width: 1660px !important;
