@@ -148,5 +148,21 @@ export const Annotation: CategoryConfig = {
         "/screenshots/LemonxNote/main.png",
       ]
     },
+    {
+      id: "LanStartWrite",
+      name: "LanStartWrite",
+      icon: "/icon/LanStartWrite.png",
+      repo: "wwiinnddyy/LanStartWrite",
+      description: "基于 Electron 的新一代书写应用",
+      author: "wwiinnddyy",
+      badge: [
+        { type: "info", text: "早期开发中" },
+      ],
+      tags: ["批注", "Electron", "Vibe Coding"],
+      screenshots: [
+        "/screenshots/LanStartWrite/1.png",
+        "/screenshots/LanStartWrite/2.png",
+      ]
+    },
   ]
 };

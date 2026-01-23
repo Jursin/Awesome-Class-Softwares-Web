@@ -3,7 +3,7 @@ import { Schedule } from './schedule';
 import { MultiFunction} from './multi-function';
 import { Board } from './board';
 import { Annotation } from './annotation';
-import { Download } from './download';
+import { Auxiliary } from './auxiliary';
 import { Selection } from './selection';
 
 // 导入所有分类配置
@@ -12,7 +12,7 @@ export const categories: CategoryConfig[] = [
   MultiFunction,
   Board,
   Annotation,
-  Download,
+  Auxiliary,
   Selection
 ];
 
