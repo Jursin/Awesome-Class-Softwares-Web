@@ -29,6 +29,7 @@ export const Auxiliary: CategoryConfig = {
       description: "一个 Windows 系统课堂屏幕锁定软件",
       author: "jiugulixiaoniu",
       tags: ["锁屏"],
+      group: { qqGroup: "https://qm.qq.com/q/jBPeZyWi3K" },
       screenshots: [
         "/screenshots/ClassScreenLock/1.png",
         "/screenshots/ClassScreenLock/2.png",
