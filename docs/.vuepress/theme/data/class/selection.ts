@@ -17,7 +17,8 @@ export const Selection: CategoryConfig = {
       ],
       tags: ["随机抽取", "语音提示", "历史记录"],
       group: { qqGroup: "https://qm.qq.com/q/Y8tx1BxnmG", qqChannel: "https://pd.qq.com/s/ddy1ie3e9", discord: "https://discord.gg/aRYzV5ZUZ2" },
-      docs: "https://secrandom-docs.netlify.app/",
+      docs: "https://secrandom.sectl.top/",
+      stcnSection: "https://forum.smart-teach.cn/t/secrandom",
       screenshots: [
         "/screenshots/SecRandom/1.png",
         "/screenshots/SecRandom/2.png",

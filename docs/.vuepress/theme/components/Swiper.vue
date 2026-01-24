@@ -115,7 +115,12 @@ onUnmounted(() => {
     <!-- 轮播内容 -->
     <div class="swiper-wrapper" v-if="itemsCount > 0">
       <transition name="fade-slide" mode="out-in">
-        <div class="swiper-slide active" :key="currentIndex">
+        <div 
+          class="swiper-slide active" 
+          :key="currentIndex"
+          @mouseenter="handleMouseEnter"
+          @mouseleave="handleMouseLeave"
+        >
           <template v-if="isVideo">
             <iframe
               class="swiper-video"
@@ -123,6 +128,8 @@ onUnmounted(() => {
               title="Bilibili"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
               allowfullscreen
+              @mouseenter="handleMouseEnter"
+              @mouseleave="handleMouseLeave"
             ></iframe>
           </template>
           <template v-else>
@@ -131,6 +138,8 @@ onUnmounted(() => {
               alt="轮播图片" 
               class="swiper-image"
               loading="lazy"
+              @mouseenter="handleMouseEnter"
+              @mouseleave="handleMouseLeave"
             />
           </template>
         </div>

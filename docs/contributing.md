@@ -1,6 +1,7 @@
 ---
 pageLayout: doc
 title: 贡献指南
+contributors: false
 ---
 
 > 感谢您考虑为 ==Awesome Class Softwares== 做出贡献！您可以为本项目或网站做出包括但不限于反馈内容过时/错误、优化排版、项目推荐等贡献。在为本项目贡献之前，请先阅读本贡献指南。
@@ -42,10 +43,6 @@ title: 贡献指南
 
 ::: field name="tags" type="string[]" optional
 标签列表
-:::
-
-::: field name="features" type="string[]" optional
-功能简述列表
 :::
 
 ::: field name="group.qqGroup" type="string" optional

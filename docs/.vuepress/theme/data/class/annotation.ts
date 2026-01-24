@@ -18,6 +18,7 @@ export const Annotation: CategoryConfig = {
       tags: ["屏幕批注", "C++", "EasyX", "多指书写", "屏幕画板", "桌面批注", "荧光笔", "PPT批注"],
       group: { qqGroup: "https://qm.qq.com/q/iEDzSL0Wn" },
       docs: "https://www.inkeys.top/",
+      stcnSection: "https://forum.smart-teach.cn/t/inkeys",
       screenshots: [
         "/screenshots/Inkeys/banner.png",
       ],
@@ -35,6 +36,7 @@ export const Annotation: CategoryConfig = {
         { type: "info", text: "已停更" },
       ],
       group: { qqGroup: "https://qm.qq.com/q/DmsQH58eqc" },
+      stcnSection: "https://forum.smart-teach.cn/t/ic",
       screenshots: [
         "/screenshots/Ink-Canvas/screen.png",
         "/screenshots/Ink-Canvas/board.png",
@@ -50,6 +52,7 @@ export const Annotation: CategoryConfig = {
       tags: ["屏幕批注", "屏幕画板", "形状识别", "Ink-Canvas"],
       group: { qqGroup: "https://qm.qq.com/q/yVzprKLfbi" },
       website: "https://www.khyan.top/apps/Ink-Canvas-Plus/",
+      stcnSection: "https://forum.smart-teach.cn/t/ink-canvas-plus",
       screenshots: [
         "/screenshots/Ink-Canvas-Plus/toolbar.png",
         "/screenshots/Ink-Canvas-Plus/board.png",
@@ -67,6 +70,7 @@ export const Annotation: CategoryConfig = {
       ],
       tags: ["屏幕批注", "屏幕画板", "形状识别", "Ink-Canvas"],
       group: { qqGroup: "https://qm.qq.com/q/AC777tzmEw" },
+      stcnSection: "https://forum.smart-teach.cn/t/ica",
       screenshots: [
         "/screenshots/Ink-Canvas-Artistry/1.png",
         "/screenshots/Ink-Canvas-Artistry/2.png",
@@ -112,6 +116,7 @@ export const Annotation: CategoryConfig = {
       group: { qqGroup: "https://qm.qq.com/q/qo32AclNh6", discord: "https://discord.gg/XzwQWcBqTK" },
       website: "https://www.iccce.dpdns.org/",
       docs: "https://inkcanvasforclass.github.io/website",
+      stcnSection: "https://forum.smart-teach.cn/t/icc-ce",
       screenshots: [
         "/screenshots/ICC-CE/banner.png",
       ],
@@ -119,13 +124,14 @@ export const Annotation: CategoryConfig = {
     },
     {
       id: "Kazuha",
-      name: "Kazuha",
+      name: "万演",
       icon: "/icon/Kazuha.svg",
       repo: "Yunofactory/Kazuha",
       description: "适用于智慧黑板/交互智能平板的演示助手工具",
       author: "Haraguse",
       tags: ["屏幕批注", "重点框选"],
       group: { qqGroup: "https://qm.qq.com/q/ikLWTHv39e" },
+      stcnSection: "https://forum.smart-teach.cn/t/kazuha",
       screenshots: [
         "/screenshots/Kazuha/1.png",
         "/screenshots/Kazuha/2.png",

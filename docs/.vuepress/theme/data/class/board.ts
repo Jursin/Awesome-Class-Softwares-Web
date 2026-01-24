@@ -18,6 +18,7 @@ export const Board: CategoryConfig = {
       tags: ["考试看板", "多平台支持", "Electron"],
       group: { qqGroup: "https://qm.qq.com/q/zDiEipHsaI" },
       docs: "https://docs.examaware.tech/",
+      stcnSection: "https://forum.smart-teach.cn/t/examaware",
       screenshots: [
         "/screenshots/ExamAware2/1.png",
         "/screenshots/ExamAware2/2.png",
@@ -34,6 +35,7 @@ export const Board: CategoryConfig = {
       tags: ["考试看板", "多平台支持", "Electron"],
       group: { qqGroup: "https://qm.qq.com/q/zDiEipHsaI" },
       docs: "https://docs.examaware.tech/",
+      stcnSection: "https://forum.smart-teach.cn/t/examaware",
       screenshots: [
         "/screenshots/Exam-Showboard/HomePage.png",
         "/screenshots/Exam-Showboard/InfoPage.png",
@@ -50,6 +52,7 @@ export const Board: CategoryConfig = {
       group: { qqGroup: "https://qm.qq.com/q/zDiEipHsaI" },
       website: "https://es.examaware.tech/",
       docs: "https://docs.examaware.tech/",
+      stcnSection: "https://forum.smart-teach.cn/t/examaware",
       screenshots: [
         "/screenshots/ExamSchedule/home.png",
         "/screenshots/ExamSchedule/light.png",
@@ -69,6 +72,7 @@ export const Board: CategoryConfig = {
       tags: ["作业展示", "富文本支持"],
       group: { qqGroup: "https://qm.qq.com/q/neHPnfBSJq" },
       docs: "https://sh2.xn--fjqu59cvx0aoqi.icu/",
+      stcnSection: "https://forum.smart-teach.cn/t/stickyhomeworks2",
       screenshots: [
         "/screenshots/StickyHomeworks2/1.png",
         "/screenshots/StickyHomeworks2/2.png",
@@ -102,6 +106,7 @@ export const Board: CategoryConfig = {
       tags: ["作业看板", "出勤看板", "随机点名", "Web", "Vue"],
       group: { qqGroup: "https://qm.qq.com/q/AdQJCgNOsS", telegram: "https://t.me/zerocatdev", discord: "https://discord.gg/YmW2JWnbdy" },
       website: "https://zerocat.dev/",
+      stcnSection: "https://forum.smart-teach.cn/t/classworks",
       screenshots: [
         "/screenshots/Classworks/banner.png",
       ]
@@ -145,7 +150,6 @@ export const Board: CategoryConfig = {
       repo: "Candlest/ClassBoard",
       description: "一款高自由度的，用于显示教学信息的壁纸软件，功能包括高考倒计时、公告栏、以及能够提示当前课程的课程表",
       author: "Candlest",
-
       tags: ["桌面小组件", "课程表", "倒计日", "作业发布", "动态壁纸"],
       screenshots: [
         "/screenshots/ClassBoard/preview.png",
@@ -170,9 +174,9 @@ export const Board: CategoryConfig = {
       repo: "xinghai-smartedu/classwindow",
       description: "一个美丽、精巧的用于班级的桌面悬浮窗软件，基于Electron构建，用于显示信息等",
       author: "yeying-xingchen",
-
       tags: ["桌面小组件", "信息展示", "Electron"],
       group: { qqGroup: "https://qm.qq.com/q/PRsFaOVk4u" },
+      stcnSection: "https://forum.smart-teach.cn/t/classwindow",
       screenshots: [
         "/screenshots/ClassWindow/main.png",
       ]

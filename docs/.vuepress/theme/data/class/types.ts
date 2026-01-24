@@ -18,6 +18,7 @@ export interface Software {
   group?: SocialLinks;
   website?: string;
   docs?: string;
+  stcnSection?: string;
   screenshots: string[];
   bvid?: string[];
   releases?: string;

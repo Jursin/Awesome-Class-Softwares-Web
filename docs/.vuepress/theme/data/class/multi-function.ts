@@ -12,10 +12,10 @@ export const MultiFunction: CategoryConfig = {
       repo: "STBBRD/ZongziTEK-Blackboard-Sticker",
       description: "用于白板一体机的桌面小部件",
       author: "STBBRD",
-
       tags: ["课程表", "黑板贴", "粽子科技", "上下课提醒", "天气提醒", "快速黑板", "启动台"],
       group: { qqGroup: "https://jq.qq.com/?_wv=1027&k=epb9KDPe" },
       website: "https://zztek.top/",
+      stcnSection: "https://forum.smart-teach.cn/t/zongzitek",
       screenshots: [
         "/screenshots/ZongziTEK-Blackboard-Sticker/light.png",
         "/screenshots/ZongziTEK-Blackboard-Sticker/dark.png",
@@ -30,7 +30,6 @@ export const MultiFunction: CategoryConfig = {
       repo: "Ris-Soft/Ris_ClassTool",
       description: "瑞思课堂工具",
       author: "PYLXU",
-
       tags: ["课堂工具", "瑞思"],
       group: { qqGroup: "https://qm.qq.com/q/nl64TDpnk6" },
       website: "https://3r60.top/",
@@ -50,6 +49,7 @@ export const MultiFunction: CategoryConfig = {
       tags: ["课堂工具", "大屏辅助", "插件化", "Electron", "JavaScript"],
       group: { qqGroup: "https://qm.qq.com/q/yHZQ0LQipq" },
       website: "https://orbiboard.3r60.top/",
+      stcnSection: "https://forum.smart-teach.cn/t/orbiboard",
       screenshots: [
         "/screenshots/OrbiBoard/preview.png",
       ]
@@ -61,7 +61,6 @@ export const MultiFunction: CategoryConfig = {
       repo: "Return-Log/Education-Clock",
       description: "一个实用的班级信息看板",
       author: "Return-Log",
-
       tags: ["桌面小组件", "课程表", "倒计日", "天气预报", "PyQt", "公告板", "桌面时钟软件"],
       screenshots: [
         "/screenshots/Education-Clock/banner.png",

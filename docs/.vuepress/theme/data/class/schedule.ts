@@ -15,6 +15,7 @@ export const Schedule: CategoryConfig = {
       tags: ["CSES", "课表编辑器", "Web 应用"],
       group: { qqGroup: "https://qm.qq.com/q/SWZWhvBmQC" },
       website: "https://cloud.smart-teach.cn/",
+      stcnSection: "https://forum.smart-teach.cn/t/cses",
       screenshots: [
         "/screenshots/CsesWebEditor/Home.png",
         "/screenshots/CsesWebEditor/Editor.png",
@@ -34,6 +35,7 @@ export const Schedule: CategoryConfig = {
       group: { qqGroup: "https://qm.qq.com/q/4NsDQKiAuQ", qqChannel: "https://pd.qq.com/s/10sd1flp0" },
       website: "https://www.classisland.tech/",
       docs: "https://docs.classisland.tech/",
+      stcnSection: "https://forum.smart-teach.cn/t/classisland",
       screenshots: [
         "/screenshots/ClassIsland/banner.png",
         "/screenshots/ClassIsland/themes.png",
@@ -54,6 +56,7 @@ export const Schedule: CategoryConfig = {
       group: { qqGroup: "https://qm.qq.com/q/LrSAgiQvu", discord: "https://discord.gg/EFF4PpqpqZ" },
       website: "https://classwidgets.rinlit.cn/zh/",
       docs: "https://cwdocs.rinlit.cn/about/",
+      stcnSection: "https://forum.smart-teach.cn/t/class-widgets",
       screenshots: [
         "/screenshots/Class-Widgets/Banner.png",
         "/screenshots/Class-Widgets/Windows11.png",
@@ -70,7 +73,6 @@ export const Schedule: CategoryConfig = {
       repo: "Yamikani-Flipped/LingYun-Class-Widgets",
       description: "一款功能丰富的桌面工具，支持在桌面显示各种组件，支持 CSES 通用课程表格式",
       author: "Yamikani-Flipped",
-
       tags: ["桌面显示", "课程表管理", "息屏显示", "桌面小组件"],
       group: { qqGroup: "https://qm.qq.com/q/BDeDL7K8kE" },
       website: "https://www.yamikani.cn/",
@@ -90,9 +92,9 @@ export const Schedule: CategoryConfig = {
       repo: "EnderWolf006/ElectronClassSchedule",
       description: "一款电子课程表软件",
       author: "EnderWolf006",
-
       tags: ["桌面小组件", "课程表", "单双周轮换", "Electron"],
       group: { qqGroup: "https://qm.qq.com/q/9nRFURLYJ2", telegram: "https://t.me/ECSchedule" },
+      stcnSection: "https://forum.smart-teach.cn/t/ECS",
       screenshots: [
         "/screenshots/ElectronClassSchedule/view.png",
       ],

@@ -495,6 +495,11 @@ onMounted(async () => {
                 <span class="link-text">GitHub 仓库</span>
                 <Icon name="octicon:arrow-right-16" />
               </a>
+              <a v-if="software.repo" :href="`https://ghproxy.jursin.top/?url=https://github.com/${software.repo}&fetchReleases=true`" target="_blank" class="link-btn download">
+                <Icon name="octicon:download-16" />
+                <span class="link-text">发行版下载</span>
+                <Icon name="octicon:arrow-right-16" />
+              </a>
               <a v-if="software.website" :href="software.website" target="_blank" class="link-btn website">
                 <Icon name="streamline-plump:web" />
                 <span class="link-text">网站</span>
@@ -505,9 +510,9 @@ onMounted(async () => {
                 <span class="link-text">文档</span>
                 <Icon name="octicon:arrow-right-16" />
               </a>
-              <a v-if="software.repo" :href="`https://ghproxy.jursin.top/?url=https://github.com/${software.repo}&fetchReleases=true`" target="_blank" class="link-btn download">
-                <Icon name="octicon:download-16" />
-                <span class="link-text">发行版</span>
+              <a v-if="software.stcnSection" :href="software.stcnSection" target="_blank" class="link-btn docs">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 20 20" style="margin: 0 4.8px;"><g fill="currentColor"><path d="M 12.566406 3.507812 C 12.566406 3.507812 11.976562 3.175781 11.398438 3.339844 L 1.933594 6.023438 L 4.449219 1.535156 C 4.449219 1.535156 4.816406 0.800781 6.242188 0.832031 L 14.148438 0.851562 L 12.632812 3.550781 Z M 15.699219 1.691406 L 14.089844 4.558594 C 14.089844 4.558594 14.492188 4.933594 14.609375 5.367188 L 16.015625 10.867188 L 10.582031 12.550781 L 12.542969 9.359375 L 11.933594 6.949219 C 11.933594 6.949219 11.617188 6 10.683594 6.109375 C 10.667969 6.109375 10.648438 6.109375 10.640625 6.109375 C 9.675781 6.257812 0.734375 8.800781 0.734375 8.800781 C 0.734375 8.800781 0.0351562 9 0 9.714844 C 0 9.714844 -0.015625 10.492188 0.441406 11.199219 L 4.410156 18.160156 L 5.867188 15.558594 C 5.867188 15.558594 5.410156 15.132812 5.359375 14.917969 L 3.757812 9.074219 L 9.132812 7.507812 C 9.132812 7.507812 9.425781 7.359375 9.542969 7.617188 L 7.199219 10.617188 L 8 13.300781 C 8 13.300781 8.351562 13.890625 9.167969 13.890625 L 19.492188 11 C 19.492188 11 20.175781 10.867188 19.984375 9.808594 C 19.984375 9.808594 20.015625 9.417969 19.691406 8.765625 L 15.714844 1.675781 Z M 15.699219 1.691406 "/><path d="M 7.25 16.410156 C 7.25 16.410156 7.800781 16.648438 8.160156 16.632812 L 18.132812 13.832031 L 15.839844 17.917969 C 15.839844 17.917969 15.285156 19.058594 13.957031 19.058594 L 5.707031 19.175781 L 7.25 16.417969 Z M 7.25 16.410156 "/></g></svg>
+                <span class="link-text">STCN 分区</span>
                 <Icon name="octicon:arrow-right-16" />
               </a>
             </div>
