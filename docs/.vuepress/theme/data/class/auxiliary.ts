@@ -24,6 +24,22 @@ export const Auxiliary: CategoryConfig = {
       ]
     },
     {
+      id: "SecScore",
+      name: "SecScore",
+      icon: "/icon/SecScore.svg",
+      repo: "SECTL/SecScore",
+      description: "一个简单易用、优雅美观的班级个人积分管理软件",
+      author: "Fox-block-offcial",
+      badge: [
+        { type: "info", text: "开发中" },
+      ],
+      tags: ["积分管理", "Electron"],
+      group: { qqGroup: "https://qm.qq.com/q/Y8tx1BxnmG" },
+      screenshots: [
+        "/screenshots/SecScore/1.png",
+      ]
+    },
+    {
       id: "ClassScreenLock",
       name: "ClassScreenLock",
       icon: "/icon/CSL.png",
@@ -31,6 +47,7 @@ export const Auxiliary: CategoryConfig = {
       description: "一个 Windows 系统课堂屏幕锁定软件",
       author: "jiugulixiaoniu",
       tags: ["锁屏"],
+      group: { qqGroup: "https://qm.qq.com/q/jBPeZyWi3K" },
       screenshots: [
         "/screenshots/ClassScreenLock/1.png",
         "/screenshots/ClassScreenLock/2.png",
@@ -50,22 +67,6 @@ export const Auxiliary: CategoryConfig = {
       screenshots: [
         "/screenshots/sidebar-for-class/1.png",
         "/screenshots/sidebar-for-class/2.png",
-      ]
-    },
-    {
-      id: "SecScore",
-      name: "SecScore",
-      icon: "/icon/SecScore.svg",
-      repo: "SECTL/SecScore",
-      description: "一个简单易用、优雅美观的班级个人积分管理软件",
-      author: "Fox-block-offcial",
-      badge: [
-        { type: "info", text: "开发中" },
-      ],
-      tags: ["积分管理", "Electron"],
-      group: { qqGroup: "https://qm.qq.com/q/Y8tx1BxnmG" },
-      screenshots: [
-        "/screenshots/SecScore/1.png",
       ]
     },
   ]
