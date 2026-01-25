@@ -144,6 +144,18 @@ export const Board: CategoryConfig = {
       ]
     },
     {
+      id: "Education-Clock",
+      name: "Education Clock",
+      icon: "/icon/Education-Clock.png",
+      repo: "Return-Log/Education-Clock",
+      description: "一个实用的班级信息看板",
+      author: "Return-Log",
+      tags: ["桌面小组件", "课程表", "倒计日", "天气预报", "PyQt", "公告板", "桌面时钟软件"],
+      screenshots: [
+        "/screenshots/Education-Clock/banner.png",
+      ]
+    },
+    {
       id: "ClassBoard",
       name: "ClassBoard",
       icon: "/icon/ClassBoard.png",

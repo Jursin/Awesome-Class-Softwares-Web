@@ -55,18 +55,6 @@ export const MultiFunction: CategoryConfig = {
       ]
     },
     {
-      id: "Education-Clock",
-      name: "Education Clock",
-      icon: "/icon/Education-Clock.png",
-      repo: "Return-Log/Education-Clock",
-      description: "一个实用的班级信息看板",
-      author: "Return-Log",
-      tags: ["桌面小组件", "课程表", "倒计日", "天气预报", "PyQt", "公告板", "桌面时钟软件"],
-      screenshots: [
-        "/screenshots/Education-Clock/banner.png",
-      ]
-    },
-    {
       id: "VoiceHub",
       name: "校园广播站点歌系统",
       icon: "/icon/VoiceHub.png",
@@ -82,6 +70,22 @@ export const MultiFunction: CategoryConfig = {
         "/screenshots/VoiceHub/4.png",
         "/screenshots/VoiceHub/5.png",
         "/screenshots/VoiceHub/6.png",
+      ]
+    },
+    {
+      id: "sidebar-for-class",
+      name: "Sidebar for Class",
+      icon: "",
+      repo: "PANDAJSR/sidebar-for-class",
+      description: "一个基于 Electron 开发的侧边栏应用程序",
+      author: "PANDAJSR",
+      badge: [
+        { type: "info", text: "开发中" },
+      ],
+      tags: ["侧边栏", "Electron"],
+      screenshots: [
+        "/screenshots/sidebar-for-class/1.png",
+        "/screenshots/sidebar-for-class/2.png",
       ]
     },
   ]
