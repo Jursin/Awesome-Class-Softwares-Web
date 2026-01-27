@@ -101,7 +101,7 @@ export const Auxiliary: CategoryConfig = {
       description: "一个简单易用、优雅美观的班级个人积分管理软件",
       author: "Fox-block-offcial",
       badge: [
-        { type: "info", text: "开发中" },
+        { type: "info", text: "早期开发中" },
       ],
       tags: ["积分管理", "Electron"],
       group: { qqGroup: "https://qm.qq.com/q/Y8tx1BxnmG" },
