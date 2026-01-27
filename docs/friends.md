@@ -1,6 +1,7 @@
 ---
 pageLayout: friends
-title: 友链
+title: 友情链接
+cols: 3
 editLink: false
 list:
   - name: 智教联盟论坛
@@ -9,7 +10,7 @@ list:
     desc: 全国最大的电教委交流社区
   - name: Awesome-Iwb
     link: https://aiwb.dev.lipoly.ink/
-    avatar: /icon/Aiwb.png
+    avatar: /icon/AIwb.png
     desc: 专为广大中小学电教打造的班级一站式软件推荐清单和实用知识手册
   - name: 电教委员指南
     link: https://smartteachcn.yuque.com/zpgkmv/cnel
@@ -23,8 +24,4 @@ list:
     link: https://www.criwits.top/missing/
     avatar: /icon/missing.svg
     desc: 一份适合电脑小白入门的电脑使用课程
-  - name: 界面生态社区
-    link: https://intereco.org.cn/
-    avatar: /icon/intereco.png
-    desc: PPT 爱好者的创意社区
 ---

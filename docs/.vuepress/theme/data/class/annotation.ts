@@ -131,6 +131,7 @@ export const Annotation: CategoryConfig = {
       author: "Haraguse",
       tags: ["屏幕批注", "重点框选"],
       group: { qqGroup: "https://qm.qq.com/q/ikLWTHv39e" },
+      docs: "https://kazuha-docs.classos.xin/",
       stcnSection: "https://forum.smart-teach.cn/t/kazuha",
       screenshots: [
         "/screenshots/Kazuha/1.png",
