@@ -111,16 +111,16 @@ export const NAV_DATA: NavData[] = [
     title: '图标库',
     items: [
       {
-        icon: 'https://fontawesome.com/favicon.ico',
-        title: 'Font Awesome',
-        desc: '',
-        link: 'https://fontawesome.com/'
-      },
-      {
         icon: 'https://icon-sets.iconify.design/favicon.ico',
         title: 'Iconify',
         desc: '开源图标库',
         link: 'https://icon-sets.iconify.design/'
+      },
+      {
+        icon: 'https://fontawesome.com/favicon.ico',
+        title: 'Font Awesome',
+        desc: '',
+        link: 'https://fontawesome.com/'
       },
       {
         icon: 'https://maxst.icons8.com/vue-static/icon/favicon/icons8_fav_32%C3%9732.png',

@@ -7,6 +7,7 @@ import { NavLinks } from '../data/types'
 const props = defineProps<{
   noIcon?: boolean
   icon?: NavLinks['icon']
+  iconBgColor?: NavLinks['iconBgColor']
   badge?: NavLinks['badge']
   title?: NavLinks['title']
   desc?: NavLinks['desc']
@@ -31,8 +32,8 @@ const formatBadge = computed(() => {
     <article class="box" :class="{ 'has-badge': formatBadge }">
       <div class="box-header">
         <template v-if="!noIcon">
-          <div v-if="svg" class="icon" v-html="svg"></div>
-          <div v-else-if="icon && typeof icon === 'string'" class="icon">
+          <div v-if="svg" class="icon" :style="iconBgColor ? { backgroundColor: iconBgColor } : {}" v-html="svg"></div>
+          <div v-else-if="icon && typeof icon === 'string'" class="icon" :style="iconBgColor ? { backgroundColor: iconBgColor } : {}">
             <img :src="icon" :alt="title" onerror="this.parentElement.style.display='none'" />
           </div>
         </template>
@@ -50,9 +51,9 @@ const formatBadge = computed(() => {
 
 <style scoped>
 .m-nav-link {
-  --m-nav-icon-box-size: 50px;
+  --m-nav-icon-box-size: 58px;
   --m-nav-icon-size: 45px;
-  --m-nav-box-gap: 12px;
+  --m-nav-box-gap: 20px;
 
   display: block;
   border: 1px solid var(--vp-c-divider);
@@ -129,7 +130,7 @@ const formatBadge = computed(() => {
 .m-nav-link .title {
   white-space: normal;
   word-wrap: break-word;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--vp-c-text-1);
   text-decoration: none !important;
@@ -151,7 +152,7 @@ const formatBadge = computed(() => {
   -webkit-box-orient: vertical;
   margin: 4px 0 0;
   line-height: 1.5;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--vp-c-text-2);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -165,7 +166,7 @@ const formatBadge = computed(() => {
   }
 
   .m-nav-link .title {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 </style>

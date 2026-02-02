@@ -111,6 +111,12 @@ export const NAV_DATA: NavData[] = [
         desc: '跨平台局域网文件传输工具',
         link: 'https://landrop.app/'
       },
+      {
+        icon: 'https://filezilla-project.org/favicon.ico',
+        title: 'FileZilla',
+        desc: '一款开源、免费的 FTP 解决方案',
+        link: 'https://filezilla-project.org/'
+      },
     ],
   },
   {
@@ -169,6 +175,18 @@ export const NAV_DATA: NavData[] = [
         title: 'PixPin',
         desc: '功能丰富的截图软件',
         link: 'https://pixpin.cn/'
+      },
+      {
+        icon: 'https://ecopaste.cn/icon.png',
+        title: 'EcoPaste',
+        desc: '免费、开源的跨平台剪贴板管理工具',
+        link: 'https://ecopaste.cn/'
+      },
+      {
+        icon: '/icon/tools/Pot.svg',
+        title: 'Pot',
+        desc: '一款跨平台划词翻译和OCR软件',
+        link: 'https://pot-app.com/'
       },
       {
         icon: 'https://qncdn.aoscdn.com/projects/apowersoft-refactor/assets/img/logo.7d71e41b.svg',
@@ -324,10 +342,22 @@ export const NAV_DATA: NavData[] = [
         link: 'https://github.com/zbezj/HEU_KMS_Activator'
       },
       {
+        icon: 'https://winhance.net/favicon.ico',
+        title: 'Winhance',
+        desc: 'Windows 增强实用程序',
+        link: 'https://winhance.net/'
+      },
+      {
         icon: 'https://www.mocreak.com/favicon.ico',
         title: 'Mocreak',
         desc: 'Office 安装、部署利器',
         link: 'https://www.mocreak.com/'
+      },
+      {
+        icon: 'https://www.officetool.plus/images/office-tool-plus-logo-large.webp',
+        title: 'Office Tool Plus',
+        desc: '一个强大且实用的 Office 部署工具',
+        link: 'https://www.officetool.plus/zh-cn/'
       },
     ],
   },
@@ -365,7 +395,7 @@ export const NAV_DATA: NavData[] = [
     items: [
       {
         icon: 'https://code.visualstudio.com/favicon.ico',
-        title: 'VS Code',
+        title: 'Visual Studio Code',
         desc: '强大的代码编辑器',
         link: 'https://code.visualstudio.com/'
       },
@@ -376,10 +406,46 @@ export const NAV_DATA: NavData[] = [
         link: 'https://visualstudio.microsoft.com/zh-hans/'
       },
       {
+        icon: 'https://resources.jetbrains.com/storage/logos/web/clion/clion.svg',
+        title: 'CLion',
+        desc: '适用于 C 和 C++ 的跨平台 IDE',
+        link: 'https://www.jetbrains.com/zh-cn/clion/'
+      },
+      {
         icon: 'https://resources.jetbrains.com/storage/logos/web/pycharm/pycharm.svg',
         title: 'PyCharm',
         desc: '您需要的唯一 Python IDE',
         link: 'https://www.jetbrains.com/zh-cn/pycharm/'
+      },
+      {
+        icon: 'https://resources.jetbrains.com/storage/logos/web/intellij-idea/intellij-idea.svg',
+        title: 'IntelliJ IDEA',
+        desc: '适用于专业开发 Java 和 Kotlin 的卓越 IDE',
+        link: 'https://www.jetbrains.com/zh-cn/idea/'
+      },
+      {
+        icon: 'https://resources.jetbrains.com/storage/logos/web/webstorm/webstorm.svg',
+        title: 'WebStorm',
+        desc: 'JavaScript 和 TypeScript IDE',
+        link: 'https://www.jetbrains.com/zh-cn/webstorm/'
+      },
+      {
+        icon: 'https://resources.jetbrains.com/storage/logos/web/rider/rider.svg',
+        title: 'Rider',
+        desc: '全球最受喜爱的 .NET 和游戏开发 IDE',
+        link: 'https://www.jetbrains.com/zh-cn/rider/'
+      },
+      {
+        icon: 'https://resources.jetbrains.com/storage/logos/web/datagrip/datagrip.svg',
+        title: 'DataGrip',
+        desc: '适用于关系型和 NoSQL 数据库的强大跨平台 IDE',
+        link: 'https://www.jetbrains.com/zh-cn/datagrip/'
+      },
+      {
+        icon: 'https://developer.android.google.cn/studio/images/android-studio-stable.svg',
+        title: 'Android Studio',
+        desc: '用于 Android 应用开发的官方 IDE',
+        link: 'https://developer.android.google.cn/studio?hl=zh-cn'
       },
     ],
   },
@@ -421,25 +487,18 @@ export const NAV_DATA: NavData[] = [
       {
         icon: 'https://vitepress.yiov.top/logo.png',
         title: 'VitePress',
-        badge: {
-          text: '🔥 非常推荐',
-          type: 'danger'
-        },
         desc: '快速上手中文教程，含更多美化教程',
         link: 'https://vitepress.yiov.top/'
       },
       {
         icon: 'https://i.theojs.cn/logo/lumen-logo-large.svg',
         title: 'Lumen',
-        badge: {
-          text: '✨ 功能丰富',
-          type: 'tip'
-        },
         desc: '专为 VitePress 打造的主题美化与 Vue 扩展组件库',
         link: 'https://lumen.theojs.cn/'
       },
       {
         icon: 'https://astro.build/favicon.svg',
+        iconBgColor: '#15124b',
         title: 'Astro',
         desc: '一个内容驱动的网站的网络框架',
         link: 'https://astro.build/'
@@ -449,7 +508,18 @@ export const NAV_DATA: NavData[] = [
         title: 'Astro Theme Pure',
         desc: '一个简洁的 Astro 主题',
         link: 'https://astro-pure.js.org/'
-      }
+      },
+      {
+        icon: 'https://shadcn-docs-nuxt.vercel.app/favicon.ico',
+        iconBgColor: '#ffffff',
+        title: 'shadcn-docs',
+        badge: {
+          text: '🎉 新版发布',
+          type: 'info'
+        },
+        desc: '精美设计的 Nuxt Content 模板, 基于 shadcn-vue 构建',
+        link: 'https://shadcn-docs-nuxt.vercel.app/zhcn'
+      },
     ]
   }
 ]

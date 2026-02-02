@@ -88,6 +88,7 @@ export const Auxiliary: CategoryConfig = {
       author: "jiugulixiaoniu",
       tags: ["锁屏"],
       group: { qqGroup: "https://qm.qq.com/q/jBPeZyWi3K" },
+      stcnSection: "https://forum.smart-teach.cn/t/classscreenlock",
       screenshots: [
         "/screenshots/ClassScreenLock/1.png",
         "/screenshots/ClassScreenLock/2.png",

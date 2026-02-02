@@ -1,5 +1,6 @@
 export interface NavLinks {
   icon?: string | { svg: string }
+  iconBgColor?: string
   badge?:
     | string
     | {
