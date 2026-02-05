@@ -83,7 +83,9 @@ export const MultiFunction: CategoryConfig = {
         { type: "info", text: "开发中" },
       ],
       tags: ["侧边栏", "Electron"],
+      stcnSection: "https://forum.smart-teach.cn/d/1216",
       screenshots: [
+        "/screenshots/sidebar-for-class/banner.png",
         "/screenshots/sidebar-for-class/1.png",
         "/screenshots/sidebar-for-class/2.png",
       ]

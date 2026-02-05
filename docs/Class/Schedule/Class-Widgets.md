@@ -3,6 +3,10 @@ pageLayout: Detail
 title: Class-Widgets
 ---
 
+::: tip
+[Class-Widgets-2](https://github.com/RinLit-233-shiroko/Class-Widgets-2) 正在开发中，在设计、交互、功能等方面将全面提升。
+:::
+
 - 插件 & 主题：极致的自定义
 - 近乎完美的兼容性：Windows、Linux、macOS
 - 强大的通知系统：提供了强大的通知系统，能够在上下课等时间点推出提醒；此外，插件也可调用通知接口，使其更加实用

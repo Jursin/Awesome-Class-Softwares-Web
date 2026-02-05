@@ -3,6 +3,10 @@ pageLayout: Detail
 title: Sidebar for Class
 ---
 
+::: tip
+绝大部分代码采用 Vibe Coding 方式编写，正在开发中且很多功能都不完善。
+:::
+
 - **应用启动器 (Launcher)**: 快速启动常用的应用程序或自定义 URI (如 `classisland://`)
 - **系统音量控制**: 内置音量调节滑块组件。
 - **高度可配置**: 所有界面元素、位置和行为均可通过 JSON 配置文件进行调整。
