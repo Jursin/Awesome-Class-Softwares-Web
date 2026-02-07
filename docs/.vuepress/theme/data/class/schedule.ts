@@ -32,7 +32,7 @@ export const Schedule: CategoryConfig = {
         { type: "danger", text: "🔥 推荐" },
       ],
       tags: ["课程表", "单双周支持", "多行支持", "上下课提醒", "插件支持", "自动化", "提醒特效"],
-      group: { qqGroup: "https://qm.qq.com/q/4NsDQKiAuQ", qqChannel: "https://pd.qq.com/s/10sd1flp0" },
+      group: { qqGroup: ["https://qm.qq.com/q/4NsDQKiAuQ", "https://qm.qq.com/q/MhWCvrk7mu"], qqChannel: "https://pd.qq.com/s/10sd1flp0" },
       website: "https://www.classisland.tech/",
       docs: "https://docs.classisland.tech/",
       stcnSection: "https://forum.smart-teach.cn/t/classisland",
@@ -93,7 +93,7 @@ export const Schedule: CategoryConfig = {
       description: "一款电子课程表软件",
       author: "EnderWolf006",
       tags: ["桌面小组件", "课程表", "单双周轮换", "Electron"],
-      group: { qqGroup: "https://qm.qq.com/q/9nRFURLYJ2", telegram: "https://t.me/ECSchedule" },
+      group: { qqGroup: ["https://qm.qq.com/q/9nRFURLYJ2", "https://qm.qq.com/q/JarnP6AD2a"], telegram: "https://t.me/ECSchedule" },
       stcnSection: "https://forum.smart-teach.cn/t/ECS",
       screenshots: [
         "/screenshots/ElectronClassSchedule/view.png",

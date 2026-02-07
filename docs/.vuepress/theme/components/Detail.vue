@@ -29,16 +29,41 @@ const mediaItems = computed(() => {
   return [...items, ...shots]
 })
 
-const hasGroupLinks = computed(() => {
+const normalizeLinkList = (value) => {
+  if (!value) return []
+  return Array.isArray(value) ? value.filter(Boolean) : [value]
+}
+
+const groupLinks = computed(() => {
   const group = software.value?.group
-  if (!group) return false
+  if (!group) {
+    return {
+      qqGroup: [],
+      qqChannel: [],
+      telegram: [],
+      discord: [],
+      facebook: [],
+      x: []
+    }
+  }
+  return {
+    qqGroup: normalizeLinkList(group.qqGroup),
+    qqChannel: normalizeLinkList(group.qqChannel),
+    telegram: normalizeLinkList(group.telegram),
+    discord: normalizeLinkList(group.discord),
+    facebook: normalizeLinkList(group.facebook),
+    x: normalizeLinkList(group.x)
+  }
+})
+
+const hasGroupLinks = computed(() => {
   return Boolean(
-    group.qqGroup ||
-    group.qqChannel ||
-    group.telegram ||
-    group.discord ||
-    group.facebook ||
-    group.x
+    groupLinks.value.qqGroup.length ||
+    groupLinks.value.qqChannel.length ||
+    groupLinks.value.telegram.length ||
+    groupLinks.value.discord.length ||
+    groupLinks.value.facebook.length ||
+    groupLinks.value.x.length
   )
 })
 
@@ -522,32 +547,32 @@ onMounted(async () => {
                 交流群组
               </h3>
               <div class="social-links">
-                <a v-if="software.group?.qqGroup" :href="software.group.qqGroup" target="_blank" class="link-btn community">
+                <a v-for="link in groupLinks.qqGroup" :key="`qq-group-${link}`" :href="link" target="_blank" class="link-btn community">
                   <Icon name="simple-icons:qq" color="#369BCE" />
                   <span class="link-text">QQ 群</span>
                   <Icon name="octicon:arrow-right-16" />
                 </a>
-                <a v-if="software.group?.qqChannel" :href="software.group.qqChannel" target="_blank" class="link-btn community">
+                <a v-for="link in groupLinks.qqChannel" :key="`qq-channel-${link}`" :href="link" target="_blank" class="link-btn community">
                   <Icon name="simple-icons:qq" color="#369BCE" />
                   <span class="link-text">QQ 频道</span>
                   <Icon name="octicon:arrow-right-16" />
                 </a>
-                <a v-if="software.group?.telegram" :href="software.group.telegram" target="_blank" class="link-btn community">
+                <a v-for="link in groupLinks.telegram" :key="`telegram-${link}`" :href="link" target="_blank" class="link-btn community">
                   <Icon name="logos:telegram" />
                   <span class="link-text">Telegram</span>
                   <Icon name="octicon:arrow-right-16" />
                 </a>
-                <a v-if="software.group?.discord" :href="software.group.discord" target="_blank" class="link-btn community">
+                <a v-for="link in groupLinks.discord" :key="`discord-${link}`" :href="link" target="_blank" class="link-btn community">
                   <Icon name="logos:discord-icon" />
                   <span class="link-text">Discord</span>
                   <Icon name="octicon:arrow-right-16" />
                 </a>
-                <a v-if="software.group?.facebook" :href="software.group.facebook" target="_blank" class="link-btn community">
+                <a v-for="link in groupLinks.facebook" :key="`facebook-${link}`" :href="link" target="_blank" class="link-btn community">
                   <Icon name="logos:facebook" />
                   <span class="link-text">Facebook</span>
                   <Icon name="octicon:arrow-right-16" />
                 </a>
-                <a v-if="software.group?.x" :href="software.group.x" target="_blank" class="link-btn community">
+                <a v-for="link in groupLinks.x" :key="`x-${link}`" :href="link" target="_blank" class="link-btn community">
                   <Icon name="logos:x" />
                   <span class="link-text">X</span>
                   <Icon name="octicon:arrow-right-16" />

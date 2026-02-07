@@ -84,6 +84,7 @@ export const MultiFunction: CategoryConfig = {
       ],
       tags: ["侧边栏", "Electron"],
       stcnSection: "https://forum.smart-teach.cn/d/1216",
+      group: { qqGroup: "https://qm.qq.com/q/QKBAohNsIy" },
       screenshots: [
         "/screenshots/sidebar-for-class/banner.png",
         "/screenshots/sidebar-for-class/1.png",

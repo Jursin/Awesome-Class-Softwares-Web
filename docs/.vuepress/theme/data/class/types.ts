@@ -26,13 +26,15 @@ export interface Software {
   categorySlug?: string;
 }
 
+export type SocialLinkValue = string | string[];
+
 export interface SocialLinks {
-  qqGroup?: string;
-  qqChannel?: string;
-  telegram?: string;
-  discord?: string;
-  facebook?: string;
-  x?: string;
+  qqGroup?: SocialLinkValue;
+  qqChannel?: SocialLinkValue;
+  telegram?: SocialLinkValue;
+  discord?: SocialLinkValue;
+  facebook?: SocialLinkValue;
+  x?: SocialLinkValue;
 }
 
 export interface CategoryConfig {

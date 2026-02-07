@@ -166,6 +166,7 @@ export const Annotation: CategoryConfig = {
         { type: "info", text: "早期开发中" },
       ],
       tags: ["批注", "Electron", "Vibe Coding"],
+      group: { qqGroup: "https://qm.qq.com/q/1RIoofPQQw" },
       screenshots: [
         "/screenshots/LanStartWrite/1.png",
         "/screenshots/LanStartWrite/2.png",
