@@ -87,11 +87,16 @@ export const Auxiliary: CategoryConfig = {
       description: "一个 Windows 系统课堂屏幕锁定软件",
       author: "jiugulixiaoniu",
       tags: ["锁屏"],
+      website: "https://classscreenlock.us.ci/",
       group: { qqGroup: "https://qm.qq.com/q/jBPeZyWi3K" },
       stcnSection: "https://forum.smart-teach.cn/t/classscreenlock",
       screenshots: [
+        "/screenshots/ClassScreenLock/banner.png",
         "/screenshots/ClassScreenLock/1.png",
         "/screenshots/ClassScreenLock/2.png",
+        "/screenshots/ClassScreenLock/3.png",
+        "/screenshots/ClassScreenLock/4.png",
+        "/screenshots/ClassScreenLock/5.png",
       ]
     },
     {
