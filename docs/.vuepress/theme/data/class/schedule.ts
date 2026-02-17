@@ -40,7 +40,7 @@ export const Schedule: CategoryConfig = {
         "/screenshots/ClassIsland/banner.png",
         "/screenshots/ClassIsland/themes.png",
       ],
-      bvid: ["BV1y2Jxz1Et7"],
+      bvid: ["BV1SYZyBDEXJ"],
     },
     {
       id: "Class-Widgets",

@@ -111,8 +111,23 @@ export const Auxiliary: CategoryConfig = {
       ],
       tags: ["积分管理", "Electron"],
       group: { qqGroup: "https://qm.qq.com/q/Y8tx1BxnmG" },
+      docs: "https://secscore.sectl.top/",
       screenshots: [
         "/screenshots/SecScore/1.png",
+      ]
+    },
+    {
+      id: "ShowWrite",
+      name: "ShowWrite视频展台",
+      icon: "/icon/ShowWrite.png",
+      repo: "SECTL/ShowWrite",
+      description: "一个简洁优雅的视频展台工具，专为教学演示设计，让展示更加高效直观",
+      author: "wwcrdrvf6u",
+      tags: ["视频展台"],
+      group: { qqGroup: "https://qm.qq.com/q/R2DItrfKMg" },
+      docs: "https://showwrite.sectl.top/",
+      screenshots: [
+        "/screenshots/ShowWrite/1.png",
       ]
     },
   ]

@@ -141,6 +141,24 @@ export const Annotation: CategoryConfig = {
       ]
     },
     {
+      id: "LanStartWrite",
+      name: "LanStartWrite",
+      icon: "/icon/LanStartWrite.png",
+      repo: "wwiinnddyy/LanStartWrite",
+      description: "基于 Electron 的新一代书写应用",
+      author: "wwiinnddyy",
+      badge: [
+        { type: "info", text: "早期开发中" },
+      ],
+      tags: ["批注", "Electron", "Vibe Coding"],
+      group: { qqGroup: "https://qm.qq.com/q/1RIoofPQQw" },
+      stcnSection: "https://forum.smart-teach.cn/d/1043",
+      screenshots: [
+        "/screenshots/LanStartWrite/1.png",
+        "/screenshots/LanStartWrite/2.png",
+      ]
+    },
+    {
       id: "LemonxNote",
       name: "LemonxNote",
       icon: "/icon/LemonxNote.png",
@@ -153,23 +171,6 @@ export const Annotation: CategoryConfig = {
       tags: ["C++", "Qt", "屏幕画板", "轻量"],
       screenshots: [
         "/screenshots/LemonxNote/main.png",
-      ]
-    },
-    {
-      id: "LanStartWrite",
-      name: "LanStartWrite",
-      icon: "/icon/LanStartWrite.png",
-      repo: "wwiinnddyy/LanStartWrite",
-      description: "基于 Electron 的新一代书写应用",
-      author: "wwiinnddyy",
-      badge: [
-        { type: "info", text: "早期开发中" },
-      ],
-      tags: ["批注", "Electron", "Vibe Coding"],
-      group: { qqGroup: "https://qm.qq.com/q/1RIoofPQQw" },
-      screenshots: [
-        "/screenshots/LanStartWrite/1.png",
-        "/screenshots/LanStartWrite/2.png",
       ]
     },
   ]
