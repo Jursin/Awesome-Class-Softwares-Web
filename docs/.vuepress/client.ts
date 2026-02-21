@@ -4,7 +4,10 @@ import Detail from './theme/components/Detail.vue'
 import NavLink from './theme/components/NavLink.vue'
 import NavLinks from './theme/components/NavLinks.vue'
 
-import './theme/styles/custom.css'
+import './theme/styles/var.css'
+import './theme/styles/nav.css'
+import './theme/styles/page.css'
+import './theme/styles/friends.css'
 
 export default defineClientConfig({
   enhance({ app }) {

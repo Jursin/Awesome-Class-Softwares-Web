@@ -1,0 +1,19 @@
+/* 自定义页面 */
+.vp-page {
+  max-width: 1660px !important;
+  padding: 32px 150px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .vp-page {
+    padding: 24px 16px !important;
+    min-width: 300px;
+  }
+}
+
+.page-title {
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  padding: 0 20px 0 !important;
+  margin: 0 !important;
+}

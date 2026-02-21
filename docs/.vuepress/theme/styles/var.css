@@ -52,13 +52,13 @@
   }
 }
 
+.vp-bulletin .container {
+  padding: 0 !important;
+}
+
 .vp-social-link .vp-icon {
   width : 20px !important;
   height: 20px !important;
-}
-
-.vp-bulletin .container {
-  padding: 0 !important;
 }
 
 .vp-content {
@@ -67,71 +67,4 @@
 
 ul li::marker {
   color: var(--vp-c-brand-1) !important;
-}
-
-/* page */
-.vp-page {
-  max-width: 1660px !important;
-  padding: 32px 150px !important;
-}
-
-@media screen and (max-width: 768px) {
-  .vp-page {
-    padding: 24px 16px !important;
-    min-width: 300px;
-  }
-}
-
-.page-title {
-  font-size: 28px !important;
-  font-weight: 700 !important;
-  padding: 0 20px 0 !important;
-  margin: 0 !important;
-}
-
-/* friends */
-.vp-friends {
-  max-width: 1400px !important;
-  padding: 0 !important;
-}
-
-.vp-friends .title {
-  color: var(--vp-c-brand-1) !important;
-  padding: 40px 0 0 0 !important;
-}
-
-@media screen and (max-width: 768px) {
-  .vp-friends {
-    padding-top: 20px !important;
-  }
-}
-
-.vp-friends-group {
-  padding-top: 0 !important;
-}
-
-.vp-friend {
-  border: solid 1px var(--vp-c-divider);
-  border-radius: 12px !important;
-  background-color: #c8c8c81a !important;
-}
-
-.vp-friend:hover {
-  border: solid 1px var(--vp-c-brand-2);
-}
-
-.avatar {
-  padding: 8px;
-  border-radius: 16px !important;
-  display: flex;
-  background-color: transparent !important;
-}
-
-.avatar img {
-  object-fit: contain !important;
-  object-position: center !important;
-}
-
-.vp-link.title {
-  color: var(--vp-c-text-1) !important;
 }
