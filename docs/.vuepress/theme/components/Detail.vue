@@ -7,7 +7,7 @@ import VPComment from '@theme/VPComment.vue'
 const route = useRoute()
 const router = useRouter()
 const API_BASES = [
-  'https://gh-api.jursin.top/api/github',
+  'https://gh-api.jursin.top',
   'https://ghfile.geekertao.top/https://api.github.com',
   'https://api.github.com'
 ]
