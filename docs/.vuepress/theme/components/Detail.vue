@@ -8,7 +8,6 @@ const route = useRoute()
 const router = useRouter()
 const API_BASES = [
   'https://gh-api.jursin.top',
-  'https://ghfile.geekertao.top/https://api.github.com',
   'https://api.github.com'
 ]
 const LANGUAGE_COLOR_URL = 'https://gh.llkk.cc/https://raw.githubusercontent.com/ozh/github-colors/master/colors.json'

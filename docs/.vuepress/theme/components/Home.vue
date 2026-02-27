@@ -6,7 +6,6 @@ import { softwareList, categories as categoryData } from '../data/class/index'
 const router = useRouter()
 const API_BASES = [
   'https://gh-api.jursin.top',
-  'https://ghfile.geekertao.top/https://api.github.com',
   'https://api.github.com'
 ]
 

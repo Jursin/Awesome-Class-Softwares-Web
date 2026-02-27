@@ -59,10 +59,12 @@ export const MultiFunction: CategoryConfig = {
       name: "校园广播站点歌系统",
       icon: "/icon/VoiceHub.png",
       repo: "laoshuikaixue/VoiceHub",
-      description: "一个使用 Nuxt 3 全栈框架开发的现代化校园广播站点歌管理系统",
+      description: "一个使用 Nuxt 4 全栈框架开发的现代化校园广播站点歌管理系统",
       author: "laoshuikaixue",
       tags: ["广播站", "点歌系统", "Nuxt3"],
       website: "https://voicehub.smart-teach.cn/",
+      stcnSection: "https://forum.smart-teach.cn/d/598",
+      group: { qqGroup: "https://qm.qq.com/q/b9f40ukfiE" },
       screenshots: [
         "/screenshots/VoiceHub/1.png",
         "/screenshots/VoiceHub/2.png",
@@ -70,7 +72,8 @@ export const MultiFunction: CategoryConfig = {
         "/screenshots/VoiceHub/4.png",
         "/screenshots/VoiceHub/5.png",
         "/screenshots/VoiceHub/6.png",
-      ]
+      ],
+      bvid: ["BV1B9ArzMEkA"]
     },
     {
       id: "sidebar-for-class",
