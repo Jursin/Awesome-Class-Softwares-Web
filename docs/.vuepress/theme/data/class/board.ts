@@ -193,5 +193,19 @@ export const Board: CategoryConfig = {
         "/screenshots/ClassWindow/main.png",
       ]
     },
+    {
+      id: "AssignSticker",
+      name: "AssignSticker",
+      icon: "/icon/AssignSticker.png",
+      repo: "SECTL/assignsticker",
+      description: "一个使用 Pywebview 开发的简洁、易用的作业看板软件",
+      author: "chenghaolee-2012",
+      tags: ["作业看板"],
+      docs: "https://homeworkisland.sectl.top/",
+      screenshots: [
+        "/screenshots/AssignSticker/1.png",
+        "/screenshots/AssignSticker/2.png",
+      ]
+    },
   ]
 };

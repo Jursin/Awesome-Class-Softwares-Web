@@ -130,5 +130,33 @@ export const Auxiliary: CategoryConfig = {
         "/screenshots/ShowWrite/1.png",
       ]
     },
+    {
+      id: "PrismCore",
+      name: "PrismCore",
+      icon: "/icon/PrismCore.png",
+      repo: "WSXYT/PrismCore",
+      description: "一个基于 WinUI 3 构建的 Windows 系统优化工具，提供内存管理、CPU 智能调度、延迟诊断、磁盘清理、网络修复和启动项管理六大核心功能",
+      author: "WSXYT",
+      tags: ["系统优化"],
+      screenshots: [
+        "/screenshots/PrismCore/1.png",
+        "/screenshots/PrismCore/2.png",
+        "/screenshots/PrismCore/3.png",
+        "/screenshots/PrismCore/4.png",
+        "/screenshots/PrismCore/5.png",
+      ]
+    },
+    {
+      id: "C30Auto-login",
+      name: "C30 教学软件自动登录工具",
+      icon: "",
+      repo: "WSXYT/C30Auto-login",
+      description: "一个基于图像识别（OpenCV）与自动化控制（PyAutoGUI/SendInput）的 C30 教学软件自动登录工具",
+      author: "WSXYT",
+      tags: ["自动登录", "C30教学软件"],
+      screenshots: [
+        "/screenshots/C30Auto-login/1.png",
+      ]
+    },
   ]
 };
