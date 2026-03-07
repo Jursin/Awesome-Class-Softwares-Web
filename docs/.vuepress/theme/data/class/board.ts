@@ -201,10 +201,12 @@ export const Board: CategoryConfig = {
       description: "一个使用 Pywebview 开发的简洁、易用的作业看板软件",
       author: "chenghaolee-2012",
       tags: ["作业看板"],
-      docs: "https://homeworkisland.sectl.top/",
+      docs: "https://assignsticker.sectl.top/",
       screenshots: [
+        "/screenshots/AssignSticker/banner.png",
         "/screenshots/AssignSticker/1.png",
         "/screenshots/AssignSticker/2.png",
+        "/screenshots/AssignSticker/3.png",
       ]
     },
   ]
