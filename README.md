@@ -1,7 +1,5 @@
 # Awesome-Class-Softwares-Web
 
-[![Deploy to Server](https://github.com/Jursin/Awesome-Class-Softwares-Web/actions/workflows/Deploy.yml/badge.svg)](https://github.com/Jursin/Awesome-Class-Softwares-Web/actions/workflows/Deploy.yml)
-
 [Awesome-Class-Softwares](https://github.com/Jursin/Awesome-Class-Softwares) 网站源码，使用 [vuepress](https://vuepress.vuejs.org/) 和 [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume) 构建生成。
 
 ## 安装依赖
