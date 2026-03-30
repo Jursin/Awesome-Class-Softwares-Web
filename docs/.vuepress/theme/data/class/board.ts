@@ -200,6 +200,9 @@ export const Board: CategoryConfig = {
       repo: "SECTL/assignsticker",
       description: "一个使用 Pywebview 开发的简洁、易用的作业看板软件",
       author: "chenghaolee-2012",
+      badge: [
+        { type: "info", text: "早期开发中" },
+      ],
       tags: ["作业看板"],
       docs: "https://assignsticker.sectl.top/",
       screenshots: [
